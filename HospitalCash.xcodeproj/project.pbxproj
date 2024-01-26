@@ -22,6 +22,7 @@
 		84ED67452B644092001D600A /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67442B644092001D600A /* BottomBar.swift */; };
 		84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67462B6443D4001D600A /* CustomDivider.swift */; };
 		84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */; };
+		84ED674F2B645961001D600A /* BMIPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED674E2B645961001D600A /* BMIPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		84ED67442B644092001D600A /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		84ED67462B6443D4001D600A /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionGroup.swift; sourceTree = "<group>"; };
+		84ED674E2B645961001D600A /* BMIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		84ED672A2B63D8DC001D600A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				84ED674A2B645891001D600A /* Premium */,
 				84ED672B2B63D942001D600A /* Onboarding */,
 			);
 			path = Features;
@@ -160,6 +163,38 @@
 				84ED673E2B64332A001D600A /* HospitalCashLogo.swift */,
 				84ED67402B6434D6001D600A /* ProductDescriptionText.swift */,
 				84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84ED674A2B645891001D600A /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				84ED674B2B64591F001D600A /* Presentation */,
+			);
+			path = Premium;
+			sourceTree = "<group>";
+		};
+		84ED674B2B64591F001D600A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84ED674D2B64593C001D600A /* Views */,
+				84ED674C2B645936001D600A /* Pages */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84ED674C2B645936001D600A /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				84ED674E2B645961001D600A /* BMIPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		84ED674D2B64593C001D600A /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,

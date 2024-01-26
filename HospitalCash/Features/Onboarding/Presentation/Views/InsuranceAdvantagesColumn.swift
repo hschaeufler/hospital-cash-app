@@ -25,7 +25,7 @@ struct InsuranceAdvantagesColumn: View {
                 subtitle: "Versicherung auf Blockchain einsehbar"
             )
             ListTile(
-                systemName: "bed.double.circle",
+                systemName: "gauge.open.with.lines.needle.33percent.and.arrowtriangle.from.0percent.to.50percent",
                 title: "Voll automatisiert",
                 subtitle: "Keine lästigen Wartezeiten"
             )

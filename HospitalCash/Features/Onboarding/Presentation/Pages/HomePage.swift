@@ -28,7 +28,8 @@ struct HomePage: View {
                     showingPremiumCalculator.toggle()
                 }
                 .sheet(isPresented: $showingPremiumCalculator) {
-                    
+                    BMIPage()
+                        .presentationBackground(.thinMaterial)
                 }
             }
         }

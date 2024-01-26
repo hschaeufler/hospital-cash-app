@@ -33,6 +33,9 @@
         }
       }
     },
+    "Gesundheitsfragen" : {
+
+    },
     "Hospital Cash" : {
       "localizations" : {
         "de" : {
@@ -96,6 +99,9 @@
           }
         }
       }
+    },
+    "Placeholder" : {
+
     },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
