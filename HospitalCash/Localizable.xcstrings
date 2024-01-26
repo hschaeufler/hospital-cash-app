@@ -1,6 +1,22 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "Bestimme selbst die Tagegeldhöhe" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestimme selbst die Tagegeldhöhe"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Determine the daily allowance yourself"
+          }
+        }
+      }
+    },
     "Deine Vorteile" : {
       "localizations" : {
         "de" : {
@@ -33,6 +49,22 @@
         }
       }
     },
+    "Individueller Leistungsumfang" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Individueller Leistungsumfang"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Individual scope of benefits"
+          }
+        }
+      }
+    },
     "Jetzt Beitrag berechnen" : {
       "localizations" : {
         "de" : {
@@ -49,6 +81,22 @@
         }
       }
     },
+    "Keine lästigen Wartezeiten" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine lästigen Wartezeiten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No annoying waiting times"
+          }
+        }
+      }
+    },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
         "de" : {
@@ -61,6 +109,54 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Our new blockchain-based hospital cash. Sign up now and benefit from particularly low prices."
+          }
+        }
+      }
+    },
+    "Versicherung auf Blockchain einsehbar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versicherung auf Blockchain einsehbar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insurance contract viewable on blockchain"
+          }
+        }
+      }
+    },
+    "Voll automatisiert" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voll automatisiert"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fully automated"
+          }
+        }
+      }
+    },
+    "Volle Transparenz" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volle Transparenz"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full transparency"
           }
         }
       }

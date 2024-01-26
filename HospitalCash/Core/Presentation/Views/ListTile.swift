@@ -12,8 +12,8 @@ struct ListTile: View {
     @ScaledMetric var iconSpacing = 10
     
     var systemName: String
-    var title: String
-    var subtitle: String
+    var title: LocalizedStringKey
+    var subtitle: LocalizedStringKey
     
     var body: some View {
         HStack(spacing: iconSpacing) {

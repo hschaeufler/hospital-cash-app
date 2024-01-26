@@ -18,10 +18,7 @@ struct HomePage: View {
                 HospitalCashLogo()
                 Divider()
                     .frame(maxWidth: 150)
-                Text("PRODUKT_BESCHREIBUNG_HOSPITALCASH")
-                    .font(.callout)
-                    .foregroundColor(Color.gray)
-                    .multilineTextAlignment(.center)
+                ProductDescriptionText()
                 Divider()
                     .frame(maxWidth: 150)
             }
@@ -37,15 +34,7 @@ struct HomePage: View {
                     .ignoresSafeArea()
                     .frame(maxHeight: maxHeightButtonGroup)
                 
-                Button {} label: {
-                    Text("Jetzt Beitrag berechnen")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(.blue)
-                .padding()
+                FilledButton(caption: "Jetzt Beitrag berechnen") {}
             }
         }
     }
