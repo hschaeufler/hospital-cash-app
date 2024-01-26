@@ -30,12 +30,34 @@ struct HomePage: View {
                     .multilineTextAlignment(.center)
                 Divider()
                     .frame(maxWidth: 150)
-                Text("Deine Vorteile")
-                    .font(.title2)
-                    .bold()
             }
-            .padding()
-            Spacer()
+            .padding(.horizontal, 10)
+            Text("Deine Vorteile")
+                .font(.title2)
+                .bold()
+            List {
+                ListTile(
+                    systemName: "bed.double.circle",
+                    title: "Individueller Leistungsumfang",
+                    subtitle: "Bestimme selbst die Tagegeldhöhe"
+                )
+                .listRowSeparator(.hidden)
+                ListTile(
+                    systemName: "cube.transparent",
+                    title: "Volle Transparenz",
+                    subtitle: "Versicherung auf Blockchain einsehbar"
+                )
+                .listRowSeparator(.hidden)
+                ListTile(
+                    systemName: "bed.double.circle",
+                    title: "Voll automatisiert",
+                    subtitle: "Keine lästigen Wartezeiten"
+                )
+                .listRowSeparator(.hidden)
+            }
+            .listRowInsets(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+            .listStyle(.plain)
+            .scrollDisabled(true)
             ZStack {
                 Rectangle()
                     .fill(Color(.systemGray5))
