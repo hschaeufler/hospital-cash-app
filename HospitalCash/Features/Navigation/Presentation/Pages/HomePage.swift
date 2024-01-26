@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomePage: View {
+    @ScaledMetric var spacing = 20
+    
     var body: some View {
-        VStack {
+        VStack(spacing: spacing) {
             Image(systemName: "cross.case.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
