@@ -19,6 +19,7 @@
 		84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED673E2B64332A001D600A /* HospitalCashLogo.swift */; };
 		84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67402B6434D6001D600A /* ProductDescriptionText.swift */; };
 		84ED67432B6435DF001D600A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67422B6435DF001D600A /* FilledButton.swift */; };
+		84ED67452B644092001D600A /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67442B644092001D600A /* BottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		84ED673E2B64332A001D600A /* HospitalCashLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCashLogo.swift; sourceTree = "<group>"; };
 		84ED67402B6434D6001D600A /* ProductDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionText.swift; sourceTree = "<group>"; };
 		84ED67422B6435DF001D600A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		84ED67442B644092001D600A /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				84ED67352B640828001D600A /* ListTile.swift */,
 				84ED67392B640D44001D600A /* Avatar.swift */,
 				84ED67422B6435DF001D600A /* FilledButton.swift */,
+				84ED67442B644092001D600A /* BottomBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
+				84ED67452B644092001D600A /* BottomBar.swift in Sources */,
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,
 				84ED673A2B640D44001D600A /* Avatar.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,

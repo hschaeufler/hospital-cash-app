@@ -28,13 +28,8 @@ struct HomePage: View {
                 .scaledToFit()
                 .padding(.horizontal, 5)
             Spacer()
-            ZStack {
-                Rectangle()
-                    .fill(Color(.systemGray5))
-                    .ignoresSafeArea()
-                    .frame(maxHeight: maxHeightButtonGroup)
-                
-                FilledButton(caption: "Jetzt Beitrag berechnen") {}
+            BottomBar {
+                FilledButton("Jetzt Beitrag berechnen") {}
             }
         }
     }

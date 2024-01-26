@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct FilledButton: View {
-    var caption: LocalizedStringKey
+    var titleKey: LocalizedStringKey
     var action: () -> Void
+    
+    init(
+        _ titleKey: LocalizedStringKey,
+        action: @escaping () -> Void
+    ) {
+        self.titleKey = titleKey
+        self.action = action
+    }
     
     var body: some View {
         Button(
             action: action,
             label: {
-                Text(caption)
+                Text(titleKey)
                     .font(.title3)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 10)
@@ -28,5 +36,5 @@ struct FilledButton: View {
 }
 
 #Preview {
-    FilledButton(caption: "Jetzt Beitrag berechnen") {}
+    FilledButton("Jetzt Beitrag berechnen") {}
 }
