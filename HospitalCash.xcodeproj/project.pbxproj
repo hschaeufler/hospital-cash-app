@@ -166,11 +166,12 @@
 			};
 			buildConfigurationList = 84A4F8722B6368F30018AA37 /* Build configuration list for PBXProject "HospitalCash" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 84A4F86E2B6368F30018AA37;
 			productRefGroup = 84A4F8782B6368F30018AA37 /* Products */;

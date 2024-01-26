@@ -24,7 +24,7 @@ struct HomePage: View {
                     .fontDesign(.serif)
                 Divider()
                     .frame(maxWidth: 150)
-                Text("Unser neues Krankentagegeld auf Blockchain-Basis. Jetzt abschließen und von besonders günstigen Preisen profitieren.")
+                Text("PRODUKT_BESCHREIBUNG_HOSPITALCASH")
                     .font(.title2)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)

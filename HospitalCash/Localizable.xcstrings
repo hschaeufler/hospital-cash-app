@@ -1,5 +1,70 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {},
+  "sourceLanguage" : "de",
+  "strings" : {
+    "Deine Vorteile" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Vorteile"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your advantages"
+          }
+        }
+      }
+    },
+    "Hospital Cash" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospital Cash"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospital Cash"
+          }
+        }
+      }
+    },
+    "Jetzt Beitrag berechnen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt Beitrag berechnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate premium now"
+          }
+        }
+      }
+    },
+    "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unser neues Krankentagegeld auf Blockchain-Basis. Jetzt abschließen und von besonders günstigen Preisen profitieren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Our new blockchain-based daily sickness allowance. Sign up now and benefit from particularly low prices."
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }
