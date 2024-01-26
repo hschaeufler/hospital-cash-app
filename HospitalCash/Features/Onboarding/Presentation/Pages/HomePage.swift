@@ -14,9 +14,9 @@ struct HomePage: View {
         VStack {
             Spacer()
             HospitalCashLogo()
-            CustomDivider(maxWidth: 150)
-            ProductDescriptionText()
-            CustomDivider(maxWidth: 150)
+            Spacer()
+            HospitalDescriptionGroup()
+                .padding(.horizontal, 15)
             Spacer()
             InsuranceAdvantagesColumn()
                 .scaledToFit()
