@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
-    @ScaledMetric var spacing = 15
-    @ScaledMetric var maxHeightButtonGroup = 100
+    @ScaledMetric var verticalPadding = 5
     
     var body: some View {
         VStack {
@@ -23,7 +22,7 @@ struct HomePage: View {
                 .scaledToFit()
                 .padding(.horizontal, 5)
             Spacer()
-            BottomBar {
+            BottomBar(verticalPadding: verticalPadding) {
                 FilledButton("Jetzt Beitrag berechnen") {}
             }
         }

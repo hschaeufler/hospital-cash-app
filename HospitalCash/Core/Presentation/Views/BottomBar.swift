@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BottomBar<Content>: View where Content : View {
-    @ScaledMetric var maxHeightButtonGroup = 100
+    var verticalPadding: CGFloat?
     @ViewBuilder let content: () -> Content
     
     var body: some View {
@@ -16,9 +16,10 @@ struct BottomBar<Content>: View where Content : View {
             Rectangle()
                 .fill(Color(.systemGray5))
                 .ignoresSafeArea()
-                .frame(maxHeight: maxHeightButtonGroup)
             content()
+                .padding(.vertical, verticalPadding)
         }
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
