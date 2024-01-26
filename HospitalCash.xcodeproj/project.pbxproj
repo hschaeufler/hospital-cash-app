@@ -11,6 +11,7 @@
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
 		84A4F8822B6368F40018AA37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */; };
+		84ED672F2B63D97E001D600A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED672E2B63D97E001D600A /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84A4F87E2B6368F40018AA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84ED672E2B63D97E001D600A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		84A4F8792B6368F30018AA37 /* HospitalCash */ = {
 			isa = PBXGroup;
 			children = (
+				84ED672A2B63D8DC001D600A /* Features */,
 				84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */,
 				84A4F87C2B6368F30018AA37 /* ContentView.swift */,
 				84A4F87E2B6368F40018AA37 /* Assets.xcassets */,
@@ -65,6 +68,38 @@
 				84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84ED672A2B63D8DC001D600A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				84ED672B2B63D942001D600A /* Navigation */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		84ED672B2B63D942001D600A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				84ED672C2B63D956001D600A /* Presentation */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		84ED672C2B63D956001D600A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84ED672D2B63D965001D600A /* Pages */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84ED672D2B63D965001D600A /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				84ED672E2B63D97E001D600A /* HomePage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
+				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
