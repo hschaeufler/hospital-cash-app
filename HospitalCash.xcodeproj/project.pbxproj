@@ -21,7 +21,7 @@
 		84ED67432B6435DF001D600A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67422B6435DF001D600A /* FilledButton.swift */; };
 		84ED67452B644092001D600A /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67442B644092001D600A /* BottomBar.swift */; };
 		84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67462B6443D4001D600A /* CustomDivider.swift */; };
-		84ED67492B64488F001D600A /* HospitalDescriptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67482B64488F001D600A /* HospitalDescriptionGroup.swift */; };
+		84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		84ED67422B6435DF001D600A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		84ED67442B644092001D600A /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		84ED67462B6443D4001D600A /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
-		84ED67482B64488F001D600A /* HospitalDescriptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDescriptionGroup.swift; sourceTree = "<group>"; };
+		84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				84ED673C2B642446001D600A /* InsuranceAdvantagesColumn.swift */,
 				84ED673E2B64332A001D600A /* HospitalCashLogo.swift */,
 				84ED67402B6434D6001D600A /* ProductDescriptionText.swift */,
-				84ED67482B64488F001D600A /* HospitalDescriptionGroup.swift */,
+				84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
-				84ED67492B64488F001D600A /* HospitalDescriptionGroup.swift in Sources */,
+				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */,
 				84ED67452B644092001D600A /* BottomBar.swift in Sources */,
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,

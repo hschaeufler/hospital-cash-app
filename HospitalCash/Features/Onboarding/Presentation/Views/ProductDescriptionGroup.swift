@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HospitalDescriptionGroup: View {
+struct ProductDescriptionGroup: View {
     @ScaledMetric var spacing = 20
     
     var body: some View {
@@ -20,5 +20,5 @@ struct HospitalDescriptionGroup: View {
 }
 
 #Preview {
-    HospitalDescriptionGroup()
+    ProductDescriptionGroup()
 }

@@ -15,7 +15,7 @@ struct HomePage: View {
             Spacer()
             HospitalCashLogo()
             Spacer()
-            HospitalDescriptionGroup()
+            ProductDescriptionGroup()
                 .padding(.horizontal, 15)
             Spacer()
             InsuranceAdvantagesColumn()
