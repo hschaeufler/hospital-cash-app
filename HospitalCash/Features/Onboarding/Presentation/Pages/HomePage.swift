@@ -14,15 +14,10 @@ struct HomePage: View {
     var body: some View {
         VStack {
             Spacer()
-            VStack (spacing: spacing) {
-                HospitalCashLogo()
-                Divider()
-                    .frame(maxWidth: 150)
-                ProductDescriptionText()
-                Divider()
-                    .frame(maxWidth: 150)
-            }
-            .padding(.horizontal, 10)
+            HospitalCashLogo()
+            CustomDivider(maxWidth: 150)
+            ProductDescriptionText()
+            CustomDivider(maxWidth: 150)
             Spacer()
             InsuranceAdvantagesColumn()
                 .scaledToFit()
