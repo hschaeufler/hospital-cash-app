@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HospitalDescriptionGroup: View {
-    @ScaledMetric var spacing = 10
+    @ScaledMetric var spacing = 20
     
     var body: some View {
         VStack(spacing: spacing) {
