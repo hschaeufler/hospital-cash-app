@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HomePage: View {
-    @ScaledMetric var spacing = 20
+    @ScaledMetric var spacing = 15
     @ScaledMetric var maxHeightButtonGroup = 100
     
     var body: some View {
-        VStack(spacing: spacing) {
-            VStack {
+        VStack {
+            Spacer()
+            VStack (spacing: spacing) {
                 Image(systemName: "cross.case.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -25,13 +26,14 @@ struct HomePage: View {
                 Divider()
                     .frame(maxWidth: 150)
                 Text("PRODUKT_BESCHREIBUNG_HOSPITALCASH")
-                    .font(.title2)
+                    .font(.callout)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)
                 Divider()
                     .frame(maxWidth: 150)
             }
             .padding(.horizontal, 10)
+            Spacer()
             Text("Deine Vorteile")
                 .font(.title2)
                 .bold()
@@ -42,22 +44,25 @@ struct HomePage: View {
                     subtitle: "Bestimme selbst die Tagegeldhöhe"
                 )
                 .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 10, leading: 5, bottom: 5, trailing: 0))
                 ListTile(
                     systemName: "cube.transparent",
                     title: "Volle Transparenz",
                     subtitle: "Versicherung auf Blockchain einsehbar"
                 )
                 .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 10, leading: 5, bottom: 5, trailing: 0))
                 ListTile(
                     systemName: "bed.double.circle",
                     title: "Voll automatisiert",
                     subtitle: "Keine lästigen Wartezeiten"
                 )
                 .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 10, leading: 5, bottom: 5, trailing: 0))
             }
-            .listRowInsets(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
             .listStyle(.plain)
-            .scrollDisabled(true)
+
+            Spacer()
             ZStack {
                 Rectangle()
                     .fill(Color(.systemGray5))

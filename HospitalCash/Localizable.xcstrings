@@ -54,13 +54,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unser neues Krankentagegeld auf Blockchain-Basis. Jetzt abschließen und von besonders günstigen Preisen profitieren."
+            "value" : "Unser neues Krankenhaustagegeld auf Blockchain-Basis. Jetzt abschließen und von besonders günstigen Preisen profitieren."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Our new blockchain-based daily sickness allowance. Sign up now and benefit from particularly low prices."
+            "value" : "Our new blockchain-based hospital cash. Sign up now and benefit from particularly low prices."
           }
         }
       }
