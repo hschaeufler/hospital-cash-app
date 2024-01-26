@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomePage: View {
     @ScaledMetric var verticalPadding = 5
+    @State private var showingPremiumCalculator = false
     
     var body: some View {
         VStack {
@@ -23,7 +24,12 @@ struct HomePage: View {
                 .padding(.horizontal, 5)
             Spacer()
             BottomBar(verticalPadding: verticalPadding) {
-                FilledButton("Jetzt Beitrag berechnen") {}
+                FilledButton("Jetzt Beitrag berechnen") {
+                    showingPremiumCalculator.toggle()
+                }
+                .sheet(isPresented: $showingPremiumCalculator) {
+                    
+                }
             }
         }
     }
