@@ -28,8 +28,7 @@ struct HomePage: View {
                     showingPremiumCalculator.toggle()
                 }
                 .sheet(isPresented: $showingPremiumCalculator) {
-                    BMIPage()
-                        .presentationBackground(.thinMaterial)
+                    PremiumCalculationSheet()
                 }
             }
         }
@@ -37,5 +36,7 @@ struct HomePage: View {
 }
 
 #Preview {
-    HomePage()
+    NavigationStack {
+        HomePage()
+    }
 }

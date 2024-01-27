@@ -23,6 +23,8 @@
 		84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67462B6443D4001D600A /* CustomDivider.swift */; };
 		84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */; };
 		84ED674F2B645961001D600A /* BMIPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED674E2B645961001D600A /* BMIPage.swift */; };
+		84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67502B652DB0001D600A /* HealthQuestionPage.swift */; };
+		84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67522B652F68001D600A /* PremiumCalculationSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		84ED67462B6443D4001D600A /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionGroup.swift; sourceTree = "<group>"; };
 		84ED674E2B645961001D600A /* BMIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIPage.swift; sourceTree = "<group>"; };
+		84ED67502B652DB0001D600A /* HealthQuestionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionPage.swift; sourceTree = "<group>"; };
+		84ED67522B652F68001D600A /* PremiumCalculationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				84ED674E2B645961001D600A /* BMIPage.swift */,
+				84ED67502B652DB0001D600A /* HealthQuestionPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 		84ED674D2B64593C001D600A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84ED67522B652F68001D600A /* PremiumCalculationSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,11 +280,13 @@
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
+				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
+				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */,
 				84ED67452B644092001D600A /* BottomBar.swift in Sources */,
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,

@@ -10,9 +10,17 @@ import SwiftUI
 struct BMIPage: View {
     var body: some View {
         VStack {
-            Text("Placeholder")
+            Spacer()
+            BottomBar {
+                NavigationLink {
+                    HealthQuestionPage()
+                } label: {
+                    Text("Next")
+                }
+                .buttonStyle(.bordered)
+            }
         }
-        .navigationTitle("Gesundheitsfragen")
+        .navigationTitle("BMI")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
