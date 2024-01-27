@@ -23,10 +23,7 @@ struct FilledButton: View {
         Button(
             action: action,
             label: {
-                Text(titleKey)
-                    .font(.title3)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
+                ButtonLabel(titleKey)
             }
         )
         .buttonStyle(.borderedProminent)

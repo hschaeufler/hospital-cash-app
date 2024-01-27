@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct BMIPage: View {
+    @State private var gewicht = 0
+    
+    let formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
+    
     var body: some View {
         VStack {
-            Spacer()
-            BottomBar {
-                NavigationLink {
-                    HealthQuestionPage()
-                } label: {
-                    Text("Next")
-                }
-                .buttonStyle(.bordered)
+            Form {
+                TextField("Gewicht", value: $gewicht, format: .number)
+                TextField("Gewicht", value: $gewicht,formatter: NumberFormatter())
+            }
+            NavigationLinkButton(titleKey: "Weiter") {
+                HealthQuestionPage()
             }
         }
         .navigationTitle("BMI")
@@ -26,5 +32,7 @@ struct BMIPage: View {
 }
 
 #Preview {
-    BMIPage()
+    NavigationStack {
+        BMIPage()
+    }
 }

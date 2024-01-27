@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "Abbrechen" : {
+
+    },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
         "de" : {
@@ -13,6 +16,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Determine the daily allowance yourself"
+          }
+        }
+      }
+    },
+    "BMI" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BMI"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BMI"
           }
         }
       }
@@ -33,7 +52,10 @@
         }
       }
     },
-    "Gesundheitsfragen" : {
+    "Gewicht" : {
+
+    },
+    "Hello, World!" : {
 
     },
     "Hospital Cash" : {
@@ -100,9 +122,6 @@
         }
       }
     },
-    "Placeholder" : {
-
-    },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
         "de" : {
@@ -118,6 +137,9 @@
           }
         }
       }
+    },
+    "Test" : {
+
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {
@@ -163,6 +185,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Full transparency"
+          }
+        }
+      }
+    },
+    "Weiter" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
           }
         }
       }
