@@ -11,6 +11,16 @@
         }
       }
     },
+    "Ambulante Behandlung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outpatient treatment"
+          }
+        }
+      }
+    },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
         "de" : {
@@ -53,6 +63,16 @@
         }
       }
     },
+    "Chronische Erkrankung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chronic illness"
+          }
+        }
+      }
+    },
     "cm" : {
       "localizations" : {
         "en" : {
@@ -75,6 +95,86 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your advantages"
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in ambulanter Behandlung, noch sind solche aufgrund von Erkrankungen geplant. Außgenommen sind leichte Erkrankungen wie Grippe oder Atemwegsinfektionen. Es liegt auch keine Schwangerschaft vor."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "I have not been hospitalized in the last 5 years, nor am I planning any hospital stays."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_CHRONISCHE_ERKRANKUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder bin ich chronisch erkrankt, noch bin ich pflegebedürftig oder leide an einer  schweren Krankheit wie z.B.: einer HIV-Infektion."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I am not chronically ill, nor am I in need of care or suffering from a serious illness such as HIV infection."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_MEDIKAMENTE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es gibt keine Medikamente die ich regelmäßig zu mir nehmen muss oder sollte."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There is no medication that I must or should take regularly."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_PSYCHOTHERAPIE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in psychotherapeutischer Behandlung, noch ist eine Psychotherapie geplant."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I have not undergone psychotherapeutic treatment in the last 5 years, nor am I planning any psychotherapy."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_STATIONAERE_BEHANDLUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in stationärer Behandlung, noch sind Krankenhausaufenthalte geplant."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I have not had any outpatient treatment in the last 5 years, nor is any planned due to illness. Exceptions are minor illnesses such as flu or respiratory infections. I am also not pregnant."
           }
         }
       }
@@ -124,9 +224,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "Hospital Cash" : {
       "localizations" : {
@@ -212,6 +309,16 @@
         }
       }
     },
+    "Medikamenteneinahme" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medikamenteneinahme"
+          }
+        }
+      }
+    },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
         "de" : {
@@ -224,6 +331,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Our new blockchain-based hospital cash. Sign up now and benefit from particularly low prices."
+          }
+        }
+      }
+    },
+    "Psychoterapie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Psychotherapy"
+          }
+        }
+      }
+    },
+    "Stationäre Behandlung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inpatient treatment"
           }
         }
       }
@@ -285,6 +412,9 @@
           }
         }
       }
+    },
+    "Weder befand ich mich in den letzten 5 Jahren in psychotherapeutischer Behandlung, noch ist eine Psychotherapie geplant." : {
+
     },
     "Weiter" : {
       "localizations" : {
