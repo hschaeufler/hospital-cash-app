@@ -18,7 +18,6 @@ struct ButtonLabel: View {
         Text(titleKey)
             .font(.title3)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 5)
     }
 }
 

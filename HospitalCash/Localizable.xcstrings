@@ -36,6 +36,12 @@
         }
       }
     },
+    "Body Mass Index" : {
+
+    },
+    "cm" : {
+
+    },
     "Deine Vorteile" : {
       "localizations" : {
         "de" : {
@@ -53,6 +59,9 @@
       }
     },
     "Gewicht" : {
+
+    },
+    "Größe" : {
 
     },
     "Hello, World!" : {
@@ -121,6 +130,12 @@
           }
         }
       }
+    },
+    "kg" : {
+
+    },
+    "kg/m²" : {
+
     },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {

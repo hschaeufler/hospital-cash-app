@@ -27,6 +27,7 @@ struct FilledButton: View {
             }
         )
         .buttonStyle(.borderedProminent)
+        .controlSize(.large)
         .tint(.blue)
         .padding()
     }

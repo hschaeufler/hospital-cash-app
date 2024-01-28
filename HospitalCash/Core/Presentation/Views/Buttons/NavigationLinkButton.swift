@@ -11,11 +11,17 @@ struct NavigationLinkButton<Destination> : View where Destination : View {
     var titleKey: LocalizedStringKey
     @ViewBuilder var destination: () -> Destination
     
+    public init(_ titleKey: LocalizedStringKey, @ViewBuilder destination: @escaping () -> Destination) {
+        self.titleKey = titleKey
+        self.destination = destination
+    }
+    
     var body: some View {
         NavigationLink(destination: destination) {
             ButtonLabel(titleKey)
         }
         .buttonStyle(.bordered)
+        .controlSize(.large)
         .tint(.blue)
         .padding()
     }
@@ -23,7 +29,7 @@ struct NavigationLinkButton<Destination> : View where Destination : View {
 
 #Preview {
     NavigationStack {
-        NavigationLinkButton(titleKey: "Weiter") {
+        NavigationLinkButton("Weiter") {
             BMIPage()
         }
     }

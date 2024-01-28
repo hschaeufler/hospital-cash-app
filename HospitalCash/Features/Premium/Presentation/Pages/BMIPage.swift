@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct BMIPage: View {
-    @State private var gewicht = 0
+    @State private var height = 175
+    @State private var weight = 80
     
-    let formatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
+    var bmi: Double {
+        let heightInMeters = Double(height) / 100
+        let bmi = (Double(weight) / (heightInMeters * heightInMeters))
+        return (bmi * 100).rounded() / 100
+    }
     
     var body: some View {
         VStack {
             Form {
-                TextField("Gewicht", value: $gewicht, format: .number)
-                TextField("Gewicht", value: $gewicht,formatter: NumberFormatter())
+                Section {
+                    NumberField("Größe", number: $height, range: 0...250, unit: "cm")
+                    NumberField("Gewicht", number: $weight, range: 0...250, unit: "kg")
+                }
+                Section("Body Mass Index") {
+                    OutputFloatingPointField(titleKey: "BMI", number: bmi, unit: "kg/m²")
+                }
             }
-            NavigationLinkButton(titleKey: "Weiter") {
+            NavigationLinkButton("Weiter") {
                 HealthQuestionPage()
             }
         }
