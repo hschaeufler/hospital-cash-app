@@ -2,7 +2,14 @@
   "sourceLanguage" : "de",
   "strings" : {
     "Abbrechen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
     },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
@@ -37,10 +44,24 @@
       }
     },
     "Body Mass Index" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Body Mass Index"
+          }
+        }
+      }
     },
     "cm" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "cm"
+          }
+        }
+      }
     },
     "Deine Vorteile" : {
       "localizations" : {
@@ -58,11 +79,51 @@
         }
       }
     },
+    "Gesundheitsfragen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Health-related questions"
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGEN_INFO" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte beantworte folgende Fragen damit wir prüfen können, ob wir dich versichern können."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please answer the following questions so that we can check whether we can insure you."
+          }
+        }
+      }
+    },
     "Gewicht" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weight"
+          }
+        }
+      }
     },
     "Größe" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Size"
+          }
+        }
+      }
     },
     "Hello, World!" : {
 
@@ -132,10 +193,24 @@
       }
     },
     "kg" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kg"
+          }
+        }
+      }
     },
     "kg/m²" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kg/m²"
+          }
+        }
+      }
     },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
@@ -154,7 +229,14 @@
       }
     },
     "Test" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test"
+          }
+        }
+      }
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {

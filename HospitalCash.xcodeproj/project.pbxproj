@@ -30,6 +30,7 @@
 		84ED675A2B654B59001D600A /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67592B654B59001D600A /* CloseButton.swift */; };
 		84ED675D2B65DE26001D600A /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED675C2B65DE26001D600A /* NumberField.swift */; };
 		84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */; };
+		84ED67632B668540001D600A /* InfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67622B668540001D600A /* InfoBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		84ED67592B654B59001D600A /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		84ED675C2B65DE26001D600A /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
 		84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFloatingPointField.swift; sourceTree = "<group>"; };
+		84ED67622B668540001D600A /* InfoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,13 +163,13 @@
 		84ED67322B63DD69001D600A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84ED67602B6684E1001D600A /* TextFields */,
 				84ED67582B654AE2001D600A /* Buttons */,
 				84ED67352B640828001D600A /* ListTile.swift */,
-				84ED675C2B65DE26001D600A /* NumberField.swift */,
 				84ED67392B640D44001D600A /* Avatar.swift */,
 				84ED67442B644092001D600A /* BottomBar.swift */,
 				84ED67462B6443D4001D600A /* CustomDivider.swift */,
-				84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */,
+				84ED67622B668540001D600A /* InfoBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +236,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84ED67602B6684E1001D600A /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				84ED675C2B65DE26001D600A /* NumberField.swift */,
+				84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
+				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,

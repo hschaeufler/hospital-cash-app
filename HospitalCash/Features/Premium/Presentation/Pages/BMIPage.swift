@@ -27,6 +27,9 @@ struct BMIPage: View {
                 Section("Body Mass Index") {
                     OutputFloatingPointField(titleKey: "BMI", number: bmi, unit: "kg/m²")
                 }
+                InfoBox("Gesundheitsfragen", contentKey: "GESUNDHEITSFRAGEN_INFO")
+                    .backgroundStyle(.windowBackground)
+                    .listRowInsets(EdgeInsets())
             }
             NavigationLinkButton("Weiter") {
                 HealthQuestionPage()
