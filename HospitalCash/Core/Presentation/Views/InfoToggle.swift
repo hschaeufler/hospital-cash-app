@@ -34,6 +34,8 @@ struct InfoToggle: View {
             )
             .bold()
             Text(contentKey)
+                .foregroundStyle(.secondary)
+                .padding(1)
         }
     }
 }
@@ -41,7 +43,7 @@ struct InfoToggle: View {
 #Preview {
     InfoToggle(
         "Stationäre Behandlung",
-        contentKey: "Weder befand ich mich in den letzten 5 Jahren in psychotherapeutischer Behandlung, noch ist eine Psychotherapie geplant.",
+        contentKey: "GESUNDHEITSFRAGE_PSYCHOTHERAPIE",
         systemImage: "cross.case",
         isOn: .constant(true)
     )

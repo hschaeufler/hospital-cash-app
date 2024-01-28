@@ -32,6 +32,8 @@
 		84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */; };
 		84ED67632B668540001D600A /* InfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67622B668540001D600A /* InfoBox.swift */; };
 		84ED67652B668A50001D600A /* InfoToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67642B668A50001D600A /* InfoToggle.swift */; };
+		84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67662B66976F001D600A /* PremiumCalculationPage.swift */; };
+		84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFloatingPointField.swift; sourceTree = "<group>"; };
 		84ED67622B668540001D600A /* InfoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBox.swift; sourceTree = "<group>"; };
 		84ED67642B668A50001D600A /* InfoToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoToggle.swift; sourceTree = "<group>"; };
+		84ED67662B66976F001D600A /* PremiumCalculationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationPage.swift; sourceTree = "<group>"; };
+		84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		84ED672A2B63D8DC001D600A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				84ED676A2B66B8EB001D600A /* Data */,
 				84ED674A2B645891001D600A /* Premium */,
 				84ED672B2B63D942001D600A /* Onboarding */,
 			);
@@ -132,6 +137,7 @@
 		84ED672C2B63D956001D600A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				84ED67682B66B374001D600A /* ViewModel */,
 				84ED673B2B642371001D600A /* Views */,
 				84ED672D2B63D965001D600A /* Pages */,
 			);
@@ -199,6 +205,7 @@
 		84ED674B2B64591F001D600A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				84ED67692B66B733001D600A /* Model */,
 				84ED675B2B65D924001D600A /* ViewModel */,
 				84ED674D2B64593C001D600A /* Views */,
 				84ED674C2B645936001D600A /* Pages */,
@@ -211,6 +218,7 @@
 			children = (
 				84ED674E2B645961001D600A /* BMIPage.swift */,
 				84ED67502B652DB0001D600A /* HealthQuestionPage.swift */,
+				84ED67662B66976F001D600A /* PremiumCalculationPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -248,6 +256,36 @@
 				84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		84ED67682B66B374001D600A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84ED67692B66B733001D600A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84ED676A2B66B8EB001D600A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84ED676B2B66B8F3001D600A /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84ED676B2B66B8F3001D600A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +362,7 @@
 			files = (
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
+				84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
@@ -333,6 +372,7 @@
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */,
+				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,

@@ -37,6 +37,9 @@
         }
       }
     },
+    "Bitte bestäge einzeln, dass keiner der nachfolgenden Fälle dich betrifft." : {
+
+    },
     "BMI" : {
       "localizations" : {
         "de" : {
@@ -225,6 +228,9 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
     "Hospital Cash" : {
       "localizations" : {
         "de" : {
@@ -412,9 +418,6 @@
           }
         }
       }
-    },
-    "Weder befand ich mich in den letzten 5 Jahren in psychotherapeutischer Behandlung, noch ist eine Psychotherapie geplant." : {
-
     },
     "Weiter" : {
       "localizations" : {

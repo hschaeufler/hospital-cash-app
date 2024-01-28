@@ -9,11 +9,18 @@ import SwiftUI
 
 struct HealthQuestionPage: View {
     @State private var hasInpatientTreatment = false;
+    @State private var hasOutpatientTreatment = false;
+    @State private var hasPsychotherapy = false;
+    @State private var hasChronicIllness = false;
+    @State private var hasMedication = false;
 
     var body: some View {
         VStack {
             Form {
                 Section {
+                    InfoBox("Gesundheitsfragen", contentKey: "Bitte bestäge einzeln, dass keiner der nachfolgenden Fälle dich betrifft.")
+                        .backgroundStyle(.windowBackground)
+                        .listRowInsets(EdgeInsets())
                     InfoToggle(
                         "Stationäre Behandlung",
                         contentKey: "GESUNDHEITSFRAGE_STATIONAERE_BEHANDLUNG",
@@ -24,30 +31,30 @@ struct HealthQuestionPage: View {
                         "Ambulante Behandlung",
                         contentKey: "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG",
                         systemImage: "cross.case",
-                        isOn: $hasInpatientTreatment
+                        isOn: $hasOutpatientTreatment
                     )
                     InfoToggle(
                         "Psychoterapie",
                         contentKey: "GESUNDHEITSFRAGE_PSYCHOTHERAPIE",
                         systemImage: "brain",
-                        isOn: $hasInpatientTreatment
+                        isOn: $hasPsychotherapy
                     )
                     InfoToggle(
                         "Chronische Erkrankung",
                         contentKey: "GESUNDHEITSFRAGE_CHRONISCHE_ERKRANKUNG",
                         systemImage: "staroflife",
-                        isOn: $hasInpatientTreatment
+                        isOn: $hasChronicIllness
                     )
                     InfoToggle(
                         "Medikamenteneinahme",
                         contentKey: "GESUNDHEITSFRAGE_MEDIKAMENTE",
                         systemImage: "cross.vial",
-                        isOn: $hasInpatientTreatment
+                        isOn: $hasMedication
                     )
                 }
             }
             NavigationLinkButton("Weiter") {
-                HealthQuestionPage()
+                PremiumCalculationPage()
             }
         }
         .navigationTitle("Gesundheitsfragen")
@@ -56,5 +63,7 @@ struct HealthQuestionPage: View {
 }
 
 #Preview {
-    HealthQuestionPage()
+    NavigationStack {
+        HealthQuestionPage()
+    }
 }
