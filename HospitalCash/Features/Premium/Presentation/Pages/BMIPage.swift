@@ -21,8 +21,8 @@ struct BMIPage: View {
         VStack {
             Form {
                 Section {
-                    NumberField("Größe", number: $height, range: 0...250, unit: "cm")
-                    NumberField("Gewicht", number: $weight, range: 0...250, unit: "kg")
+                    NumberField("Größe", number: $height, unit: "cm", range: 0...250)
+                    NumberField("Gewicht", number: $weight, unit: "kg", range: 0...250)
                 }
                 Section("Body Mass Index") {
                     OutputFloatingPointField(titleKey: "BMI", number: bmi, unit: "kg/m²")

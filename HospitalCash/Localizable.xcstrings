@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "€" : {
+
+    },
     "Abbrechen" : {
       "localizations" : {
         "en" : {
@@ -20,6 +23,9 @@
           }
         }
       }
+    },
+    "Beitrag berechnen" : {
+
     },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
@@ -101,6 +107,9 @@
           }
         }
       }
+    },
+    "Geburtsdatum" : {
+
     },
     "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
       "localizations" : {
@@ -227,9 +236,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "Hospital Cash" : {
       "localizations" : {
@@ -361,6 +367,9 @@
         }
       }
     },
+    "Tagegeldhöhe" : {
+
+    },
     "Test" : {
       "localizations" : {
         "en" : {
@@ -386,6 +395,9 @@
           }
         }
       }
+    },
+    "Versicherungsbeginn" : {
+
     },
     "Voll automatisiert" : {
       "localizations" : {

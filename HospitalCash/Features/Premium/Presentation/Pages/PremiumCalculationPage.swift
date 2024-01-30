@@ -14,7 +14,14 @@ struct PremiumCalculationPage: View {
     var body: some View {
         VStack {
             Form {
-                NumberField("Krankenhaustagegeld", number: $amountHospitalCash, range: 0...250, unit: "€", step:10)
+                NumberField("Höhe Krankenhaustagegeld",
+                            caption: "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?",
+                            number:  $amountHospitalCash,
+                            unit: "€",
+                            range: 0...250,
+                            step: 10,
+                            style: NumberField.NumberFieldStyle.multiLine
+                )
                 DatePicker(
                     "Versicherungsbeginn",
                     selection: $date,
