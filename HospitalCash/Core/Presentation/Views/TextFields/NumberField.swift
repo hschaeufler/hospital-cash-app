@@ -35,6 +35,7 @@ struct NumberField: View {
         self.titleKey = titleKey
         self.caption = caption
         self._number = number
+        self.range = range
         self.unit = unit
         self.step = step
         self.style = style

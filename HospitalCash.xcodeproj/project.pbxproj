@@ -34,6 +34,7 @@
 		84ED67652B668A50001D600A /* InfoToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67642B668A50001D600A /* InfoToggle.swift */; };
 		84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67662B66976F001D600A /* PremiumCalculationPage.swift */; };
 		84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */; };
+		84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67712B69B258001D600A /* PremiumDetailPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		84ED67642B668A50001D600A /* InfoToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoToggle.swift; sourceTree = "<group>"; };
 		84ED67662B66976F001D600A /* PremiumCalculationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationPage.swift; sourceTree = "<group>"; };
 		84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
+		84ED67712B69B258001D600A /* PremiumDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumDetailPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				84ED674E2B645961001D600A /* BMIPage.swift */,
 				84ED67502B652DB0001D600A /* HealthQuestionPage.swift */,
 				84ED67662B66976F001D600A /* PremiumCalculationPage.swift */,
+				84ED67712B69B258001D600A /* PremiumDetailPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				84ED67452B644092001D600A /* BottomBar.swift in Sources */,
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,
 				84ED673A2B640D44001D600A /* Avatar.swift in Sources */,
+				84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				84ED67552B65351F001D600A /* NavigationLinkButton.swift in Sources */,
 			);

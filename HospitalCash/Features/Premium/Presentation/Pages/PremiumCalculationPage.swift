@@ -27,14 +27,16 @@ struct PremiumCalculationPage: View {
                     selection: $date,
                     displayedComponents: [.date]
                 )
+                .bold()
                 DatePicker(
                     "Geburtsdatum",
                     selection: $date,
                     displayedComponents: [.date]
                 )
+                .bold()
             }
-            NavigationLinkButton("Weiter") {
-                PremiumCalculationPage()
+            NavigationLinkButton("Beitrag berechnen") {
+                PremiumDetailPage()
             }
         }
         .navigationTitle("Beitrag berechnen")

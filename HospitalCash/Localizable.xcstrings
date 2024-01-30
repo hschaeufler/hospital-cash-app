@@ -237,6 +237,12 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
+    "Höhe Krankenhaustagegeld" : {
+
+    },
     "Hospital Cash" : {
       "localizations" : {
         "de" : {
@@ -321,6 +327,9 @@
         }
       }
     },
+    "Krankentagegeld" : {
+
+    },
     "Medikamenteneinahme" : {
       "localizations" : {
         "en" : {
@@ -366,9 +375,6 @@
           }
         }
       }
-    },
-    "Tagegeldhöhe" : {
-
     },
     "Test" : {
       "localizations" : {
@@ -446,6 +452,9 @@
           }
         }
       }
+    },
+    "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?" : {
+
     }
   },
   "version" : "1.0"
