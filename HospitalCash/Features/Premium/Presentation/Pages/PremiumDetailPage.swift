@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PremiumDetailPage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        SheetPageLayout("Dein Beitrag") {
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 

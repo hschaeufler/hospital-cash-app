@@ -13,13 +13,6 @@ struct PremiumCalculationSheet: View {
     var body: some View {
         NavigationStack {
             BMIPage()
-                .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        CloseButton {
-                            dismiss()
-                        }
-                    }
-                }
         }
         .presentationDragIndicator(.visible)
     }

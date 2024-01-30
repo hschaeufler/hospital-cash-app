@@ -18,25 +18,25 @@ struct BMIPage: View {
     }
     
     var body: some View {
-        VStack {
-            Form {
-                Section {
-                    NumberField("Größe", number: $height, unit: "cm", range: 0...250)
-                    NumberField("Gewicht", number: $weight, unit: "kg", range: 0...250)
+        SheetPageLayout("BMI") {
+            VStack {
+                Form {
+                    Section {
+                        NumberField("Größe", number: $height, unit: "cm", range: 0...250)
+                        NumberField("Gewicht", number: $weight, unit: "kg", range: 0...250)
+                    }
+                    Section("Body Mass Index") {
+                        OutputFloatingPointField(titleKey: "BMI", number: bmi, unit: "kg/m²")
+                    }
+                    InfoBox("Gesundheitsfragen", contentKey: "GESUNDHEITSFRAGEN_INFO")
+                        .backgroundStyle(.windowBackground)
+                        .listRowInsets(EdgeInsets())
                 }
-                Section("Body Mass Index") {
-                    OutputFloatingPointField(titleKey: "BMI", number: bmi, unit: "kg/m²")
+                NavigationLinkButton("Weiter") {
+                    HealthQuestionPage()
                 }
-                InfoBox("Gesundheitsfragen", contentKey: "GESUNDHEITSFRAGEN_INFO")
-                    .backgroundStyle(.windowBackground)
-                    .listRowInsets(EdgeInsets())
-            }
-            NavigationLinkButton("Weiter") {
-                HealthQuestionPage()
             }
         }
-        .navigationTitle("BMI")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -35,6 +35,7 @@
 		84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67662B66976F001D600A /* PremiumCalculationPage.swift */; };
 		84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */; };
 		84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67712B69B258001D600A /* PremiumDetailPage.swift */; };
+		84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67732B69B3D7001D600A /* SheetPageLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		84ED67662B66976F001D600A /* PremiumCalculationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationPage.swift; sourceTree = "<group>"; };
 		84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
 		84ED67712B69B258001D600A /* PremiumDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumDetailPage.swift; sourceTree = "<group>"; };
+		84ED67732B69B3D7001D600A /* SheetPageLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPageLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,14 +175,13 @@
 		84ED67322B63DD69001D600A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84ED67602B6684E1001D600A /* TextFields */,
-				84ED67582B654AE2001D600A /* Buttons */,
+				84ED67752B69B3EB001D600A /* Input */,
 				84ED67352B640828001D600A /* ListTile.swift */,
+				84ED67732B69B3D7001D600A /* SheetPageLayout.swift */,
 				84ED67392B640D44001D600A /* Avatar.swift */,
 				84ED67442B644092001D600A /* BottomBar.swift */,
 				84ED67462B6443D4001D600A /* CustomDivider.swift */,
 				84ED67622B668540001D600A /* InfoBox.swift */,
-				84ED67642B668A50001D600A /* InfoToggle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +292,16 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		84ED67752B69B3EB001D600A /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				84ED67582B654AE2001D600A /* Buttons */,
+				84ED67602B6684E1001D600A /* TextFields */,
+				84ED67642B668A50001D600A /* InfoToggle.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +384,7 @@
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
+				84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */,
 				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,

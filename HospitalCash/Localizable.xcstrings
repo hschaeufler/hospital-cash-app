@@ -92,6 +92,9 @@
         }
       }
     },
+    "Dein Beitrag" : {
+
+    },
     "Deine Vorteile" : {
       "localizations" : {
         "de" : {
@@ -385,6 +388,9 @@
           }
         }
       }
+    },
+    "Testpage" : {
+
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {
