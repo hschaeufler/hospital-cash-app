@@ -26,12 +26,14 @@ struct PremiumCalculationPage: View {
                     DatePicker(
                         "Versicherungsbeginn",
                         selection: $date,
+                        in: Date.now...,
                         displayedComponents: [.date]
                     )
                     .bold()
                     DatePicker(
                         "Geburtsdatum",
                         selection: $date,
+                        in: ...Date.now,
                         displayedComponents: [.date]
                     )
                     .bold()
