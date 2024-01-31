@@ -7,7 +7,11 @@
 
 import Foundation
 
-class CalculateBMIUseCase {
+protocol CalculateBMI {
+    func callAsFunction(height: Int, weight: Int) -> Double
+}
+
+struct CalculateBMIUseCase: CalculateBMI {
     
     func callAsFunction(height: Int, weight: Int) -> Double {
         let heightInMeters = Double(height) / 100

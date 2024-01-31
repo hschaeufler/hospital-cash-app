@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct PremiumCalculationSheet: View {
+    @State private var premiumCalculationVM = PremiumCalculationVM()
     
     var body: some View {
         NavigationStack {
             BMIPage()
         }
         .presentationDragIndicator(.visible)
+        .environment(premiumCalculationVM)
     }
 }
 

@@ -36,8 +36,11 @@
 		84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */; };
 		84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67712B69B258001D600A /* PremiumDetailPage.swift */; };
 		84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67732B69B3D7001D600A /* SheetPageLayout.swift */; };
-		84ED67772B69BFB0001D600A /* PremiumCalculationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67762B69BFB0001D600A /* PremiumCalculationViewModel.swift */; };
+		84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67762B69BFB0001D600A /* PremiumCalculationVM.swift */; };
 		84ED677F2B69C2BE001D600A /* CalculateBMIUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED677E2B69C2BE001D600A /* CalculateBMIUseCase.swift */; };
+		84ED67822B69C7D3001D600A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84ED67812B69C7D3001D600A /* Factory */; };
+		84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67832B69C8B0001D600A /* PremiumContainer.swift */; };
+		84ED67862B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67852B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +74,10 @@
 		84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
 		84ED67712B69B258001D600A /* PremiumDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumDetailPage.swift; sourceTree = "<group>"; };
 		84ED67732B69B3D7001D600A /* SheetPageLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPageLayout.swift; sourceTree = "<group>"; };
-		84ED67762B69BFB0001D600A /* PremiumCalculationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationViewModel.swift; sourceTree = "<group>"; };
+		84ED67762B69BFB0001D600A /* PremiumCalculationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationVM.swift; sourceTree = "<group>"; };
 		84ED677E2B69C2BE001D600A /* CalculateBMIUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBMIUseCase.swift; sourceTree = "<group>"; };
+		84ED67832B69C8B0001D600A /* PremiumContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumContainer.swift; sourceTree = "<group>"; };
+		84ED67852B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuestionValidityUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ED67822B69C7D3001D600A /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +212,7 @@
 				84ED676A2B66B8EB001D600A /* Data */,
 				84ED67782B69C050001D600A /* Domain */,
 				84ED674B2B64591F001D600A /* Presentation */,
+				84ED67832B69C8B0001D600A /* PremiumContainer.swift */,
 			);
 			path = Premium;
 			sourceTree = "<group>";
@@ -254,7 +261,7 @@
 		84ED675B2B65D924001D600A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				84ED67762B69BFB0001D600A /* PremiumCalculationViewModel.swift */,
+				84ED67762B69BFB0001D600A /* PremiumCalculationVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,7 +285,6 @@
 		84ED67692B66B733001D600A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 		84ED676B2B66B8F3001D600A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				84ED676F2B66B96D001D600A /* HealthQuestionModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -324,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				84ED677E2B69C2BE001D600A /* CalculateBMIUseCase.swift */,
+				84ED67852B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -372,6 +380,9 @@
 			dependencies = (
 			);
 			name = HospitalCash;
+			packageProductDependencies = (
+				84ED67812B69C7D3001D600A /* Factory */,
+			);
 			productName = HospitalCash;
 			productReference = 84A4F8772B6368F30018AA37 /* HospitalCash.app */;
 			productType = "com.apple.product-type.application";
@@ -401,6 +412,9 @@
 				de,
 			);
 			mainGroup = 84A4F86E2B6368F30018AA37;
+			packageReferences = (
+				84ED67802B69C7D3001D600A /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 84A4F8782B6368F30018AA37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -430,12 +444,13 @@
 			files = (
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
-				84ED67772B69BFB0001D600A /* PremiumCalculationViewModel.swift in Sources */,
+				84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionModel.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
+				84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
@@ -445,6 +460,7 @@
 				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,
 				84ED677F2B69C2BE001D600A /* CalculateBMIUseCase.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
+				84ED67862B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,
@@ -661,6 +677,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84ED67802B69C7D3001D600A /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84ED67812B69C7D3001D600A /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84ED67802B69C7D3001D600A /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84A4F86F2B6368F30018AA37 /* Project object */;
 }
