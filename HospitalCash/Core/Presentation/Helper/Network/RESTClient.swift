@@ -12,23 +12,18 @@ class RESTClient {
     static let HEADER_FIELD_NAME_AUTHORISATION = "Authorization"
     static let HEADER_FIELD_NAME_CONTENT_TYPE = "Content-Type"
     static let CONTENT_TYPE_JSON = "application/json"
-    
-    private let backendURL: String
-    
-    init(baseURL: String) {
-        self.backendURL = baseURL
-    }
+
     
     func get<T: Decodable>(
-        _ path : String,
-        baseURL: String? = nil,
+        _ baseURL : String,
+        path: String? = nil,
         queryParams: [String : String]? = nil,
         header: [String : String]? = nil,
         authToken: String? = nil) async throws -> T {
             return try await send(
-                path,
+                baseURL,
+                path: path,
                 httpMethod: HTTPMethod.GET,
-                baseURL: baseURL,
                 queryParams: queryParams,
                 header: header,
                 authToken: authToken
@@ -36,16 +31,16 @@ class RESTClient {
         }
     
     func post<T: Decodable>(
-        _ path : String,
-        baseURL: String? = nil,
+        _ baseURL: String,
+        path : String? = nil,
         httpBody: Codable? = nil,
         queryParams: [String : String]? = nil,
         header: [String : String]? = nil,
         authToken: String? = nil) async throws -> T {
             return try await send(
-                path,
+                baseURL,
+                path: path,
                 httpMethod: HTTPMethod.POST,
-                baseURL: baseURL,
                 httpBody: httpBody,
                 queryParams: queryParams,
                 header: header,
@@ -54,9 +49,9 @@ class RESTClient {
         }
     
     private func send<T: Decodable>(
-        _ path : String,
+        _ baseURL : String,
+        path: String? = nil,
         httpMethod: HTTPMethod,
-        baseURL: String? = nil,
         httpBody: Codable? = nil,
         queryParams: [String : String]? = nil,
         header: [String : String]? = nil,
@@ -65,7 +60,7 @@ class RESTClient {
         // see: https://developer.apple.com/videos/play/wwdc2021/10095/
         // and: https://kean.blog/post/new-api-client
         
-        let requestURL = "\(baseURL ?? self.backendURL)\(path)"
+        let requestURL = "\(baseURL)\(path ?? "")"
         
         guard var urlComponent = URLComponents(string: requestURL) else {
             throw RESTClientError.invalidURL
