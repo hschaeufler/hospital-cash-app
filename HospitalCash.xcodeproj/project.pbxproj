@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
+		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
+		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
 		84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */; };
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
+		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
+		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		84A4F8772B6368F30018AA37 /* HospitalCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCashApp.swift; sourceTree = "<group>"; };
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846D6EFD2B6AEA980074F2F3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				846D6EFE2B6AEAA20074F2F3 /* Network */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		846D6EFE2B6AEAA20074F2F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */,
+				846D6F012B6AEAE00074F2F3 /* RESTClient.swift */,
+				846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		84A4F86E2B6368F30018AA37 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +200,7 @@
 		84ED67312B63DD54001D600A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				846D6EFD2B6AEA980074F2F3 /* Helper */,
 				84ED67322B63DD69001D600A /* Views */,
 			);
 			path = Presentation;
@@ -450,15 +475,18 @@
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
+				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
 				84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */,
+				846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */,
 				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,
 				84ED677F2B69C2BE001D600A /* CalculateBMIUseCase.swift in Sources */,
+				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67862B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
