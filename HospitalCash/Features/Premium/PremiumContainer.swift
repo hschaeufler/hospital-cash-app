@@ -16,6 +16,10 @@ public final class PremiumContainer: SharedContainer {
 
 extension PremiumContainer {
     var calculateBMI: Factory<CalculateBMI> {
-        self { CalculateBMIUseCase() }.cached
+        self { CalculateBMIUseCase() }
+    }
+    
+    var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
+        self { CheckHealthQuestionValidityUseCase() }
     }
 }

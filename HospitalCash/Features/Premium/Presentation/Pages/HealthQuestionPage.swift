@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HealthQuestionPage: View {
+    @Environment(PremiumCalculationVM.self) private var premiumCalculationVm
+    
     @State private var hasInpatientTreatment = false;
     @State private var hasOutpatientTreatment = false;
     @State private var hasPsychotherapy = false;
@@ -15,6 +17,9 @@ struct HealthQuestionPage: View {
     @State private var hasMedication = false;
 
     var body: some View {
+        @Bindable var premiumCalculationVm = premiumCalculationVm
+        let healthQuestions = $premiumCalculationVm.healthQuestions
+        
         SheetPageLayout("Gesundheitsfragen") {
             VStack {
                 Form {
@@ -26,37 +31,38 @@ struct HealthQuestionPage: View {
                             "Stationäre Behandlung",
                             contentKey: "GESUNDHEITSFRAGE_STATIONAERE_BEHANDLUNG",
                             systemImage: "bed.double",
-                            isOn: $hasInpatientTreatment
+                            isOn: healthQuestions.hasNoInpatientTreatment
                         )
                         InfoToggle(
                             "Ambulante Behandlung",
                             contentKey: "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG",
                             systemImage: "cross.case",
-                            isOn: $hasOutpatientTreatment
+                            isOn: healthQuestions.hasNoOutpatientTreatment
                         )
                         InfoToggle(
                             "Psychoterapie",
                             contentKey: "GESUNDHEITSFRAGE_PSYCHOTHERAPIE",
                             systemImage: "brain",
-                            isOn: $hasPsychotherapy
+                            isOn: healthQuestions.hasNoPsychotherapy
                         )
                         InfoToggle(
                             "Chronische Erkrankung",
                             contentKey: "GESUNDHEITSFRAGE_CHRONISCHE_ERKRANKUNG",
                             systemImage: "staroflife",
-                            isOn: $hasChronicIllness
+                            isOn: healthQuestions.hasNoChronicIllness
                         )
                         InfoToggle(
                             "Medikamenteneinahme",
                             contentKey: "GESUNDHEITSFRAGE_MEDIKAMENTE",
                             systemImage: "cross.vial",
-                            isOn: $hasMedication
+                            isOn: healthQuestions.hasNoMedication
                         )
                     }
                 }
                 NavigationLinkButton("Weiter") {
                     PremiumCalculationPage()
                 }
+                .disabled(!premiumCalculationVm.areHealthQuestionsValid)
             }
         }
     }
@@ -65,5 +71,6 @@ struct HealthQuestionPage: View {
 #Preview {
     NavigationStack {
         HealthQuestionPage()
+            .environment(PremiumCalculationVM())
     }
 }

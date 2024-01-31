@@ -13,6 +13,10 @@ protocol CheckHealthQuestionValidity {
 
 struct CheckHealthQuestionValidityUseCase: CheckHealthQuestionValidity {
     func callAsFunction(with: HealthQuestionEntity) -> Bool {
-        return false
+        return with.hasNoChronicIllness
+        && with.hasNoInpatientTreatment
+        && with.hasNoMedication
+        && with.hasNoOutpatientTreatment
+        && with.hasNoPsychotherapy
     }
 }
