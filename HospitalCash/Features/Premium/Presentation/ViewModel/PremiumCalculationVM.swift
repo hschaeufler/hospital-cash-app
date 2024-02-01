@@ -11,7 +11,13 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.calculateBMI) private var calculateBMI
     @ObservationIgnored
-    @Injected(\PremiumContainer.checkHealthQuestionValidity) private var checkHealthQuestionValidity
+    @Injected(\PremiumContainer.checkHealthQuestionValidity) private var checkHealthQuestionValidityUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.calculateEthInEur) private var calculateEthInEurUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.calculateEurInEth) private var calculateEurInEthUseCase
+    
+    var error: Error?
     
     var height = 175
     var weight = 80
@@ -28,8 +34,20 @@ import SwiftUI
     )
     
     var areHealthQuestionsValid: Bool {
-        checkHealthQuestionValidity(with: healthQuestions)
+        checkHealthQuestionValidityUseCase(with: healthQuestions)
     }
     
+    var amountHospitalCashEur = 0
+    var amountHospitalCashEth = 0.0
+    var insuranceDate = Date()
+    var birthDate = Date()
     
+    func calculateEurInEth() async {
+        do {
+            let amount = Double(amountHospitalCashEur)
+            amountHospitalCashEth = try await calculateEurInEthUseCase(euroAmount: amount)
+        } catch {
+            self.error = error
+        }
+    }
 }

@@ -7,14 +7,14 @@
 
 import Foundation
 
-class ExchangeRateRepositoryImp: ExchangeRateRepository {
+class ExchangeRateRepositoryImpl: ExchangeRateRepository {
     let remoteDatasource: ExchangeRateRemoteDatasource
     
     init(remoteDatasource: ExchangeRateRemoteDatasource) {
         self.remoteDatasource = remoteDatasource
     }
 
-    func getEthInEur() async throws -> Double {
+    func getEthEurPrice() async throws -> Double {
         let exchangeRate = try await remoteDatasource.getExchangeRates(
             ExchangeRateDataModel.CurrencyEnum.ETH
         )
@@ -29,7 +29,7 @@ class ExchangeRateRepositoryImp: ExchangeRateRepository {
         return euroRate
     }
     
-    func getEurInEth() async throws -> Double {
+    func getEurEthPrice() async throws -> Double {
         let exchangeRate = try await remoteDatasource.getExchangeRates(
             ExchangeRateDataModel.CurrencyEnum.EUR
         )

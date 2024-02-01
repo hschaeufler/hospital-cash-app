@@ -16,6 +16,8 @@
 		846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F0D2B6AFAB10074F2F3 /* ExchangeRateRepository.swift */; };
 		846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F0F2B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift */; };
 		846D6F122B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F112B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift */; };
+		846D6F152B6B08020074F2F3 /* CalculateEurInEthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F142B6B08020074F2F3 /* CalculateEurInEthUseCase.swift */; };
+		846D6F172B6B08250074F2F3 /* CalculateEthInEurUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F162B6B08250074F2F3 /* CalculateEthInEurUseCase.swift */; };
 		84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */; };
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		846D6F0D2B6AFAB10074F2F3 /* ExchangeRateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepository.swift; sourceTree = "<group>"; };
 		846D6F0F2B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepositoryImpl.swift; sourceTree = "<group>"; };
 		846D6F112B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepositoryError.swift; sourceTree = "<group>"; };
+		846D6F142B6B08020074F2F3 /* CalculateEurInEthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEurInEthUseCase.swift; sourceTree = "<group>"; };
+		846D6F162B6B08250074F2F3 /* CalculateEthInEurUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEthInEurUseCase.swift; sourceTree = "<group>"; };
 		84A4F8772B6368F30018AA37 /* HospitalCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCashApp.swift; sourceTree = "<group>"; };
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -283,7 +287,6 @@
 		84ED674B2B64591F001D600A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				84ED67692B66B733001D600A /* Model */,
 				84ED675B2B65D924001D600A /* ViewModel */,
 				84ED674D2B64593C001D600A /* Views */,
 				84ED674C2B645936001D600A /* Pages */,
@@ -345,13 +348,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		84ED67692B66B733001D600A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		84ED676A2B66B8EB001D600A /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +391,8 @@
 			children = (
 				84ED677E2B69C2BE001D600A /* CalculateBMIUseCase.swift */,
 				84ED67852B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift */,
+				846D6F142B6B08020074F2F3 /* CalculateEurInEthUseCase.swift */,
+				846D6F162B6B08250074F2F3 /* CalculateEthInEurUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -521,6 +519,7 @@
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
+				846D6F152B6B08020074F2F3 /* CalculateEurInEthUseCase.swift in Sources */,
 				84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */,
 				846D6F0C2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift in Sources */,
 				84ED67432B6435DF001D600A /* FilledButton.swift in Sources */,
@@ -534,6 +533,7 @@
 				84ED677F2B69C2BE001D600A /* CalculateBMIUseCase.swift in Sources */,
 				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
 				846D6F122B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift in Sources */,
+				846D6F172B6B08250074F2F3 /* CalculateEthInEurUseCase.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67862B69D102001D600A /* CheckHealthQuestionValidityUseCase.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,

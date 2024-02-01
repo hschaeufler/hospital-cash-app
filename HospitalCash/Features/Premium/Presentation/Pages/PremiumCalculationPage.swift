@@ -8,31 +8,37 @@
 import SwiftUI
 
 struct PremiumCalculationPage: View {
-    @State private var date = Date()
-    @State private var amountHospitalCash = 0;
+    @Environment(PremiumCalculationVM.self) private var premiumCalculationVm
     
     var body: some View {
+        @Bindable var premiumCalculationVm = premiumCalculationVm
+        
         SheetPageLayout("Beitrag berechnen") {
             VStack {
                 Form {
                     NumberField("Höhe Krankenhaustagegeld",
                                 caption: "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?",
-                                number:  $amountHospitalCash,
+                                number:  $premiumCalculationVm.amountHospitalCashEur,
                                 unit: "€",
                                 range: 0...250,
                                 step: 10,
                                 style: NumberField.NumberFieldStyle.multiLine
-                    )
+                    ).onChange(of: premiumCalculationVm.amountHospitalCashEur) { oldValue, newValue in
+                        Task {
+                            await premiumCalculationVm.calculateEurInEth()
+                        }
+                    }
+                    Text("\(premiumCalculationVm.amountHospitalCashEth)")
                     DatePicker(
                         "Versicherungsbeginn",
-                        selection: $date,
+                        selection: $premiumCalculationVm.insuranceDate,
                         in: Date.now...,
                         displayedComponents: [.date]
                     )
                     .bold()
                     DatePicker(
                         "Geburtsdatum",
-                        selection: $date,
+                        selection: $premiumCalculationVm.birthDate,
                         in: ...Date.now,
                         displayedComponents: [.date]
                     )
@@ -48,4 +54,5 @@ struct PremiumCalculationPage: View {
 
 #Preview {
     PremiumCalculationPage()
+        .environment(PremiumCalculationVM())
 }

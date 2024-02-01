@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ExchangeRateRepository {
-    func getEthInEur() async throws -> Double
-    func getEurInEth() async throws -> Double
+    func getEthEurPrice() async throws -> Double
+    func getEurEthPrice() async throws -> Double
 }

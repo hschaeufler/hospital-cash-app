@@ -15,11 +15,7 @@ public final class CoreContainer: SharedContainer {
 
 
 extension CoreContainer {
-    var calculateBMI: Factory<CalculateBMI> {
-        self { CalculateBMIUseCase() }
-    }
-    
-    var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
-        self { CheckHealthQuestionValidityUseCase() }
+    var restClient: Factory<RESTClient> {
+        self { RESTClient() }
     }
 }
