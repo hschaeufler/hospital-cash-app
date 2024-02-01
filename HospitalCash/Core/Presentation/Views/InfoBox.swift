@@ -22,7 +22,7 @@ struct InfoBox: View {
     }
     
     var body: some View {
-        GroupBox(label: Label("Gesundheitsfragen", systemImage: systemImage ?? "info.bubble")) {
+        GroupBox(label: Label(titleKey, systemImage: systemImage ?? "info.bubble")) {
             Text(contentKey)
         }
     }

@@ -14,7 +14,8 @@ struct OutputFloatingPointField: View {
     
     var body: some View {
         HStack(content: {
-            Text("BMI")
+            Text(titleKey)
+                .fontWeight(.bold)
             Spacer()
             Text(number, format: .number)
                 .textSelection(.enabled)

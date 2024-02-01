@@ -28,7 +28,14 @@ struct PremiumCalculationPage: View {
                             await premiumCalculationVm.calculateEurInEth()
                         }
                     }
-                    Text("\(premiumCalculationVm.amountHospitalCashEth)")
+                    OutputFloatingPointField(
+                        titleKey: "tats. Betrag",
+                        number: premiumCalculationVm.amountHospitalCashEth,
+                        unit: "ETH"
+                    )
+                    InfoBox("Hinweis", contentKey: "Die Krankenhaustagegeldhöhe wird in ETH versichert und ausgezahlt. Der EUR Betrag dient als Richtwert. Es besteht das Risiko von Wechselkursschwankungen.")
+                        .backgroundStyle(.windowBackground)
+                        .listRowInsets(EdgeInsets())
                     DatePicker(
                         "Versicherungsbeginn",
                         selection: $premiumCalculationVm.insuranceDate,
