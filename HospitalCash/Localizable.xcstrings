@@ -111,6 +111,12 @@
         }
       }
     },
+    "Die Krankenhaustagegeldhöhe wird in ETH versichert und ausgezahlt. Der EUR Betrag dient als Richtwert. Es besteht das Risiko von Wechselkursschwankungen." : {
+
+    },
+    "ETH" : {
+
+    },
     "Geburtsdatum" : {
 
     },
@@ -241,6 +247,9 @@
       }
     },
     "Hello, World!" : {
+
+    },
+    "Hinweis" : {
 
     },
     "Höhe Krankenhaustagegeld" : {
@@ -378,6 +387,9 @@
           }
         }
       }
+    },
+    "tats. Betrag" : {
+
     },
     "Test" : {
       "localizations" : {

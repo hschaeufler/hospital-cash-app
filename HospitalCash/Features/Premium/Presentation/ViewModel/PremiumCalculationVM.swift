@@ -50,4 +50,11 @@ import SwiftUI
             self.error = error
         }
     }
+    
+    func caculatePremium() async {
+       let data = try? await MetamaskDatasourceImpl().callSmartContract()
+        if let data = data {
+            print(data)
+        }
+    }
 }
