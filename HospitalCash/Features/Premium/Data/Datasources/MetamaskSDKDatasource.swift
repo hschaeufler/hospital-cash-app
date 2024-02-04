@@ -30,6 +30,15 @@ public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
     
     
     public func callSmartContract() async throws -> String {
+        let contractAdress =  "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E"
+        let model = GetHospitalCashPremiumModel(
+            EthereumAddress(contractAdress),
+            birthDateTs: 728784534,
+            insuranceStartDateTs: 1714514400,
+            hospitalCashInWei: 100000
+        )
+        
+        
         let connection = await metaMaskSDK.connect()
         switch connection {
         case let .failure(error):
@@ -39,13 +48,13 @@ public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
             break
         }
         
-        let contractAdress =  "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E"
+        /*let contractAdress =  "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E"
         let model = GetHospitalCashPremiumModel(
-            "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E",
-            birthDateTs: 1675364248,
+            EthereumAddress(contractAdress),
+            birthDateTs: 728784534,
             insuranceStartDateTs: 1714514400,
             hospitalCashInWei: 100000
-        )
+        )*/
         
         let hexString = model.toHexString()
         print(hexString)

@@ -9,7 +9,7 @@ import Foundation
 import web3
 import BigInt
 
-public struct GetHospitalCashPremiumModel: ABIFunction {
+struct GetHospitalCashPremiumModel: ABIFunction {
     public static let name = "getHospitalCashPremium"
     public let gasPrice: BigUInt? = nil
     public let gasLimit: BigUInt? = nil

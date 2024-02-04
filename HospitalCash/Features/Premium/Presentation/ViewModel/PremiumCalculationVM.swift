@@ -52,9 +52,12 @@ import SwiftUI
     }
     
     func caculatePremium() async {
-       let data = try? await MetamaskDatasourceImpl().callSmartContract()
-        if let data = data {
-            print(data)
+        do {
+            //let result = try await MetamaskDatasourceImpl().callSmartContract()
+            let result = try await SmartContractRemoteDatasourceImpl().callSmartContract()
+            print(result)
+        } catch {
+            print(error)
         }
     }
 }
