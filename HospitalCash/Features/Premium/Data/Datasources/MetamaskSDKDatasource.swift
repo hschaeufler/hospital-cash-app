@@ -17,7 +17,6 @@ protocol MetamaskSDKDatasource {
 
 public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
     private let metaMaskSDK: MetaMaskSDK
-    private var cancellables: Set<AnyCancellable> = []
     
     init() {
         let appMetaData = AppMetadata(
