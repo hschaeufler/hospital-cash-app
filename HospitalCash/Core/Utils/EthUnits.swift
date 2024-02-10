@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum EthUnits: Int {
-    case wei = 1000000000000000000
+enum EthUnits {
+    static let wei = 1000000000000000000
 }

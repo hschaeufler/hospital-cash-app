@@ -10,10 +10,11 @@ import web3
 
 
 protocol InsuranceContractRemoteDatasource {
-    func callSmartContract() async throws -> String
+    func getContractAdress() -> EthereumAddress
+    func callSmartContract(with: GetPremiumRequestModel) async throws -> GetPremiumResponseModel
 }
 
-public class SmartContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
+public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
     let client: EthereumHttpClient
     let contractAdress: EthereumAddress
     
@@ -26,18 +27,15 @@ public class SmartContractRemoteDatasourceImpl: InsuranceContractRemoteDatasourc
         self.contractAdress = EthereumAddress(Configuration.contractAdress)
     }
     
-    public func callSmartContract() async throws -> String {
-        let function = HospitalCashSmartContractModel.getHospitalCashPremiumFunction(
-            self.contractAdress,
-            birthDateTs: 1675364248,
-            insuranceStartDateTs: 1714514400,
-            hospitalCashInWei: 100000
-        )
-        let data = try await function.call(
+    func getContractAdress() -> EthereumAddress {
+        self.contractAdress
+    }
+    
+    func callSmartContract(with: GetPremiumRequestModel) async throws -> GetPremiumResponseModel {
+        try await with.call(
             withClient: client,
-            responseType: HospitalCashSmartContractModel.getHospitalCashPremiumResponse.self
+            responseType: GetPremiumResponseModel.self
         )
-        return data.value.formatted()
     }
     
 }

@@ -8,17 +8,18 @@
 import Foundation
 
 class InsuranceRepositoryImpl: InsuranceRepository {
+    
     let insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource;
     
     init(insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource) {
         self.insuracenContractRemoteDatasource = insuracenContractRemoteDatasource
     }
     
-    func calculatePremium(
-        ethAmount: Double,
-        insuranceStartData: Date,
-        birthDate: Date
-    ) async throws -> Double {
-        insuracenContractRemoteDatasource.callSmartContract()
+    func calculatePremium(with: PremiumCalculationEntity) async throws -> Double {
+        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let requestModel = GetPremiumRequestModel.fromEntity(with, contractAdress: contractAdress);
+        let responseModel = try await insuracenContractRemoteDatasource
+            .callSmartContract(with: requestModel)
+        return responseModel.toEth()!
     }
 }

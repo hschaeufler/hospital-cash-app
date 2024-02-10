@@ -1,5 +1,5 @@
 //
-//  ExchangeRateRemoteDatasource.swift
+//  WalletLocalDataSource.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 31.01.24.
@@ -15,7 +15,7 @@ protocol WalletLocalDataSource {
     func callSmartContract() async throws -> String
 }
 
-public class MetamaskDatasourceImpl: WalletLocalDataSource {
+public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     private let metaMaskSDK: MetaMaskSDK
     
     init() {

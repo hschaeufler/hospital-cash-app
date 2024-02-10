@@ -9,7 +9,7 @@ import Foundation
 import web3
 import BigInt
 
-class GetPremiumRequestModel: ABIFunction {
+struct GetPremiumRequestModel: ABIFunction {
     public static let name = "getHospitalCashPremium"
     public let gasPrice: BigUInt? = nil
     public let gasLimit: BigUInt? = nil
@@ -37,3 +37,19 @@ class GetPremiumRequestModel: ABIFunction {
         try encoder.encode(hospitalCashInWei)
     }
 }
+
+extension GetPremiumRequestModel {
+    static func fromEntity(
+        _ entity: PremiumCalculationEntity,
+        contractAdress: EthereumAddress
+    ) -> GetPremiumRequestModel {
+        let weiAmount = entity.amountHospitalCashEth * Double(EthUnits.wei)
+        return GetPremiumRequestModel(
+            contractAdress,
+            birthDateTs: BigUInt(entity.birthDate.timeIntervalSince1970),
+            insuranceStartDateTs: BigUInt(entity.insuranceDate.timeIntervalSince1970),
+            hospitalCashInWei: BigUInt(weiAmount)
+        )
+    }
+}
+

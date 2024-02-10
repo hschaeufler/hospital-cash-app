@@ -16,6 +16,8 @@ import SwiftUI
     @Injected(\PremiumContainer.calculateEthInEur) private var calculateEthInEurUseCase
     @ObservationIgnored
     @Injected(\PremiumContainer.calculateEurInEth) private var calculateEurInEthUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
     
     var error: Error?
     
@@ -39,6 +41,7 @@ import SwiftUI
     
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
+    var calculatedPremium = 0.0
     var insuranceDate = Date()
     var birthDate = Date()
     
@@ -53,11 +56,14 @@ import SwiftUI
     
     func caculatePremium() async {
         do {
-            //let result = try await MetamaskDatasourceImpl().callSmartContract()
-            let result = try await SmartContractRemoteDatasourceImpl().callSmartContract()
-            print(result)
+            let premiumCalculationEntity = PremiumCalculationEntity(
+                amountHospitalCashEth: self.amountHospitalCashEth,
+                insuranceDate: self.insuranceDate,
+                birthDate: self.birthDate
+            )
+            self.calculatedPremium = try await calculatePremiumUseCase(with: premiumCalculationEntity)
         } catch {
-            print(error)
+            self.error = error
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CalculatePremium {
-    func callAsFunction(ethAmount: Double) async throws -> Double
+    func callAsFunction(with: PremiumCalculationEntity) async throws -> Double
 }
 
 struct CalculatePremiumUseCase: CalculatePremium {
@@ -18,7 +18,7 @@ struct CalculatePremiumUseCase: CalculatePremium {
         self.insuranceRepository = insuranceRepository
     }
  
-    func callAsFunction(ethAmount: Double, isuranceStartData: Date, birthDate: Date) async throws -> Double {
-        try await insuranceRepository.calculatePremium()
+    func callAsFunction(with: PremiumCalculationEntity) async throws -> Double {
+        try await insuranceRepository.calculatePremium(with: with)
     }
 }

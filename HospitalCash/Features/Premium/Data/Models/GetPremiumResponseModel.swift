@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import web3
+import BigInt
+
+public struct GetPremiumResponseModel: ABIResponse, MulticallDecodableResponse {
+      public static var types: [ABIType.Type] = [BigUInt.self]
+      public let value: BigUInt
+
+      public init?(values: [ABIDecoder.DecodedValue]) throws {
+          self.value = try values[0].decoded()
+      }
+  }
+
+extension GetPremiumResponseModel {
+    func toEth() -> Double? {
+        let ethValue = (value / BigUInt(EthUnits.wei)).formatted()
+        return Double(ethValue)
+    }
+}

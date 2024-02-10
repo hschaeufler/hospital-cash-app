@@ -8,9 +8,5 @@
 import Foundation
 
 protocol InsuranceRepository {
-    func calculatePremium(
-        ethAmount: Double,
-        isuranceStartData: Date,
-        birthDate: Date
-    ) async throws -> Double
+    func calculatePremium(with: PremiumCalculationEntity) async throws -> Double
 }

@@ -20,9 +20,25 @@ extension PremiumContainer {
         self { ExchangeRateRemoteDatasourceImpl(restClient: CoreContainer.shared.restClient())}
     }
     
+    var walletLocalDataSource: Factory<WalletLocalDataSource> {
+        self { WalletLocalDataSourceImpl()}
+    }
+    
+    var insuranceContractRemoteDatasource: Factory<InsuranceContractRemoteDatasource> {
+        self { InsuranceContractRemoteDatasourceImpl()}
+    }
+    
     // Repositories
     var exchangeRateRepository: Factory<ExchangeRateRepository> {
         self { ExchangeRateRepositoryImpl(remoteDatasource: self.exchangeRateRemoteDataSource()) }
+    }
+    
+    var insuraneRepository: Factory<InsuranceRepository> {
+        self {
+            InsuranceRepositoryImpl(
+                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource()
+            )
+        }
     }
     
     
@@ -45,5 +61,11 @@ extension PremiumContainer {
     
     var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
         self { CheckHealthQuestionValidityUseCase() }
+    }
+    
+    var calculatePremium: Factory<CalculatePremium> {
+        self {
+            CalculatePremiumUseCase(insuranceRepository: self.insuraneRepository())
+        }
     }
 }
