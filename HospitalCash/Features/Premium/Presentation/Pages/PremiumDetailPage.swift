@@ -11,6 +11,8 @@ struct PremiumDetailPage: View {
     @Environment(PremiumCalculationVM.self) private var viewModel
     
     var body: some View {
+        let premium = viewModel.premiumEntity
+        
         SheetPageLayout("Dein Beitrag") {
             VStack {
                 Spacer()
@@ -18,23 +20,12 @@ struct PremiumDetailPage: View {
                     .font(.system(size: 90))
                     .foregroundStyle(.green, .blue)
                 Spacer()
-                Text("\(viewModel.amountHospitalCashEth.formatted()) Eth / ~ \(viewModel.amountHospitalCashEur.formatted()) €")
-                    .foregroundStyle(.green)
-                    .font(.title2)
-                    .bold()
-                Text("Krankenhaustagegeld")
-                    .font(.title)
-                    .bold()
-                Text("für nur")
-                    .font(.title2)
-                    .bold()
-                Text("\((viewModel.calculatedPremium?.yearlyEthPremium ?? 0).formatted()) Eth / ~ \((viewModel.calculatedPremium?.yearlyEurPremium ?? 0).formatted()) €")
-                    .foregroundStyle(.green)
-                    .font(.title2)
-                    .bold()
-                Text("pro Jahr")
-                    .font(.title2)
-                    .bold()
+                PremiumDetailGroup(
+                    yearlyPremiumEth: premium?.yearlyEthPremium ?? 0,
+                    yearlyPremiumEur: premium?.yearlyEurPremium ?? 0,
+                    hcAmountEth: viewModel.amountHospitalCashEth,
+                    hcAmountEur: Double(viewModel.amountHospitalCashEur)
+                )
                 Spacer()
                 CustomDivider(maxWidth: 150)
                 InsuranceAdvantagesColumn()

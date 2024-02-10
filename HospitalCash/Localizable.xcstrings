@@ -11,16 +11,6 @@
         }
       }
     },
-    "%lf Eth / ~ %lld €" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lf Eth / ~ %2$lld €"
-          }
-        }
-      }
-    },
     "€" : {
 
     },
