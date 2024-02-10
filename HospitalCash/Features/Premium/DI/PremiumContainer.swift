@@ -63,9 +63,12 @@ extension PremiumContainer {
         self { CheckHealthQuestionValidityUseCase() }
     }
     
-    var calculatePremium: Factory<CalculatePremium> {
+    var calculatePremium: Factory<CalculateYearlyPremium> {
         self {
-            CalculatePremiumUseCase(insuranceRepository: self.insuraneRepository())
+            CalculatePremiumUseCase(
+                insuranceRepository: self.insuraneRepository(),
+                calculateEthInEur: self.calculateEthInEur()
+            )
         }
     }
 }

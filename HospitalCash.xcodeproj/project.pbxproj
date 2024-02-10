@@ -14,11 +14,12 @@
 		8454E8A32B6FC1E4007A3887 /* web3.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A22B6FC1E4007A3887 /* web3.swift */; };
 		8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8A72B763D5B007A3887 /* Configuration.swift */; };
 		8454E8AA2B765995007A3887 /* InsuranceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8A92B765995007A3887 /* InsuranceRepository.swift */; };
-		8454E8AC2B765A10007A3887 /* CalculatePremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AB2B765A10007A3887 /* CalculatePremium.swift */; };
+		8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */; };
 		8454E8AE2B765EF0007A3887 /* InsuranceRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AD2B765EF0007A3887 /* InsuranceRepositoryImpl.swift */; };
 		8454E8B02B76750B007A3887 /* GetPremiumResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AF2B76750B007A3887 /* GetPremiumResponseModel.swift */; };
 		8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */; };
 		8454E8B62B768FC1007A3887 /* EthUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8B52B768FC1007A3887 /* EthUnits.swift */; };
+		8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8B92B77D6C1007A3887 /* PremiumEntity.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -76,12 +77,13 @@
 		8454E8A62B75B97A007A3887 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8454E8A72B763D5B007A3887 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8454E8A92B765995007A3887 /* InsuranceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceRepository.swift; sourceTree = "<group>"; };
-		8454E8AB2B765A10007A3887 /* CalculatePremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePremium.swift; sourceTree = "<group>"; };
+		8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateYearlyPremium.swift; sourceTree = "<group>"; };
 		8454E8AD2B765EF0007A3887 /* InsuranceRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceRepositoryImpl.swift; sourceTree = "<group>"; };
 		8454E8AF2B76750B007A3887 /* GetPremiumResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPremiumResponseModel.swift; sourceTree = "<group>"; };
 		8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationEntity.swift; sourceTree = "<group>"; };
 		8454E8B52B768FC1007A3887 /* EthUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthUnits.swift; sourceTree = "<group>"; };
 		8454E8B82B77AA1E007A3887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8454E8B92B77D6C1007A3887 /* PremiumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumEntity.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 			children = (
 				84ED676F2B66B96D001D600A /* HealthQuestionEntity.swift */,
 				8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */,
+				8454E8B92B77D6C1007A3887 /* PremiumEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -446,7 +449,7 @@
 				84ED67852B69D102001D600A /* CheckHealthQuestionValidity.swift */,
 				846D6F142B6B08020074F2F3 /* CalculateEurInEth.swift */,
 				846D6F162B6B08250074F2F3 /* CalculateEthInEur.swift */,
-				8454E8AB2B765A10007A3887 /* CalculatePremium.swift */,
+				8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -587,7 +590,7 @@
 				8454E8872B6C9790007A3887 /* GetPremiumRequestModel.swift in Sources */,
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
-				8454E8AC2B765A10007A3887 /* CalculatePremium.swift in Sources */,
+				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
 				84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */,
@@ -624,6 +627,7 @@
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,
+				8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */,
 				84ED67552B65351F001D600A /* NavigationLinkButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

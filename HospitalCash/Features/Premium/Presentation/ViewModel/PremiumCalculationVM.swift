@@ -41,7 +41,7 @@ import SwiftUI
     
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
-    var calculatedPremium = 0.0
+    var calculatedPremium: PremiumEntity? = nil
     var insuranceDate = Date()
     var birthDate = Date()
     

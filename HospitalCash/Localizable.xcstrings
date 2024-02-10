@@ -1,6 +1,26 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "%@ Eth / ~ %@ €" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Eth / ~ %2$@ €"
+          }
+        }
+      }
+    },
+    "%lf Eth / ~ %lld €" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lf Eth / ~ %2$lld €"
+          }
+        }
+      }
+    },
     "€" : {
 
     },
@@ -115,6 +135,9 @@
 
     },
     "ETH" : {
+
+    },
+    "für nur" : {
 
     },
     "Geburtsdatum" : {
@@ -246,9 +269,6 @@
         }
       }
     },
-    "Hello, World!" : {
-
-    },
     "Hinweis" : {
 
     },
@@ -286,6 +306,9 @@
           }
         }
       }
+    },
+    "Jetzt abschließen" : {
+
     },
     "Jetzt Beitrag berechnen" : {
       "localizations" : {
@@ -339,6 +362,9 @@
         }
       }
     },
+    "Krankenhaustagegeld" : {
+
+    },
     "Krankentagegeld" : {
 
     },
@@ -351,6 +377,9 @@
           }
         }
       }
+    },
+    "pro Jahr" : {
+
     },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
