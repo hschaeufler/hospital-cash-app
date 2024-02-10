@@ -19,6 +19,8 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
     
+    var path = NavigationPath()
+    
     var error: Error?
     
     var height = 175
@@ -54,6 +56,10 @@ import SwiftUI
         }
     }
     
+    func navigate(to destination: NavigationDestination) {
+        self.path.append(destination)
+    }
+    
     func caculatePremium() async {
         do {
             let premiumCalculationEntity = PremiumCalculationEntity(
@@ -62,6 +68,7 @@ import SwiftUI
                 birthDate: self.birthDate
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
+            self.navigate(to: .premiumDetail)
         } catch {
             self.error = error
         }

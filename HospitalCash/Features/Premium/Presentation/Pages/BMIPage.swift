@@ -27,9 +27,7 @@ struct BMIPage: View {
                         .backgroundStyle(.windowBackground)
                         .listRowInsets(EdgeInsets())
                 }
-                NavigationLinkButton("Weiter") {
-                    HealthQuestionPage()
-                }
+                NavigationLinkButton("Weiter", value: NavigationDestination.healthQuestions)
             }
         }
     }

@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct NavigationLinkButton<P> : View where P : Hashable {
+struct NavigationDestinationButton<Destination> : View where Destination : View {
     var titleKey: LocalizedStringKey
-    var value: P
+    @ViewBuilder var destination: () -> Destination
     
     public init(
         _ titleKey: LocalizedStringKey,
-        value: P
+        @ViewBuilder destination: @escaping () -> Destination
     ) {
         self.titleKey = titleKey
-        self.value = value
+        self.destination = destination
     }
     
     var body: some View {
-        NavigationLink(value: value) {
+        NavigationLink(destination: destination) {
             ButtonLabel(titleKey)
         }
         .buttonStyle(.bordered)

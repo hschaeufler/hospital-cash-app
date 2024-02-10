@@ -51,9 +51,12 @@ struct PremiumCalculationPage: View {
                     )
                     .bold()
                 }
-                NavigationLinkButton("Beitrag berechnen") {
-                    PremiumDetailPage()
+                FilledButton("Beitrag berechnen") {
+                    Task {
+                        await premiumCalculationVm.caculatePremium()
+                    }
                 }
+                .buttonStyle(.plain)
             }
         }
     }

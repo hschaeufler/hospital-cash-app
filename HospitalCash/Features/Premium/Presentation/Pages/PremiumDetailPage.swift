@@ -28,13 +28,15 @@ struct PremiumDetailPage: View {
                 )
                 Spacer()
                 CustomDivider(maxWidth: 150)
+                Spacer()
                 InsuranceAdvantagesColumn()
                     .scaledToFit()
                     .padding(.horizontal, 5)
                 Spacer()
-                NavigationLinkButton("Jetzt abschließen") {
-                    PremiumDetailPage()
-                }
+                NavigationLinkButton(
+                    "Jetzt abschließen",
+                    value: NavigationDestination.premiumDetail
+                )
             }
             .task {
                 await viewModel.caculatePremium()

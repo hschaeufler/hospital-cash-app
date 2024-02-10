@@ -11,8 +11,20 @@ struct PremiumCalculationSheet: View {
     @State private var premiumCalculationVM = PremiumCalculationVM()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $premiumCalculationVM.path) {
             BMIPage()
+                .navigationDestination(for: NavigationDestination.self) { destination in
+                    switch destination {
+                    case NavigationDestination.bmi:
+                        BMIPage()
+                    case NavigationDestination.healthQuestions:
+                        HealthQuestionPage()
+                    case NavigationDestination.premiumCalculation:
+                        PremiumCalculationPage()
+                    case NavigationDestination.premiumDetail:
+                        PremiumDetailPage()
+                    }
+                }
         }
         .presentationDragIndicator(.visible)
         .environment(premiumCalculationVM)

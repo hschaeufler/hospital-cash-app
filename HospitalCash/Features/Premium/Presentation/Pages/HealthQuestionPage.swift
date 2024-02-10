@@ -59,10 +59,8 @@ struct HealthQuestionPage: View {
                         )
                     }
                 }
-                NavigationLinkButton("Weiter") {
-                    PremiumCalculationPage()
-                }
-                .disabled(!premiumCalculationVm.areHealthQuestionsValid)
+                NavigationLinkButton("Weiter", value: NavigationDestination.premiumCalculation)
+                    .disabled(!premiumCalculationVm.areHealthQuestionsValid)
             }
         }
     }
