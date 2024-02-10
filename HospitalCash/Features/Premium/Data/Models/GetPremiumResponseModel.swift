@@ -20,7 +20,7 @@ public struct GetPremiumResponseModel: ABIResponse, MulticallDecodableResponse {
 
 extension GetPremiumResponseModel {
     func toEth() -> Double? {
-        let ethValue = (value / BigUInt(EthUnits.wei)).formatted()
-        return Double(ethValue)
+        let doubleValue = Double(String(self.value))! / Double(EthUnits.wei)
+        return doubleValue
     }
 }

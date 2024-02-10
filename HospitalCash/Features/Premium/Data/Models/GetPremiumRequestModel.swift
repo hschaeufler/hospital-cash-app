@@ -10,19 +10,19 @@ import web3
 import BigInt
 
 struct GetPremiumRequestModel: ABIFunction {
-    public static let name = "getHospitalCashPremium"
+    public static let name = "getMonthlyPremium"
     public let gasPrice: BigUInt? = nil
     public let gasLimit: BigUInt? = nil
     public let contract: EthereumAddress
     public let from: EthereumAddress?=nil
     
-    public let birthDate: BigUInt
-    public let insuranceStartDate: BigUInt
+    public let birthDate: BigInt
+    public let insuranceStartDate: BigInt
     public let hospitalCashInWei: BigUInt
     
     init(_ contract: EthereumAddress,
-         birthDateTs: BigUInt,
-         insuranceStartDateTs: BigUInt,
+         birthDateTs: BigInt,
+         insuranceStartDateTs: BigInt,
          hospitalCashInWei: BigUInt
     ) {
         self.contract = contract
@@ -46,8 +46,8 @@ extension GetPremiumRequestModel {
         let weiAmount = entity.amountHospitalCashEth * Double(EthUnits.wei)
         return GetPremiumRequestModel(
             contractAdress,
-            birthDateTs: BigUInt(entity.birthDate.timeIntervalSince1970),
-            insuranceStartDateTs: BigUInt(entity.insuranceDate.timeIntervalSince1970),
+            birthDateTs: BigInt(entity.birthDate.timeIntervalSince1970),
+            insuranceStartDateTs: BigInt(entity.insuranceDate.timeIntervalSince1970),
             hospitalCashInWei: BigUInt(weiAmount)
         )
     }
