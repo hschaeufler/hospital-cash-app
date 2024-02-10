@@ -81,6 +81,7 @@
 		8454E8AF2B76750B007A3887 /* GetPremiumResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPremiumResponseModel.swift; sourceTree = "<group>"; };
 		8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationEntity.swift; sourceTree = "<group>"; };
 		8454E8B52B768FC1007A3887 /* EthUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthUnits.swift; sourceTree = "<group>"; };
+		8454E8B82B77AA1E007A3887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -224,6 +225,7 @@
 		84A4F8792B6368F30018AA37 /* HospitalCash */ = {
 			isa = PBXGroup;
 			children = (
+				8454E8B82B77AA1E007A3887 /* Info.plist */,
 				84ED67302B63DD49001D600A /* Core */,
 				84ED672A2B63D8DC001D600A /* Features */,
 				84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */,
@@ -760,6 +762,7 @@
 				DEVELOPMENT_TEAM = NVHSPQ3LP3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HospitalCash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -790,6 +793,7 @@
 				DEVELOPMENT_TEAM = NVHSPQ3LP3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HospitalCash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

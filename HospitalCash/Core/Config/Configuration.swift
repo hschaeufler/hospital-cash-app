@@ -26,10 +26,10 @@ enum Configuration {
     }
     
     static private func getConfigValue(forKey: String) -> String {
-        Bundle.main.value(forKey: forKey) as! String
+        Bundle.main.object(forInfoDictionaryKey: forKey) as! String
     }
     
     static private func getConfigValue(forKey: String) -> Int {
-        Bundle.main.value(forKey: forKey) as! Int
+        Bundle.main.object(forInfoDictionaryKey: forKey) as! Int
     }
 }
