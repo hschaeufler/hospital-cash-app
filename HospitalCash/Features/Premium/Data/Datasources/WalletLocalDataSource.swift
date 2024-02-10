@@ -11,11 +11,11 @@ import web3
 import BigInt
 import Combine
 
-protocol MetamaskSDKDatasource {
+protocol WalletLocalDataSource {
     func callSmartContract() async throws -> String
 }
 
-public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
+public class MetamaskDatasourceImpl: WalletLocalDataSource {
     private let metaMaskSDK: MetaMaskSDK
     
     init() {
@@ -29,7 +29,7 @@ public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
     
     
     public func callSmartContract() async throws -> String {
-        let contractAdress =  "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E"
+        /*let contractAdress =  "0x8936FD38C5AcC5a6CFfb3841153EC604E215309E"
         let model = GetHospitalCashPremiumModel(
             EthereumAddress(contractAdress),
             birthDateTs: 728784534,
@@ -80,7 +80,8 @@ public class MetamaskDatasourceImpl: MetamaskSDKDatasource {
             print(error.message)
             print(error.localizedDescription)
             throw error
-        }
+        }*/
+        return ""
     }
     
 }

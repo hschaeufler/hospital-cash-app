@@ -9,7 +9,7 @@ import Foundation
 import web3
 import BigInt
 
-struct GetHospitalCashPremiumModel: ABIFunction {
+class GetPremiumRequestModel: ABIFunction {
     public static let name = "getHospitalCashPremium"
     public let gasPrice: BigUInt? = nil
     public let gasLimit: BigUInt? = nil
@@ -35,12 +35,5 @@ struct GetHospitalCashPremiumModel: ABIFunction {
         try encoder.encode(birthDate)
         try encoder.encode(insuranceStartDate)
         try encoder.encode(hospitalCashInWei)
-    }
-}
-
-extension GetHospitalCashPremiumModel {
-    func toHexString() -> String {
-        let transaction = try? self.transaction()
-        return transaction?.data?.web3.hexString ?? ""
     }
 }
