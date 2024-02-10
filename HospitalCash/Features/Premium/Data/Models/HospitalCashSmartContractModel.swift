@@ -1,5 +1,5 @@
 //
-//  HospitalCashSCModel.swift
+//  HospitalCashSmartContractModel.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 03.02.24.

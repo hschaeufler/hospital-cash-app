@@ -1,5 +1,5 @@
 //
-//  PremiumCalculationContainer.swift
+//  PremiumContainer.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 31.01.24.

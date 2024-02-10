@@ -1,5 +1,5 @@
 //
-//  ExchangeRateRepositoryError.swift
+//  CommonError.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 31.01.24.

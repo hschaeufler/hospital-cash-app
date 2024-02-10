@@ -1,5 +1,5 @@
 //
-//  GetHospitalCashPremiumModel.swift
+//  GetPremiumRequestModel.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 02.02.24.

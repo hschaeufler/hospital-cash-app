@@ -1,5 +1,5 @@
 //
-//  CalculatePremiumUseCase.swift
+//  CalculatePremium.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 09.02.24.

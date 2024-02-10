@@ -1,5 +1,5 @@
 //
-//  AdvantagesRow.swift
+//  InsuranceAdvantagesColumn.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 26.01.24.

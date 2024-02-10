@@ -27,7 +27,7 @@
 		846D6F0C2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F0B2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift */; };
 		846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F0D2B6AFAB10074F2F3 /* ExchangeRateRepository.swift */; };
 		846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F0F2B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift */; };
-		846D6F122B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F112B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift */; };
+		846D6F122B6B01A60074F2F3 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F112B6B01A60074F2F3 /* CommonError.swift */; };
 		846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F142B6B08020074F2F3 /* CalculateEurInEth.swift */; };
 		846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F162B6B08250074F2F3 /* CalculateEthInEur.swift */; };
 		846D6F1B2B6C372D0074F2F3 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 846D6F1A2B6C372D0074F2F3 /* metamask-ios-sdk */; };
@@ -89,7 +89,7 @@
 		846D6F0B2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDataModel.swift; sourceTree = "<group>"; };
 		846D6F0D2B6AFAB10074F2F3 /* ExchangeRateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepository.swift; sourceTree = "<group>"; };
 		846D6F0F2B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepositoryImpl.swift; sourceTree = "<group>"; };
-		846D6F112B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepositoryError.swift; sourceTree = "<group>"; };
+		846D6F112B6B01A60074F2F3 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		846D6F142B6B08020074F2F3 /* CalculateEurInEth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEurInEth.swift; sourceTree = "<group>"; };
 		846D6F162B6B08250074F2F3 /* CalculateEthInEur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEthInEur.swift; sourceTree = "<group>"; };
 		846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLocalDataSource.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		846D6F132B6B02350074F2F3 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				846D6F112B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift */,
+				846D6F112B6B01A60074F2F3 /* CommonError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -606,7 +606,7 @@
 				8454E8AA2B765995007A3887 /* InsuranceRepository.swift in Sources */,
 				84ED677F2B69C2BE001D600A /* CalculateBMI.swift in Sources */,
 				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
-				846D6F122B6B01A60074F2F3 /* ExchangeRateRepositoryError.swift in Sources */,
+				846D6F122B6B01A60074F2F3 /* CommonError.swift in Sources */,
 				846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67862B69D102001D600A /* CheckHealthQuestionValidity.swift in Sources */,
