@@ -37,6 +37,9 @@
     "Beitrag berechnen" : {
 
     },
+    "Berechnungsfehler" : {
+
+    },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
         "de" : {
@@ -367,6 +370,9 @@
           }
         }
       }
+    },
+    "Ok" : {
+
     },
     "pro Jahr" : {
 

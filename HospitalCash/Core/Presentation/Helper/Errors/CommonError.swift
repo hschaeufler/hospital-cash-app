@@ -11,6 +11,7 @@ import Foundation
 enum CommonError: Error {
     case dataCorrupted
     case couldNotParse
+    case contractExecutionError(message: String)
 }
 
 extension CommonError: LocalizedError {
@@ -20,6 +21,8 @@ extension CommonError: LocalizedError {
             return "Read data is corrupted"
         case .couldNotParse:
             return "Could not parse Data"
+        case .contractExecutionError(let message):
+            return message
         }
     }
 }

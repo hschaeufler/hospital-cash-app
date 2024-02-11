@@ -22,6 +22,14 @@ import SwiftUI
     var path = NavigationPath()
     
     var error: Error?
+    var showError: Bool {
+        get {
+            error != nil
+        }
+        set {
+            error = nil
+        }
+    }
     
     var height = 175
     var weight = 80
@@ -70,6 +78,8 @@ import SwiftUI
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
             self.navigate(to: .premiumDetail)
         } catch {
+            print("21222")
+            print(error)
             self.error = error
         }
     }

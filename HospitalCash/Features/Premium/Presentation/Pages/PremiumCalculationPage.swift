@@ -51,6 +51,15 @@ struct PremiumCalculationPage: View {
                     )
                     .bold()
                 }
+                .alert(
+                    "Berechnungsfehler",
+                    isPresented: $premiumCalculationVm.showError,
+                    presenting: premiumCalculationVm.error
+                ) { error in
+                    Button("Ok", role: .cancel, action: {})
+                } message: { error in
+                    Text(error.localizedDescription)
+                }
                 FilledButton("Beitrag berechnen") {
                     Task {
                         await premiumCalculationVm.caculatePremium()

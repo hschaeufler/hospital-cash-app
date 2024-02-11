@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct NavigationLinkButton<P> : View where P : Hashable {
+struct NavigationLinkButton : View {
     var titleKey: LocalizedStringKey
-    var value: P
+    var value: any Hashable
     
-    public init(
+    public init<P>(
         _ titleKey: LocalizedStringKey,
         value: P
-    ) {
+    )  where P : Hashable {
         self.titleKey = titleKey
         self.value = value
     }
@@ -32,8 +32,6 @@ struct NavigationLinkButton<P> : View where P : Hashable {
 
 #Preview {
     NavigationStack {
-        NavigationDestinationButton("Weiter") {
-            BMIPage()
-        }
+        NavigationLinkButton("Weiter", value: NavigationDestination.bmi)
     }
 }

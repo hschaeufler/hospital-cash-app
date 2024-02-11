@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum NavigationDestination: Hashable {
+enum NavigationDestination {
     case bmi, healthQuestions, premiumCalculation, premiumDetail
 }
