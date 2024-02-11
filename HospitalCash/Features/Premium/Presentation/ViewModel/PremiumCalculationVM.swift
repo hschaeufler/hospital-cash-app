@@ -57,12 +57,16 @@ import SwiftUI
     var amountHospitalCashEth = 0.0
     var premiumEntity: PremiumEntity? = nil
     
-    var fromTomorrowRange: PartialRangeFrom<Date> {
+    var fromTomorrowRange: ClosedRange<Date> {
         Calendar.current.date(
             byAdding: .day,
             value: 1,
             to: Date.now
-        )!...
+        )!...Calendar.current.date(
+            byAdding: .month,
+            value: 6,
+            to: Date.now
+        )!
     }
     var untilYesterdayRange: PartialRangeThrough<Date> {
         ...Calendar.current.date(
