@@ -38,15 +38,15 @@ struct PremiumCalculationPage: View {
                         .listRowInsets(EdgeInsets())
                     DatePicker(
                         "Versicherungsbeginn",
-                        selection: $premiumCalculationVm.insuranceDate,
-                        in: Date.now...,
+                        selection: $premiumCalculationVm.insuranceStartDate,
+                        in: premiumCalculationVm.fromTomorrowRange,
                         displayedComponents: [.date]
                     )
                     .bold()
                     DatePicker(
                         "Geburtsdatum",
                         selection: $premiumCalculationVm.birthDate,
-                        in: ...Date.now,
+                        in: premiumCalculationVm.untilYesterdayRange,
                         displayedComponents: [.date]
                     )
                     .bold()

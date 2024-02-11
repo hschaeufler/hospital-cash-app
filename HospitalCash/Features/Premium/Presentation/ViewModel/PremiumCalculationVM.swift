@@ -52,7 +52,22 @@ import SwiftUI
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
     var premiumEntity: PremiumEntity? = nil
-    var insuranceDate = Date()
+    
+    var fromTomorrowRange: PartialRangeFrom<Date> {
+        Calendar.current.date(
+            byAdding: .day,
+            value: 1,
+            to: Date.now
+        )!...
+    }
+    var untilYesterdayRange: PartialRangeThrough<Date> {
+        ...Calendar.current.date(
+            byAdding: .day,
+            value: -1,
+            to: Date.now
+        )!
+    }
+    var insuranceStartDate = Date()
     var birthDate = Date()
     
     var isCalculationAllowed: Bool {
@@ -76,14 +91,12 @@ import SwiftUI
         do {
             let premiumCalculationEntity = PremiumCalculationEntity(
                 amountHospitalCashEth: self.amountHospitalCashEth,
-                insuranceDate: self.insuranceDate,
+                insuranceDate: self.insuranceStartDate,
                 birthDate: self.birthDate
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
             self.navigate(to: .premiumDetail)
         } catch {
-            print("21222")
-            print(error)
             self.error = error
         }
     }
