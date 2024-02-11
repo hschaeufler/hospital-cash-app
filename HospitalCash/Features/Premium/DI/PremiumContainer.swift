@@ -68,7 +68,9 @@ extension PremiumContainer {
     }
     
     var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
-        self { CheckHealthQuestionValidityUseCase() }
+        self { CheckHealthQuestionValidityUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
     }
     
     var calculatePremium: Factory<CalculateYearlyPremium> {

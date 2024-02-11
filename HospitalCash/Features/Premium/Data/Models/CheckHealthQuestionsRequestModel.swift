@@ -29,3 +29,15 @@ struct CheckHealthQuestionsRequestModel: ABIFunction {
         try encoder.encode(healthQuestions)
     }
 }
+
+extension CheckHealthQuestionsRequestModel {
+    static func fromEntity(
+        _ contractAdress: EthereumAddress,
+        with entity: HealthQuestionEntity
+    ) -> CheckHealthQuestionsRequestModel {
+        CheckHealthQuestionsRequestModel(
+            contractAdress,
+            healthQuestions: HealthQuestionModel.fromEntity(with: entity)
+        )
+    }
+}

@@ -35,9 +35,17 @@ class InsuranceRepositoryImpl: InsuranceRepository {
             return responseModel.isOk
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
             throw try jsonRpcErrorDetail.toCommonError()
-        } catch {
-            print(error)
-            throw error
+        }
+    }
+    
+    func checkHealthQuestions(with entity: HealthQuestionEntity) async throws -> Bool {
+        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let requestModel = CheckHealthQuestionsRequestModel.fromEntity(contractAdress, with: entity)
+        do {
+            let responseModel = try await insuracenContractRemoteDatasource.checkHealthQuestions(with: requestModel)
+            return responseModel.value
+        } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
+            throw try jsonRpcErrorDetail.toCommonError()
         }
     }
 }

@@ -48,10 +48,7 @@ import SwiftUI
         hasNoChronicIllness: false,
         hasNoMedication: false
     )
-    
-    var areHealthQuestionsValid: Bool {
-        checkHealthQuestionValidityUseCase(with: healthQuestions)
-    }
+    var areHealthQuestionsValid = false
     
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
@@ -86,6 +83,15 @@ import SwiftUI
         do {
             self.bmiIsOk = try await checkBMIUseCase(heightInCm: height, weightInKg: weight)
             self.navigate(to: .healthQuestions)
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func checkHealthQuestions() async {
+        do {
+            self.areHealthQuestionsValid = false;
+            self.areHealthQuestionsValid = try await checkHealthQuestionValidityUseCase(with: healthQuestions)
         } catch {
             self.error = error
         }

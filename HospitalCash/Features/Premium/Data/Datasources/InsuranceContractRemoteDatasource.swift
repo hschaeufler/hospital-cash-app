@@ -11,8 +11,9 @@ import web3
 
 protocol InsuranceContractRemoteDatasource {
     func getContractAdress() -> EthereumAddress
-    func getMonthlyPremium(with: GetMonthlyPremiumRequestModel) async throws -> GetMonthlyPremiumResponseModel
-    func checkBMI(with: CheckBMIRequestModel) async throws -> CheckBMIResponseModel
+    func getMonthlyPremium(with model: GetMonthlyPremiumRequestModel) async throws -> GetMonthlyPremiumResponseModel
+    func checkBMI(with model: CheckBMIRequestModel) async throws -> CheckBMIResponseModel
+    func checkHealthQuestions(with model: CheckHealthQuestionsRequestModel) async throws -> CheckHealthQuestionsResponseModel
 }
 
 public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
@@ -46,4 +47,10 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
         )
     }
     
+    func checkHealthQuestions(with model: CheckHealthQuestionsRequestModel) async throws -> CheckHealthQuestionsResponseModel {
+        try await model.call(
+            withClient: client,
+            responseType: CheckHealthQuestionsResponseModel.self
+        )
+    }
 }

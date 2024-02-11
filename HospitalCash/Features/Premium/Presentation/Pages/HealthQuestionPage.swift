@@ -17,8 +17,8 @@ struct HealthQuestionPage: View {
     @State private var hasMedication = false;
 
     var body: some View {
-        @Bindable var premiumCalculationVm = premiumCalculationVm
-        let healthQuestions = $premiumCalculationVm.healthQuestions
+        @Bindable var vm = premiumCalculationVm
+        let healthQuestions = $vm.healthQuestions
         
         SheetPageLayout("Gesundheitsfragen") {
             VStack {
@@ -59,6 +59,11 @@ struct HealthQuestionPage: View {
                         )
                     }
                 }
+                .onChange(of: premiumCalculationVm.healthQuestions, {
+                    Task {
+                        await premiumCalculationVm.checkHealthQuestions()
+                    }
+                })
                 NavigationLinkButton("Weiter", value: NavigationDestination.premiumCalculation)
                     .disabled(!premiumCalculationVm.areHealthQuestionsValid)
             }
