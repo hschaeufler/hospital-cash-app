@@ -19,7 +19,7 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
     
-    var path = NavigationPath()
+    var path: [NavigationDestination] = []
     
     var error: Error?
     var showError: Bool {
@@ -52,11 +52,26 @@ import SwiftUI
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
     var premiumEntity: PremiumEntity? = nil
-    var insuranceDate = Date()
+    
+    var fromTomorrowRange: PartialRangeFrom<Date> {
+        Calendar.current.date(
+            byAdding: .day,
+            value: 1,
+            to: Date.now
+        )!...
+    }
+    var untilYesterdayRange: PartialRangeThrough<Date> {
+        ...Calendar.current.date(
+            byAdding: .day,
+            value: -1,
+            to: Date.now
+        )!
+    }
+    var insuranceStartDate = Date()
     var birthDate = Date()
     
     var isCalculationAllowed: Bool {
-        amountHospitalCashEur != 0
+        amountHospitalCashEth != 0
     }
     
     func calculateEurInEth() async {
@@ -76,14 +91,12 @@ import SwiftUI
         do {
             let premiumCalculationEntity = PremiumCalculationEntity(
                 amountHospitalCashEth: self.amountHospitalCashEth,
-                insuranceDate: self.insuranceDate,
+                insuranceDate: self.insuranceStartDate,
                 birthDate: self.birthDate
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
             self.navigate(to: .premiumDetail)
         } catch {
-            print("21222")
-            print(error)
             self.error = error
         }
     }
