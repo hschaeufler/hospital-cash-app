@@ -9,7 +9,9 @@ import SwiftUI
 
 @Observable class PremiumCalculationVM {
     @ObservationIgnored
-    @Injected(\PremiumContainer.calculateBMI) private var calculateBMI
+    @Injected(\PremiumContainer.calculateBMI) private var calculateBMIUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.checkBMI) private var checkBMIUseCase
     @ObservationIgnored
     @Injected(\PremiumContainer.checkHealthQuestionValidity) private var checkHealthQuestionValidityUseCase
     @ObservationIgnored
@@ -33,8 +35,10 @@ import SwiftUI
     
     var height = 175
     var weight = 80
+    var bmiIsOk = false;
+    
     var bmi: Double {
-        calculateBMI(height: height, weight: weight)
+        calculateBMIUseCase(height: height, weight: weight)
     }
     
     var healthQuestions = HealthQuestionEntity(
@@ -72,6 +76,15 @@ import SwiftUI
     
     var isCalculationAllowed: Bool {
         amountHospitalCashEth != 0
+    }
+    
+    func checkBMI() async {
+        do {
+            self.bmiIsOk = try await checkBMIUseCase(heightInCm: height, weightInKg: weight)
+            self.navigate(to: .healthQuestions)
+        } catch {
+            self.error = error
+        }
     }
     
     func calculateEurInEth() async {

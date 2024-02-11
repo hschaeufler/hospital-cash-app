@@ -140,8 +140,8 @@
             filePath = "HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -2101,8 +2101,8 @@
             filePath = "HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -2165,9 +2165,9 @@
             filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "calculatePremium(with:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getMonthlyPremium(with:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -2228,9 +2228,9 @@
             filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "calculatePremium(with:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getMonthlyPremium(with:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -2384,9 +2384,9 @@
             filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "calculatePremium(with:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getMonthlyPremium(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2592,6 +2592,38 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "toCommonError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81CA1D06-207C-415A-810B-A9FFD5FF0A83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Models/CheckBMIRequestModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(_:heightInCm:weightInKg:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C53D4FA2-DF9D-4F09-B066-64A67F557275"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Models/CheckBMIRequestModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(_:heightInCm:weightInKg:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

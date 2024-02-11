@@ -25,6 +25,6 @@ struct BottomBar<Content>: View where Content : View {
 
 #Preview {
     BottomBar {
-        FilledButton("Jetzt Beitrag berechnen") {}
+        ProminentButton("Jetzt Beitrag berechnen") {}
     }
 }

@@ -47,10 +47,18 @@ extension PremiumContainer {
         self { CalculateBMIUseCase() }
     }
     
+    var checkBMI: Factory<CheckBMI> {
+        self {
+            CheckBMIUseCase(insuranceRepository: self.insuraneRepository())
+        }
+    }
+    
     var calculateEthInEur: Factory<CalculateEthInEur> {
-        self { CalculateEthInEurUseCase(
-            exchangeRateRepository: self.exchangeRateRepository()
-        ) }
+        self {
+            CalculateEthInEurUseCase(
+                exchangeRateRepository: self.exchangeRateRepository()
+            )
+        }
     }
     
     var calculateEurInEth: Factory<CalculateEurInEth> {

@@ -1,5 +1,5 @@
 //
-//  FilledButton.swift
+//  ProminentButton.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 26.01.24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FilledButton: View {
+struct ProminentButton: View {
     var titleKey: LocalizedStringKey
     var action: () -> Void
     
@@ -20,19 +20,14 @@ struct FilledButton: View {
     }
     
     var body: some View {
-        Button(
-            action: action,
-            label: {
-                ButtonLabel(titleKey)
-            }
-        )
-        .buttonStyle(.borderedProminent)
-        .controlSize(.large)
-        .tint(.blue)
-        .padding()
+        CustomButton(titleKey, action: action)
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            .tint(.blue)
+            .padding()
     }
 }
 
 #Preview {
-    FilledButton("Jetzt Beitrag berechnen") {}
+    ProminentButton("Jetzt Beitrag berechnen") {}
 }

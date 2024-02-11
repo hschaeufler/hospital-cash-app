@@ -24,7 +24,7 @@ struct HomePage: View {
                 .padding(.horizontal, 5)
             Spacer()
             BottomBar(verticalPadding: verticalPadding) {
-                FilledButton("Jetzt Beitrag berechnen") {
+                ProminentButton("Jetzt Beitrag berechnen") {
                     showingPremiumCalculator.toggle()
                 }
                 .sheet(isPresented: $showingPremiumCalculator) {

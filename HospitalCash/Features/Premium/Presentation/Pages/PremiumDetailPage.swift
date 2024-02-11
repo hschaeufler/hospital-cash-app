@@ -33,7 +33,10 @@ struct PremiumDetailPage: View {
                     .scaledToFit()
                     .padding(.horizontal, 5)
                 Spacer()
-                NavigationLinkButton("Jetzt abschließen", value: NavigationDestination.premiumDetail)
+                NavigationLinkButton(
+                    "Jetzt abschließen", 
+                    value: NavigationDestination.premiumDetail
+                )
             }
             .task {
                 await viewModel.caculatePremium()

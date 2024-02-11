@@ -8,5 +8,6 @@
 import Foundation
 
 protocol InsuranceRepository {
-    func calculatePremium(with: PremiumCalculationEntity) async throws -> Double
+    func getMonthlyPremium(with: PremiumCalculationEntity) async throws -> Double
+    func checkBMI(heightInCm: Int, weightInKg: Int) async throws -> Bool
 }

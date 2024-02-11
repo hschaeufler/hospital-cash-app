@@ -24,7 +24,7 @@ struct CalculatePremiumUseCase: CalculateYearlyPremium {
     }
  
     func callAsFunction(with: PremiumCalculationEntity) async throws -> PremiumEntity {
-        let monthlyEthPremium = try await insuranceRepository.calculatePremium(with: with)
+        let monthlyEthPremium = try await insuranceRepository.getMonthlyPremium(with: with)
         let yearlyEthPremium = monthlyEthPremium * 12
         let yearlyEurPremium = try await calculateEthInEur(ethAmount: yearlyEthPremium)
         return PremiumEntity(

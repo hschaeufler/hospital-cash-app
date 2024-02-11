@@ -1,5 +1,5 @@
 //
-//  GetPremiumRequestModel.swift
+//  GetMonthlyPremiumRequestModel.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 02.02.24.
@@ -9,7 +9,7 @@ import Foundation
 import web3
 import BigInt
 
-struct GetPremiumRequestModel: ABIFunction {
+struct GetMonthlyPremiumRequestModel: ABIFunction {
     public static let name = "getMonthlyPremium"
     public let gasPrice: BigUInt? = nil
     public let gasLimit: BigUInt? = nil
@@ -38,13 +38,13 @@ struct GetPremiumRequestModel: ABIFunction {
     }
 }
 
-extension GetPremiumRequestModel {
+extension GetMonthlyPremiumRequestModel {
     static func fromEntity(
-        _ entity: PremiumCalculationEntity,
-        contractAdress: EthereumAddress
-    ) -> GetPremiumRequestModel {
+        _ contractAdress: EthereumAddress,
+        with entity: PremiumCalculationEntity
+    ) -> GetMonthlyPremiumRequestModel {
         let weiAmount = entity.amountHospitalCashEth * Double(EthUnits.wei)
-        return GetPremiumRequestModel(
+        return GetMonthlyPremiumRequestModel(
             contractAdress,
             birthDateTs: BigInt(entity.birthDate.timeIntervalSince1970),
             insuranceStartDateTs: BigInt(entity.insuranceDate.timeIntervalSince1970),

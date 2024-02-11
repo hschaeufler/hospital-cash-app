@@ -60,7 +60,7 @@ struct PremiumCalculationPage: View {
                 } message: { error in
                     Text(LocalizedStringKey(error.localizedDescription))
                 }
-                FilledButton("Beitrag berechnen") {
+                BorderedButton("Beitrag berechnen") {
                     Task {
                         await premiumCalculationVm.caculatePremium()
                     }
