@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HealthQuestionEntity {
+struct HealthQuestionEntity: Equatable {
     var hasNoInpatientTreatment: Bool
     var hasNoOutpatientTreatment: Bool
     var hasNoPsychotherapy: Bool

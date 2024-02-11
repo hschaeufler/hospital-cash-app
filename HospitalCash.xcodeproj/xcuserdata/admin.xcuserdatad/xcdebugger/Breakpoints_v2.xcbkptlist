@@ -2232,98 +2232,6 @@
             endingLineNumber = "25"
             landmarkName = "getMonthlyPremium(with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "340">
-               </Location>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "412">
-               </Location>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "276">
-               </Location>
-               <Location
-                  uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245 - ed6d32778b50247b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2624,6 +2532,22 @@
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "init(_:heightInCm:weightInKg:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE63ADA3-48AC-47FC-A128-1F6026E790AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "checkHealthQuestions(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

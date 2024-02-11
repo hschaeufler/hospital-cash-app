@@ -26,7 +26,7 @@
 		8454E8C82B79199C007A3887 /* CheckBMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8C72B79199C007A3887 /* CheckBMI.swift */; };
 		8454E8CA2B791C4B007A3887 /* CheckBMIRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8C92B791C4B007A3887 /* CheckBMIRequestModel.swift */; };
 		8454E8CC2B791C71007A3887 /* CheckBMIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8CB2B791C71007A3887 /* CheckBMIResponseModel.swift */; };
-		8454E8CE2B791C89007A3887 /* CheckHealthQuetionsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8CD2B791C89007A3887 /* CheckHealthQuetionsRequestModel.swift */; };
+		8454E8CE2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8CD2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift */; };
 		8454E8D02B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8CF2B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
@@ -45,6 +45,7 @@
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
 		84A4F8822B6368F40018AA37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */; };
+		84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA13D62B7976870075561E /* HealthQuestionModel.swift */; };
 		84EC9DB92B79676300B839DA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9DB82B79676300B839DA /* CustomButton.swift */; };
 		84EC9DBB2B7967D300B839DA /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9DBA2B7967D300B839DA /* BorderedButton.swift */; };
 		84ED672F2B63D97E001D600A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED672E2B63D97E001D600A /* HomePage.swift */; };
@@ -100,7 +101,7 @@
 		8454E8C72B79199C007A3887 /* CheckBMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBMI.swift; sourceTree = "<group>"; };
 		8454E8C92B791C4B007A3887 /* CheckBMIRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBMIRequestModel.swift; sourceTree = "<group>"; };
 		8454E8CB2B791C71007A3887 /* CheckBMIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBMIResponseModel.swift; sourceTree = "<group>"; };
-		8454E8CD2B791C89007A3887 /* CheckHealthQuetionsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuetionsRequestModel.swift; sourceTree = "<group>"; };
+		8454E8CD2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuestionsRequestModel.swift; sourceTree = "<group>"; };
 		8454E8CF2B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuestionsResponseModel.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84A4F87E2B6368F40018AA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84EA13D62B7976870075561E /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
 		84EC9DB82B79676300B839DA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		84EC9DBA2B7967D300B839DA /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		84ED672E2B63D97E001D600A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -508,8 +510,9 @@
 				8454E8C52B7867F7007A3887 /* JSONRPCErrorDetailModel.swift */,
 				8454E8C92B791C4B007A3887 /* CheckBMIRequestModel.swift */,
 				8454E8CB2B791C71007A3887 /* CheckBMIResponseModel.swift */,
-				8454E8CD2B791C89007A3887 /* CheckHealthQuetionsRequestModel.swift */,
+				8454E8CD2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift */,
 				8454E8CF2B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift */,
+				84EA13D62B7976870075561E /* HealthQuestionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
+				84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */,
 				8454E8D02B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift in Sources */,
 				84ED67842B69C8B0001D600A /* PremiumContainer.swift in Sources */,
 				846D6F0C2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift in Sources */,
@@ -663,7 +667,7 @@
 				8454E8C62B7867F7007A3887 /* JSONRPCErrorDetailModel.swift in Sources */,
 				84ED673A2B640D44001D600A /* Avatar.swift in Sources */,
 				84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */,
-				8454E8CE2B791C89007A3887 /* CheckHealthQuetionsRequestModel.swift in Sources */,
+				8454E8CE2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,

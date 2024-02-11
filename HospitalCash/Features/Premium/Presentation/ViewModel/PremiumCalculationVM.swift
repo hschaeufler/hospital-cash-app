@@ -48,21 +48,22 @@ import SwiftUI
         hasNoChronicIllness: false,
         hasNoMedication: false
     )
-    
-    var areHealthQuestionsValid: Bool {
-        checkHealthQuestionValidityUseCase(with: healthQuestions)
-    }
+    var areHealthQuestionsValid = false
     
     var amountHospitalCashEur = 0
     var amountHospitalCashEth = 0.0
     var premiumEntity: PremiumEntity? = nil
     
-    var fromTomorrowRange: PartialRangeFrom<Date> {
+    var fromTomorrowRange: ClosedRange<Date> {
         Calendar.current.date(
             byAdding: .day,
             value: 1,
             to: Date.now
-        )!...
+        )!...Calendar.current.date(
+            byAdding: .month,
+            value: 6,
+            to: Date.now
+        )!
     }
     var untilYesterdayRange: PartialRangeThrough<Date> {
         ...Calendar.current.date(
@@ -82,6 +83,15 @@ import SwiftUI
         do {
             self.bmiIsOk = try await checkBMIUseCase(heightInCm: height, weightInKg: weight)
             self.navigate(to: .healthQuestions)
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func checkHealthQuestions() async {
+        do {
+            self.areHealthQuestionsValid = false;
+            self.areHealthQuestionsValid = try await checkHealthQuestionValidityUseCase(with: healthQuestions)
         } catch {
             self.error = error
         }
