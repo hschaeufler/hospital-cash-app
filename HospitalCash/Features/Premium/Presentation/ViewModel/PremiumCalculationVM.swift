@@ -55,6 +55,10 @@ import SwiftUI
     var insuranceDate = Date()
     var birthDate = Date()
     
+    var isCalculationAllowed: Bool {
+        amountHospitalCashEur != 0
+    }
+    
     func calculateEurInEth() async {
         do {
             let amount = Double(amountHospitalCashEur)

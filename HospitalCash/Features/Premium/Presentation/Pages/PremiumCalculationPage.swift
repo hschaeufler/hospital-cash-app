@@ -65,7 +65,7 @@ struct PremiumCalculationPage: View {
                         await premiumCalculationVm.caculatePremium()
                     }
                 }
-                .buttonStyle(.plain)
+                .disabled(!premiumCalculationVm.isCalculationAllowed)
             }
         }
     }
