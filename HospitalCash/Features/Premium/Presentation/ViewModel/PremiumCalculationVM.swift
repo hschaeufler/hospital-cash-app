@@ -71,7 +71,7 @@ import SwiftUI
     var birthDate = Date()
     
     var isCalculationAllowed: Bool {
-        amountHospitalCashEur != 0
+        amountHospitalCashEth != 0
     }
     
     func calculateEurInEth() async {
