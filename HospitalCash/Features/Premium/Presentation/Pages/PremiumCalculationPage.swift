@@ -58,7 +58,7 @@ struct PremiumCalculationPage: View {
                 ) { error in
                     Button("Ok", role: .cancel, action: {})
                 } message: { error in
-                    Text(error.localizedDescription)
+                    Text(LocalizedStringKey(error.localizedDescription))
                 }
                 FilledButton("Beitrag berechnen") {
                     Task {

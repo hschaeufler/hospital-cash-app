@@ -24,7 +24,7 @@ struct HealthQuestionPage: View {
             VStack {
                 Form {
                     Section {
-                        InfoBox("Gesundheitsfragen", contentKey: "Bitte bestäge einzeln, dass keiner der nachfolgenden Fälle dich betrifft.")
+                        InfoBox("Gesundheitsfragen", contentKey: "Bitte bestätige einzeln, dass keiner der nachfolgenden Fälle dich betrifft.")
                             .backgroundStyle(.windowBackground)
                             .listRowInsets(EdgeInsets())
                         InfoToggle(

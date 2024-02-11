@@ -8,11 +8,24 @@
             "state" : "new",
             "value" : "%1$@ Eth / ~ %2$@ €"
           }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ Eth / ~ %2$@ €"
+          }
         }
       }
     },
     "€" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€"
+          }
+        }
+      }
     },
     "Abbrechen" : {
       "localizations" : {
@@ -35,10 +48,24 @@
       }
     },
     "Beitrag berechnen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate premium"
+          }
+        }
+      }
     },
     "Berechnungsfehler" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculation error"
+          }
+        }
+      }
     },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
@@ -56,8 +83,49 @@
         }
       }
     },
-    "Bitte bestäge einzeln, dass keiner der nachfolgenden Fälle dich betrifft." : {
-
+    "Birtday is not allowed to be in the future." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Geburtstag darf nicht in der Zukunft liegen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birtday is not allowed to be in the future."
+          }
+        }
+      }
+    },
+    "Birthday must be before Insurance day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Geburtstag muss vor dem Versicherungsbeginn liegen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birthday must be before Insurance day."
+          }
+        }
+      }
+    },
+    "Bitte bestätige einzeln, dass keiner der nachfolgenden Fälle dich betrifft." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please confirm individually that none of the following cases apply to you."
+          }
+        }
+      }
     },
     "BMI" : {
       "localizations" : {
@@ -106,7 +174,14 @@
       }
     },
     "Dein Beitrag" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your contribution"
+          }
+        }
+      }
     },
     "Deine Vorteile" : {
       "localizations" : {
@@ -125,16 +200,44 @@
       }
     },
     "Die Krankenhaustagegeldhöhe wird in ETH versichert und ausgezahlt. Der EUR Betrag dient als Richtwert. Es besteht das Risiko von Wechselkursschwankungen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The daily hospital benefit amount is insured and paid out in ETH. The EUR amount serves as a guideline. There is a risk of exchange rate fluctuations."
+          }
+        }
+      }
     },
     "ETH" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ETH"
+          }
+        }
+      }
     },
     "für nur" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "for only"
+          }
+        }
+      }
     },
     "Geburtsdatum" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birth date"
+          }
+        }
+      }
     },
     "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
       "localizations" : {
@@ -146,8 +249,8 @@
         },
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "I have not been hospitalized in the last 5 years, nor am I planning any hospital stays."
+            "state" : "translated",
+            "value" : "I have not had any outpatient treatment in the last 5 years, nor is any planned due to illness. Exceptions are minor illnesses such as flu or respiratory infections. I am also not pregnant."
           }
         }
       }
@@ -211,7 +314,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I have not had any outpatient treatment in the last 5 years, nor is any planned due to illness. Exceptions are minor illnesses such as flu or respiratory infections. I am also not pregnant."
+            "value" : "I have not been hospitalized in the last 5 years, nor am I planning any hospital stays."
           }
         }
       }
@@ -263,10 +366,24 @@
       }
     },
     "Hinweis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hint"
+          }
+        }
+      }
     },
     "Höhe Krankenhaustagegeld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hospital cash amount"
+          }
+        }
+      }
     },
     "Hospital Cash" : {
       "localizations" : {
@@ -280,6 +397,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hospital Cash"
+          }
+        }
+      }
+    },
+    "Hospitalcash must be greater then 1000 Wei" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die höhe Krankenhaustagegeld muss mehr als 1000Wei betragen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospitalcash must be greater then 1000 Wei"
           }
         }
       }
@@ -300,8 +434,32 @@
         }
       }
     },
+    "Insurance start date need to be in the future!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Datum des Versicherungsbeginns muss in der Zukunft liegen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insurance start date need to be in the future!"
+          }
+        }
+      }
+    },
     "Jetzt abschließen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complete now"
+          }
+        }
+      }
     },
     "Jetzt Beitrag berechnen" : {
       "localizations" : {
@@ -356,10 +514,24 @@
       }
     },
     "Krankenhaustagegeld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hospital cash"
+          }
+        }
+      }
     },
     "Krankentagegeld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daily sickness allowance"
+          }
+        }
+      }
     },
     "Medikamenteneinahme" : {
       "localizations" : {
@@ -372,10 +544,41 @@
       }
     },
     "Ok" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        }
+      }
+    },
+    "Person must be an adult!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die versicherte Person muss erwachsen sein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The policyholder must be an adult"
+          }
+        }
+      }
     },
     "pro Jahr" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "per year"
+          }
+        }
+      }
     },
     "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
       "localizations" : {
@@ -414,7 +617,14 @@
       }
     },
     "tats. Betrag" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "actual Amount"
+          }
+        }
+      }
     },
     "Test" : {
       "localizations" : {
@@ -427,7 +637,14 @@
       }
     },
     "Testpage" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testpage"
+          }
+        }
+      }
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {
@@ -446,7 +663,14 @@
       }
     },
     "Versicherungsbeginn" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start of insurance"
+          }
+        }
+      }
     },
     "Voll automatisiert" : {
       "localizations" : {
@@ -497,7 +721,14 @@
       }
     },
     "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Which amount would you like to receive per day during a hospital stay?"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
