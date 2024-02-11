@@ -19,7 +19,7 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
     
-    var path = NavigationPath()
+    var path: [NavigationDestination] = []
     
     var error: Error?
     var showError: Bool {
