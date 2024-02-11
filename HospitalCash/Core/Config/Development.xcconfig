@@ -1,0 +1,12 @@
+//
+//  Development.xcconfig
+//  HospitalCash
+//
+//  Created by Holger Schäufler on 09.02.24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+NODE_RPC_ENDPOINT = http:/$()/192.168.178.86:8545
+CHAIN_ID = 1337
+CONTRACT_ADRESS = 0x8936FD38C5AcC5a6CFfb3841153EC604E215309E

@@ -1,0 +1,504 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%@ Eth / ~ %@ €" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Eth / ~ %2$@ €"
+          }
+        }
+      }
+    },
+    "€" : {
+
+    },
+    "Abbrechen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "Ambulante Behandlung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outpatient treatment"
+          }
+        }
+      }
+    },
+    "Beitrag berechnen" : {
+
+    },
+    "Berechnungsfehler" : {
+
+    },
+    "Bestimme selbst die Tagegeldhöhe" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestimme selbst die Tagegeldhöhe"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Determine the daily allowance yourself"
+          }
+        }
+      }
+    },
+    "Bitte bestäge einzeln, dass keiner der nachfolgenden Fälle dich betrifft." : {
+
+    },
+    "BMI" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BMI"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BMI"
+          }
+        }
+      }
+    },
+    "Body Mass Index" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Body Mass Index"
+          }
+        }
+      }
+    },
+    "Chronische Erkrankung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chronic illness"
+          }
+        }
+      }
+    },
+    "cm" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "cm"
+          }
+        }
+      }
+    },
+    "Dein Beitrag" : {
+
+    },
+    "Deine Vorteile" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Vorteile"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your advantages"
+          }
+        }
+      }
+    },
+    "Die Krankenhaustagegeldhöhe wird in ETH versichert und ausgezahlt. Der EUR Betrag dient als Richtwert. Es besteht das Risiko von Wechselkursschwankungen." : {
+
+    },
+    "ETH" : {
+
+    },
+    "für nur" : {
+
+    },
+    "Geburtsdatum" : {
+
+    },
+    "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in ambulanter Behandlung, noch sind solche aufgrund von Erkrankungen geplant. Außgenommen sind leichte Erkrankungen wie Grippe oder Atemwegsinfektionen. Es liegt auch keine Schwangerschaft vor."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "I have not been hospitalized in the last 5 years, nor am I planning any hospital stays."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_CHRONISCHE_ERKRANKUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder bin ich chronisch erkrankt, noch bin ich pflegebedürftig oder leide an einer  schweren Krankheit wie z.B.: einer HIV-Infektion."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I am not chronically ill, nor am I in need of care or suffering from a serious illness such as HIV infection."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_MEDIKAMENTE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es gibt keine Medikamente die ich regelmäßig zu mir nehmen muss oder sollte."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There is no medication that I must or should take regularly."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_PSYCHOTHERAPIE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in psychotherapeutischer Behandlung, noch ist eine Psychotherapie geplant."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I have not undergone psychotherapeutic treatment in the last 5 years, nor am I planning any psychotherapy."
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGE_STATIONAERE_BEHANDLUNG" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weder befand ich mich in den letzten 5 Jahren in stationärer Behandlung, noch sind Krankenhausaufenthalte geplant."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I have not had any outpatient treatment in the last 5 years, nor is any planned due to illness. Exceptions are minor illnesses such as flu or respiratory infections. I am also not pregnant."
+          }
+        }
+      }
+    },
+    "Gesundheitsfragen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Health-related questions"
+          }
+        }
+      }
+    },
+    "GESUNDHEITSFRAGEN_INFO" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte beantworte folgende Fragen damit wir prüfen können, ob wir dich versichern können."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please answer the following questions so that we can check whether we can insure you."
+          }
+        }
+      }
+    },
+    "Gewicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weight"
+          }
+        }
+      }
+    },
+    "Größe" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Size"
+          }
+        }
+      }
+    },
+    "Hinweis" : {
+
+    },
+    "Höhe Krankenhaustagegeld" : {
+
+    },
+    "Hospital Cash" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospital Cash"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospital Cash"
+          }
+        }
+      }
+    },
+    "Individueller Leistungsumfang" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Individueller Leistungsumfang"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Individual scope of benefits"
+          }
+        }
+      }
+    },
+    "Jetzt abschließen" : {
+
+    },
+    "Jetzt Beitrag berechnen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt Beitrag berechnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate premium now"
+          }
+        }
+      }
+    },
+    "Keine lästigen Wartezeiten" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine lästigen Wartezeiten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No annoying waiting times"
+          }
+        }
+      }
+    },
+    "kg" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kg"
+          }
+        }
+      }
+    },
+    "kg/m²" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kg/m²"
+          }
+        }
+      }
+    },
+    "Krankenhaustagegeld" : {
+
+    },
+    "Krankentagegeld" : {
+
+    },
+    "Medikamenteneinahme" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medikamenteneinahme"
+          }
+        }
+      }
+    },
+    "Ok" : {
+
+    },
+    "pro Jahr" : {
+
+    },
+    "PRODUKT_BESCHREIBUNG_HOSPITALCASH" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unser neues Krankenhaustagegeld auf Blockchain-Basis. Jetzt abschließen und von besonders günstigen Preisen profitieren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Our new blockchain-based hospital cash. Sign up now and benefit from particularly low prices."
+          }
+        }
+      }
+    },
+    "Psychoterapie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Psychotherapy"
+          }
+        }
+      }
+    },
+    "Stationäre Behandlung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inpatient treatment"
+          }
+        }
+      }
+    },
+    "tats. Betrag" : {
+
+    },
+    "Test" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test"
+          }
+        }
+      }
+    },
+    "Testpage" : {
+
+    },
+    "Versicherung auf Blockchain einsehbar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versicherung auf Blockchain einsehbar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insurance contract viewable on blockchain"
+          }
+        }
+      }
+    },
+    "Versicherungsbeginn" : {
+
+    },
+    "Voll automatisiert" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voll automatisiert"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fully automated"
+          }
+        }
+      }
+    },
+    "Volle Transparenz" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volle Transparenz"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full transparency"
+          }
+        }
+      }
+    },
+    "Weiter" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        }
+      }
+    },
+    "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?" : {
+
+    }
+  },
+  "version" : "1.0"
+}
