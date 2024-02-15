@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PremiumDetailPage: View {
     @Environment(PremiumCalculationVM.self) private var viewModel
+    @State private var showSheet = false
     
     var body: some View {
         let premium = viewModel.premiumEntity
@@ -33,14 +34,20 @@ struct PremiumDetailPage: View {
                     .scaledToFit()
                     .padding(.horizontal, 5)
                 Spacer()
-                NavigationLinkButton(
-                    "Jetzt abschließen", 
-                    value: NavigationDestination.premiumDetail
-                )
+                BorderedButton("Jetzt abschließen") {
+                    showSheet.toggle()
+                }
             }
             .task {
                 await viewModel.caculatePremium()
             }
+            .sheet(isPresented: $showSheet, content: {
+                NavigationStack {
+                    PayWithMetamaskPage()
+                }
+                .presentationDetents([.fraction(1 / 3)])
+                .presentationDragIndicator(.visible)
+            })
             
         }
     }

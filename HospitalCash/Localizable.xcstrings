@@ -553,6 +553,12 @@
         }
       }
     },
+    "Pay with" : {
+
+    },
+    "Pay with Metamask" : {
+
+    },
     "Person must be an adult!" : {
       "extractionState" : "manual",
       "localizations" : {

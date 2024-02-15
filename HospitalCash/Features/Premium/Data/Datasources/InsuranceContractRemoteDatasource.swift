@@ -20,13 +20,13 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
     let client: EthereumHttpClient
     let contractAdress: EthereumAddress
     
-    init() {
-        let network = EthereumNetwork.fromString(Configuration.chainId)
+    init(contractConfig: Configuration.InsuranceContract) {
+        let network = EthereumNetwork.fromString(contractConfig.chainId)
         self.client = EthereumHttpClient(
-            url: Configuration.nodeRpcEndpoint,
+            url: contractConfig.nodeRpcEndpoint,
             network: network
         )
-        self.contractAdress = EthereumAddress(Configuration.contractAdress)
+        self.contractAdress = EthereumAddress(contractConfig.contractAdress)
     }
     
     func getContractAdress() -> EthereumAddress {

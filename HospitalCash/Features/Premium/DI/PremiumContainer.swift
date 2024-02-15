@@ -15,17 +15,28 @@ public final class PremiumContainer: SharedContainer {
 
 
 extension PremiumContainer {
+    // Config
+    var contractConfig: Factory<Configuration.InsuranceContract> {
+        self { Configuration.InsuranceContract() }
+            .singleton
+    }
+    
+    var walletConfig: Factory<Configuration.Wallet> {
+        self { Configuration.Wallet() }
+            .singleton
+    }
+    
     // Datasources
     var exchangeRateRemoteDataSource: Factory<ExchangeRateRemoteDatasource> {
         self { ExchangeRateRemoteDatasourceImpl(restClient: CoreContainer.shared.restClient())}
     }
     
     var walletLocalDataSource: Factory<WalletLocalDataSource> {
-        self { WalletLocalDataSourceImpl()}
+        self { WalletLocalDataSourceImpl(walletConfig: self.walletConfig() )}
     }
     
     var insuranceContractRemoteDatasource: Factory<InsuranceContractRemoteDatasource> {
-        self { InsuranceContractRemoteDatasourceImpl()}
+        self { InsuranceContractRemoteDatasourceImpl(contractConfig: self.contractConfig() )}
     }
     
     // Repositories

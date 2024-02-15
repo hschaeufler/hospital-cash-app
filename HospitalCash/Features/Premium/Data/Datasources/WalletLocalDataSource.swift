@@ -12,18 +12,24 @@ import BigInt
 import Combine
 
 protocol WalletLocalDataSource {
-    func callSmartContract() async throws -> String
+    func connectWithTransaction() async throws -> String
 }
 
 public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     private let metaMaskSDK: MetaMaskSDK
     
-    init() {
+    init(walletConfig: Configuration.Wallet) {
         let appMetaData = AppMetadata(
-            name: "Hospital Cash",
-            url: "https://the-wallet.dev"
+            name: walletConfig.dappName,
+            url: walletConfig.dappUrl,
+            iconUrl: walletConfig.dappIconUrl
         )
         metaMaskSDK = MetaMaskSDK.shared(appMetaData, sdkOptions: nil)
+    }
+    
+    func connectWithTransaction() async throws -> String {
+        //metaMaskSDK.connectAndSign(message: String)
+        return ""
     }
     
     
