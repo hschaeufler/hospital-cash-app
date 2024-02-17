@@ -26,6 +26,15 @@ struct PremiumCalculationSheet: View {
                     }
                 }
         }
+        .alert(
+            "Fehler",
+            isPresented: $premiumCalculationVM.showError,
+            presenting: premiumCalculationVM.error
+        ) { error in
+            Button("Ok", role: .cancel, action: {})
+        } message: { error in
+            Text(LocalizedStringKey(error.localizedDescription))
+        }
         .presentationDragIndicator(.visible)
         .environment(premiumCalculationVM)
     }
