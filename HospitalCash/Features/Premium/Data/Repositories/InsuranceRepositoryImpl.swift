@@ -55,7 +55,13 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func underwriteContract(with application: ContractApplicationEntity) async throws -> ContractEntity {
-        
+        return ContractEntity(
+            insuranceStartDate: Date(),
+            insuranceEndDate: Date(),
+            dailyHospitalCash: 2.1,
+            policyId: 1,
+            birthdate: Date()
+        )
     }
     
 }

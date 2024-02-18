@@ -11,10 +11,10 @@ import BigInt
 
 struct UnderwriteContractRequestModel: ABIFunction {
     public static let name = "applyForInsurace"
-    public let gasPrice: BigUInt? = nil
-    public let gasLimit: BigUInt? = nil
-    public let contract: EthereumAddress
-    public let from: EthereumAddress?=nil
+    public var gasPrice: BigUInt? = nil
+    public var gasLimit: BigUInt? = nil
+    public var contract: EthereumAddress
+    public var from: EthereumAddress?=nil
     
     public let value: BigUInt
     let contractApplication: ContractApplicationModel

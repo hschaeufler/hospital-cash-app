@@ -8,5 +8,11 @@
 	<string>$(CHAIN_ID)</string>
 	<key>NODE_RPC_ENDPOINT</key>
 	<string>$(NODE_RPC_ENDPOINT)</string>
+	<key>DAPP_NAME</key>
+	<string>$(DAPP_NAME)</string>
+	<key>DAPP_URL</key>
+	<string>$(DAPP_URL)</string>
+	<key>DAPP_ICON_URL</key>
+	<string>$(DAPP_ICON_URL)</string>
 </dict>
 </plist>

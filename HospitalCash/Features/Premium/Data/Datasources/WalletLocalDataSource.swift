@@ -30,26 +30,8 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     }
     
     func connectWithTransaction() async throws -> String {
-        let parameters: [String: String] = [
-            "to": config.contractAdress, // receiver address
-            "data": hexString,
-            "value": 
-        ]
-        
-        let parameters: [Transaction] = [transaction]
-
-        let transactionRequest = EthereumRequest(
-            method: .ethSendTransaction,
-            params: parameters // eth_sendTransaction rpc call expects an array parameters object
-        )
-        
-        showProgressView = true
-        
-        let transactionResult = isConnectWith
-        ? await metamaskSDK.connectWith(transactionRequest)
-        : await metamaskSDK.request(transactionRequest)
-        //metaMaskSDK.connectAndSign(message: String)
-        return ""
+        //
+        return "string";
     }
     
     
