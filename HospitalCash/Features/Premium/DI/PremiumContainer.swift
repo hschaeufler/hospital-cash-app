@@ -47,7 +47,8 @@ extension PremiumContainer {
     var insuraneRepository: Factory<InsuranceRepository> {
         self {
             InsuranceRepositoryImpl(
-                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource()
+                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource(),
+                walletLocalDatasource: self.walletLocalDataSource()
             )
         }
     }
@@ -91,5 +92,11 @@ extension PremiumContainer {
                 calculateEthInEur: self.calculateEthInEur()
             )
         }
+    }
+    
+    var underwriteContract: Factory<UnderwriteContract> {
+        self { UnderwriteContractUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
     }
 }

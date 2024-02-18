@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CheckHealthQuestionValidity {
-    func callAsFunction(with: HealthQuestionEntity) async throws -> Bool
+    func callAsFunction(with healthQuestions: HealthQuestionEntity) async throws -> Bool
 }
 
 struct CheckHealthQuestionValidityUseCase: CheckHealthQuestionValidity {
@@ -18,7 +18,7 @@ struct CheckHealthQuestionValidityUseCase: CheckHealthQuestionValidity {
         self.insuranceRepository = insuranceRepository
     }
     
-    func callAsFunction(with: HealthQuestionEntity) async throws -> Bool {
-        try await insuranceRepository.checkHealthQuestions(with: with)
+    func callAsFunction(with healthQuestions: HealthQuestionEntity) async throws -> Bool {
+        try await insuranceRepository.checkHealthQuestions(with: healthQuestions)
     }
 }

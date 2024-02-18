@@ -31,6 +31,7 @@ struct Configuration {
         private static let dappNameKey = "DAPP_NAME"
         private static let dappUrlKey = "DAPP_URL"
         private static let dappIconUrlKey = "DAPP_ICON_URL"
+        private static let contractAdress = "CONTRACT_ADRESS"
 
         var dappName: String {
             getConfigValue(forKey: Wallet.dappNameKey)
@@ -42,6 +43,10 @@ struct Configuration {
         
         var dappIconUrl: String {
             getConfigValue(forKey: Wallet.dappIconUrlKey)
+        }
+        
+        var contractAdress: String {
+            getConfigValue(forKey: Wallet.contractAdress)
         }
     }
     

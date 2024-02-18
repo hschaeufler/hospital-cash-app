@@ -9,17 +9,22 @@ import Foundation
 import web3
 
 class InsuranceRepositoryImpl: InsuranceRepository {
-    let insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource;
+    let insuranceContractRemoteDatasource: InsuranceContractRemoteDatasource;
+    let walletLocalDatasource: WalletLocalDataSource
     
-    init(insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource) {
-        self.insuracenContractRemoteDatasource = insuracenContractRemoteDatasource
+    init(
+        insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource,
+         walletLocalDatasource: WalletLocalDataSource
+    ) {
+        self.insuranceContractRemoteDatasource = insuracenContractRemoteDatasource
+        self.walletLocalDatasource = walletLocalDatasource
     }
     
     func getMonthlyPremium(with entity: PremiumCalculationEntity) async throws -> Double {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = GetMonthlyPremiumRequestModel.fromEntity(contractAdress, with: entity);
         do {
-            let responseModel = try await insuracenContractRemoteDatasource
+            let responseModel = try await insuranceContractRemoteDatasource
                 .getMonthlyPremium(with: requestModel)
             return responseModel.toEth()!
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
@@ -28,10 +33,10 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func checkBMI(heightInCm: Int, weightInKg: Int) async throws -> Bool {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = CheckBMIRequestModel.fromEntity(contractAdress, heightInCm: heightInCm, weightInKg: weightInKg)
         do {
-            let responseModel = try await insuracenContractRemoteDatasource.checkBMI(with: requestModel)
+            let responseModel = try await insuranceContractRemoteDatasource.checkBMI(with: requestModel)
             return responseModel.isOk
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
             throw try jsonRpcErrorDetail.toCommonError()
@@ -39,13 +44,18 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func checkHealthQuestions(with entity: HealthQuestionEntity) async throws -> Bool {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = CheckHealthQuestionsRequestModel.fromEntity(contractAdress, with: entity)
         do {
-            let responseModel = try await insuracenContractRemoteDatasource.checkHealthQuestions(with: requestModel)
+            let responseModel = try await insuranceContractRemoteDatasource.checkHealthQuestions(with: requestModel)
             return responseModel.value
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
             throw try jsonRpcErrorDetail.toCommonError()
         }
     }
+    
+    func underwriteContract(with application: ContractApplicationEntity) async throws -> ContractEntity {
+        
+    }
+    
 }

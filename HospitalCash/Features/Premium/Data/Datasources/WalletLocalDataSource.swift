@@ -17,6 +17,7 @@ protocol WalletLocalDataSource {
 
 public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     private let metaMaskSDK: MetaMaskSDK
+    private let config: Configuration.Wallet
     
     init(walletConfig: Configuration.Wallet) {
         let appMetaData = AppMetadata(
@@ -24,10 +25,29 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
             url: walletConfig.dappUrl,
             iconUrl: walletConfig.dappIconUrl
         )
-        metaMaskSDK = MetaMaskSDK.shared(appMetaData, sdkOptions: nil)
+        self.metaMaskSDK = MetaMaskSDK.shared(appMetaData, sdkOptions: nil)
+        self.config = walletConfig
     }
     
     func connectWithTransaction() async throws -> String {
+        let parameters: [String: String] = [
+            "to": config.contractAdress, // receiver address
+            "data": hexString,
+            "value": 
+        ]
+        
+        let parameters: [Transaction] = [transaction]
+
+        let transactionRequest = EthereumRequest(
+            method: .ethSendTransaction,
+            params: parameters // eth_sendTransaction rpc call expects an array parameters object
+        )
+        
+        showProgressView = true
+        
+        let transactionResult = isConnectWith
+        ? await metamaskSDK.connectWith(transactionRequest)
+        : await metamaskSDK.request(transactionRequest)
         //metaMaskSDK.connectAndSign(message: String)
         return ""
     }

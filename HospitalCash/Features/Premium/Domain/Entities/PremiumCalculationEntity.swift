@@ -8,7 +8,7 @@
 import Foundation
 
 struct PremiumCalculationEntity {
-    var amountHospitalCashEth: Double
-    var insuranceDate: Date
-    var birthDate: Date
+    let amountHospitalCashEth: Double
+    let insuranceDate: Date
+    let birthDate: Date
 }
