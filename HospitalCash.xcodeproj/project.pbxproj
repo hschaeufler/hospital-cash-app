@@ -49,7 +49,7 @@
 		84A4F8822B6368F40018AA37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */; };
 		84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */; };
 		84C4265E2B823306002AC308 /* UnderwriteContractResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265D2B823306002AC308 /* UnderwriteContractResponseModel.swift */; };
-		84C426602B823355002AC308 /* PremiumCalculatationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265F2B823355002AC308 /* PremiumCalculatationModel.swift */; };
+		84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265F2B823355002AC308 /* PremiumCalculationModel.swift */; };
 		84C426622B823364002AC308 /* BodyMeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426612B823364002AC308 /* BodyMeasureModel.swift */; };
 		84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426632B823392002AC308 /* InsuranceContractModel.swift */; };
 		84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426652B8235F1002AC308 /* ContractApplicationModel.swift */; };
@@ -136,7 +136,7 @@
 		84A4F8812B6368F40018AA37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwriteContractRequestModel.swift; sourceTree = "<group>"; };
 		84C4265D2B823306002AC308 /* UnderwriteContractResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwriteContractResponseModel.swift; sourceTree = "<group>"; };
-		84C4265F2B823355002AC308 /* PremiumCalculatationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculatationModel.swift; sourceTree = "<group>"; };
+		84C4265F2B823355002AC308 /* PremiumCalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationModel.swift; sourceTree = "<group>"; };
 		84C426612B823364002AC308 /* BodyMeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasureModel.swift; sourceTree = "<group>"; };
 		84C426632B823392002AC308 /* InsuranceContractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractModel.swift; sourceTree = "<group>"; };
 		84C426652B8235F1002AC308 /* ContractApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractApplicationModel.swift; sourceTree = "<group>"; };
@@ -609,7 +609,7 @@
 				84EA13D62B7976870075561E /* HealthQuestionModel.swift */,
 				84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */,
 				84C4265D2B823306002AC308 /* UnderwriteContractResponseModel.swift */,
-				84C4265F2B823355002AC308 /* PremiumCalculatationModel.swift */,
+				84C4265F2B823355002AC308 /* PremiumCalculationModel.swift */,
 				84C426612B823364002AC308 /* BodyMeasureModel.swift */,
 				84C426632B823392002AC308 /* InsuranceContractModel.swift */,
 				84C426652B8235F1002AC308 /* ContractApplicationModel.swift */,
@@ -718,7 +718,7 @@
 				8454E8C42B783F54007A3887 /* NavigationLinkButton.swift in Sources */,
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
-				84C426602B823355002AC308 /* PremiumCalculatationModel.swift in Sources */,
+				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
 				8454E88F2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,

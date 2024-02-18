@@ -7,40 +7,48 @@
 
 import Foundation
 import web3
+import BigInt
 
 struct ContractApplicationModel: ABITuple {
     var encodableValues: [web3.ABIType] {
         [
-            heightInCm,
-            weightInKg
+            healthQuestions,
+            premiumCalculation,
+            bodyMeasure
         ]
     }
     
     static var types: [ABIType.Type] {
         [
-            BigUInt.self,
-            BigUInt.self
+            HealthQuestionModel.self,
+            PremiumCalculationModel.self,
+            BodyMeasureModel.self
         ]
     }
     
-    public let heightInCm: BigUInt
-    public let weightInKg: BigUInt
+    public let healthQuestions: HealthQuestionModel
+    public let premiumCalculation: PremiumCalculationModel
+    public let bodyMeasure: BodyMeasureModel
     
     init(
-        heightInCm: BigUInt,
-        weightInKg: BigUInt
+        healthQuestions: HealthQuestionModel,
+        premiumCalculation: PremiumCalculationModel,
+        bodyMeasure: BodyMeasureModel
     ) {
-        self.heightInCm = heightInCm
-        self.weightInKg = weightInKg
+        self.healthQuestions = healthQuestions
+        self.premiumCalculation = premiumCalculation
+        self.bodyMeasure = bodyMeasure
     }
     
     init?(values: [web3.ABIDecoder.DecodedValue]) throws {
-        self.heightInCm = try values[0].decoded()
-        self.weightInKg = try values[1].decoded()
+        self.healthQuestions = try values[0].decoded()
+        self.premiumCalculation = try values[1].decoded()
+        self.bodyMeasure = try values[2].decoded()
     }
     
     public func encode(to encoder: web3.ABIFunctionEncoder) throws {
-        try encoder.encode(heightInCm)
-        try encoder.encode(weightInKg)
+        try encoder.encode(healthQuestions)
+        try encoder.encode(premiumCalculation)
+        try encoder.encode(bodyMeasure)
     }
 }

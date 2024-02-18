@@ -9,7 +9,7 @@ import Foundation
 import BigInt
 import web3
 
-struct PremiumCalculatationModel: ABITuple {
+struct PremiumCalculationModel: ABITuple {
     var encodableValues: [web3.ABIType] {
         [
             birthDate,
