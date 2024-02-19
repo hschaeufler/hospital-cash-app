@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PremiumDetailPage: View {
     @Environment(PremiumCalculationVM.self) private var viewModel
-    @State private var showSheet = false
     
     var body: some View {
+        @Bindable var viewModel = viewModel
         let premium = viewModel.premiumEntity
         
         SheetPageLayout("Dein Beitrag") {
@@ -35,13 +35,13 @@ struct PremiumDetailPage: View {
                     .padding(.horizontal, 5)
                 Spacer()
                 BorderedButton("Jetzt abschließen") {
-                    showSheet.toggle()
+                    viewModel.showPaymentSheet.toggle()
                 }
             }
             .task {
                 await viewModel.caculatePremium()
             }
-            .sheet(isPresented: $showSheet, content: {
+            .sheet(isPresented: $viewModel.showPaymentSheet, content: {
                 NavigationStack {
                     PayWithMetamaskPage()
                         .environment(viewModel)

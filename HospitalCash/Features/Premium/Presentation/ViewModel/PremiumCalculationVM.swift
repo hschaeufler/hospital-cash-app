@@ -81,6 +81,8 @@ import SwiftUI
         amountHospitalCashEth != 0
     }
     
+    var showPaymentSheet = false;
+    
     var insuranceContract: InsuranceContractEntity? = nil
     
     func checkBMI() async {
@@ -114,11 +116,15 @@ import SwiftUI
         self.path.append(destination)
     }
     
+    func pop() {
+        self.path.removeLast()
+    }
+    
     func caculatePremium() async {
         do {
             let premiumCalculationEntity = PremiumCalculationEntity(
                 amountHospitalCashEth: self.amountHospitalCashEth,
-                insuranceDate: self.insuranceStartDate,
+                insuranceStartDate: self.insuranceStartDate,
                 birthDate: self.birthDate
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
@@ -134,7 +140,7 @@ import SwiftUI
                 healthQuestions: healthQuestions, 
                 premiumCalculation: PremiumCalculationEntity(
                     amountHospitalCashEth: self.amountHospitalCashEth,
-                    insuranceDate: self.insuranceStartDate,
+                    insuranceStartDate: self.insuranceStartDate,
                     birthDate: self.birthDate
                 ), 
                 bodyMeasure: BodyMeasureEntity(
@@ -144,8 +150,10 @@ import SwiftUI
                 yearlyPremiumInEth: self.premiumEntity!.yearlyEthPremium
             )
             self.insuranceContract = try await underwriteContractUseCase(with: application)
+            self.showPaymentSheet = false;
             self.navigate(to: .contractDetail)
         } catch {
+            self.showPaymentSheet = false;
             self.error = error
         }
     }

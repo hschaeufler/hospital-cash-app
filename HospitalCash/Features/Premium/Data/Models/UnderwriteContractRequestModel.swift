@@ -29,7 +29,7 @@ struct UnderwriteContractRequestModel: CodableData {
     private static func encodeData(_ contractApplication: ContractApplicationModel) throws -> String {
         let encoder = ABIFunctionEncoder(Self.name)
         try encoder.encode(contractApplication)
-        return String(decoding: try encoder.encoded(), as: UTF8.self)
+        return try encoder.encoded().web3.hexString
     }
     
     private static func encodeValue(_ value: BigUInt) -> String {

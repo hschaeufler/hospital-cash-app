@@ -7,125 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CADA0C37-7E0E-410B-B1B3-9C9EE6BD2A85"
+            uuid = "FD4DA486-EE8A-4C63-8F68-BB18469085D3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Navigation/Presentation/Pages/HomePage.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "CADA0C37-7E0E-410B-B1B3-9C9EE6BD2A85 - 1bccec8964180848"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HospitalCash.HomePage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Navigation/Presentation/Pages/HomePage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "CADA0C37-7E0E-410B-B1B3-9C9EE6BD2A85 - 87acdcc8bba73d36"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.scrollDisabled(Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in HospitalCash.HomePage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Navigation/Presentation/Pages/HomePage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "672">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D039EB4F-7E4C-4901-9F12-B549AEE6BB4A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "callSmartContract()"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "request(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D039EB4F-7E4C-4901-9F12-B549AEE6BB4A - 3f97bfe8b0702e0e"
+                  uuid = "FD4DA486-EE8A-4C63-8F68-BB18469085D3 - 9e5d9c63ef612251"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;, Swift.Never&gt;) -&gt; () in metamask_ios_sdk.Ethereum.request(metamask_ios_sdk.RPCRequest) async -&gt; Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "252">
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "540">
                </Location>
                <Location
-                  uuid = "D039EB4F-7E4C-4901-9F12-B549AEE6BB4A - 3f97bfe8b0702e0e"
+                  uuid = "FD4DA486-EE8A-4C63-8F68-BB18469085D3 - 76c0a77b304a38e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
+                  symbolName = "closure #2 (Any) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;, Swift.Never&gt;) -&gt; () in metamask_ios_sdk.Ethereum.request(metamask_ios_sdk.RPCRequest) async -&gt; Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "276">
-               </Location>
-               <Location
-                  uuid = "D039EB4F-7E4C-4901-9F12-B549AEE6BB4A - e182d7c43a4bd47b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "D039EB4F-7E4C-4901-9F12-B549AEE6BB4A - e182d7c43a4bd47b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "288">
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "296">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -133,170 +55,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388"
+            uuid = "EBA7629C-DA20-4810-BE72-4DA869EB882E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - fde93da9b93b1146"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - c050adea17d5a553"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - cf40bc1b563ad518"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - fde93da9b93b1601"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - c050adea17d5a214"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "C9DD1A77-300A-4D73-8A51-4F6D61528388 - cf40bc1b563ad25f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in HospitalCash.PremiumDetailPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C652010D-6B61-4EB5-87F1-0A35BFA55DBE"
+            uuid = "70E42C87-9CA9-4C20-AC52-A093A318E72A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "callSmartContract()"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC8A7287-D11C-4BB8-8A05-4628D66C3269"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "request(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "C652010D-6B61-4EB5-87F1-0A35BFA55DBE - e182d7c43a4bd5a5"
+                  uuid = "BC8A7287-D11C-4BB8-8A05-4628D66C3269 - 9e5d9c63ef61237a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;, Swift.Never&gt;) -&gt; () in metamask_ios_sdk.Ethereum.request(metamask_ios_sdk.RPCRequest) async -&gt; Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "584">
+                  startingLineNumber = "242"
+                  endingLineNumber = "242"
+                  offsetFromSymbolStart = "456">
                </Location>
                <Location
-                  uuid = "C652010D-6B61-4EB5-87F1-0A35BFA55DBE - e182d7c43a4bd5a5"
+                  uuid = "BC8A7287-D11C-4BB8-8A05-4628D66C3269 - 5cf7214d9fac0b02"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;metamask_ios_sdk.RequestError&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;, Swift.Never&gt;) -&gt; () in metamask_ios_sdk.Ethereum.request(metamask_ios_sdk.RPCRequest) async -&gt; Swift.Result&lt;Swift.String, metamask_ios_sdk.RequestError&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "460">
-               </Location>
-               <Location
-                  uuid = "C652010D-6B61-4EB5-87F1-0A35BFA55DBE - e182d7c43a4bd418"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "328">
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "88">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -304,1520 +135,235 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A8FFB9C2-C73C-4B51-930D-66425154BBAF"
+            uuid = "CB62AF06-3609-4595-BAFC-1290DA2DE93C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "callSmartContract()"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "request(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A8FFB9C2-C73C-4B51-930D-66425154BBAF - e182d7c43a4bd418"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1136">
-               </Location>
-               <Location
-                  uuid = "A8FFB9C2-C73C-4B51-930D-66425154BBAF - e182d7c43a4bd418"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1000">
-               </Location>
-               <Location
-                  uuid = "A8FFB9C2-C73C-4B51-930D-66425154BBAF - e182d7c43a4bd4ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "640">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5A823987-3D07-4922-807F-F7A17B67D345"
-            shouldBeEnabled = "No"
+            uuid = "22DDC9A9-46E1-48DE-B409-3524B0EEE24B"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "callSmartContract()"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "request(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - 9d7b070b369961c3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - e80b1ff2fda65535"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - 3f97bfe8b0702dc1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "152">
-               </Location>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - 9d7b070b36996181"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - e80b1ff2fda65577"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "5A823987-3D07-4922-807F-F7A17B67D345 - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "164">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "04D373B9-20F3-425C-8AA2-0AD2743D9E35"
+            uuid = "80D2A1BD-A697-464B-8F7F-49738EEDE88F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "04D373B9-20F3-425C-8AA2-0AD2743D9E35 - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "04D373B9-20F3-425C-8AA2-0AD2743D9E35 - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "324">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "324">
-               </Location>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702d83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "336">
-               </Location>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702c5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "A263C328-5DC5-4FD3-9F51-1131D880FD5E - 3f97bfe8b0702c5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "336">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2260CD9D-60B6-43A4-9925-F5C0400BD12A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
+            landmarkName = "appMetaDataValidationError"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F5A491FE-FBE4-46AB-9758-AB6589253663"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F5A491FE-FBE4-46AB-9758-AB6589253663 - 3f97bfe8b07011a3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "1776">
-               </Location>
-               <Location
-                  uuid = "F5A491FE-FBE4-46AB-9758-AB6589253663 - 3279e61e1f812d59"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) await resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "F5A491FE-FBE4-46AB-9758-AB6589253663 - e182d7c43a4bd5a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A7C502C2-BA2F-439B-B700-89A7F62AB9B2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A7C502C2-BA2F-439B-B700-89A7F62AB9B2 - e182d7c43a4bd47b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "A7C502C2-BA2F-439B-B700-89A7F62AB9B2 - e182d7c43a4bd47b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "288">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "94882936-034E-46FF-B584-EB8F09DEB5C7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "94882936-034E-46FF-B584-EB8F09DEB5C7 - 3f97bfe8b0701316"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "676">
-               </Location>
-               <Location
-                  uuid = "94882936-034E-46FF-B584-EB8F09DEB5C7 - e182d7c43a4bd710"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for HospitalCash.MetamaskDatasourceImpl.callSmartContract() async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "2032">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F8D80811-5A89-4DE7-9922-AF6BD0D7B8C4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Datasources/MetamaskSDKDatasource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "callSmartContract()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10690E96-A9B3-4F64-95A5-311CD3A6E81D"
+            uuid = "6CF91E82-3ECA-417C-8504-B0B811DE7EA8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5DDE5F0D-23D9-44D1-A86B-66A1B09DC0C1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5DDE5F0D-23D9-44D1-A86B-66A1B09DC0C1 - c52013e95312d2f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "1144">
-               </Location>
-               <Location
-                  uuid = "5DDE5F0D-23D9-44D1-A86B-66A1B09DC0C1 - 92e85e103172bfd2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "5DDE5F0D-23D9-44D1-A86B-66A1B09DC0C1 - f40189daf44996f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "5DDE5F0D-23D9-44D1-A86B-66A1B09DC0C1 - 9f91cc2dcb1cf4f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "188">
-               </Location>
-            </Locations>
+            landmarkName = "appMetaDataValidationError"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EAD9615A-DDE1-43C7-9ADD-42F572FD38D4"
+            uuid = "A86FD276-5A07-434A-B677-A90A4C8DBF98"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EAD9615A-DDE1-43C7-9ADD-42F572FD38D4 - f40189daf449915e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "384">
-               </Location>
-               <Location
-                  uuid = "EAD9615A-DDE1-43C7-9ADD-42F572FD38D4 - 9f91cc2dcb1cf359"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "356">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3DDBE8AC-DD4F-4E24-932E-138EA3688A60"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "data(for:delegate:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3DDBE8AC-DD4F-4E24-932E-138EA3688A60 - 9417d2b499334971"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;(Foundation.Data, __C.NSURLResponse), Swift.Error&gt;) -&gt; () in __C.NSURLSession.data(for: Foundation.URLRequest, delegate: Swift.Optional&lt;__C.NSURLSessionTaskDelegate&gt;) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "308">
-               </Location>
-               <Location
-                  uuid = "3DDBE8AC-DD4F-4E24-932E-138EA3688A60 - 9417d2b499334971"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;(Foundation.Data, __C.NSURLResponse), Swift.Error&gt;) -&gt; () in __C.NSURLSession.data(for: Foundation.URLRequest, delegate: Swift.Optional&lt;__C.NSURLSessionTaskDelegate&gt;) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "416">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FE0C1DB4-B9B1-447D-9C0B-F6CC68A8B0E8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "data(for:delegate:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1AD8D5E5-18DB-43F8-AD35-CD393DA6B817"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "data(for:delegate:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3C910EFD-F121-4DC3-95E4-395EDC6E1ECD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "data(for:delegate:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "44BF65A5-CAAD-4564-862A-69CE0A8C0BD5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Extensions/URLSessionExtensions.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "data(for:delegate:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0741B59B-445E-4D74-BD7E-1211526334AC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0741B59B-445E-4D74-BD7E-1211526334AC - f40189daf449917f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "816">
-               </Location>
-               <Location
-                  uuid = "0741B59B-445E-4D74-BD7E-1211526334AC - 9f91cc2dcb1cf378"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "792">
-               </Location>
-            </Locations>
+            landmarkName = "appMetaDataValidationError"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7BFFB313-B782-4288-9874-7E2CE19F3D12"
+            uuid = "B6A54399-3CE1-45CC-81AD-B1971E6A9A1D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "send(method:params:receive:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "connect()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7BFFB313-B782-4288-9874-7E2CE19F3D12 - f40189daf44991b9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "1324">
-               </Location>
-               <Location
-                  uuid = "7BFFB313-B782-4288-9874-7E2CE19F3D12 - 9f91cc2dcb1cf3be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "1304">
-               </Location>
-               <Location
-                  uuid = "7BFFB313-B782-4288-9874-7E2CE19F3D12 - c99b5e911decd989"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (web3.JSONRPCResult&lt;&#x3c4;_0_1&gt;) -&gt; &#x3c4;_0_1 in web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E278131-4610-4EC3-91CC-F7873A73370C"
-            shouldBeEnabled = "Yes"
+            uuid = "2B1870C2-717F-4F84-96F4-DDA4BDCF1D65"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "send(method:params:receive:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "connect()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0E278131-4610-4EC3-91CC-F7873A73370C - f40189daf4499004"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "2204">
-               </Location>
-               <Location
-                  uuid = "0E278131-4610-4EC3-91CC-F7873A73370C - 9f91cc2dcb1cf203"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "2188">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "42931739-6207-4267-B317-6DE61B97B79C"
+            uuid = "DED1247E-C5EC-45BF-B2DC-2F9E8D42C3BC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "42931739-6207-4267-B317-6DE61B97B79C - f40189daf4499025"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "2476">
-               </Location>
-               <Location
-                  uuid = "42931739-6207-4267-B317-6DE61B97B79C - f40189daf4499025"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "2728">
-               </Location>
-               <Location
-                  uuid = "42931739-6207-4267-B317-6DE61B97B79C - 9f91cc2dcb1cf222"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "2460">
-               </Location>
-               <Location
-                  uuid = "42931739-6207-4267-B317-6DE61B97B79C - 9f91cc2dcb1cf222"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "2712">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B7CFB60-B44B-4F7C-9456-4E160BC489C2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7B7CFB60-B44B-4F7C-9456-4E160BC489C2 - f40189daf44991fb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "1752">
-               </Location>
-               <Location
-                  uuid = "7B7CFB60-B44B-4F7C-9456-4E160BC489C2 - 9f91cc2dcb1cf3fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "1736">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BEB50D98-50D0-4404-806A-141F376E1365"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BEB50D98-50D0-4404-806A-141F376E1365 - f40189daf4499080"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "3444">
-               </Location>
-               <Location
-                  uuid = "BEB50D98-50D0-4404-806A-141F376E1365 - 9f91cc2dcb1cf287"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "3424">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E44B4026-85AD-4D5E-817A-758922150A65"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E44B4026-85AD-4D5E-817A-758922150A65 - f40189daf4499080"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "3444">
-               </Location>
-               <Location
-                  uuid = "E44B4026-85AD-4D5E-817A-758922150A65 - 9f91cc2dcb1cf287"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "3424">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "88A88DB0-2FB7-48DA-8DB6-72E7C2D1FE34"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "88A88DB0-2FB7-48DA-8DB6-72E7C2D1FE34 - f40189daf4499046"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "3112">
-               </Location>
-               <Location
-                  uuid = "88A88DB0-2FB7-48DA-8DB6-72E7C2D1FE34 - 9f91cc2dcb1cf241"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "3096">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "15179290-01CB-4027-9BE7-BB2E8BBC81BE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "15179290-01CB-4027-9BE7-BB2E8BBC81BE - f40189daf44991da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1584">
-               </Location>
-               <Location
-                  uuid = "15179290-01CB-4027-9BE7-BB2E8BBC81BE - 9f91cc2dcb1cf3dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1564">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6F2D1525-E993-4763-9769-8ADD6B74AC27"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6F2D1525-E993-4763-9769-8ADD6B74AC27 - f40189daf4499198"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "1008">
-               </Location>
-               <Location
-                  uuid = "6F2D1525-E993-4763-9769-8ADD6B74AC27 - 9f91cc2dcb1cf39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "984">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "96D62469-6AA1-484C-A2F9-2C4EC5872019"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "96D62469-6AA1-484C-A2F9-2C4EC5872019 - f40189daf449915e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "384">
-               </Location>
-               <Location
-                  uuid = "96D62469-6AA1-484C-A2F9-2C4EC5872019 - 9f91cc2dcb1cf359"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "356">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "04BC8937-FA12-4D7F-B207-D378B56DB699"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "send(method:params:receive:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "04BC8937-FA12-4D7F-B207-D378B56DB699 - f40189daf449911c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "3712">
-               </Location>
-               <Location
-                  uuid = "04BC8937-FA12-4D7F-B207-D378B56DB699 - 9f91cc2dcb1cf31b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.HttpNetworkProvider.send&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Encodable, &#x3c4;_0_1: Swift.Decodable&gt;(method: Swift.String, params: &#x3c4;_0_0, receive: &#x3c4;_0_1.Type) async throws -&gt; Any"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "3700">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BD13D09F-E4CF-4AA3-819E-895F121CB510"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "failureHandler(_:)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "connect()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D3C91889-1AA8-4847-9CCE-28EDB4BD3D1A"
+            uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "failureHandler(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BD04DFAF-6269-42A5-A92D-F59CBCE0519E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "eth_call(_:resolution:block:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1D76EAC3-EBFC-4E94-AB08-10D6071BB82B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "eth_call(_:resolution:block:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D6F64DF2-A14C-4F90-9A50-ABF15A4A42EF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "eth_call(_:resolution:block:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F895A036-ADDD-430C-9A38-45367E66EA5F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "eth_call(_:resolution:block:)"
+            landmarkName = "sendRequest(_:chainId:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F895A036-ADDD-430C-9A38-45367E66EA5F - 8a7ac92ff3ba7106"
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - 78527a636eae1d78"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
+                  symbolName = "metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
                   endingLineNumber = "99"
-                  offsetFromSymbolStart = "2476">
+                  offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  uuid = "F895A036-ADDD-430C-9A38-45367E66EA5F - f6b95741159070d"
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - e4e22558fd206eab"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
+                  symbolName = "(1) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
                   endingLineNumber = "99"
-                  offsetFromSymbolStart = "1932">
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - 4829b28a170ed6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - 51dad328509d2ba5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - 51dad328509d2ba5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "936">
+               </Location>
+               <Location
+                  uuid = "B811B4B7-D230-4E40-AD1A-ACE146124C27 - 77bf5801995b4a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1825,140 +371,202 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D0B7772-C08E-4EE7-9BAC-9CF8BA9B1980"
+            uuid = "73C57BEC-24E7-4218-8CBA-FF052A98FD7C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "send(method:params:receive:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "sendRequest(_:chainId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D094A437-5972-4B86-9D72-E80A7B99E9AD"
+            uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/NetworkProviders/HttpNetworkProvider.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "send(method:params:receive:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "sendRequest(_:chainId:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - e4e22558fd206e75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1840">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 4829b28a170ed6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 4829b28a170edb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 51dad328509d2ba5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 51dad328509d2b7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 77bf5801995b4a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3E0F26DD-2852-4649-8987-1A3ED1DAEA0C - 77bf5801995b4afa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8141A4F2-2DF6-4FD6-B59C-ED1D0BB3BBE6"
+            uuid = "3DE5C244-1E21-4F9B-BA6E-C0F789224350"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/HospitalCash-acctwilmdygfcufsjakurbrupves/SourcePackages/checkouts/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "eth_call(_:resolution:block:)"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "sendRequest(_:chainId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5"
-            shouldBeEnabled = "No"
+            uuid = "BBD6D815-52BD-4544-AE23-2105336DD11C"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "eth_call(_:resolution:block:)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "sendRequest(_:chainId:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5 - 310092470325fcad"
+                  uuid = "BBD6D815-52BD-4544-AE23-2105336DD11C - 78527a636eae1d78"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
+                  symbolName = "metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "816">
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5 - 337f658ed4f274a9"
+                  uuid = "BBD6D815-52BD-4544-AE23-2105336DD11C - e4e22558fd206eab"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
+                  symbolName = "(1) suspend resume partial function for metamask_ios_sdk.InfuraProvider.sendRequest(_: metamask_ios_sdk.RPCRequest, chainId: Swift.String) async -&gt; Swift.Optional&lt;Any&gt;"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/InfuraProvider.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5 - b411ce1ce1c68aa6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5 - 358890f2f2d928a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "180">
-               </Location>
-               <Location
-                  uuid = "61B84D5A-B5C2-4E8A-88FE-97575FB622E5 - 333751a93974f7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for web3.BaseEthereumClient.eth_call(_: web3.EthereumTransaction, resolution: web3.CallResolution, block: web3.EthereumBlock) async throws -&gt; Swift.String"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Client/BaseEthereumClient+Call.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "228">
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "76">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1966,47 +574,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD742F8A-40D1-4166-AF15-87CD403205F6"
+            uuid = "92F7C46D-2C71-4AF1-ACA6-854D0DB594D0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3swift/src/Contract/Statically Typed/ABIRevertError.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "decode(error:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "post(_:endpoint:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "DD742F8A-40D1-4166-AF15-87CD403205F6 - 505a585a2715d82f"
+                  uuid = "92F7C46D-2C71-4AF1-ACA6-854D0DB594D0 - 6a6b378d6ee87603"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.decode&lt;&#x3c4;_0_0 where &#x3c4;_0_0: web3.ABIRevertError&gt;(error: &#x3c4;_0_0) throws -&gt; Swift.Array&lt;web3.ABIDecoder.DecodedValue&gt;"
+                  symbolName = "(1) suspend resume partial function for metamask_ios_sdk.Network.post(_: Swift.Dictionary&lt;Swift.String, Any&gt;, endpoint: metamask_ios_sdk.Endpoint) async throws -&gt; Foundation.Data"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/ABIRevertError.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "168">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "60">
                </Location>
                <Location
-                  uuid = "DD742F8A-40D1-4166-AF15-87CD403205F6 - 505a585a2715d82f"
+                  uuid = "92F7C46D-2C71-4AF1-ACA6-854D0DB594D0 - 77a283538d2fda19"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.decode&lt;&#x3c4;_0_0 where &#x3c4;_0_0: web3.ABIRevertError&gt;(error: &#x3c4;_0_0) throws -&gt; Swift.Array&lt;web3.ABIDecoder.DecodedValue&gt;"
+                  symbolName = "(2) await resume partial function for metamask_ios_sdk.Network.post(_: Swift.Dictionary&lt;Swift.String, Any&gt;, endpoint: metamask_ios_sdk.Endpoint) async throws -&gt; Foundation.Data"
                   moduleName = "HospitalCash"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/ABIRevertError.swift"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "156">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "92F7C46D-2C71-4AF1-ACA6-854D0DB594D0 - 4d3550cbb4dab21d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for metamask_ios_sdk.Network.post(_: Swift.Dictionary&lt;Swift.String, Any&gt;, endpoint: metamask_ios_sdk.Endpoint) async throws -&gt; Foundation.Data"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "92F7C46D-2C71-4AF1-ACA6-854D0DB594D0 - 50a99ea8de22101e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for metamask_ios_sdk.Network.post(_: Swift.Dictionary&lt;Swift.String, Any&gt;, endpoint: metamask_ios_sdk.Endpoint) async throws -&gt; Foundation.Data"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2014,540 +652,320 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A05DEE14-3A35-4AF8-8B08-739C4E8EE3EB"
-            shouldBeEnabled = "No"
+            uuid = "0FB73B44-485B-4F7D-855E-D564F7E84BEE"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3swift/src/Contract/Statically Typed/ABIRevertError.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "decode(error:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A05DEE14-3A35-4AF8-8B08-739C4E8EE3EB - 505a585a2715d965"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.decode&lt;&#x3c4;_0_0 where &#x3c4;_0_0: web3.ABIRevertError&gt;(error: &#x3c4;_0_0) throws -&gt; Swift.Array&lt;web3.ABIDecoder.DecodedValue&gt;"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/ABIRevertError.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "800">
-               </Location>
-               <Location
-                  uuid = "A05DEE14-3A35-4AF8-8B08-739C4E8EE3EB - 505a585a2715d965"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.decode&lt;&#x3c4;_0_0 where &#x3c4;_0_0: web3.ABIRevertError&gt;(error: &#x3c4;_0_0) throws -&gt; Swift.Array&lt;web3.ABIDecoder.DecodedValue&gt;"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/ABIRevertError.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "756">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BF41FB4C-DAD2-40DF-BA95-23D2853BF74C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3swift/src/Contract/Statically Typed/ABIRevertError.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "decode(error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "785F282D-F91A-4B65-B830-FBFE475243E4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3sTests/Contract/ABIDecoderTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "ABIDecoderTests"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "71C8425C-1185-480C-BE28-D299E192B376"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Presentation/Pages/PremiumDetailPage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "45DA0D16-90DE-4F3D-B27A-3A6486CCC423"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Presentation/Pages/PremiumCalculationPage.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "45DA0D16-90DE-4F3D-B27A-3A6486CCC423 - 8d5f43a3fc359616"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HospitalCash.PremiumCalculationPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumCalculationPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "45DA0D16-90DE-4F3D-B27A-3A6486CCC423 - c9513dec11e3fc71"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.alert&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View&gt;(_: SwiftUI.LocalizedStringKey, isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, presenting: Swift.Optional&lt;&#x3c4;_1_1&gt;, actions: (&#x3c4;_1_1) -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;&gt; in HospitalCash.PremiumCalculationPage.body.getter : some"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/Pages/PremiumCalculationPage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B22F674-0ECE-4400-BEE2-D6EF5BEDFCBB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "getMonthlyPremium(with:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0B22F674-0ECE-4400-BEE2-D6EF5BEDFCBB - ed6d32778b50279a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "480">
-               </Location>
-               <Location
-                  uuid = "0B22F674-0ECE-4400-BEE2-D6EF5BEDFCBB - ed6d32778b50279a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "520">
-               </Location>
-               <Location
-                  uuid = "0B22F674-0ECE-4400-BEE2-D6EF5BEDFCBB - ed6d32778b50279a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.calculatePremium(with: HospitalCash.PremiumCalculationEntity) async throws -&gt; Swift.Double"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "372">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E515949B-C01E-4DA1-88AE-FF5066E14245"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getMonthlyPremium(with:)"
+            landmarkName = "fetch(_:endpoint:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "96F07C22-3E5A-4EC8-9A28-0E5B68C148BA"
+            uuid = "4731056F-CB26-4712-BB73-3C7CCB90A591"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../other/web3.swift/web3swift/src/Contract/Statically Typed/EthereumClient+Static.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "call(withClient:responseType:block:resolution:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "96F07C22-3E5A-4EC8-9A28-0E5B68C148BA - f067d53d633eef5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for web3.ABIFunction.call&lt;&#x3c4;_0_0 where &#x3c4;_1_0: web3.ABIResponse&gt;(withClient: web3.EthereumRPCProtocol, responseType: &#x3c4;_1_0.Type, block: web3.EthereumBlock, resolution: web3.CallResolution) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/EthereumClient+Static.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "756">
-               </Location>
-               <Location
-                  uuid = "96F07C22-3E5A-4EC8-9A28-0E5B68C148BA - 2470c1b451c40f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for web3.ABIFunction.call&lt;&#x3c4;_0_0 where &#x3c4;_1_0: web3.ABIResponse&gt;(withClient: web3.EthereumRPCProtocol, responseType: &#x3c4;_1_0.Type, block: web3.EthereumBlock, resolution: web3.CallResolution) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/other/web3.swift/web3swift/src/Contract/Statically%20Typed/EthereumClient+Static.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "204">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EDA8FDFB-CCC9-458E-82C8-3FF93D54AECE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getMonthlyPremium(with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "820EDE92-DE30-4C7E-8204-32806E5C8F56"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F6AAC23A-9AD8-4140-B9F2-FB741F245A03"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F6AAC23A-9AD8-4140-B9F2-FB741F245A03 - 10ec293f92011f00"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.signature(name: Swift.String, types: Swift.Array&lt;web3.ABIType.Type&gt;) throws -&gt; Swift.Array&lt;Swift.UInt8&gt;"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "216">
-               </Location>
-               <Location
-                  uuid = "F6AAC23A-9AD8-4140-B9F2-FB741F245A03 - 3e19cf556d27db14"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (web3.ABIType.Type) -&gt; web3.ABIRawType in web3.JSONRPCErrorDetail.signature(name: Swift.String, types: Swift.Array&lt;web3.ABIType.Type&gt;) throws -&gt; Swift.Array&lt;Swift.UInt8&gt;"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "F6AAC23A-9AD8-4140-B9F2-FB741F245A03 - 4e2981e5d690a5b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.toCommonError() throws -&gt; HospitalCash.CommonError"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "F6AAC23A-9AD8-4140-B9F2-FB741F245A03 - 4e2981e5d690a5b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.toCommonError() throws -&gt; HospitalCash.CommonError"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "374913CD-DF2D-44B1-B6DE-3F145C50B530"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "374913CD-DF2D-44B1-B6DE-3F145C50B530 - 4e2981e5d690a533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.toCommonError() throws -&gt; HospitalCash.CommonError"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "704">
-               </Location>
-               <Location
-                  uuid = "374913CD-DF2D-44B1-B6DE-3F145C50B530 - 4e2981e5d690a533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.toCommonError() throws -&gt; HospitalCash.CommonError"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "652">
-               </Location>
-               <Location
-                  uuid = "374913CD-DF2D-44B1-B6DE-3F145C50B530 - 4e2981e5d690a533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "web3.JSONRPCErrorDetail.toCommonError() throws -&gt; HospitalCash.CommonError"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "1112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A665C0B-A1A6-4D26-A0A4-34D1EA3FA54B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "57E2A2AC-7F12-465D-9FCD-F3741494EA1D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "563931FC-DB23-4CAE-9ADC-74CB0AF902AB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/JSONRPCErrorDetailModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "toCommonError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "81CA1D06-207C-415A-810B-A9FFD5FF0A83"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/CheckBMIRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "init(_:heightInCm:weightInKg:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C53D4FA2-DF9D-4F09-B066-64A67F557275"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Models/CheckBMIRequestModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "init(_:heightInCm:weightInKg:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DE63ADA3-48AC-47FC-A128-1F6026E790AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/API/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "checkHealthQuestions(with:)"
+            landmarkName = "request(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF470642-0FB6-44DD-A8F6-E4C4B294444A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "handleMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "264F1375-AD34-4520-A14D-B2FFCDB4FE1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/RequestError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB17A7C5-AC25-465F-BCFE-793F34F0FA84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/RequestError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "failWithError(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A736C24A-0AEC-47A5-BA78-0B660C3C6120"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "receiveResponse(id:data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A736C24A-0AEC-47A5-BA78-0B660C3C6120 - 6dc8ae0c31e2a75e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "668">
+               </Location>
+               <Location
+                  uuid = "A736C24A-0AEC-47A5-BA78-0B660C3C6120 - 6dc8ae0c31e2a75e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9F9F127-9B02-4990-9EFB-9BC255CB2460"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "receiveResponse(id:data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67F5B790-20D9-4218-9DFC-4B0AF6F4910D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "handleEncryptedMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8698F39B-E5C2-4291-8D6A-D5DBF8EF31AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "receiveResponse(id:data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8698F39B-E5C2-4291-8D6A-D5DBF8EF31AA - 6dc8ae0c31e2a718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "1196">
+               </Location>
+               <Location
+                  uuid = "8698F39B-E5C2-4291-8D6A-D5DBF8EF31AA - 6dc8ae0c31e2a718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FAC636C-B096-4B16-BE55-C2A248156AB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "receiveResponse(id:data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0FAC636C-B096-4B16-BE55-C2A248156AB7 - 6dc8ae0c31e2a779"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "301"
+                  endingLineNumber = "301"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "0FAC636C-B096-4B16-BE55-C2A248156AB7 - 6dc8ae0c31e2a779"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "metamask_ios_sdk.Ethereum.receiveResponse(id: Swift.String, data: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/Ethereum.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "301"
+                  endingLineNumber = "301"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4A35664-83F1-4CC4-9C13-3E5AE66E332D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "handleEncryptedMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03C46825-550F-4B24-AEE7-ECD13D0FE211"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "handleEncryptedMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C817FA9-0C82-4415-8032-8A93D6750F08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "underwriteContract()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "994EF825-EE43-4D36-8C95-3C0C6C73B7F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../fork/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Ethereum/RequestError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

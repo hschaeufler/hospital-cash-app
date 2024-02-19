@@ -47,7 +47,7 @@ extension GetMonthlyPremiumRequestModel {
         return GetMonthlyPremiumRequestModel(
             contractAdress,
             birthDateTs: BigInt(entity.birthDate.timeIntervalSince1970),
-            insuranceStartDateTs: BigInt(entity.insuranceDate.timeIntervalSince1970),
+            insuranceStartDateTs: BigInt(entity.insuranceStartDate.timeIntervalSince1970),
             hospitalCashInWei: BigUInt(weiAmount)
         )
     }
