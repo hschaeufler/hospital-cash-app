@@ -7,6 +7,7 @@
 
 import Foundation
 import web3
+import metamask_ios_sdk
 
 class InsuranceRepositoryImpl: InsuranceRepository {
     let insuranceContractRemoteDatasource: InsuranceContractRemoteDatasource;
@@ -62,8 +63,12 @@ class InsuranceRepositoryImpl: InsuranceRepository {
             contractAdress,
             with: application
         )
-        let responseModel = try await walletLocalDatasource.underwriteContract(with: requestModel)
-        return responseModel.contract.toEntity();
+        do {
+            let responseModel = try await walletLocalDatasource.underwriteContract(with: requestModel)
+            return responseModel.contract.toEntity();
+        } catch let error as RequestError {
+            throw try error.toCommonError()
+        }
     }
     
 }

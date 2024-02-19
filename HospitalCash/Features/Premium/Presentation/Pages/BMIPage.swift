@@ -27,15 +27,6 @@ struct BMIPage: View {
                         .backgroundStyle(.windowBackground)
                         .listRowInsets(EdgeInsets())
                 }
-                .alert(
-                    "BMI",
-                    isPresented: $premiumCalculationVm.showError,
-                    presenting: premiumCalculationVm.error
-                ) { error in
-                    Button("Ok", role: .cancel, action: {})
-                } message: { error in
-                    Text(LocalizedStringKey(error.localizedDescription))
-                }
                 BorderedButton("Weiter") {
                     Task {
                         await premiumCalculationVm.checkBMI()

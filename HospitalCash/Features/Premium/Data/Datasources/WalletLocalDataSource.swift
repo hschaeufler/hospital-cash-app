@@ -30,15 +30,32 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     }
     
     func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel {
+        metaMaskSDK.terminateConnection()
+        if(metaMaskSDK.account.isEmpty) {
+            print("Connect")
+            let resultOrError = await metaMaskSDK.connect();
+            print("go back")
+            if case .failure(let error) = resultOrError {
+                print("1 Fehler")
+                print(error)
+                throw error
+            }
+            print("test")
+        }
+        print("test")
+        let estimateGasRequest = EthereumRequest(
+            method: .ethEstimateGas,
+            params: [model]
+        )
         let transactionRequest = EthereumRequest(
             method: .ethSendTransaction,
             params: [model]
         )
-        let transactionResult = await metaMaskSDK.connectWith(transactionRequest);
+        let transactionResult = await metaMaskSDK.request(estimateGasRequest);
         
         switch transactionResult {
         case let .success(value):
-            return try UnderwriteContractResponseModel(data: value)!
+            return try UnderwriteContractResponseModel(data: value[1])!
         case let .failure(error):
             throw error
         }

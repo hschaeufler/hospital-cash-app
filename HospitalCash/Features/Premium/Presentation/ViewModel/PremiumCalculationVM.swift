@@ -154,6 +154,7 @@ import SwiftUI
             self.navigate(to: .contractDetail)
         } catch {
             self.showPaymentSheet = false;
+            print(error.localizedDescription)
             self.error = error
         }
     }
