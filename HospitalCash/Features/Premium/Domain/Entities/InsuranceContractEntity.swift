@@ -8,9 +8,9 @@
 import Foundation
 
 struct InsuranceContractEntity {
-    let insuranceStartDate: Date;
-    let insuranceEndDate: Date;
-    let dailyHospitalCash: Double;
-    let policyId: Int;
-    let birthdate: Date;
+    let insuranceStartDate: Date
+    let insuranceEndDate: Date
+    let dailyHospitalCash: Double
+    let policyId: Int
+    let birthdate: Date
 }

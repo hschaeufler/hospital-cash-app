@@ -8,7 +8,8 @@
 import Foundation
 
 struct ContractApplicationEntity {
-    var healthQuestions: HealthQuestionEntity;
-    var premiumCalculation: PremiumCalculationEntity;
-    var bodyMeasure: BodyMeasureEntity;
+    var healthQuestions: HealthQuestionEntity
+    var premiumCalculation: PremiumCalculationEntity
+    var bodyMeasure: BodyMeasureEntity
+    var yearlyPremiumInEth: Double
 }

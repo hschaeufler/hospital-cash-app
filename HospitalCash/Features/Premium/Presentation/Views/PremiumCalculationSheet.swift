@@ -23,6 +23,8 @@ struct PremiumCalculationSheet: View {
                         PremiumCalculationPage()
                     case NavigationDestination.premiumDetail:
                         PremiumDetailPage()
+                    case NavigationDestination.contractDetail:
+                        ContractDetailPage()
                     }
                 }
         }

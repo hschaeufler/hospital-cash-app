@@ -55,17 +55,15 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func underwriteContract(
-        with application: ContractApplicationEntity,
-        and yearlyPremiumInEth: Double
+        with application: ContractApplicationEntity
     ) async throws -> InsuranceContractEntity {
         let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = try UnderwriteContractRequestModel.fromEntity(
             contractAdress,
-            with: application,
-            and: yearlyPremiumInEth
+            with: application
         )
         let responseModel = try await walletLocalDatasource.underwriteContract(with: requestModel)
-        
+        return responseModel.contract.toEntity();
     }
     
 }

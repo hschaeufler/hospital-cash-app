@@ -53,6 +53,7 @@
 		84C426622B823364002AC308 /* BodyMeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426612B823364002AC308 /* BodyMeasureModel.swift */; };
 		84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426632B823392002AC308 /* InsuranceContractModel.swift */; };
 		84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426652B8235F1002AC308 /* ContractApplicationModel.swift */; };
+		84C426682B82E403002AC308 /* ContractDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426672B82E403002AC308 /* ContractDetailPage.swift */; };
 		84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA13D62B7976870075561E /* HealthQuestionModel.swift */; };
 		84EC9DB92B79676300B839DA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9DB82B79676300B839DA /* CustomButton.swift */; };
 		84EC9DBB2B7967D300B839DA /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC9DBA2B7967D300B839DA /* BorderedButton.swift */; };
@@ -140,6 +141,7 @@
 		84C426612B823364002AC308 /* BodyMeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasureModel.swift; sourceTree = "<group>"; };
 		84C426632B823392002AC308 /* InsuranceContractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractModel.swift; sourceTree = "<group>"; };
 		84C426652B8235F1002AC308 /* ContractApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractApplicationModel.swift; sourceTree = "<group>"; };
+		84C426672B82E403002AC308 /* ContractDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailPage.swift; sourceTree = "<group>"; };
 		84EA13D62B7976870075561E /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
 		84EC9DB82B79676300B839DA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		84EC9DBA2B7967D300B839DA /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 				84ED67502B652DB0001D600A /* HealthQuestionPage.swift */,
 				84ED67662B66976F001D600A /* PremiumCalculationPage.swift */,
 				84ED67712B69B258001D600A /* PremiumDetailPage.swift */,
+				84C426672B82E403002AC308 /* ContractDetailPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				846D6F0A2B6AED130074F2F3 /* ExchangeRateRemoteDatasource.swift in Sources */,
 				84F8EACC2B810DF300D0A414 /* InsuranceContractEntity.swift in Sources */,
+				84C426682B82E403002AC308 /* ContractDetailPage.swift in Sources */,
 				84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */,
 				8454E8C42B783F54007A3887 /* NavigationLinkButton.swift in Sources */,
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,

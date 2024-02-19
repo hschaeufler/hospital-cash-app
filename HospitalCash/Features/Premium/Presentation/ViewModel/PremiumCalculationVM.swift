@@ -20,6 +20,8 @@ import SwiftUI
     @Injected(\PremiumContainer.calculateEurInEth) private var calculateEurInEthUseCase
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
     
     var path: [NavigationDestination] = []
     
@@ -79,6 +81,8 @@ import SwiftUI
         amountHospitalCashEth != 0
     }
     
+    var insuranceContract: InsuranceContractEntity? = nil
+    
     func checkBMI() async {
         do {
             self.bmiIsOk = try await checkBMIUseCase(heightInCm: height, weightInKg: weight)
@@ -119,6 +123,28 @@ import SwiftUI
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
             self.navigate(to: .premiumDetail)
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func underwriteContract() async {
+        do {
+            let application = ContractApplicationEntity(
+                healthQuestions: healthQuestions, 
+                premiumCalculation: PremiumCalculationEntity(
+                    amountHospitalCashEth: self.amountHospitalCashEth,
+                    insuranceDate: self.insuranceStartDate,
+                    birthDate: self.birthDate
+                ), 
+                bodyMeasure: BodyMeasureEntity(
+                    heightInCm: self.height,
+                    weightInKg: self.weight
+                ),
+                yearlyPremiumInEth: self.premiumEntity!.yearlyEthPremium
+            )
+            self.insuranceContract = try await underwriteContractUseCase(with: application)
+            self.navigate(to: .contractDetail)
         } catch {
             self.error = error
         }

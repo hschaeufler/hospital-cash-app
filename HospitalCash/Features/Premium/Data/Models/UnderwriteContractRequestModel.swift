@@ -48,10 +48,9 @@ struct UnderwriteContractRequestModel: CodableData {
 extension UnderwriteContractRequestModel {
     static func fromEntity(
         _ contractAdress: EthereumAddress,
-        with entity: ContractApplicationEntity,
-        and yearlyPremiumInEth: Double
+        with entity: ContractApplicationEntity
     ) throws -> UnderwriteContractRequestModel {
-        let weiAmount = yearlyPremiumInEth * Double(EthUnits.wei)
+        let weiAmount = entity.yearlyPremiumInEth * Double(EthUnits.wei)
         return try UnderwriteContractRequestModel(
             contractAdress,
             contractApplication: ContractApplicationModel.fromEntity(with: entity), 
