@@ -44,6 +44,7 @@ struct PremiumDetailPage: View {
             .sheet(isPresented: $showSheet, content: {
                 NavigationStack {
                     PayWithMetamaskPage()
+                        .environment(viewModel)
                 }
                 .presentationDetents([.fraction(1 / 3)])
                 .presentationDragIndicator(.visible)
