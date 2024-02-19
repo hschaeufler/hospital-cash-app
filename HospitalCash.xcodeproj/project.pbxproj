@@ -88,7 +88,7 @@
 		84ED67862B69D102001D600A /* CheckHealthQuestionValidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67852B69D102001D600A /* CheckHealthQuestionValidity.swift */; };
 		84F8EAC82B80FB6000D0A414 /* UnderwriteContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8EAC72B80FB6000D0A414 /* UnderwriteContract.swift */; };
 		84F8EACA2B80FC3E00D0A414 /* BodyMeasureEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8EAC92B80FC3E00D0A414 /* BodyMeasureEntity.swift */; };
-		84F8EACC2B810DF300D0A414 /* ContractEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8EACB2B810DF300D0A414 /* ContractEntity.swift */; };
+		84F8EACC2B810DF300D0A414 /* InsuranceContractEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8EACB2B810DF300D0A414 /* InsuranceContractEntity.swift */; };
 		84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F8EACD2B81109400D0A414 /* ContractApplicationEntity.swift */; };
 /* End PBXBuildFile section */
 
@@ -174,7 +174,7 @@
 		84ED67852B69D102001D600A /* CheckHealthQuestionValidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuestionValidity.swift; sourceTree = "<group>"; };
 		84F8EAC72B80FB6000D0A414 /* UnderwriteContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwriteContract.swift; sourceTree = "<group>"; };
 		84F8EAC92B80FC3E00D0A414 /* BodyMeasureEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasureEntity.swift; sourceTree = "<group>"; };
-		84F8EACB2B810DF300D0A414 /* ContractEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractEntity.swift; sourceTree = "<group>"; };
+		84F8EACB2B810DF300D0A414 /* InsuranceContractEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractEntity.swift; sourceTree = "<group>"; };
 		84F8EACD2B81109400D0A414 /* ContractApplicationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractApplicationEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -489,6 +489,7 @@
 				84ED67592B654B59001D600A /* CloseButton.swift */,
 				8454E8C32B783F54007A3887 /* NavigationLinkButton.swift */,
 				84EC9DB82B79676300B839DA /* CustomButton.swift */,
+				84ED67602B6684E1001D600A /* TextFields */,
 				84EC9DBA2B7967D300B839DA /* BorderedButton.swift */,
 			);
 			path = Buttons;
@@ -536,7 +537,7 @@
 				8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */,
 				8454E8B92B77D6C1007A3887 /* PremiumEntity.swift */,
 				84F8EAC92B80FC3E00D0A414 /* BodyMeasureEntity.swift */,
-				84F8EACB2B810DF300D0A414 /* ContractEntity.swift */,
+				84F8EACB2B810DF300D0A414 /* InsuranceContractEntity.swift */,
 				84F8EACD2B81109400D0A414 /* ContractApplicationEntity.swift */,
 			);
 			path = Entities;
@@ -546,7 +547,6 @@
 			isa = PBXGroup;
 			children = (
 				84ED67582B654AE2001D600A /* Buttons */,
-				84ED67602B6684E1001D600A /* TextFields */,
 				84ED67642B668A50001D600A /* InfoToggle.swift */,
 			);
 			path = Input;
@@ -589,8 +589,8 @@
 			isa = PBXGroup;
 			children = (
 				846D6F092B6AED130074F2F3 /* ExchangeRateRemoteDatasource.swift */,
-				846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */,
 				8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */,
+				846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -713,7 +713,7 @@
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				846D6F0A2B6AED130074F2F3 /* ExchangeRateRemoteDatasource.swift in Sources */,
-				84F8EACC2B810DF300D0A414 /* ContractEntity.swift in Sources */,
+				84F8EACC2B810DF300D0A414 /* InsuranceContractEntity.swift in Sources */,
 				84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */,
 				8454E8C42B783F54007A3887 /* NavigationLinkButton.swift in Sources */,
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,

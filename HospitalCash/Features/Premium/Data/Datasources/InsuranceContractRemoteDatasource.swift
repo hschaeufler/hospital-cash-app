@@ -11,9 +11,15 @@ import web3
 
 protocol InsuranceContractRemoteDatasource {
     func getContractAdress() -> EthereumAddress
-    func getMonthlyPremium(with model: GetMonthlyPremiumRequestModel) async throws -> GetMonthlyPremiumResponseModel
-    func checkBMI(with model: CheckBMIRequestModel) async throws -> CheckBMIResponseModel
-    func checkHealthQuestions(with model: CheckHealthQuestionsRequestModel) async throws -> CheckHealthQuestionsResponseModel
+    func getMonthlyPremium(
+        with model: GetMonthlyPremiumRequestModel
+    ) async throws -> GetMonthlyPremiumResponseModel
+    func checkBMI(
+        with model: CheckBMIRequestModel
+    ) async throws -> CheckBMIResponseModel
+    func checkHealthQuestions(
+        with model: CheckHealthQuestionsRequestModel
+    ) async throws -> CheckHealthQuestionsResponseModel
 }
 
 public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
@@ -33,21 +39,27 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
         self.contractAdress
     }
     
-    func getMonthlyPremium(with model: GetMonthlyPremiumRequestModel) async throws -> GetMonthlyPremiumResponseModel {
+    func getMonthlyPremium(
+        with model: GetMonthlyPremiumRequestModel
+    ) async throws -> GetMonthlyPremiumResponseModel {
         try await model.call(
             withClient: client,
             responseType: GetMonthlyPremiumResponseModel.self
         )
     }
     
-    func checkBMI(with model: CheckBMIRequestModel) async throws -> CheckBMIResponseModel {
+    func checkBMI(
+        with model: CheckBMIRequestModel
+    ) async throws -> CheckBMIResponseModel {
         try await model.call(
             withClient: client,
             responseType: CheckBMIResponseModel.self
         )
     }
     
-    func checkHealthQuestions(with model: CheckHealthQuestionsRequestModel) async throws -> CheckHealthQuestionsResponseModel {
+    func checkHealthQuestions(
+        with model: CheckHealthQuestionsRequestModel
+    ) async throws -> CheckHealthQuestionsResponseModel {
         try await model.call(
             withClient: client,
             responseType: CheckHealthQuestionsResponseModel.self

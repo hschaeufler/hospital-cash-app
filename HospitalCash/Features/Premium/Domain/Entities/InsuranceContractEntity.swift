@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContractEntity {
+struct InsuranceContractEntity {
     let insuranceStartDate: Date;
     let insuranceEndDate: Date;
     let dailyHospitalCash: Double;

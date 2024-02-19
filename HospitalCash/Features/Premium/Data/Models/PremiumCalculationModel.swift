@@ -52,3 +52,14 @@ struct PremiumCalculationModel: ABITuple {
         try encoder.encode(hospitalCashInWei)
     }
 }
+
+extension PremiumCalculationModel {
+    static func fromEntity(with entity: PremiumCalculationEntity) -> PremiumCalculationModel {
+        let weiAmount = entity.amountHospitalCashEth * Double(EthUnits.wei)
+        return PremiumCalculationModel(
+            birthDate: BigInt(entity.birthDate.timeIntervalSince1970),
+            insuranceStartDate: BigInt(entity.insuranceDate.timeIntervalSince1970),
+            hospitalCashInWei: BigUInt(weiAmount)
+        )
+    }
+}

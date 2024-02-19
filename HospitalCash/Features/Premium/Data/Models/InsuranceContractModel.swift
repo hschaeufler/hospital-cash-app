@@ -66,3 +66,9 @@ struct InsuranceContractModel: ABITuple {
         try encoder.encode(birthDate)
     }
 }
+
+extension InsuranceContractModel {
+    static func toEntity() -> InsuranceContract {
+        InsuranceContractModel(
+    }
+}

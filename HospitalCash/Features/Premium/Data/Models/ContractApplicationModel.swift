@@ -52,3 +52,16 @@ struct ContractApplicationModel: ABITuple {
         try encoder.encode(bodyMeasure)
     }
 }
+
+
+extension ContractApplicationModel {
+    static func fromEntity(
+        with entity: ContractApplicationEntity
+    ) -> ContractApplicationModel {
+        ContractApplicationModel(
+            healthQuestions: HealthQuestionModel.fromEntity(with: entity.healthQuestions),
+            premiumCalculation: PremiumCalculationModel.fromEntity(with: entity.premiumCalculation),
+            bodyMeasure: BodyMeasureModel.fromEntity(with: entity.bodyMeasure)
+        )
+    }
+}

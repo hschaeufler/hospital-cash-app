@@ -45,3 +45,12 @@ struct BodyMeasureModel: ABITuple {
         try encoder.encode(weightInKg)
     }
 }
+
+extension BodyMeasureModel {
+    static func fromEntity(with entity: BodyMeasureEntity) -> BodyMeasureModel {
+        BodyMeasureModel(
+            heightInCm: BigUInt(entity.heightInCm),
+            weightInKg: BigUInt(entity.weightInKg)
+        )
+    }
+}
