@@ -13,6 +13,7 @@ import Combine
 
 protocol WalletLocalDataSource {
     func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel
+    func connect() async throws -> String
 }
 
 public class WalletLocalDataSourceImpl: WalletLocalDataSource {
@@ -29,20 +30,17 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         self.config = walletConfig
     }
     
-    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel {
-        metaMaskSDK.terminateConnection()
-        if(metaMaskSDK.account.isEmpty) {
-            print("Connect")
-            let resultOrError = await metaMaskSDK.connect();
-            print("go back")
-            if case .failure(let error) = resultOrError {
-                print("1 Fehler")
-                print(error)
+    func connect() async throws -> String {
+        if metaMaskSDK.account.isEmpty {
+            let connectionResult = await metaMaskSDK.connect()
+            if case .failure(let error) = connectionResult {
                 throw error
             }
-            print("test")
         }
-        print("test")
+        return metaMaskSDK.account;
+    }
+    
+    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel {
         let estimateGasRequest = EthereumRequest(
             method: .ethEstimateGas,
             params: [model]
@@ -51,7 +49,10 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
             method: .ethSendTransaction,
             params: [model]
         )
-        let transactionResult = await metaMaskSDK.request(estimateGasRequest);
+        let transactionResult = await metaMaskSDK.batchRequest([
+            estimateGasRequest,
+            transactionRequest
+        ]);
         
         switch transactionResult {
         case let .success(value):

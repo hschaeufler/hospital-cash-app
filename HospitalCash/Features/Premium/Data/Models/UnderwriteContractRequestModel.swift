@@ -13,15 +13,18 @@ import metamask_ios_sdk
 struct UnderwriteContractRequestModel: CodableData {
     static let name = "applyForInsurace"
     let to: String
+    let from: String
     let data: String
     let value: String
     
     
     init(_ contract: EthereumAddress,
+         from: String,
          contractApplication: ContractApplicationModel,
          value: BigUInt
     ) throws {
         self.to = contract.asString()
+        self.from = from
         self.value = UnderwriteContractRequestModel.encodeValue(value)
         self.data = try UnderwriteContractRequestModel.encodeData(contractApplication)
     }
@@ -39,6 +42,7 @@ struct UnderwriteContractRequestModel: CodableData {
     func socketRepresentation() -> NetworkData {
            [
                "to": to,
+               "from": from,
                "value": value,
                "data": data
            ]
@@ -48,12 +52,14 @@ struct UnderwriteContractRequestModel: CodableData {
 extension UnderwriteContractRequestModel {
     static func fromEntity(
         _ contractAdress: EthereumAddress,
+        from: String,
         with entity: ContractApplicationEntity
     ) throws -> UnderwriteContractRequestModel {
         let weiAmount = entity.yearlyPremiumInEth * Double(EthUnits.wei)
         return try UnderwriteContractRequestModel(
             contractAdress,
-            contractApplication: ContractApplicationModel.fromEntity(with: entity), 
+            from: from,
+            contractApplication: ContractApplicationModel.fromEntity(with: entity),
             value: BigUInt(weiAmount)
         )
     }

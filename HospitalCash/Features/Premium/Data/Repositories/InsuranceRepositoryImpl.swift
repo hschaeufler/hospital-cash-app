@@ -59,11 +59,13 @@ class InsuranceRepositoryImpl: InsuranceRepository {
         with application: ContractApplicationEntity
     ) async throws -> InsuranceContractEntity {
         let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
-        let requestModel = try UnderwriteContractRequestModel.fromEntity(
-            contractAdress,
-            with: application
-        )
         do {
+            let accountAdress = try await walletLocalDatasource.connect();
+            let requestModel = try UnderwriteContractRequestModel.fromEntity(
+                contractAdress,
+                from: accountAdress,
+                with: application
+            )
             let responseModel = try await walletLocalDatasource.underwriteContract(with: requestModel)
             return responseModel.contract.toEntity();
         } catch let error as RequestError {
