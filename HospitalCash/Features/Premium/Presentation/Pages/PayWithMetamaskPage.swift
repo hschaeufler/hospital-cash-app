@@ -27,4 +27,5 @@ struct PayWithMetamaskPage: View {
 
 #Preview {
     PayWithMetamaskPage()
+        .environment(PremiumCalculationVM())
 }
