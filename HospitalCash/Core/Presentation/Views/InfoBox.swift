@@ -22,9 +22,13 @@ struct InfoBox: View {
     }
     
     var body: some View {
-        GroupBox(label: Label(titleKey, systemImage: systemImage ?? "info.bubble")) {
-            Text(contentKey)
-                .multilineTextAlignment(.leading)
+        GroupBox {
+            VStack (alignment: .leading) {
+                Label(titleKey, systemImage: systemImage ?? "info.bubble")
+                    .bold()
+                Text(contentKey)
+                    .multilineTextAlignment(.leading)
+            }
         }
     }
 }

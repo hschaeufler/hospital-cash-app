@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840C6DBE2B84C5EB0052E6AA /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */; };
+		840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */; };
 		841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */; };
 		841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
@@ -94,6 +96,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
+		840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputDateRangeField.swift; sourceTree = "<group>"; };
 		841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetamaskPage.swift; sourceTree = "<group>"; };
 		841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetaMaskButton.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
@@ -195,6 +199,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840C6DBF2B84C6880052E6AA /* Toggles */ = {
+			isa = PBXGroup;
+			children = (
+				84ED67642B668A50001D600A /* InfoToggle.swift */,
+			);
+			path = Toggles;
+			sourceTree = "<group>";
+		};
 		841A964D2B7E67A400BDA450 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,13 +498,13 @@
 		84ED67582B654AE2001D600A /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */,
 				84ED67422B6435DF001D600A /* ProminentButton.swift */,
 				84ED67542B65351F001D600A /* NavigationDestinationButton.swift */,
 				84ED67562B653840001D600A /* ButtonLabel.swift */,
 				84ED67592B654B59001D600A /* CloseButton.swift */,
 				8454E8C32B783F54007A3887 /* NavigationLinkButton.swift */,
 				84EC9DB82B79676300B839DA /* CustomButton.swift */,
-				84ED67602B6684E1001D600A /* TextFields */,
 				84EC9DBA2B7967D300B839DA /* BorderedButton.swift */,
 			);
 			path = Buttons;
@@ -512,6 +524,7 @@
 			children = (
 				84ED675C2B65DE26001D600A /* NumberField.swift */,
 				84ED675E2B666E9B001D600A /* OutputFloatingPointField.swift */,
+				840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -549,8 +562,9 @@
 		84ED67752B69B3EB001D600A /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				840C6DBF2B84C6880052E6AA /* Toggles */,
+				84ED67602B6684E1001D600A /* TextFields */,
 				84ED67582B654AE2001D600A /* Buttons */,
-				84ED67642B668A50001D600A /* InfoToggle.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -736,6 +750,7 @@
 				841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
+				840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
 				84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */,
@@ -770,6 +785,7 @@
 				846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */,
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67862B69D102001D600A /* CheckHealthQuestionValidity.swift in Sources */,
+				840C6DBE2B84C5EB0052E6AA /* CopyButton.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,

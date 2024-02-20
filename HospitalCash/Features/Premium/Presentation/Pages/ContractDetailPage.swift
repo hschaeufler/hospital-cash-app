@@ -10,7 +10,7 @@ import SwiftUI
 struct ContractDetailPage: View {
     var body: some View {
         SheetPageLayout("Deine Versicherung") {
-            VStack(spacing: 15) {
+            VStack {
                 Spacer()
                 Image(systemName: "fireworks")
                     .font(.system(size: 90))
@@ -20,38 +20,37 @@ struct ContractDetailPage: View {
                     .font(.title)
                     .bold()
                 CustomDivider(maxWidth: 150)
-                Text("Deine Informationen")
-                    .multilineTextAlignment(.center)
-                    .font(.title2)
-                    .bold()
-                OutputFloatingPointField(
-                    titleKey: "Versicherungsnummer",
-                    number: 2
-                )
-                InfoBox("Versicherungsnummer", contentKey: "Diese musst du bei einem Krankenhausaufenthalt angeben.")
-                OutputFloatingPointField(
-                    titleKey: "Höhe Krankenhaustaggeld",
-                    number: 0.5,
-                    unit: "ETH"
-                )
-                HStack {
-                    DatePicker(
-                        "",
-                        selection: .constant(Date()),
-                        displayedComponents: [.date]
-                    )
-                    .disabled(true)
-                    Spacer()
-                    Text(" - ")
-                    Spacer()
-                    DatePicker(
-                        "",
-                        selection: .constant(Date()),
-                        displayedComponents: [.date]
-                    )
-                    .disabled(true)
+                    .padding(.vertical, 10)
+                List {
+                    Group {
+                        Text("Deine Informationen")
+                            .multilineTextAlignment(.leading)
+                            .font(.title2)
+                            .bold()
+                        OutputFloatingPointField(
+                            titleKey: "Versicherungsnummer",
+                            caption: "Diese musst du bei einem Krankenhausaufenthalt angeben.",
+                            number: 2,
+                            style: OutputFloatingPointField.FieldStyle.multiLine,
+                            allowCopy: true
+                        )
+                        OutputFloatingPointField(
+                            titleKey: "Höhe Krankenhaustaggeld",
+                            number: 0.5,
+                            unit: "ETH",
+                            style: OutputFloatingPointField.FieldStyle.multiLine,
+                            allowCopy: true
+                        )
+                        OutputDateRangeField(
+                            titleKey: "Zeitraum",
+                            caption:  "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden.",
+                            startDate: Date(),
+                            endDate: Date(),
+                            allowCopy: true
+                        )
+                    }
                 }
-                InfoBox("Laufzeit", contentKey: "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden.")
+                .listStyle(.plain)
                 Spacer()
                 BorderedButton("Zur Übersicht") {}
             }

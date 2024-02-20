@@ -22,7 +22,7 @@ struct PremiumCalculationPage: View {
                                 unit: "€",
                                 range: 0...250,
                                 step: 10,
-                                style: NumberField.NumberFieldStyle.multiLine
+                                style: NumberField.FieldStyle.multiLine
                     ).onChange(of: premiumCalculationVm.amountHospitalCashEur) { oldValue, newValue in
                         Task {
                             await premiumCalculationVm.calculateEurInEth()

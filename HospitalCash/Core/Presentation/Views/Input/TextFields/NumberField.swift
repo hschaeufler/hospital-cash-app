@@ -14,11 +14,12 @@ struct NumberField: View {
     var range: ClosedRange<Int>?
     var unit: LocalizedStringKey?
     var step: Int
-    var style: NumberFieldStyle
+    var style: FieldStyle
     
     @ScaledMetric var unitPlaceholderWidth = 40
+    @ScaledMetric var verticalSpacing = 5
     
-    enum NumberFieldStyle {
+    enum FieldStyle {
         case oneLine
         case multiLine
     }
@@ -30,7 +31,7 @@ struct NumberField: View {
          unit: LocalizedStringKey? = nil,
          range: ClosedRange<Int>? = nil,
          step: Int = 1,
-         style: NumberFieldStyle = NumberFieldStyle.oneLine
+         style: FieldStyle = FieldStyle.oneLine
     ) {
         self.titleKey = titleKey
         self.caption = caption
@@ -42,8 +43,11 @@ struct NumberField: View {
     }
     
     var body: some View {
-        VStack(alignment : .leading) {
-            if style == NumberFieldStyle.multiLine {
+        VStack(
+            alignment : .leading,
+            spacing: verticalSpacing
+        ) {
+            if style == FieldStyle.multiLine {
                 Text(titleKey)
                     .bold()
             }
@@ -52,7 +56,7 @@ struct NumberField: View {
                     .foregroundStyle(.secondary)
             }
             HStack {
-                if style == NumberFieldStyle.oneLine {
+                if style == FieldStyle.oneLine {
                     Text(titleKey)
                         .bold()
                 }
@@ -89,7 +93,7 @@ struct NumberField: View {
                     caption: "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?",
                     number: .constant(5),
                     range: 0...250,
-                    style: NumberField.NumberFieldStyle.multiLine
+                    style: NumberField.FieldStyle.multiLine
         )
     }
 }
