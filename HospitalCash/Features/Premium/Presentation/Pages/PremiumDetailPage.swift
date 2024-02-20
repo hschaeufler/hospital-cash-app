@@ -37,18 +37,16 @@ struct PremiumDetailPage: View {
                     viewModel.showPaymentSheet.toggle()
                 }
             }
-            .sheet(isPresented: $viewModel.showPaymentSheet, content: {
-                NavigationStack {
-                    PayWithMetamaskPage()
-                        .environment(viewModel)
-                }
-                .presentationDetents([.fraction(1 / 3)])
-                .presentationDragIndicator(.visible)
-            })
+
         }
-        .task {
-            await viewModel.caculatePremium()
-        }
+        .sheet(isPresented: $viewModel.showPaymentSheet, content: {
+            NavigationStack {
+                PayWithMetamaskPage()
+                    .environment(viewModel)
+            }
+            .presentationDetents([.fraction(1 / 3)])
+            .presentationDragIndicator(.visible)
+        })
     }
 }
 
