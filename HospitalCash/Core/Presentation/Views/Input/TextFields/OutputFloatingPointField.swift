@@ -15,7 +15,7 @@ struct OutputFloatingPointField: View {
     var style = FieldStyle.oneLine
     var allowCopy = false
     
-    @ScaledMetric var verticalSpacing = 5
+    @ScaledMetric var verticalSpacing = 10
     
     enum FieldStyle {
         case oneLine

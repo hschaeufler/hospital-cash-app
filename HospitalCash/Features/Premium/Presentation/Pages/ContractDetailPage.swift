@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContractDetailPage: View {
+    @Environment(PremiumCalculationVM.self) private var viewModel
+    
     var body: some View {
         SheetPageLayout("Deine Versicherung") {
             VStack {
@@ -21,36 +23,7 @@ struct ContractDetailPage: View {
                     .bold()
                 CustomDivider(maxWidth: 150)
                     .padding(.vertical, 10)
-                List {
-                    Group {
-                        Text("Deine Informationen")
-                            .multilineTextAlignment(.leading)
-                            .font(.title2)
-                            .bold()
-                        OutputFloatingPointField(
-                            titleKey: "Versicherungsnummer",
-                            caption: "Diese musst du bei einem Krankenhausaufenthalt angeben.",
-                            number: 2,
-                            style: OutputFloatingPointField.FieldStyle.multiLine,
-                            allowCopy: true
-                        )
-                        OutputFloatingPointField(
-                            titleKey: "Höhe Krankenhaustaggeld",
-                            number: 0.5,
-                            unit: "ETH",
-                            style: OutputFloatingPointField.FieldStyle.multiLine,
-                            allowCopy: true
-                        )
-                        OutputDateRangeField(
-                            titleKey: "Zeitraum",
-                            caption:  "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden.",
-                            startDate: Date(),
-                            endDate: Date(),
-                            allowCopy: true
-                        )
-                    }
-                }
-                .listStyle(.plain)
+                ContractDetailGroup(insuranceContract: viewModel.insuranceContract!)
                 Spacer()
                 BorderedButton("Zur Übersicht") {}
             }
@@ -59,5 +32,15 @@ struct ContractDetailPage: View {
 }
 
 #Preview {
-    ContractDetailPage()
+    let viewModel = PremiumCalculationVM()
+    viewModel.insuranceContract = InsuranceContractEntity(
+        insuranceStartDate: Date(),
+        insuranceEndDate: Date(),
+        dailyHospitalCash: 100,
+        policyId: 1,
+        birthdate: Date()
+    );
+    
+    return ContractDetailPage()
+        .environment(viewModel)
 }

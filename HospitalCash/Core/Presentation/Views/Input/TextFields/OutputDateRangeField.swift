@@ -14,7 +14,7 @@ struct OutputDateRangeField: View {
     var endDate: Date
     var allowCopy = false
     
-    @ScaledMetric var verticalSpacing = 5
+    @ScaledMetric var verticalSpacing = 10
     
     var copyString = "\(Date().formatted(date: .numeric, time: .omitted)) - \(Date().formatted(date: .numeric, time: .omitted))"
     

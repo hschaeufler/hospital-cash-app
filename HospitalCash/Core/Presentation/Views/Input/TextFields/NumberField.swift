@@ -17,7 +17,7 @@ struct NumberField: View {
     var style: FieldStyle
     
     @ScaledMetric var unitPlaceholderWidth = 40
-    @ScaledMetric var verticalSpacing = 5
+    @ScaledMetric var verticalSpacing = 10
     
     enum FieldStyle {
         case oneLine

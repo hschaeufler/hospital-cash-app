@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		840C6DBE2B84C5EB0052E6AA /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */; };
 		840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */; };
+		840C6DC32B84E6710052E6AA /* ContractDetailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */; };
 		841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */; };
 		841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
@@ -98,6 +99,7 @@
 /* Begin PBXFileReference section */
 		840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
 		840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputDateRangeField.swift; sourceTree = "<group>"; };
+		840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailGroup.swift; sourceTree = "<group>"; };
 		841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetamaskPage.swift; sourceTree = "<group>"; };
 		841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetaMaskButton.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 				84ED67522B652F68001D600A /* PremiumCalculationSheet.swift */,
 				841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */,
 				8454E8BD2B77DC8F007A3887 /* PremiumDetailGroup.swift */,
+				840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -799,6 +802,7 @@
 				84ED673A2B640D44001D600A /* Avatar.swift in Sources */,
 				84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */,
 				8454E8CE2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift in Sources */,
+				840C6DC32B84E6710052E6AA /* ContractDetailGroup.swift in Sources */,
 				84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
