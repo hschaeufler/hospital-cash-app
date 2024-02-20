@@ -13,7 +13,7 @@ import Combine
 
 protocol WalletLocalDataSource {
     func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel
-    func connect() async throws -> String
+    func connectWallet() async throws -> String
 }
 
 public class WalletLocalDataSourceImpl: WalletLocalDataSource {
@@ -30,7 +30,7 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         self.config = walletConfig
     }
     
-    func connect() async throws -> String {
+    func connectWallet() async throws -> String {
         if metaMaskSDK.account.isEmpty {
             let connectionResult = await metaMaskSDK.connect()
             if case .failure(let error) = connectionResult {
@@ -41,6 +41,7 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     }
     
     func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel {
+        // Call Estimate Gas first to get possible Error Messages
         let estimateGasRequest = EthereumRequest(
             method: .ethEstimateGas,
             params: [model]

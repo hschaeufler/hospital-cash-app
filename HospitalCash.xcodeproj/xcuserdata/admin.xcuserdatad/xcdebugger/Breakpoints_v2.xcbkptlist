@@ -8,48 +8,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5ECC3DF7-9818-4418-A99F-A84E6B4B524E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "underwriteContract(with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5ECC3DF7-9818-4418-A99F-A84E6B4B524E - 14f4dde6879e1d4a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.WalletLocalDataSourceImpl.underwriteContract(with: HospitalCash.UnderwriteContractRequestModel) async throws -&gt; HospitalCash.UnderwriteContractResponseModel"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "1216">
-               </Location>
-               <Location
-                  uuid = "5ECC3DF7-9818-4418-A99F-A84E6B4B524E - 14f4dde6879e1d4a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.WalletLocalDataSourceImpl.underwriteContract(with: HospitalCash.UnderwriteContractRequestModel) async throws -&gt; HospitalCash.UnderwriteContractResponseModel"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "292">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,42 +30,26 @@
             filePath = "HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "WalletLocalDataSourceImpl"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "CCF99A53-2912-427E-B5FA-6D6FC2CB8F86 - 14f4dde6879e1c84"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.WalletLocalDataSourceImpl.underwriteContract(with: HospitalCash.UnderwriteContractRequestModel) async throws -&gt; HospitalCash.UnderwriteContractResponseModel"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "1560">
-               </Location>
-               <Location
-                  uuid = "CCF99A53-2912-427E-B5FA-6D6FC2CB8F86 - 14f4dde6879e1c84"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for HospitalCash.WalletLocalDataSourceImpl.underwriteContract(with: HospitalCash.UnderwriteContractRequestModel) async throws -&gt; HospitalCash.UnderwriteContractResponseModel"
-                  moduleName = "HospitalCash"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "1220">
-               </Location>
-            </Locations>
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "underwriteContract(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2573DFC7-676E-4621-9BC4-CBCE5BF065E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "underwriteContract(with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

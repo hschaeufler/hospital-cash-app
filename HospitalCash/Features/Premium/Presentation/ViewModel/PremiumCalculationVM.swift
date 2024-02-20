@@ -150,8 +150,8 @@ import SwiftUI
                 yearlyPremiumInEth: self.premiumEntity!.yearlyEthPremium
             )
             self.insuranceContract = try await underwriteContractUseCase(with: application)
-            self.showPaymentSheet = false;
             self.navigate(to: .contractDetail)
+            self.showPaymentSheet = false;
         } catch {
             self.showPaymentSheet = false;
             print(error.localizedDescription)

@@ -38,9 +38,6 @@ struct PremiumDetailPage: View {
                     viewModel.showPaymentSheet.toggle()
                 }
             }
-            .task {
-                await viewModel.caculatePremium()
-            }
             .sheet(isPresented: $viewModel.showPaymentSheet, content: {
                 NavigationStack {
                     PayWithMetamaskPage()
@@ -49,7 +46,9 @@ struct PremiumDetailPage: View {
                 .presentationDetents([.fraction(1 / 3)])
                 .presentationDragIndicator(.visible)
             })
-            
+        }
+        .task {
+            await viewModel.caculatePremium()
         }
     }
 }
