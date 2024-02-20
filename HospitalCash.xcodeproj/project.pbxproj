@@ -10,6 +10,8 @@
 		840C6DBE2B84C5EB0052E6AA /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */; };
 		840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */; };
 		840C6DC32B84E6710052E6AA /* ContractDetailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */; };
+		840C6DC52B856A200052E6AA /* TransactionStateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC42B856A200052E6AA /* TransactionStateEntity.swift */; };
+		840C6DC72B856D770052E6AA /* NewContractEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DC62B856D770052E6AA /* NewContractEventModel.swift */; };
 		841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */; };
 		841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
@@ -100,6 +102,8 @@
 		840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
 		840C6DC02B84CDC90052E6AA /* OutputDateRangeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputDateRangeField.swift; sourceTree = "<group>"; };
 		840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailGroup.swift; sourceTree = "<group>"; };
+		840C6DC42B856A200052E6AA /* TransactionStateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStateEntity.swift; sourceTree = "<group>"; };
+		840C6DC62B856D770052E6AA /* NewContractEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContractEventModel.swift; sourceTree = "<group>"; };
 		841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetamaskPage.swift; sourceTree = "<group>"; };
 		841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetaMaskButton.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
@@ -558,6 +562,7 @@
 				84F8EAC92B80FC3E00D0A414 /* BodyMeasureEntity.swift */,
 				84F8EACB2B810DF300D0A414 /* InsuranceContractEntity.swift */,
 				84F8EACD2B81109400D0A414 /* ContractApplicationEntity.swift */,
+				840C6DC42B856A200052E6AA /* TransactionStateEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -633,6 +638,7 @@
 				84C426612B823364002AC308 /* BodyMeasureModel.swift */,
 				84C426632B823392002AC308 /* InsuranceContractModel.swift */,
 				84C426652B8235F1002AC308 /* ContractApplicationModel.swift */,
+				840C6DC62B856D770052E6AA /* NewContractEventModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -738,6 +744,8 @@
 				84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */,
 				8454E8C42B783F54007A3887 /* NavigationLinkButton.swift in Sources */,
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,
+				840C6DC72B856D770052E6AA /* NewContractEventModel.swift in Sources */,
+				840C6DC52B856A200052E6AA /* TransactionStateEntity.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
 				8454E88F2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift in Sources */,

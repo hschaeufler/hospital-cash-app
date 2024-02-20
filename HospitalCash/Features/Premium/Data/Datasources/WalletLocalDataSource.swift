@@ -12,7 +12,7 @@ import BigInt
 import Combine
 
 protocol WalletLocalDataSource {
-    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel
+    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> String
     func connectWallet() async throws -> String
 }
 
@@ -40,10 +40,10 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         return metaMaskSDK.account;
     }
     
-    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> UnderwriteContractResponseModel {
-        // Call Estimate Gas first to get possible Error Messages
+    func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> String {
+        // Call estimate Gas to simulate sendTransaction end get possible errors
         let estimateGasRequest = EthereumRequest(
-            method: .ethEstimateGas,
+            method:  .ethEstimateGas,
             params: [model]
         )
         let transactionRequest = EthereumRequest(
@@ -56,9 +56,8 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         ]);
         
         switch transactionResult {
-        case let .success(value):
-            print(value)
-            return try UnderwriteContractResponseModel(data: value[1])!
+        case let .success(result):
+            return result[1]
         case let .failure(error):
             throw error
         }
