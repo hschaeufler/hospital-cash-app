@@ -17,12 +17,12 @@ struct GetMonthlyPremiumRequestModel: ABIFunction {
     public let from: EthereumAddress?=nil
     
     public let birthDate: BigInt
-    public let insuranceStartDate: BigInt
+    public let insuranceStartDate: BigUInt
     public let hospitalCashInWei: BigUInt
     
     init(_ contract: EthereumAddress,
          birthDateTs: BigInt,
-         insuranceStartDateTs: BigInt,
+         insuranceStartDateTs: BigUInt,
          hospitalCashInWei: BigUInt
     ) {
         self.contract = contract
@@ -47,7 +47,7 @@ extension GetMonthlyPremiumRequestModel {
         return GetMonthlyPremiumRequestModel(
             contractAdress,
             birthDateTs: BigInt(entity.birthDate.timeIntervalSince1970),
-            insuranceStartDateTs: BigInt(entity.insuranceStartDate.timeIntervalSince1970),
+            insuranceStartDateTs: BigUInt(entity.insuranceStartDate.timeIntervalSince1970),
             hospitalCashInWei: BigUInt(weiAmount)
         )
     }

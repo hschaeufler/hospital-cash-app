@@ -67,7 +67,8 @@ class InsuranceRepositoryImpl: InsuranceRepository {
                 with: application
             )
             let responseModel = try await walletLocalDatasource.underwriteContract(with: requestModel)
-            return responseModel.contract.toEntity();
+            let entity = responseModel.value.toEntity();
+            return entity;
         } catch let error as RequestError {
             throw try error.toCommonError()
         }

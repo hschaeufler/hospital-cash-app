@@ -14,9 +14,9 @@ struct InsuranceContractModel: ABITuple {
         [
             insuranceStartDate,
             insuranceEndDate,
-            dailyHospitalCashImWei,
+            dailyHospitalCashInWei,
             policyId,
-            birthDate
+            birthday
         ]
     }
     
@@ -32,49 +32,52 @@ struct InsuranceContractModel: ABITuple {
     
     public let insuranceStartDate: BigUInt
     public let insuranceEndDate: BigUInt
-    public let dailyHospitalCashImWei: BigUInt
+    public let dailyHospitalCashInWei: BigUInt
     public let policyId: BigUInt
-    public let birthDate: BigInt
+    public let birthday: BigInt
     
     init(
         insuranceStartDate: BigUInt,
         insuranceEndDate: BigUInt,
-        dailyHospitalCashImWei: BigUInt,
+        dailyHospitalCashInWei: BigUInt,
         policyId: BigUInt,
-        birthDate: BigInt
+        birthday: BigInt
     ) {
         self.insuranceStartDate = insuranceStartDate
         self.insuranceEndDate = insuranceEndDate
-        self.dailyHospitalCashImWei = dailyHospitalCashImWei
+        self.dailyHospitalCashInWei = dailyHospitalCashInWei
         self.policyId = policyId
-        self.birthDate = birthDate
+        self.birthday = birthday
     }
     
     init?(values: [web3.ABIDecoder.DecodedValue]) throws {
         self.insuranceStartDate = try values[0].decoded()
         self.insuranceEndDate = try values[1].decoded()
-        self.dailyHospitalCashImWei = try values[2].decoded()
+        self.dailyHospitalCashInWei = try values[2].decoded()
         self.policyId = try values[3].decoded()
-        self.birthDate = try values[4].decoded()
+        self.birthday = try values[4].decoded()
     }
     
     public func encode(to encoder: web3.ABIFunctionEncoder) throws {
         try encoder.encode(insuranceStartDate)
         try encoder.encode(insuranceEndDate)
-        try encoder.encode(dailyHospitalCashImWei)
+        try encoder.encode(dailyHospitalCashInWei)
         try encoder.encode(policyId)
-        try encoder.encode(birthDate)
+        try encoder.encode(birthday)
     }
 }
 
 extension InsuranceContractModel {
     func toEntity() -> InsuranceContractEntity {
-       InsuranceContractEntity(
+        print(self.insuranceStartDate)
+        print(self.policyId)
+        print(self.dailyHospitalCashInWei)
+       return InsuranceContractEntity(
         insuranceStartDate: Date(timeIntervalSince1970: Double(String(self.insuranceStartDate))!),
         insuranceEndDate: Date(timeIntervalSince1970: Double(String(self.insuranceEndDate))!),
-        dailyHospitalCash: Double(String(self.dailyHospitalCashImWei))! / Double(EthUnits.wei),
+        dailyHospitalCash: Double(String(self.dailyHospitalCashInWei))! / Double(EthUnits.wei),
         policyId: Int(String(self.policyId))!,
-        birthdate: Date(timeIntervalSince1970: Double(String(self.birthDate))!)
+        birthdate: Date(timeIntervalSince1970: Double(String(self.birthday))!)
        )
     }
 }

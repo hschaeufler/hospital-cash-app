@@ -21,18 +21,18 @@ struct PremiumCalculationModel: ABITuple {
     static var types: [ABIType.Type] {
         [
             BigInt.self,
-            BigInt.self,
+            BigUInt.self,
             BigUInt.self
         ]
     }
     
     public let birthDate: BigInt
-    public let insuranceStartDate: BigInt
+    public let insuranceStartDate: BigUInt
     public let hospitalCashInWei: BigUInt
     
     init(
         birthDate: BigInt,
-        insuranceStartDate: BigInt,
+        insuranceStartDate: BigUInt,
         hospitalCashInWei: BigUInt
     ) {
         self.birthDate = birthDate
@@ -58,7 +58,7 @@ extension PremiumCalculationModel {
         let weiAmount = entity.amountHospitalCashEth * Double(EthUnits.wei)
         return PremiumCalculationModel(
             birthDate: BigInt(entity.birthDate.timeIntervalSince1970),
-            insuranceStartDate: BigInt(entity.insuranceStartDate.timeIntervalSince1970),
+            insuranceStartDate: BigUInt(entity.insuranceStartDate.timeIntervalSince1970),
             hospitalCashInWei: BigUInt(weiAmount)
         )
     }

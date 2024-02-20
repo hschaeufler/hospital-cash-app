@@ -57,6 +57,7 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         
         switch transactionResult {
         case let .success(value):
+            print(value)
             return try UnderwriteContractResponseModel(data: value[1])!
         case let .failure(error):
             throw error

@@ -8,12 +8,12 @@
 import Foundation
 import web3
 
-struct UnderwriteContractResponseModel: ABIResponse {
+struct UnderwriteContractResponseModel: ABIResponse, MulticallDecodableResponse {
     static var types: [ABIType.Type] { [InsuranceContractModel.self] }
 
-    var contract: InsuranceContractModel
+    var value: InsuranceContractModel
 
     init?(values: [ABIDecoder.DecodedValue]) throws {
-        self.contract = try values[0].decoded()
+        self.value = try values[0].decoded()
     }
 }
