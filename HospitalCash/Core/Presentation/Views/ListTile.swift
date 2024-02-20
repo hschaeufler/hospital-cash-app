@@ -18,7 +18,7 @@ struct ListTile: View {
     var body: some View {
         HStack(spacing: iconSpacing) {
             Avatar(systemName: systemName)
-                .frame(maxWidth: 60)
+                .font(.title)
             VStack(alignment: .leading, spacing: titleSpacing) {
                 Text(title)
                     .font(.title3)

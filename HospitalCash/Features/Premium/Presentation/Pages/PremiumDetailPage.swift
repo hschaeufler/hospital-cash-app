@@ -31,7 +31,6 @@ struct PremiumDetailPage: View {
                 CustomDivider(maxWidth: 150)
                 Spacer()
                 InsuranceAdvantagesColumn()
-                    .scaledToFit()
                     .padding(.horizontal, 5)
                 Spacer()
                 BorderedButton("Jetzt abschließen") {

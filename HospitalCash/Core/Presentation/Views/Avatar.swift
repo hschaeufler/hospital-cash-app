@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct Avatar: View {
-    @ScaledMetric var padding = 15
+    @ScaledMetric var padding = 10
     
     var systemName: String
     
     var body: some View {
         Image(systemName: systemName)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
             .foregroundColor(.white)
             .padding(padding)
             .background {
@@ -27,4 +25,5 @@ struct Avatar: View {
 
 #Preview {
     Avatar(systemName: "bed.double.circle")
+        .font(.title)
 }

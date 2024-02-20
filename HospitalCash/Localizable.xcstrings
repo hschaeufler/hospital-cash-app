@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    " - " : {
+
+    },
     "%@ Eth / ~ %@ €" : {
       "localizations" : {
         "de" : {
@@ -173,6 +176,12 @@
         }
       }
     },
+    "Das ist ein Test" : {
+
+    },
+    "Das ist eine Description" : {
+
+    },
     "Dein Beitrag" : {
       "localizations" : {
         "en" : {
@@ -182,6 +191,15 @@
           }
         }
       }
+    },
+    "Deine Informationen" : {
+
+    },
+    "Deine Versicherung" : {
+
+    },
+    "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden." : {
+
     },
     "Deine Vorteile" : {
       "localizations" : {
@@ -208,6 +226,9 @@
           }
         }
       }
+    },
+    "Diese musst du bei einem Krankenhausaufenthalt angeben." : {
+
     },
     "ETH" : {
       "localizations" : {
@@ -358,6 +379,9 @@
         }
       }
     },
+    "Gratulation zum \nerfolgreichen Abschluss!" : {
+
+    },
     "Größe" : {
       "localizations" : {
         "en" : {
@@ -367,9 +391,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "Hinweis" : {
       "localizations" : {
@@ -390,6 +411,9 @@
           }
         }
       }
+    },
+    "Höhe Krankenhaustaggeld" : {
+
     },
     "Hospital Cash" : {
       "localizations" : {
@@ -684,6 +708,9 @@
         }
       }
     },
+    "Versicherungsnummer" : {
+
+    },
     "Voll automatisiert" : {
       "localizations" : {
         "de" : {
@@ -741,6 +768,12 @@
           }
         }
       }
+    },
+    "Zeitraum" : {
+
+    },
+    "Zur Übersicht" : {
+
     }
   },
   "version" : "1.0"

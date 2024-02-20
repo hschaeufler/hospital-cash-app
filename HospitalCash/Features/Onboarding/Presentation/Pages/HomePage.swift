@@ -20,7 +20,6 @@ struct HomePage: View {
                 .padding(.horizontal, 15)
             Spacer()
             InsuranceAdvantagesColumn()
-                .scaledToFit()
                 .padding(.horizontal, 5)
             Spacer()
             BottomBar(verticalPadding: verticalPadding) {
