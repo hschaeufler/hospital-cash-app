@@ -117,4 +117,11 @@ extension PremiumContainer {
             insuranceRepository: self.insuraneRepository()
         ) }
     }
+    
+    var getContractByTransaction: Factory<GetContractByTransaction> {
+        self { GetContractByTransactionUseCase(
+            getContract: self.getContrat(),
+            getTransactionState: self.getTransactionState()
+        ) }
+    }
 }

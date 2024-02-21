@@ -25,9 +25,7 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.getTransactionState) private var getTransactionStateUseCase
-    @ObservationIgnored
-    @Injected(\PremiumContainer.getContrat) private var getContractUseCase
+    @Injected(\PremiumContainer.getContractByTransaction) private var getContractByTransactionUseCase
     
     var path: [NavigationDestination] = []
     
@@ -63,25 +61,18 @@ import SwiftUI
     var premiumEntity: PremiumEntity? = nil
     
     var fromTomorrowRange: ClosedRange<Date> {
-        Calendar.current.date(
-            byAdding: .day,
-            value: 1,
-            to: Date.now
-        )!...Calendar.current.date(
+        DateUtils.tommorow()...Calendar.current.date(
             byAdding: .month,
             value: 6,
             to: Date.now
         )!
     }
     var untilYesterdayRange: PartialRangeThrough<Date> {
-        ...Calendar.current.date(
-            byAdding: .day,
-            value: -1,
-            to: Date.now
-        )!
+        ...DateUtils.yesterday()
     }
-    var insuranceStartDate = Date()
-    var birthDate = Date()
+    
+    var insuranceStartDate = DateUtils.tommorow()
+    var birthDate = DateUtils.yesterday()
     
     var isCalculationAllowed: Bool {
         amountHospitalCashEth != 0
@@ -92,6 +83,19 @@ import SwiftUI
     
     var tx: String? = nil
     var insuranceContract: InsuranceContractEntity? = nil
+    
+    func navigate(to destination: NavigationDestination) {
+        self.path.append(destination)
+    }
+    
+    func navigateWithReplace(to destination: NavigationDestination) {
+        self.path.removeAll()
+        self.path.append(destination)
+    }
+    
+    func pop() {
+        self.path.removeLast()
+    }
     
     func checkBMI() async {
         do {
@@ -118,19 +122,6 @@ import SwiftUI
         } catch {
             self.error = error
         }
-    }
-    
-    func navigate(to destination: NavigationDestination) {
-        self.path.append(destination)
-    }
-    
-    func navigateWithReplace(to destination: NavigationDestination) {
-        self.path.removeAll()
-        self.path.append(destination)
-    }
-    
-    func pop() {
-        self.path.removeLast()
     }
     
     func caculatePremium() async {
@@ -182,25 +173,13 @@ import SwiftUI
         }
     }
     
-    func getContractStatus() {
+    func fetchContract() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             Task {
                 do {
-                    guard self.insuranceContract == nil else {
-                        return
-                    }
-                    
-                    let transactionStatus = try await self.getTransactionStateUseCase(with: self.tx!)
-                    switch transactionStatus {
-                    case .failure:
-                        throw CommonError.contractExecutionError(message: "Transaction fehlerhaft")
-                    case .success:
-                        self.insuranceContract = try await self.getContractUseCase()
-                        self.getContractStatus()
-                        break
-                    case .notProcessed:
-                        self.getContractStatus()
-                        break
+                    self.insuranceContract = try await self.getContractByTransactionUseCase(with: self.tx!);
+                    if(self.insuranceContract == nil) {
+                        self.fetchContract()
                     }
                 } catch {
                     print(error)
