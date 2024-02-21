@@ -63,25 +63,18 @@ import SwiftUI
     var premiumEntity: PremiumEntity? = nil
     
     var fromTomorrowRange: ClosedRange<Date> {
-        Calendar.current.date(
-            byAdding: .day,
-            value: 1,
-            to: Date.now
-        )!...Calendar.current.date(
+        DateUtils.tommorow()...Calendar.current.date(
             byAdding: .month,
             value: 6,
             to: Date.now
         )!
     }
     var untilYesterdayRange: PartialRangeThrough<Date> {
-        ...Calendar.current.date(
-            byAdding: .day,
-            value: -1,
-            to: Date.now
-        )!
+        ...DateUtils.yesterday()
     }
-    var insuranceStartDate = Date()
-    var birthDate = Date()
+    
+    var insuranceStartDate = DateUtils.tommorow()
+    var birthDate = DateUtils.yesterday()
     
     var isCalculationAllowed: Bool {
         amountHospitalCashEth != 0
@@ -92,6 +85,19 @@ import SwiftUI
     
     var tx: String? = nil
     var insuranceContract: InsuranceContractEntity? = nil
+    
+    func navigate(to destination: NavigationDestination) {
+        self.path.append(destination)
+    }
+    
+    func navigateWithReplace(to destination: NavigationDestination) {
+        self.path.removeAll()
+        self.path.append(destination)
+    }
+    
+    func pop() {
+        self.path.removeLast()
+    }
     
     func checkBMI() async {
         do {
@@ -118,19 +124,6 @@ import SwiftUI
         } catch {
             self.error = error
         }
-    }
-    
-    func navigate(to destination: NavigationDestination) {
-        self.path.append(destination)
-    }
-    
-    func navigateWithReplace(to destination: NavigationDestination) {
-        self.path.removeAll()
-        self.path.append(destination)
-    }
-    
-    func pop() {
-        self.path.removeLast()
     }
     
     func caculatePremium() async {

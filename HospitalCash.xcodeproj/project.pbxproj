@@ -55,6 +55,7 @@
 		846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F162B6B08250074F2F3 /* CalculateEthInEur.swift */; };
 		846D6F1B2B6C372D0074F2F3 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 846D6F1A2B6C372D0074F2F3 /* metamask-ios-sdk */; };
 		846D6F1E2B6C38D90074F2F3 /* WalletLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */; };
+		849471C62B863CA9000EC4D3 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471C52B863CA9000EC4D3 /* DateUtils.swift */; };
 		84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */; };
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
@@ -154,6 +155,7 @@
 		846D6F142B6B08020074F2F3 /* CalculateEurInEth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEurInEth.swift; sourceTree = "<group>"; };
 		846D6F162B6B08250074F2F3 /* CalculateEthInEur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateEthInEur.swift; sourceTree = "<group>"; };
 		846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLocalDataSource.swift; sourceTree = "<group>"; };
+		849471C52B863CA9000EC4D3 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		84A4F8772B6368F30018AA37 /* HospitalCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCashApp.swift; sourceTree = "<group>"; };
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				8454E8B52B768FC1007A3887 /* EthUnits.swift */,
+				849471C52B863CA9000EC4D3 /* DateUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -823,6 +826,7 @@
 				84ED67492B64488F001D600A /* ProductDescriptionGroup.swift in Sources */,
 				84ED67862B69D102001D600A /* CheckHealthQuestionValidity.swift in Sources */,
 				840C6DBE2B84C5EB0052E6AA /* CopyButton.swift in Sources */,
+				849471C62B863CA9000EC4D3 /* DateUtils.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,
