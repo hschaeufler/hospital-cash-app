@@ -14,6 +14,7 @@ import Combine
 protocol WalletLocalDataSource {
     func underwriteContract(with model: UnderwriteContractRequestModel) async throws -> String
     func connectWallet() async throws -> String
+    func getWalletAdress() -> String
 }
 
 public class WalletLocalDataSourceImpl: WalletLocalDataSource {
@@ -61,6 +62,10 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
         case let .failure(error):
             throw error
         }
+    }
+    
+    func getWalletAdress() -> String {
+        return metaMaskSDK.account;
     }
     
 }

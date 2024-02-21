@@ -38,3 +38,14 @@ struct NewContractEventModel: ABIEvent {
         self.dailyHospitalCashInWei = try data[3].decoded()
     }
 }
+
+extension NewContractEventModel {
+    func toEntity() -> NewContractEventEntity {
+       return NewContractEventEntity(
+        policyId: Int(String(self.policyId))!,
+        insuranceStartDate: Date(timeIntervalSince1970: Double(String(self.insuranceStartDate))!),
+        insuranceEndDate: Date(timeIntervalSince1970: Double(String(self.insuranceEndDate))!),
+        dailyHospitalCash: Double(String(self.dailyHospitalCashInWei))! / Double(EthUnits.wei)
+       )
+    }
+}

@@ -84,12 +84,25 @@ class InsuranceRepositoryImpl: InsuranceRepository {
         let model = GetContractRequestModel(contractAdress)
         let result = try await insuranceContractRemoteDatasource.getContract(with: model)
         return result.isValid
-            ? result.insuranceContract.toEntity()
-            : nil;
+        ? result.insuranceContract.toEntity()
+        : nil;
+    }
+    
+    func getNewContractEvent(address: String) async throws -> NewContractEventEntity? {
+        return try await insuranceContractRemoteDatasource.getNewContractEvents(
+            policyHolder: EthereumAddress(address),
+            fromBlock: .Earliest,
+            toBlock: .Latest
+        ).map { model in
+            model.toEntity()
+        }.last
     }
     
     func connectWallet() async throws -> String {
         return try await walletLocalDatasource.connectWallet();
     }
     
+    func getWalletAddress() -> String {
+        return walletLocalDatasource.getWalletAdress();
+    }
 }

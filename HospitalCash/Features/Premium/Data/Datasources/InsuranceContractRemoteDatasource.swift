@@ -26,6 +26,11 @@ protocol InsuranceContractRemoteDatasource {
     func getContract(
         with model: GetContractRequestModel
     ) async throws -> GetContractResponseModel
+    func getNewContractEvents(
+        policyHolder: EthereumAddress,
+        fromBlock: EthereumBlock,
+        toBlock: EthereumBlock
+    ) async throws -> [NewContractEventModel]
 }
 
 public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
@@ -85,5 +90,45 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
             withClient: client,
             responseType: GetContractResponseModel.self
         )
+    }
+    
+    func transferEventsTo(recipient: EthereumAddress, fromBlock: EthereumBlock, toBlock: EthereumBlock) async throws -> [ERC20Events.Transfer] {
+        guard let result = try? ABIEncoder.encode(recipient).bytes, let sig = try? ERC20Events.Transfer.signature() else {
+            throw EthereumSignerError.unknownError
+        }
+
+        let data = try await client.getEvents(
+            addresses: nil,
+            topics: [sig, nil, String(hexFromBytes: result)],
+            fromBlock: fromBlock,
+            toBlock: toBlock,
+            eventTypes: [ERC20Events.Transfer.self]
+        )
+
+        if let events = data.events as? [ERC20Events.Transfer] {
+            return events
+        } else {
+            throw EthereumClientError.decodeIssue
+        }
+    }
+    
+    func getNewContractEvents(policyHolder: EthereumAddress, fromBlock: EthereumBlock, toBlock: EthereumBlock) async throws -> [NewContractEventModel] {
+        guard let result = try? ABIEncoder.encode(policyHolder).bytes, let sig = try? NewContractEventModel.signature() else {
+            throw EthereumSignerError.unknownError
+        }
+
+        let data = try await client.getEvents(
+            addresses: nil,
+            topics: [sig, nil, String(hexFromBytes: result)],
+            fromBlock: fromBlock,
+            toBlock: toBlock,
+            eventTypes: [NewContractEventModel.self]
+        )
+
+        if let events = data.events as? [NewContractEventModel] {
+            return events
+        } else {
+            throw EthereumClientError.decodeIssue
+        }
     }
 }
