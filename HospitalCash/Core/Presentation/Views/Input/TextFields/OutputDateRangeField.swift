@@ -16,8 +16,6 @@ struct OutputDateRangeField: View {
     
     @ScaledMetric var verticalSpacing = 10
     
-    var copyString = "\(Date().formatted(date: .numeric, time: .omitted)) - \(Date().formatted(date: .numeric, time: .omitted))"
-    
     var body: some View {
         VStack(
             alignment: .leading,
@@ -30,15 +28,17 @@ struct OutputDateRangeField: View {
                     .foregroundStyle(.secondary)
             }
             HStack {
-                Text(Date().formatted(date: .numeric, time: .omitted))
+                Text(startDate.formatted(date: .numeric, time: .omitted))
                 Spacer()
                 Text(" - ")
                 Spacer()
-                Text(Date().formatted(date: .numeric, time: .omitted))
+                Text(endDate.formatted(date: .numeric, time: .omitted))
                 if allowCopy {
-                    CopyButton(copyString: copyString)
-                        .foregroundStyle(.secondary)
-                        .padding(.leading, 10)
+                    CopyButton(
+                        copyString: "\(startDate.formatted(date: .numeric, time: .omitted)) - \(endDate.formatted(date: .numeric, time: .omitted))"
+                    )
+                    .foregroundStyle(.secondary)
+                    .padding(.leading, 10)
                 }
             }
         }

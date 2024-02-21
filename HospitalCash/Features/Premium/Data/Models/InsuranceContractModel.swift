@@ -68,7 +68,7 @@ struct InsuranceContractModel: ABITuple {
 }
 
 extension InsuranceContractModel {
-    func toEntity() -> InsuranceContractEntity {
+    func toEntity() -> InsuranceContractEntity {        
        return InsuranceContractEntity(
         policyId: Int(String(self.policyId))!,
         insuranceStartDate: Date(timeIntervalSince1970: Double(String(self.insuranceStartDate))!),
