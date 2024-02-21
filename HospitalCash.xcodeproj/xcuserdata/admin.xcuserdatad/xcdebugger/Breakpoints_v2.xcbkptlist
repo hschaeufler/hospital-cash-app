@@ -295,7 +295,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "297318D0-8C5F-466A-A6CD-BED06932A00E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HospitalCash/Features/Premium/Data/Datasources/WalletLocalDataSource.swift"

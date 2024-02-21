@@ -23,13 +23,22 @@ struct HomePage: View {
                 .padding(.horizontal, 5)
             Spacer()
             BottomBar(verticalPadding: verticalPadding) {
-                ProminentButton("Jetzt Beitrag berechnen") {
-                    showingPremiumCalculator.toggle()
-                }
-                .sheet(isPresented: $showingPremiumCalculator) {
-                    PremiumCalculationSheet()
+                VStack {
+                    ProminentButton("Jetzt Beitrag berechnen") {
+                        showingPremiumCalculator.toggle()
+                    }
+                    HStack {
+                        Text("Bereits versichert?")
+                            .foregroundStyle(.secondary)
+                        Button("Jetzt einloggen") {
+                            
+                        }
+                    }
                 }
             }
+        }
+        .sheet(isPresented: $showingPremiumCalculator) {
+            PremiumCalculationSheet()
         }
     }
 }
