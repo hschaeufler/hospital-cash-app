@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol GetContract {
     func callAsFunction() async throws -> InsuranceContractEntity?
 }

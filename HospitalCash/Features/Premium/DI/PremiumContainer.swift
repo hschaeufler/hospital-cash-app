@@ -99,4 +99,16 @@ extension PremiumContainer {
             insuranceRepository: self.insuraneRepository()
         ) }
     }
+    
+    var getContrat: Factory<GetContract> {
+        self { GetContractUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
+    
+    var getTransactionState: Factory<GetTransactionState> {
+        self { GetTransactionStateUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
 }
