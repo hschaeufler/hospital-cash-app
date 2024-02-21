@@ -32,7 +32,7 @@ struct ContractDetailPage: View {
                 BorderedButton("Zur Übersicht") {}
             }
         }
-        .task {
+        .onAppear {
             viewModel.getContractStatus()
         }
     }

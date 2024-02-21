@@ -14,11 +14,13 @@ struct GetContractRequestModel: ABIFunction {
     let gasPrice: BigUInt? = nil
     let gasLimit: BigUInt? = nil
     let contract: EthereumAddress
-    let from: EthereumAddress?=nil
+    var from: EthereumAddress? = nil
     
-    init(_ contract: EthereumAddress
+    init(_ contract: EthereumAddress,
+         from: EthereumAddress
     ) {
         self.contract = contract
+        self.from = from
     }
     
     func encode(to encoder: web3.ABIFunctionEncoder) throws {}

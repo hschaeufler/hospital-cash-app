@@ -124,6 +124,11 @@ import SwiftUI
         self.path.append(destination)
     }
     
+    func navigateWithReplace(to destination: NavigationDestination) {
+        self.path.removeAll()
+        self.path.append(destination)
+    }
+    
     func pop() {
         self.path.removeLast()
     }
@@ -169,7 +174,7 @@ import SwiftUI
             )
             self.tx = try await underwriteContractUseCase(with: application)
             
-            self.navigate(to: .contractDetail)
+            self.navigateWithReplace(to: .contractDetail)
             self.showPaymentSheet = false;
         } catch {
             self.showPaymentSheet = false;

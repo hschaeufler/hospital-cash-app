@@ -59,11 +59,11 @@ class InsuranceRepositoryImpl: InsuranceRepository {
         with application: ContractApplicationEntity
     ) async throws -> String {
         let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
+        let walletAdress = walletLocalDatasource.getWalletAdress()
         do {
-            let accountAdress = try await walletLocalDatasource.connectWallet();
             let requestModel = try UnderwriteContractRequestModel.fromEntity(
                 contractAdress,
-                from: accountAdress,
+                from: walletAdress,
                 with: application
             )
             return try await walletLocalDatasource.underwriteContract(with: requestModel)
@@ -81,7 +81,8 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     
     func getContract() async throws -> InsuranceContractEntity? {
         let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
-        let model = GetContractRequestModel(contractAdress)
+        let walletAddress = walletLocalDatasource.getWalletAdress()
+        let model = GetContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
         let result = try await insuranceContractRemoteDatasource.getContract(with: model)
         return result.isValid
         ? result.insuranceContract.toEntity()

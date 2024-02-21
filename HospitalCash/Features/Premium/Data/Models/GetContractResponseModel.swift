@@ -10,7 +10,7 @@ import web3
 import BigInt
 
 struct GetContractResponseModel: ABIResponse {
-    static var types: [ABIType.Type] { [BigUInt.self, InsuranceContractModel.self] }
+    static var types: [ABIType.Type] { [Bool.self, InsuranceContractModel.self] }
     let isValid: Bool
     let insuranceContract: InsuranceContractModel
     
