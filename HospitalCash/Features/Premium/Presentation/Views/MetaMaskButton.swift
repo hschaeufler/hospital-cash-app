@@ -1,5 +1,5 @@
 //
-//  PayWithMetaMaskButton.swift
+//  MetaMaskButton.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 15.02.24.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct PayWithMetaMaskButton: View {
+struct MetaMaskButton: View {
+    var titleKey: LocalizedStringKey
     var action: () -> Void
     
     var body: some View {
@@ -34,5 +35,5 @@ struct PayWithMetaMaskButton: View {
 }
 
 #Preview {
-    PayWithMetaMaskButton {}
+    MetaMaskButton (titleKey: "Pay With") {}
 }

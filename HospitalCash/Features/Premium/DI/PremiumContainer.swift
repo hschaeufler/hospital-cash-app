@@ -111,4 +111,10 @@ extension PremiumContainer {
             insuranceRepository: self.insuraneRepository()
         ) }
     }
+    
+    var connectWallet: Factory<ConnectWallet> {
+        self { ConnectWalletUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
 }

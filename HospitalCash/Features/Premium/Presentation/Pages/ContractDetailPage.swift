@@ -34,10 +34,10 @@ struct ContractDetailPage: View {
 #Preview {
     let viewModel = PremiumCalculationVM()
     viewModel.insuranceContract = InsuranceContractEntity(
+        policyId: 1,
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),
         dailyHospitalCash: 100,
-        policyId: 1,
         birthdate: Date()
     );
     

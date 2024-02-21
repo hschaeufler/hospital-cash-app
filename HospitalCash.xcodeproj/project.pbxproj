@@ -20,7 +20,7 @@
 		840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DD22B857AC70052E6AA /* GetTransactionState.swift */; };
 		840C6DD52B85811C0052E6AA /* NewContractEventEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C6DD42B85811C0052E6AA /* NewContractEventEntity.swift */; };
 		841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */; };
-		841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */; };
+		841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
 		8454E88F2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */; };
 		8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */; };
@@ -119,7 +119,7 @@
 		840C6DD22B857AC70052E6AA /* GetTransactionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionState.swift; sourceTree = "<group>"; };
 		840C6DD42B85811C0052E6AA /* NewContractEventEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContractEventEntity.swift; sourceTree = "<group>"; };
 		841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetamaskPage.swift; sourceTree = "<group>"; };
-		841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetaMaskButton.swift; sourceTree = "<group>"; };
+		841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskButton.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
 		8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractRemoteDatasource.swift; sourceTree = "<group>"; };
 		8454E8A52B75B96A007A3887 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				84ED67522B652F68001D600A /* PremiumCalculationSheet.swift */,
-				841A96572B7E68AB00BDA450 /* PayWithMetaMaskButton.swift */,
+				841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */,
 				8454E8BD2B77DC8F007A3887 /* PremiumDetailGroup.swift */,
 				840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */,
 			);
@@ -782,7 +782,7 @@
 				84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */,
 				84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */,
 				840C6DCD2B8575AD0052E6AA /* GetContractRequestModel.swift in Sources */,
-				841A96582B7E68AB00BDA450 /* PayWithMetaMaskButton.swift in Sources */,
+				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 protocol UnderwriteContract {
     func callAsFunction(
         with application: ContractApplicationEntity
-    ) async throws -> InsuranceContractEntity
+    ) async throws -> String
 }
 
 struct UnderwriteContractUseCase: UnderwriteContract {
@@ -22,7 +22,7 @@ struct UnderwriteContractUseCase: UnderwriteContract {
     
     func callAsFunction(
         with application: ContractApplicationEntity
-    ) async throws -> InsuranceContractEntity {
+    ) async throws -> String {
         return try await insuranceRepository.underwriteContract(with: application);
     }
 }

@@ -41,7 +41,7 @@ struct PremiumDetailPage: View {
         }
         .sheet(isPresented: $viewModel.showPaymentSheet, content: {
             NavigationStack {
-                PayWithMetamaskPage()
+                PayWithMetamaskPage(isPayment: true)
                     .environment(viewModel)
             }
             .presentationDetents([.fraction(1 / 3)])

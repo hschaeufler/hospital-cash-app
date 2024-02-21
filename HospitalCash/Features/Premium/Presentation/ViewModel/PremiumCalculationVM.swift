@@ -21,6 +21,8 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
     @ObservationIgnored
+    @Injected(\PremiumContainer.connectWallet) private var connectWalletUseCase
+    @ObservationIgnored
     @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
     
     var path: [NavigationDestination] = []
@@ -81,8 +83,10 @@ import SwiftUI
         amountHospitalCashEth != 0
     }
     
+    var showConnectSheet = false;
     var showPaymentSheet = false;
     
+    var tx: String? = nil
     var insuranceContract: InsuranceContractEntity? = nil
     
     func checkBMI() async {
@@ -134,6 +138,16 @@ import SwiftUI
         }
     }
     
+    func connectWallet() async {
+        do {
+            let _ = try await self.connectWalletUseCase();
+            self.showConnectSheet = false;
+            self.showPaymentSheet = true;
+        } catch {
+            self.error = error
+        }
+    }
+    
     func underwriteContract() async {
         do {
             let application = ContractApplicationEntity(
@@ -149,12 +163,11 @@ import SwiftUI
                 ),
                 yearlyPremiumInEth: self.premiumEntity!.yearlyEthPremium
             )
-            self.insuranceContract = try await underwriteContractUseCase(with: application)
+            self.tx = try await underwriteContractUseCase(with: application)
+            
             self.navigate(to: .contractDetail)
             self.showPaymentSheet = false;
         } catch {
-            self.showPaymentSheet = false;
-            print(error.localizedDescription)
             self.error = error
         }
     }

@@ -48,10 +48,10 @@ struct ContractDetailGroup: View {
 #Preview {
     ContractDetailGroup(
     insuranceContract: InsuranceContractEntity(
+        policyId: 12334,
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),
         dailyHospitalCash: 1222,
-        policyId: 12334,
         birthdate: Date()
     )
     )
