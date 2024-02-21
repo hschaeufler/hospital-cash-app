@@ -14,7 +14,7 @@ struct MetaMaskButton: View {
     var body: some View {
         Button ( action: action, label: {
             VStack(spacing: 0) {
-                Text("Pay with")
+                Text(titleKey)
                     .font(.title2)
                 Image("metamask_logo")
                     .resizable()

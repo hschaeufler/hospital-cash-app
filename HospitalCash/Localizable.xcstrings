@@ -176,6 +176,12 @@
         }
       }
     },
+    "Connect with" : {
+
+    },
+    "Connect with Metamask" : {
+
+    },
     "Das ist ein Test" : {
 
     },
@@ -584,6 +590,9 @@
       }
     },
     "Pay with" : {
+
+    },
+    "Pay With" : {
 
     },
     "Pay with Metamask" : {

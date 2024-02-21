@@ -13,7 +13,6 @@ struct ContractDetailPage: View {
     var body: some View {
         SheetPageLayout("Deine Versicherung") {
             VStack {
-                Spacer()
                 Image(systemName: "fireworks")
                     .font(.system(size: 90))
                     .foregroundStyle(.green, .blue)
@@ -23,10 +22,18 @@ struct ContractDetailPage: View {
                     .bold()
                 CustomDivider(maxWidth: 150)
                     .padding(.vertical, 10)
-                ContractDetailGroup(insuranceContract: viewModel.insuranceContract!)
+                if let insuranceContract = viewModel.insuranceContract {
+                    ContractDetailGroup(insuranceContract: insuranceContract)
+                } else {
+                    Spacer()
+                    ProgressView()
+                }
                 Spacer()
                 BorderedButton("Zur Übersicht") {}
             }
+        }
+        .task {
+            viewModel.getContractStatus()
         }
     }
 }

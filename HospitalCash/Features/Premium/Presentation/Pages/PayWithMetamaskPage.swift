@@ -8,30 +8,38 @@
 import SwiftUI
 
 struct PayWithMetamaskPage: View {
+    @Environment(PremiumCalculationVM.self) private var viewModel
     var isPayment: Bool
     
-    @Environment(PremiumCalculationVM.self) private var viewModel
-    
     var body: some View {
-        SheetPageLayout("Pay with Metamask") {
-            VStack(content: {
-                MetaMaskButton(
-                    titleKey: isPayment ? "Pay with" : "Connect with"
-                ) {
-                    Task {
-                        isPayment ?
-                        await viewModel.underwriteContract() :
-                        await viewModel.connectWallet()
-                    }
+        NavigationStack {
+            SheetPageLayout(
+                isPayment
+                ? "Pay with Metamask"
+                : "Connect with Metamask") {
+                    VStack(content: {
+                        MetaMaskButton(
+                            titleKey: isPayment
+                            ? "Pay with"
+                            : "Connect with"
+                        ) {
+                            Task {
+                                isPayment ?
+                                await viewModel.underwriteContract() :
+                                await viewModel.connectWallet()
+                            }
+                        }
+                        .padding(10)
+                        Spacer()
+                    })
                 }
-                .padding(10)
-                Spacer()
-            })
         }
+        .presentationDetents([.fraction(1 / 3)])
+        .presentationDragIndicator(.visible)
     }
 }
 
 #Preview {
-    PayWithMetamaskPage(isPayment: true)
+    PayWithMetamaskPage(isPayment: false)
         .environment(PremiumCalculationVM())
 }

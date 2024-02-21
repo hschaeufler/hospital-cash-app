@@ -191,6 +191,21 @@
                   endingLineNumber = "78"
                   offsetFromSymbolStart = "1796">
                </Location>
+               <Location
+                  uuid = "BF6D4A2A-41F2-4288-B41E-D12038E2414B - 919a40cfd4e36b9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HospitalCash.InsuranceContractModel.toEntity() -&gt; HospitalCash.InsuranceContractEntity"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Models/InsuranceContractModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1100">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,8 +297,8 @@
             filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "underwriteContract()"
             landmarkType = "7">
          </BreakpointContent>
@@ -381,6 +396,1051 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "init?(values:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C426DFF6-7EE9-405F-BEAD-42FEFBEDFEF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C426DFF6-7EE9-405F-BEAD-42FEFBEDFEF6 - a2b5866b55bbb2ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "C426DFF6-7EE9-405F-BEAD-42FEFBEDFEF6 - a2b5866b55bbb2ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - a2b5866b55bbb2ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - c7ae518b588d0afe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - 4de322a89fe976a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - 74c94fee29de2aaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - 4de322a89fe976a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - a2b5866b55bbb2ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "B6CC1382-ED9C-4581-8743-980A7D11F8D8 - 74c94fee29de2aaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8175660-002A-4FC0-902A-94BA250A352E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8175660-002A-4FC0-902A-94BA250A352E - a2b5866b55bbb127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "C8175660-002A-4FC0-902A-94BA250A352E - a2b5866b55bbb127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "C8175660-002A-4FC0-902A-94BA250A352E - a2b5866b55bbb127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - ba4c1d25084afe4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - 23da07d1435a5603"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - a2b5866b55bbb250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - 78741109c2f1c853"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - a2b5866b55bbb250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "FC33810A-E628-428C-9E04-A0BAD8D95A97 - 78741109c2f1c853"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - ba4c1d25084afe4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - 23da07d1435a5603"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - a2b5866b55bbb250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - 78741109c2f1c853"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - a2b5866b55bbb250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "BB7F48C2-0234-44B9-8A83-742E9F08ABBE - 78741109c2f1c853"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A021B63-2090-4E71-B509-6364D4B516C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A021B63-2090-4E71-B509-6364D4B516C9 - a2b5866b55bbb20e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "2A021B63-2090-4E71-B509-6364D4B516C9 - a2b5866b55bbb20e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51BF15F8-29F2-4F13-AEBD-70E8D6BC2FE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51BF15F8-29F2-4F13-AEBD-70E8D6BC2FE6 - a2b5866b55bbb20e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "51BF15F8-29F2-4F13-AEBD-70E8D6BC2FE6 - a2b5866b55bbb20e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82A32E63-C961-4CFC-883B-25A2E3DF90AF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82A32E63-C961-4CFC-883B-25A2E3DF90AF - a2b5866b55bbb148"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "82A32E63-C961-4CFC-883B-25A2E3DF90AF - 4de322a89fe9756b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDCE7CAF-2945-4BEE-9ED4-5E70596A268F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CDCE7CAF-2945-4BEE-9ED4-5E70596A268F - a2b5866b55bbb148"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "CDCE7CAF-2945-4BEE-9ED4-5E70596A268F - a2b5866b55bbb127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "CDCE7CAF-2945-4BEE-9ED4-5E70596A268F - a2b5866b55bbb127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - a2b5866b55bbb2ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - c7ae518b588d0afe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - 4de322a89fe976a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - 74c94fee29de2aaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - 4de322a89fe976a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - a2b5866b55bbb2ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "DABE8DC9-4B9C-462D-AE3A-B5F6FF371354 - 74c94fee29de2aaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - a2b5866b55bbb1e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - 4de322a89fe975e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - 78741109c2f1cbe6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - 74c94fee29de29e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - a2b5866b55bbb106"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "D9DD9924-A7A8-47C0-82ED-858D0FAC7FA4 - a2b5866b55bbb106"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 @Swift.MainActor () -&gt; () in HospitalCash.PremiumCalculationVM.getContractStatus() -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "892">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "getContract()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD - 197c5b759b6a5d7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.getContract() async throws -&gt; Swift.Optional&lt;HospitalCash.InsuranceContractEntity&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD - 9ab95bd40afc4d47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for HospitalCash.InsuranceRepositoryImpl.getContract() async throws -&gt; Swift.Optional&lt;HospitalCash.InsuranceContractEntity&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD - 2e98fe99f143197c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.getContract() async throws -&gt; Swift.Optional&lt;HospitalCash.InsuranceContractEntity&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD - d976d3af022fbb7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.getContract() async throws -&gt; Swift.Optional&lt;HospitalCash.InsuranceContractEntity&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "9EFC84E7-3917-41C4-87F0-94B62637BCDD - d976d3af022fbb7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for HospitalCash.InsuranceRepositoryImpl.getContract() async throws -&gt; Swift.Optional&lt;HospitalCash.InsuranceContractEntity&gt;"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A20C9DD-B3B8-4383-B4FA-86BB604E7038"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "getContract()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FACF8D1-A283-4D8F-A816-3A70BEDF9389"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Data/Repositories/InsuranceRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getContract()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E74492A3-3F59-46DD-ABA1-C187CDAA64AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "getContractStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A02E6114-6EC6-43A0-A297-A0065E74E8DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Premium/Presentation/ViewModel/PremiumCalculationVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "getContractStatus()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

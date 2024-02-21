@@ -34,19 +34,27 @@ struct PremiumDetailPage: View {
                     .padding(.horizontal, 5)
                 Spacer()
                 BorderedButton("Jetzt abschließen") {
-                    viewModel.showPaymentSheet.toggle()
+                    viewModel.showConnectSheet.toggle()
                 }
             }
-
+            
         }
-        .sheet(isPresented: $viewModel.showPaymentSheet, content: {
+        .sheet(isPresented: $viewModel.showConnectSheet) {
+            NavigationStack {
+                PayWithMetamaskPage(isPayment: false)
+                    .environment(viewModel)
+            }
+            .presentationDetents([.fraction(1 / 3)])
+            .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $viewModel.showPaymentSheet) {
             NavigationStack {
                 PayWithMetamaskPage(isPayment: true)
                     .environment(viewModel)
             }
             .presentationDetents([.fraction(1 / 3)])
             .presentationDragIndicator(.visible)
-        })
+        }
     }
 }
 

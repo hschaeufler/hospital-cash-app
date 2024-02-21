@@ -24,6 +24,10 @@ import SwiftUI
     @Injected(\PremiumContainer.connectWallet) private var connectWalletUseCase
     @ObservationIgnored
     @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.getTransactionState) private var getTransactionStateUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.getContrat) private var getContractUseCase
     
     var path: [NavigationDestination] = []
     
@@ -151,12 +155,12 @@ import SwiftUI
     func underwriteContract() async {
         do {
             let application = ContractApplicationEntity(
-                healthQuestions: healthQuestions, 
+                healthQuestions: healthQuestions,
                 premiumCalculation: PremiumCalculationEntity(
                     amountHospitalCashEth: self.amountHospitalCashEth,
                     insuranceStartDate: self.insuranceStartDate,
                     birthDate: self.birthDate
-                ), 
+                ),
                 bodyMeasure: BodyMeasureEntity(
                     heightInCm: self.height,
                     weightInKg: self.weight
@@ -168,7 +172,37 @@ import SwiftUI
             self.navigate(to: .contractDetail)
             self.showPaymentSheet = false;
         } catch {
+            self.showPaymentSheet = false;
             self.error = error
+        }
+    }
+    
+    func getContractStatus() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            Task {
+                do {
+                    guard self.insuranceContract == nil else {
+                        return
+                    }
+                    
+                    let transactionStatus = try await self.getTransactionStateUseCase(with: self.tx!)
+                    switch transactionStatus {
+                    case .failure:
+                        throw CommonError.contractExecutionError(message: "Transaction fehlerhaft")
+                    case .success:
+                        self.insuranceContract = try await self.getContractUseCase()
+                        self.getContractStatus()
+                        break
+                    case .notProcessed:
+                        self.getContractStatus()
+                        break
+                    }
+                } catch {
+                    print(error)
+                    self.error = error
+                }
+            }
+            
         }
     }
 }
