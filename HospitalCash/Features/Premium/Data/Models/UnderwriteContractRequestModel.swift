@@ -26,6 +26,7 @@ struct UnderwriteContractRequestModel: CodableData {
         self.to = contract.asString()
         self.from = from
         self.value = UnderwriteContractRequestModel.encodeValue(value)
+        print(self.value)
         self.data = try UnderwriteContractRequestModel.encodeData(contractApplication)
     }
     
@@ -36,7 +37,7 @@ struct UnderwriteContractRequestModel: CodableData {
     }
     
     private static func encodeValue(_ value: BigUInt) -> String {
-        return value.web3.hexString
+        return value.web3.hexStringNoLeadingZeroes
     }
     
     func socketRepresentation() -> NetworkData {

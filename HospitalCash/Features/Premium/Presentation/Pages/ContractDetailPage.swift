@@ -33,7 +33,7 @@ struct ContractDetailPage: View {
             }
         }
         .onAppear {
-            viewModel.getContractStatus()
+            viewModel.fetchContract()
         }
     }
 }

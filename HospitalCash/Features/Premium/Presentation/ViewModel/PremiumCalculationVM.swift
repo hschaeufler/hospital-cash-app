@@ -25,9 +25,7 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.getTransactionState) private var getTransactionStateUseCase
-    @ObservationIgnored
-    @Injected(\PremiumContainer.getContrat) private var getContractUseCase
+    @Injected(\PremiumContainer.getContractByTransaction) private var getContractByTransactionUseCase
     
     var path: [NavigationDestination] = []
     
@@ -175,25 +173,13 @@ import SwiftUI
         }
     }
     
-    func getContractStatus() {
+    func fetchContract() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             Task {
                 do {
-                    guard self.insuranceContract == nil else {
-                        return
-                    }
-                    
-                    let transactionStatus = try await self.getTransactionStateUseCase(with: self.tx!)
-                    switch transactionStatus {
-                    case .failure:
-                        throw CommonError.contractExecutionError(message: "Transaction fehlerhaft")
-                    case .success:
-                        self.insuranceContract = try await self.getContractUseCase()
-                        self.getContractStatus()
-                        break
-                    case .notProcessed:
-                        self.getContractStatus()
-                        break
+                    self.insuranceContract = try await self.getContractByTransactionUseCase(with: self.tx!);
+                    if(self.insuranceContract == nil) {
+                        self.fetchContract()
                     }
                 } catch {
                     print(error)
