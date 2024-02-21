@@ -20,9 +20,12 @@ protocol InsuranceContractRemoteDatasource {
     func checkHealthQuestions(
         with model: CheckHealthQuestionsRequestModel
     ) async throws -> CheckHealthQuestionsResponseModel
-    func getUnderwriteTransaction(
+    func getTransactionReciept(
         with tx: String
-    ) async throws -> UnderwriteContractResponseModel
+    ) async throws -> EthereumTransactionReceipt
+    func getContract(
+        with model: GetContractRequestModel
+    ) async throws -> GetContractResponseModel
 }
 
 public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
@@ -69,7 +72,18 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
         )
     }
     
-    func getTransactionReciept(with tx: String) async throws -> EthereumTransactionReceipt {
+    func getTransactionReciept(
+        with tx: String
+    ) async throws -> EthereumTransactionReceipt {
         return try await client.eth_getTransactionReceipt(txHash: tx)
+    }
+    
+    func getContract(
+        with model: GetContractRequestModel
+    ) async throws -> GetContractResponseModel {
+        try await model.call(
+            withClient: client,
+            responseType: GetContractResponseModel.self
+        )
     }
 }

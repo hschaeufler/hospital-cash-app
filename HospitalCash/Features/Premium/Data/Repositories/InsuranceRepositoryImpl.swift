@@ -15,7 +15,7 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     
     init(
         insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource,
-         walletLocalDatasource: WalletLocalDataSource
+        walletLocalDatasource: WalletLocalDataSource
     ) {
         self.insuranceContractRemoteDatasource = insuracenContractRemoteDatasource
         self.walletLocalDatasource = walletLocalDatasource
@@ -57,7 +57,7 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     
     func underwriteContract(
         with application: ContractApplicationEntity
-    ) async throws -> InsuranceContractEntity {
+    ) async throws -> String {
         let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         do {
             let accountAdress = try await walletLocalDatasource.connectWallet();
@@ -66,13 +66,30 @@ class InsuranceRepositoryImpl: InsuranceRepository {
                 from: accountAdress,
                 with: application
             )
-            let tx = try await walletLocalDatasource.underwriteContract(with: requestModel)
-            let responseModel = try await insuranceContractRemoteDatasource.getUnderwriteTransaction(with: tx);
-            let entity = responseModel.value.toEntity();
-            return entity;
+            return try await walletLocalDatasource.underwriteContract(with: requestModel)
         } catch let error as RequestError {
             throw try error.toCommonError()
         }
+    }
+    
+    func getTransactionState(with tx: String) async throws -> TransactionStateEntity {
+        return try await insuranceContractRemoteDatasource
+            .getTransactionReciept(with: tx)
+            .status
+            .toEntity();
+    }
+    
+    func getContract() async throws -> InsuranceContractEntity? {
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
+        let model = GetContractRequestModel(contractAdress)
+        let result = try await insuranceContractRemoteDatasource.getContract(with: model)
+        return result.isValid
+            ? result.insuranceContract.toEntity()
+            : nil;
+    }
+    
+    func connectWallet() async throws -> String {
+        return try await walletLocalDatasource.connectWallet();
     }
     
 }
