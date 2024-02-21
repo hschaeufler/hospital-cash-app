@@ -563,8 +563,8 @@
 		84ED676A2B66B8EB001D600A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				84ED677C2B69C176001D600A /* Models */,
 				84ED677B2B69C16C001D600A /* Datasources */,
+				84ED677C2B69C176001D600A /* Models */,
 				84ED677D2B69C17D001D600A /* Repositories */,
 			);
 			path = Data;

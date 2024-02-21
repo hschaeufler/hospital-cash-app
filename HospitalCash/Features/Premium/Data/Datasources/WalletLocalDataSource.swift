@@ -33,6 +33,7 @@ public class WalletLocalDataSourceImpl: WalletLocalDataSource {
     
     func connectWallet() async throws -> String {
         if metaMaskSDK.account.isEmpty {
+            metaMaskSDK.clearSession()
             let connectionResult = await metaMaskSDK.connect()
             if case .failure(let error) = connectionResult {
                 throw error
