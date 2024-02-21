@@ -15,17 +15,28 @@ public final class PremiumContainer: SharedContainer {
 
 
 extension PremiumContainer {
+    // Config
+    var contractConfig: Factory<Configuration.InsuranceContract> {
+        self { Configuration.InsuranceContract() }
+            .singleton
+    }
+    
+    var walletConfig: Factory<Configuration.Wallet> {
+        self { Configuration.Wallet() }
+            .singleton
+    }
+    
     // Datasources
     var exchangeRateRemoteDataSource: Factory<ExchangeRateRemoteDatasource> {
         self { ExchangeRateRemoteDatasourceImpl(restClient: CoreContainer.shared.restClient())}
     }
     
     var walletLocalDataSource: Factory<WalletLocalDataSource> {
-        self { WalletLocalDataSourceImpl()}
+        self { WalletLocalDataSourceImpl(walletConfig: self.walletConfig() )}
     }
     
     var insuranceContractRemoteDatasource: Factory<InsuranceContractRemoteDatasource> {
-        self { InsuranceContractRemoteDatasourceImpl()}
+        self { InsuranceContractRemoteDatasourceImpl(contractConfig: self.contractConfig() )}
     }
     
     // Repositories
@@ -36,7 +47,8 @@ extension PremiumContainer {
     var insuraneRepository: Factory<InsuranceRepository> {
         self {
             InsuranceRepositoryImpl(
-                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource()
+                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource(),
+                walletLocalDatasource: self.walletLocalDataSource()
             )
         }
     }
@@ -80,5 +92,29 @@ extension PremiumContainer {
                 calculateEthInEur: self.calculateEthInEur()
             )
         }
+    }
+    
+    var underwriteContract: Factory<UnderwriteContract> {
+        self { UnderwriteContractUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
+    
+    var getContrat: Factory<GetContract> {
+        self { GetContractUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
+    
+    var getTransactionState: Factory<GetTransactionState> {
+        self { GetTransactionStateUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
+    }
+    
+    var connectWallet: Factory<ConnectWallet> {
+        self { ConnectWalletUseCase(
+            insuranceRepository: self.insuraneRepository()
+        ) }
     }
 }

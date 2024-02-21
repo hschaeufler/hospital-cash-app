@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct InsuranceAdvantagesColumn: View {
+    @ScaledMetric var spacing = 15.0
+    
     var body: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: spacing) {
             Text("Deine Vorteile")
                 .font(.title2)
                 .bold()

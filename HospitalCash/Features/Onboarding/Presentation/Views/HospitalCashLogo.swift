@@ -13,7 +13,7 @@ struct HospitalCashLogo: View {
             Image(systemName: "cross.case.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundStyle(.tint)
+                .foregroundStyle(.blue)
                 .frame(maxWidth: 75)
             Text("Hospital Cash")
                 .font(.largeTitle)

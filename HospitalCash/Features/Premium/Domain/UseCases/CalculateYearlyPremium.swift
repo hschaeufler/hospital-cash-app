@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CalculateYearlyPremium {
-    func callAsFunction(with: PremiumCalculationEntity) async throws -> PremiumEntity
+    func callAsFunction(with premiumCalculation: PremiumCalculationEntity) async throws -> PremiumEntity
 }
 
 struct CalculatePremiumUseCase: CalculateYearlyPremium {
@@ -23,8 +23,8 @@ struct CalculatePremiumUseCase: CalculateYearlyPremium {
         self.calculateEthInEur = calculateEthInEur
     }
  
-    func callAsFunction(with: PremiumCalculationEntity) async throws -> PremiumEntity {
-        let monthlyEthPremium = try await insuranceRepository.getMonthlyPremium(with: with)
+    func callAsFunction(with premiumCalculation: PremiumCalculationEntity) async throws -> PremiumEntity {
+        let monthlyEthPremium = try await insuranceRepository.getMonthlyPremium(with: premiumCalculation)
         let yearlyEthPremium = monthlyEthPremium * 12
         let yearlyEurPremium = try await calculateEthInEur(ethAmount: yearlyEthPremium)
         return PremiumEntity(

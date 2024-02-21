@@ -11,6 +11,7 @@ struct PremiumDetailPage: View {
     @Environment(PremiumCalculationVM.self) private var viewModel
     
     var body: some View {
+        @Bindable var viewModel = viewModel
         let premium = viewModel.premiumEntity
         
         SheetPageLayout("Dein Beitrag") {
@@ -30,18 +31,29 @@ struct PremiumDetailPage: View {
                 CustomDivider(maxWidth: 150)
                 Spacer()
                 InsuranceAdvantagesColumn()
-                    .scaledToFit()
                     .padding(.horizontal, 5)
                 Spacer()
-                NavigationLinkButton(
-                    "Jetzt abschließen", 
-                    value: NavigationDestination.premiumDetail
-                )
-            }
-            .task {
-                await viewModel.caculatePremium()
+                BorderedButton("Jetzt abschließen") {
+                    viewModel.showConnectSheet.toggle()
+                }
             }
             
+        }
+        .sheet(isPresented: $viewModel.showConnectSheet) {
+            NavigationStack {
+                PayWithMetamaskPage(isPayment: false)
+                    .environment(viewModel)
+            }
+            .presentationDetents([.fraction(1 / 3)])
+            .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $viewModel.showPaymentSheet) {
+            NavigationStack {
+                PayWithMetamaskPage(isPayment: true)
+                    .environment(viewModel)
+            }
+            .presentationDetents([.fraction(1 / 3)])
+            .presentationDragIndicator(.visible)
         }
     }
 }

@@ -7,19 +7,25 @@
 
 import Foundation
 import web3
+import metamask_ios_sdk
 
 class InsuranceRepositoryImpl: InsuranceRepository {
-    let insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource;
+    let insuranceContractRemoteDatasource: InsuranceContractRemoteDatasource;
+    let walletLocalDatasource: WalletLocalDataSource
     
-    init(insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource) {
-        self.insuracenContractRemoteDatasource = insuracenContractRemoteDatasource
+    init(
+        insuracenContractRemoteDatasource: InsuranceContractRemoteDatasource,
+        walletLocalDatasource: WalletLocalDataSource
+    ) {
+        self.insuranceContractRemoteDatasource = insuracenContractRemoteDatasource
+        self.walletLocalDatasource = walletLocalDatasource
     }
     
     func getMonthlyPremium(with entity: PremiumCalculationEntity) async throws -> Double {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = GetMonthlyPremiumRequestModel.fromEntity(contractAdress, with: entity);
         do {
-            let responseModel = try await insuracenContractRemoteDatasource
+            let responseModel = try await insuranceContractRemoteDatasource
                 .getMonthlyPremium(with: requestModel)
             return responseModel.toEth()!
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
@@ -28,10 +34,10 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func checkBMI(heightInCm: Int, weightInKg: Int) async throws -> Bool {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = CheckBMIRequestModel.fromEntity(contractAdress, heightInCm: heightInCm, weightInKg: weightInKg)
         do {
-            let responseModel = try await insuracenContractRemoteDatasource.checkBMI(with: requestModel)
+            let responseModel = try await insuranceContractRemoteDatasource.checkBMI(with: requestModel)
             return responseModel.isOk
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
             throw try jsonRpcErrorDetail.toCommonError()
@@ -39,13 +45,65 @@ class InsuranceRepositoryImpl: InsuranceRepository {
     }
     
     func checkHealthQuestions(with entity: HealthQuestionEntity) async throws -> Bool {
-        let contractAdress = insuracenContractRemoteDatasource.getContractAdress()
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
         let requestModel = CheckHealthQuestionsRequestModel.fromEntity(contractAdress, with: entity)
         do {
-            let responseModel = try await insuracenContractRemoteDatasource.checkHealthQuestions(with: requestModel)
+            let responseModel = try await insuranceContractRemoteDatasource.checkHealthQuestions(with: requestModel)
             return responseModel.value
         } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
             throw try jsonRpcErrorDetail.toCommonError()
         }
+    }
+    
+    func underwriteContract(
+        with application: ContractApplicationEntity
+    ) async throws -> String {
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
+        let walletAdress = walletLocalDatasource.getWalletAdress()
+        do {
+            let requestModel = try UnderwriteContractRequestModel.fromEntity(
+                contractAdress,
+                from: walletAdress,
+                with: application
+            )
+            return try await walletLocalDatasource.underwriteContract(with: requestModel)
+        } catch let error as RequestError {
+            throw try error.toCommonError()
+        }
+    }
+    
+    func getTransactionState(with tx: String) async throws -> TransactionStateEntity {
+        return try await insuranceContractRemoteDatasource
+            .getTransactionReciept(with: tx)
+            .status
+            .toEntity();
+    }
+    
+    func getContract() async throws -> InsuranceContractEntity? {
+        let contractAdress = insuranceContractRemoteDatasource.getContractAdress()
+        let walletAddress = walletLocalDatasource.getWalletAdress()
+        let model = GetContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
+        let result = try await insuranceContractRemoteDatasource.getContract(with: model)
+        return result.isValid
+        ? result.insuranceContract.toEntity()
+        : nil;
+    }
+    
+    func getNewContractEvent(address: String) async throws -> NewContractEventEntity? {
+        return try await insuranceContractRemoteDatasource.getNewContractEvents(
+            policyHolder: EthereumAddress(address),
+            fromBlock: .Earliest,
+            toBlock: .Latest
+        ).map { model in
+            model.toEntity()
+        }.last
+    }
+    
+    func connectWallet() async throws -> String {
+        return try await walletLocalDatasource.connectWallet();
+    }
+    
+    func getWalletAddress() -> String {
+        return walletLocalDatasource.getWalletAdress();
     }
 }

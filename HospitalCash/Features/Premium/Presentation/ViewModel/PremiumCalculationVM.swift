@@ -20,6 +20,14 @@ import SwiftUI
     @Injected(\PremiumContainer.calculateEurInEth) private var calculateEurInEthUseCase
     @ObservationIgnored
     @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.connectWallet) private var connectWalletUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.getTransactionState) private var getTransactionStateUseCase
+    @ObservationIgnored
+    @Injected(\PremiumContainer.getContrat) private var getContractUseCase
     
     var path: [NavigationDestination] = []
     
@@ -79,6 +87,12 @@ import SwiftUI
         amountHospitalCashEth != 0
     }
     
+    var showConnectSheet = false;
+    var showPaymentSheet = false;
+    
+    var tx: String? = nil
+    var insuranceContract: InsuranceContractEntity? = nil
+    
     func checkBMI() async {
         do {
             self.bmiIsOk = try await checkBMIUseCase(heightInCm: height, weightInKg: weight)
@@ -110,17 +124,90 @@ import SwiftUI
         self.path.append(destination)
     }
     
+    func navigateWithReplace(to destination: NavigationDestination) {
+        self.path.removeAll()
+        self.path.append(destination)
+    }
+    
+    func pop() {
+        self.path.removeLast()
+    }
+    
     func caculatePremium() async {
         do {
             let premiumCalculationEntity = PremiumCalculationEntity(
                 amountHospitalCashEth: self.amountHospitalCashEth,
-                insuranceDate: self.insuranceStartDate,
+                insuranceStartDate: self.insuranceStartDate,
                 birthDate: self.birthDate
             )
             self.premiumEntity = try await calculatePremiumUseCase(with: premiumCalculationEntity)
             self.navigate(to: .premiumDetail)
         } catch {
             self.error = error
+        }
+    }
+    
+    func connectWallet() async {
+        do {
+            let _ = try await self.connectWalletUseCase();
+            self.showConnectSheet = false;
+            self.showPaymentSheet = true;
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func underwriteContract() async {
+        do {
+            let application = ContractApplicationEntity(
+                healthQuestions: healthQuestions,
+                premiumCalculation: PremiumCalculationEntity(
+                    amountHospitalCashEth: self.amountHospitalCashEth,
+                    insuranceStartDate: self.insuranceStartDate,
+                    birthDate: self.birthDate
+                ),
+                bodyMeasure: BodyMeasureEntity(
+                    heightInCm: self.height,
+                    weightInKg: self.weight
+                ),
+                yearlyPremiumInEth: self.premiumEntity!.yearlyEthPremium
+            )
+            self.tx = try await underwriteContractUseCase(with: application)
+            
+            self.navigateWithReplace(to: .contractDetail)
+            self.showPaymentSheet = false;
+        } catch {
+            self.showPaymentSheet = false;
+            self.error = error
+        }
+    }
+    
+    func getContractStatus() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            Task {
+                do {
+                    guard self.insuranceContract == nil else {
+                        return
+                    }
+                    
+                    let transactionStatus = try await self.getTransactionStateUseCase(with: self.tx!)
+                    switch transactionStatus {
+                    case .failure:
+                        throw CommonError.contractExecutionError(message: "Transaction fehlerhaft")
+                    case .success:
+                        self.insuranceContract = try await self.getContractUseCase()
+                        self.getContractStatus()
+                        break
+                    case .notProcessed:
+                        self.getContractStatus()
+                        break
+                    }
+                } catch {
+                    print(error)
+                    self.error = error
+                }
+            }
+            
         }
     }
 }

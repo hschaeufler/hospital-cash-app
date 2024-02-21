@@ -8,5 +8,9 @@
 import Foundation
 
 enum NavigationDestination {
-    case bmi, healthQuestions, premiumCalculation, premiumDetail
+    case bmi, 
+         healthQuestions,
+         premiumCalculation,
+         premiumDetail,
+         contractDetail
 }

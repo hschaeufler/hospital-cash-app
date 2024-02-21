@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    " - " : {
+
+    },
     "%@ Eth / ~ %@ €" : {
       "localizations" : {
         "de" : {
@@ -173,6 +176,18 @@
         }
       }
     },
+    "Connect with" : {
+
+    },
+    "Connect with Metamask" : {
+
+    },
+    "Das ist ein Test" : {
+
+    },
+    "Das ist eine Description" : {
+
+    },
     "Dein Beitrag" : {
       "localizations" : {
         "en" : {
@@ -182,6 +197,15 @@
           }
         }
       }
+    },
+    "Deine Informationen" : {
+
+    },
+    "Deine Versicherung" : {
+
+    },
+    "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden." : {
+
     },
     "Deine Vorteile" : {
       "localizations" : {
@@ -209,6 +233,9 @@
         }
       }
     },
+    "Diese musst du bei einem Krankenhausaufenthalt angeben." : {
+
+    },
     "ETH" : {
       "localizations" : {
         "en" : {
@@ -218,6 +245,9 @@
           }
         }
       }
+    },
+    "Fehler" : {
+
     },
     "für nur" : {
       "localizations" : {
@@ -355,6 +385,9 @@
         }
       }
     },
+    "Gratulation zum \nerfolgreichen Abschluss!" : {
+
+    },
     "Größe" : {
       "localizations" : {
         "en" : {
@@ -384,6 +417,9 @@
           }
         }
       }
+    },
+    "Höhe Krankenhaustaggeld" : {
+
     },
     "Hospital Cash" : {
       "localizations" : {
@@ -553,6 +589,15 @@
         }
       }
     },
+    "Pay with" : {
+
+    },
+    "Pay With" : {
+
+    },
+    "Pay with Metamask" : {
+
+    },
     "Person must be an adult!" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -672,6 +717,9 @@
         }
       }
     },
+    "Versicherungsnummer" : {
+
+    },
     "Voll automatisiert" : {
       "localizations" : {
         "de" : {
@@ -729,6 +777,12 @@
           }
         }
       }
+    },
+    "Zeitraum" : {
+
+    },
+    "Zur Übersicht" : {
+
     }
   },
   "version" : "1.0"

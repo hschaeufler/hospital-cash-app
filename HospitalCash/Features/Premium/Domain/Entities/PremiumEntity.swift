@@ -8,6 +8,6 @@
 import Foundation
 
 struct PremiumEntity {
-    var yearlyEthPremium: Double
-    var yearlyEurPremium: Double
+    let yearlyEthPremium: Double
+    let yearlyEurPremium: Double
 }
