@@ -13,7 +13,7 @@ struct PremiumCalculationPage: View {
     var body: some View {
         @Bindable var viewModel = viewModel
         
-        SheetPageLayout("Beitrag berechnen") {
+        UnderwritingSheetLayout("Beitrag berechnen") {
             VStack {
                 Form {
                     NumberField("Höhe Krankenhaustagegeld",
@@ -65,4 +65,5 @@ struct PremiumCalculationPage: View {
 #Preview {
     PremiumCalculationPage()
         .environment(UnderwritingVM())
+        .environment(WalletVM())
 }

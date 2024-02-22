@@ -13,7 +13,7 @@ struct BMIPage: View {
     var body: some View {
         @Bindable var underwritingVM = underwritingVM
         
-        SheetPageLayout("BMI") {
+        UnderwritingSheetLayout("BMI") {
             VStack {
                 Form {
                     Section {
@@ -41,5 +41,6 @@ struct BMIPage: View {
     NavigationStack {
         BMIPage()
             .environment(UnderwritingVM())
+            .environment(WalletVM())
     }
 }

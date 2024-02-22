@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct SheetPageLayout<Content> : View where Content : View  {
+struct SheetLayout<Content> : View where Content : View  {
     var titleKey: LocalizedStringKey
+    var dismiss: () -> Void
     @ViewBuilder let content: () -> Content
     
-    @Environment(\.dismiss) private var dismiss
-    
-    init(_ titleKey: LocalizedStringKey, content: @escaping () -> Content) {
+    init(_ titleKey: LocalizedStringKey,
+         dismiss: @escaping () -> Void,
+         content: @escaping () -> Content) {
         self.titleKey = titleKey
+        self.dismiss = dismiss
         self.content = content
     }
 
@@ -34,7 +36,7 @@ struct SheetPageLayout<Content> : View where Content : View  {
 }
 
 #Preview {
-    SheetPageLayout("BMI") {
+    SheetLayout("BMI", dismiss: {}) {
         Text("Testpage")
     }
 }

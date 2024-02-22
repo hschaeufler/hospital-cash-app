@@ -11,7 +11,7 @@ struct AlreadyInsured: View {
     @Environment(WalletVM.self) private var walletVM
     
     var body: some View {
-        SheetPageLayout("Bereits versichert?") {
+        UnderwritingSheetLayout("Bereits versichert?") {
             VStack {
                 Spacer()
                 Image(systemName: "person.fill.questionmark")

@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct PayWithWalletPage: View {
+    @Environment(\.dismiss) private var dismiss
     var action: () -> Void
     
     var body: some View {
         NavigationStack {
-            SheetPageLayout("Pay with Metamask") {
+            SheetLayout("Pay with Metamask", dismiss:{ dismiss() }) {
                 VStack {
                     MetaMaskButton(
                         titleKey: "Pay with",

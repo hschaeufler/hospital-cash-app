@@ -7,12 +7,15 @@
 import SwiftUI
 
 struct ConnectWithWalletPage: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var action: () -> Void
+    
     
     var body: some View {
         WalletErrorViewBuilder {
             NavigationStack {
-                SheetPageLayout("Connect with Metamask") {
+                SheetLayout("Connect with Metamask", dismiss:{dismiss()}) {
                     VStack(content: {
                         MetaMaskButton(
                             titleKey: "Connect with",

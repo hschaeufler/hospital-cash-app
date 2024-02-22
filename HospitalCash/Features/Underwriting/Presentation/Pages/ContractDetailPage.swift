@@ -10,9 +10,10 @@ import SwiftUI
 struct ContractDetailPage: View {
     @Environment(UnderwritingVM.self) private var underwritingVM
     @Environment(WalletVM.self) private var walletVM
+
     
     var body: some View {
-        SheetPageLayout("Deine Versicherung") {
+        UnderwritingSheetLayout("Deine Versicherung") {
             VStack {
                 Image(systemName: "fireworks")
                     .font(.system(size: 90))

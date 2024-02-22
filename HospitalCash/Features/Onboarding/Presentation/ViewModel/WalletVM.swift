@@ -36,6 +36,13 @@ import Factory
         self.state = .isUnderwriting
     }
     
+    func handleDismiss() {
+        self.state = .initial
+        Task {
+            await fetchAppState()
+        }
+    }
+    
     func handleConnectWallet() async {
         do {
             let _ = try await self.connectWalletUseCase()

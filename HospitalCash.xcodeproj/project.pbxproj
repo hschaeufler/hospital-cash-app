@@ -40,6 +40,7 @@
 		843969942B87AA6900FA3E00 /* WalletErrorViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969932B87AA6900FA3E00 /* WalletErrorViewBuilder.swift */; };
 		843969962B87C90700FA3E00 /* WalletSheetViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969952B87C90700FA3E00 /* WalletSheetViewBuilder.swift */; };
 		843969982B87F70100FA3E00 /* AlreadyInsured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969972B87F70100FA3E00 /* AlreadyInsured.swift */; };
+		8439699A2B88001D00FA3E00 /* UnderwritingSheetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969992B88001D00FA3E00 /* UnderwritingSheetLayout.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
 		8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */; };
 		8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */; };
@@ -118,7 +119,7 @@
 		84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67662B66976F001D600A /* PremiumCalculationPage.swift */; };
 		84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED676F2B66B96D001D600A /* HealthQuestionEntity.swift */; };
 		84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67712B69B258001D600A /* PremiumDetailPage.swift */; };
-		84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67732B69B3D7001D600A /* SheetPageLayout.swift */; };
+		84ED67742B69B3D7001D600A /* SheetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67732B69B3D7001D600A /* SheetLayout.swift */; };
 		84ED677F2B69C2BE001D600A /* CalculateBMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED677E2B69C2BE001D600A /* CalculateBMI.swift */; };
 		84ED67822B69C7D3001D600A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84ED67812B69C7D3001D600A /* Factory */; };
 		84ED67842B69C8B0001D600A /* UnderwritingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED67832B69C8B0001D600A /* UnderwritingContainer.swift */; };
@@ -163,6 +164,7 @@
 		843969932B87AA6900FA3E00 /* WalletErrorViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletErrorViewBuilder.swift; sourceTree = "<group>"; };
 		843969952B87C90700FA3E00 /* WalletSheetViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSheetViewBuilder.swift; sourceTree = "<group>"; };
 		843969972B87F70100FA3E00 /* AlreadyInsured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyInsured.swift; sourceTree = "<group>"; };
+		843969992B88001D00FA3E00 /* UnderwritingSheetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwritingSheetLayout.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
 		8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDatasource.swift; sourceTree = "<group>"; };
 		8454E8A52B75B96A007A3887 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -242,7 +244,7 @@
 		84ED67662B66976F001D600A /* PremiumCalculationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationPage.swift; sourceTree = "<group>"; };
 		84ED676F2B66B96D001D600A /* HealthQuestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionEntity.swift; sourceTree = "<group>"; };
 		84ED67712B69B258001D600A /* PremiumDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumDetailPage.swift; sourceTree = "<group>"; };
-		84ED67732B69B3D7001D600A /* SheetPageLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPageLayout.swift; sourceTree = "<group>"; };
+		84ED67732B69B3D7001D600A /* SheetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetLayout.swift; sourceTree = "<group>"; };
 		84ED677E2B69C2BE001D600A /* CalculateBMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBMI.swift; sourceTree = "<group>"; };
 		84ED67832B69C8B0001D600A /* UnderwritingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwritingContainer.swift; sourceTree = "<group>"; };
 		84ED67852B69D102001D600A /* CheckHealthQuestionValidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthQuestionValidity.swift; sourceTree = "<group>"; };
@@ -717,7 +719,7 @@
 				84ED67752B69B3EB001D600A /* Input */,
 				843969912B8794E100FA3E00 /* ErrorViewBuilder.swift */,
 				84ED67352B640828001D600A /* ListTile.swift */,
-				84ED67732B69B3D7001D600A /* SheetPageLayout.swift */,
+				84ED67732B69B3D7001D600A /* SheetLayout.swift */,
 				84ED67392B640D44001D600A /* Avatar.swift */,
 				84ED67442B644092001D600A /* BottomBar.swift */,
 				84ED67462B6443D4001D600A /* CustomDivider.swift */,
@@ -783,6 +785,7 @@
 				84ED67522B652F68001D600A /* UnderwritingSheet.swift */,
 				8454E8BD2B77DC8F007A3887 /* PremiumDetailGroup.swift */,
 				840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */,
+				843969992B88001D00FA3E00 /* UnderwritingSheetLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1068,6 +1071,7 @@
 				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
+				8439699A2B88001D00FA3E00 /* UnderwritingSheetLayout.swift in Sources */,
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
 				843969702B86E54200FA3E00 /* GetContractRequestModel.swift in Sources */,
 				840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */,
@@ -1086,7 +1090,7 @@
 				8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				8439697E2B86EFA000FA3E00 /* WelcomePage.swift in Sources */,
-				84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */,
+				84ED67742B69B3D7001D600A /* SheetLayout.swift in Sources */,
 				843969902B87768E00FA3E00 /* LoginButton.swift in Sources */,
 				84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */,
 				84F8EACA2B80FC3E00D0A414 /* BodyMeasureEntity.swift in Sources */,

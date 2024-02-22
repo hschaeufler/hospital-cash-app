@@ -14,7 +14,7 @@ struct HealthQuestionPage: View {
         @Bindable var viewModel = viewModel
         let healthQuestions = $viewModel.healthQuestions
         
-        SheetPageLayout("Gesundheitsfragen") {
+        UnderwritingSheetLayout("Gesundheitsfragen") {
             VStack {
                 Form {
                     Section {
@@ -69,5 +69,6 @@ struct HealthQuestionPage: View {
     NavigationStack {
         HealthQuestionPage()
             .environment(UnderwritingVM())
+            .environment(WalletVM())
     }
 }

@@ -14,8 +14,8 @@
             filePath = "HospitalCash/Features/Onboarding/Presentation/ViewModel/WalletVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "handleConnectWallet()"
             landmarkType = "7">
             <Locations>
@@ -92,8 +92,8 @@
             filePath = "HospitalCash/Features/Onboarding/Presentation/ViewModel/WalletVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "fetchAppState()"
             landmarkType = "7">
             <Locations>

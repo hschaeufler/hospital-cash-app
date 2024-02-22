@@ -14,7 +14,7 @@ struct PremiumDetailPage: View {
         let premium = viewModel.premiumEntity
         @Bindable var viewModel = viewModel
         
-        SheetPageLayout("Dein Beitrag") {
+        UnderwritingSheetLayout("Dein Beitrag") {
             VStack {
                 Spacer()
                 Image(systemName: "dollarsign.arrow.circlepath")
