@@ -12,9 +12,9 @@ protocol CheckBMI {
 }
 
 struct CheckBMIUseCase: CheckBMI {
-    private let insuranceRepository: InsuranceRepository
+    private let insuranceRepository: ContractRepository
     
-    init(insuranceRepository: InsuranceRepository) {
+    init(insuranceRepository: ContractRepository) {
         self.insuranceRepository = insuranceRepository
     }
     

@@ -14,9 +14,9 @@ protocol UnderwriteContract {
 }
 
 struct UnderwriteContractUseCase: UnderwriteContract {
-    let insuranceRepository: InsuranceRepository
+    let insuranceRepository: ContractRepository
     
-    init(insuranceRepository: InsuranceRepository) {
+    init(insuranceRepository: ContractRepository) {
         self.insuranceRepository = insuranceRepository
     }
     

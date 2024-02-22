@@ -22,13 +22,13 @@
 		841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */; };
 		841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
-		8454E88F2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */; };
+		8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */; };
 		8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */; };
 		8454E8A32B6FC1E4007A3887 /* web3.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A22B6FC1E4007A3887 /* web3.swift */; };
 		8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8A72B763D5B007A3887 /* Configuration.swift */; };
-		8454E8AA2B765995007A3887 /* InsuranceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8A92B765995007A3887 /* InsuranceRepository.swift */; };
+		8454E8AA2B765995007A3887 /* ContractRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8A92B765995007A3887 /* ContractRepository.swift */; };
 		8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */; };
-		8454E8AE2B765EF0007A3887 /* InsuranceRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AD2B765EF0007A3887 /* InsuranceRepositoryImpl.swift */; };
+		8454E8AE2B765EF0007A3887 /* ContractRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AD2B765EF0007A3887 /* ContractRepositoryImpl.swift */; };
 		8454E8B02B76750B007A3887 /* GetMonthlyPremiumResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8AF2B76750B007A3887 /* GetMonthlyPremiumResponseModel.swift */; };
 		8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */; };
 		8454E8B62B768FC1007A3887 /* EthUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8B52B768FC1007A3887 /* EthUnits.swift */; };
@@ -57,6 +57,13 @@
 		846D6F1E2B6C38D90074F2F3 /* WalletLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */; };
 		849471C62B863CA9000EC4D3 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471C52B863CA9000EC4D3 /* DateUtils.swift */; };
 		849471C82B865F0B000EC4D3 /* GetContractByTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471C72B865F0B000EC4D3 /* GetContractByTransaction.swift */; };
+		849471CD2B869348000EC4D3 /* WalletVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471CC2B869348000EC4D3 /* WalletVM.swift */; };
+		849471D02B8694E4000EC4D3 /* OnboardingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471CF2B8694E4000EC4D3 /* OnboardingContainer.swift */; };
+		849471DB2B86A021000EC4D3 /* WalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471DA2B86A021000EC4D3 /* WalletRepository.swift */; };
+		849471DD2B86A0B1000EC4D3 /* WalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471DC2B86A0B1000EC4D3 /* WalletRepository.swift */; };
+		849471E52B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471E42B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift */; };
+		849471E82B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471E72B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift */; };
+		849471EA2B86B25A000EC4D3 /* EthereumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849471E92B86B25A000EC4D3 /* EthereumRepository.swift */; };
 		84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */; };
 		84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4F87C2B6368F30018AA37 /* ContentView.swift */; };
 		84A4F87F2B6368F40018AA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4F87E2B6368F40018AA37 /* Assets.xcassets */; };
@@ -122,13 +129,13 @@
 		841A96552B7E689600BDA450 /* PayWithMetamaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWithMetamaskPage.swift; sourceTree = "<group>"; };
 		841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskButton.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
-		8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractRemoteDatasource.swift; sourceTree = "<group>"; };
+		8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDatasource.swift; sourceTree = "<group>"; };
 		8454E8A52B75B96A007A3887 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		8454E8A62B75B97A007A3887 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8454E8A72B763D5B007A3887 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		8454E8A92B765995007A3887 /* InsuranceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceRepository.swift; sourceTree = "<group>"; };
+		8454E8A92B765995007A3887 /* ContractRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRepository.swift; sourceTree = "<group>"; };
 		8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateYearlyPremium.swift; sourceTree = "<group>"; };
-		8454E8AD2B765EF0007A3887 /* InsuranceRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceRepositoryImpl.swift; sourceTree = "<group>"; };
+		8454E8AD2B765EF0007A3887 /* ContractRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRepositoryImpl.swift; sourceTree = "<group>"; };
 		8454E8AF2B76750B007A3887 /* GetMonthlyPremiumResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumResponseModel.swift; sourceTree = "<group>"; };
 		8454E8B22B7683A3007A3887 /* PremiumCalculationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationEntity.swift; sourceTree = "<group>"; };
 		8454E8B52B768FC1007A3887 /* EthUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthUnits.swift; sourceTree = "<group>"; };
@@ -157,6 +164,13 @@
 		846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLocalDataSource.swift; sourceTree = "<group>"; };
 		849471C52B863CA9000EC4D3 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		849471C72B865F0B000EC4D3 /* GetContractByTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContractByTransaction.swift; sourceTree = "<group>"; };
+		849471CC2B869348000EC4D3 /* WalletVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVM.swift; sourceTree = "<group>"; };
+		849471CF2B8694E4000EC4D3 /* OnboardingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainer.swift; sourceTree = "<group>"; };
+		849471DA2B86A021000EC4D3 /* WalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletRepository.swift; path = ../../Domain/Repositories/WalletRepository.swift; sourceTree = "<group>"; };
+		849471DC2B86A0B1000EC4D3 /* WalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletRepository.swift; path = ../../Data/Repositories/WalletRepository.swift; sourceTree = "<group>"; };
+		849471E42B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumRemoteDatasource.swift; sourceTree = "<group>"; };
+		849471E72B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumRepositoryImpl.swift; sourceTree = "<group>"; };
+		849471E92B86B25A000EC4D3 /* EthereumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumRepository.swift; sourceTree = "<group>"; };
 		84A4F8772B6368F30018AA37 /* HospitalCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4F87A2B6368F30018AA37 /* HospitalCashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCashApp.swift; sourceTree = "<group>"; };
 		84A4F87C2B6368F30018AA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -314,7 +328,7 @@
 		846D6EFD2B6AEA980074F2F3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				846D6F132B6B02350074F2F3 /* Errors */,
+				8454E8B42B768FA3007A3887 /* Utils */,
 				846D6EFE2B6AEAA20074F2F3 /* Network */,
 			);
 			path = Helper;
@@ -352,6 +366,149 @@
 				846D6F112B6B01A60074F2F3 /* CommonError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		849471CE2B8693B5000EC4D3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				849471CF2B8694E4000EC4D3 /* OnboardingContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		849471D12B86970B000EC4D3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				849471D52B86975C000EC4D3 /* Usecases */,
+				849471D42B869746000EC4D3 /* Repositories */,
+				849471D22B869719000EC4D3 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		849471D22B869719000EC4D3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		849471D42B869746000EC4D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				849471DC2B86A0B1000EC4D3 /* WalletRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		849471D52B86975C000EC4D3 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				840C6DC82B8570850052E6AA /* ConnectWallet.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		849471D62B8699F0000EC4D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				849471D72B869A0E000EC4D3 /* Datasources */,
+				849471D92B869A1B000EC4D3 /* Repositories */,
+				849471D82B869A14000EC4D3 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		849471D72B869A0E000EC4D3 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		849471D82B869A14000EC4D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		849471D92B869A1B000EC4D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				849471DA2B86A021000EC4D3 /* WalletRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		849471DE2B86AC01000EC4D3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				849471EC2B86B5FB000EC4D3 /* Usecases */,
+				849471E62B86AEDB000EC4D3 /* Repositories */,
+				849471EB2B86B509000EC4D3 /* Entities */,
+				846D6F132B6B02350074F2F3 /* Errors */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		849471E02B86AC26000EC4D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				849471E12B86AC36000EC4D3 /* DataSources */,
+				849471E32B86AD96000EC4D3 /* Models */,
+				849471E22B86AD88000EC4D3 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		849471E12B86AC36000EC4D3 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				849471E42B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		849471E22B86AD88000EC4D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				849471E72B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		849471E32B86AD96000EC4D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840C6DCA2B85734A0052E6AA /* EthereumTransactionReceiptStatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		849471E62B86AEDB000EC4D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				849471E92B86B25A000EC4D3 /* EthereumRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		849471EB2B86B509000EC4D3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				840C6DC42B856A200052E6AA /* TransactionStateEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		849471EC2B86B5FB000EC4D3 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				840C6DD22B857AC70052E6AA /* GetTransactionState.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 		84A4F86E2B6368F30018AA37 = {
@@ -406,6 +563,9 @@
 		84ED672B2B63D942001D600A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				849471CE2B8693B5000EC4D3 /* DI */,
+				849471D62B8699F0000EC4D3 /* Data */,
+				849471D12B86970B000EC4D3 /* Domain */,
 				84ED672C2B63D956001D600A /* Presentation */,
 			);
 			path = Onboarding;
@@ -432,9 +592,11 @@
 		84ED67302B63DD49001D600A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8454E8B42B768FA3007A3887 /* Utils */,
-				8454E8A42B75B8E3007A3887 /* Config */,
 				846D6F062B6AEC310074F2F3 /* DI */,
+				849471E02B86AC26000EC4D3 /* Data */,
+				849471DE2B86AC01000EC4D3 /* Domain */,
+				846D6EFD2B6AEA980074F2F3 /* Helper */,
+				8454E8A42B75B8E3007A3887 /* Config */,
 				84ED67312B63DD54001D600A /* Presentation */,
 			);
 			path = Core;
@@ -443,7 +605,6 @@
 		84ED67312B63DD54001D600A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				846D6EFD2B6AEA980074F2F3 /* Helper */,
 				84ED67322B63DD69001D600A /* Views */,
 			);
 			path = Presentation;
@@ -556,6 +717,7 @@
 		84ED67682B66B374001D600A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				849471CC2B869348000EC4D3 /* WalletVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -579,7 +741,6 @@
 				84F8EAC92B80FC3E00D0A414 /* BodyMeasureEntity.swift */,
 				84F8EACB2B810DF300D0A414 /* InsuranceContractEntity.swift */,
 				84F8EACD2B81109400D0A414 /* ContractApplicationEntity.swift */,
-				840C6DC42B856A200052E6AA /* TransactionStateEntity.swift */,
 				840C6DD42B85811C0052E6AA /* NewContractEventEntity.swift */,
 			);
 			path = Entities;
@@ -615,9 +776,7 @@
 				8454E8AB2B765A10007A3887 /* CalculateYearlyPremium.swift */,
 				8454E8C72B79199C007A3887 /* CheckBMI.swift */,
 				84F8EAC72B80FB6000D0A414 /* UnderwriteContract.swift */,
-				840C6DC82B8570850052E6AA /* ConnectWallet.swift */,
 				840C6DD02B8579D70052E6AA /* GetContract.swift */,
-				840C6DD22B857AC70052E6AA /* GetTransactionState.swift */,
 				849471C72B865F0B000EC4D3 /* GetContractByTransaction.swift */,
 			);
 			path = UseCases;
@@ -627,7 +786,7 @@
 			isa = PBXGroup;
 			children = (
 				846D6F0D2B6AFAB10074F2F3 /* ExchangeRateRepository.swift */,
-				8454E8A92B765995007A3887 /* InsuranceRepository.swift */,
+				8454E8A92B765995007A3887 /* ContractRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -636,8 +795,7 @@
 			isa = PBXGroup;
 			children = (
 				846D6F092B6AED130074F2F3 /* ExchangeRateRemoteDatasource.swift */,
-				8454E88E2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift */,
-				846D6F1D2B6C38D90074F2F3 /* WalletLocalDataSource.swift */,
+				8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -660,7 +818,6 @@
 				84C426632B823392002AC308 /* InsuranceContractModel.swift */,
 				84C426652B8235F1002AC308 /* ContractApplicationModel.swift */,
 				840C6DC62B856D770052E6AA /* NewContractEventModel.swift */,
-				840C6DCA2B85734A0052E6AA /* EthereumTransactionReceiptStatusModel.swift */,
 				840C6DCC2B8575AD0052E6AA /* GetContractRequestModel.swift */,
 				840C6DCE2B8575CD0052E6AA /* GetContractResponseModel.swift */,
 			);
@@ -671,7 +828,7 @@
 			isa = PBXGroup;
 			children = (
 				846D6F0F2B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift */,
-				8454E8AD2B765EF0007A3887 /* InsuranceRepositoryImpl.swift */,
+				8454E8AD2B765EF0007A3887 /* ContractRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -761,18 +918,22 @@
 			files = (
 				84C426622B823364002AC308 /* BodyMeasureModel.swift in Sources */,
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
+				849471DD2B86A0B1000EC4D3 /* WalletRepository.swift in Sources */,
+				849471E82B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				846D6F0A2B6AED130074F2F3 /* ExchangeRateRemoteDatasource.swift in Sources */,
 				84F8EACC2B810DF300D0A414 /* InsuranceContractEntity.swift in Sources */,
+				849471DB2B86A021000EC4D3 /* WalletRepository.swift in Sources */,
 				84C426682B82E403002AC308 /* ContractDetailPage.swift in Sources */,
 				84ED67772B69BFB0001D600A /* PremiumCalculationVM.swift in Sources */,
 				8454E8C42B783F54007A3887 /* NavigationLinkButton.swift in Sources */,
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,
+				849471E52B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift in Sources */,
 				840C6DC72B856D770052E6AA /* NewContractEventModel.swift in Sources */,
 				840C6DC52B856A200052E6AA /* TransactionStateEntity.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
-				8454E88F2B6E79B7007A3887 /* InsuranceContractRemoteDatasource.swift in Sources */,
+				8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				84ED67532B652F68001D600A /* PremiumCalculationSheet.swift in Sources */,
 				846D6F082B6AEC420074F2F3 /* CoreContainer.swift in Sources */,
@@ -781,6 +942,7 @@
 				8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */,
 				849471C82B865F0B000EC4D3 /* GetContractByTransaction.swift in Sources */,
 				84ED67632B668540001D600A /* InfoBox.swift in Sources */,
+				849471D02B8694E4000EC4D3 /* OnboardingContainer.swift in Sources */,
 				840C6DCB2B85734A0052E6AA /* EthereumTransactionReceiptStatusModel.swift in Sources */,
 				8454E8C82B79199C007A3887 /* CheckBMI.swift in Sources */,
 				84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */,
@@ -800,7 +962,8 @@
 				84ED67432B6435DF001D600A /* ProminentButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				8454E8CC2B791C71007A3887 /* CheckBMIResponseModel.swift in Sources */,
-				8454E8AE2B765EF0007A3887 /* InsuranceRepositoryImpl.swift in Sources */,
+				849471CD2B869348000EC4D3 /* WalletVM.swift in Sources */,
+				8454E8AE2B765EF0007A3887 /* ContractRepositoryImpl.swift in Sources */,
 				8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
 				84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */,
@@ -817,9 +980,10 @@
 				84F8EAC82B80FB6000D0A414 /* UnderwriteContract.swift in Sources */,
 				841A96562B7E689600BDA450 /* PayWithMetamaskPage.swift in Sources */,
 				8454E8BE2B77DC8F007A3887 /* PremiumDetailGroup.swift in Sources */,
-				8454E8AA2B765995007A3887 /* InsuranceRepository.swift in Sources */,
+				8454E8AA2B765995007A3887 /* ContractRepository.swift in Sources */,
 				84ED677F2B69C2BE001D600A /* CalculateBMI.swift in Sources */,
 				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
+				849471EA2B86B25A000EC4D3 /* EthereumRepository.swift in Sources */,
 				846D6F122B6B01A60074F2F3 /* CommonError.swift in Sources */,
 				8454E8C02B77F4F3007A3887 /* NavigationDestination.swift in Sources */,
 				846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */,

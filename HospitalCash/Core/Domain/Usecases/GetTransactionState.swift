@@ -12,13 +12,13 @@ protocol GetTransactionState {
 }
 
 struct GetTransactionStateUseCase: GetTransactionState {
-    private let insuranceRepository: InsuranceRepository
+    private let ethereumRepository: EthereumRepository
     
-    init(insuranceRepository: InsuranceRepository) {
-        self.insuranceRepository = insuranceRepository
+    init(ethereumRepository: EthereumRepository) {
+        self.ethereumRepository = ethereumRepository
     }
     
     func callAsFunction(with tx: String) async throws -> TransactionStateEntity {
-        return try await insuranceRepository.getTransactionState(with: tx)
+        return try await ethereumRepository.getTransactionState(with: tx)
     }
 }

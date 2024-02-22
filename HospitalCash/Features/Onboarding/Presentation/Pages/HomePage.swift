@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HomePage: View {
     @ScaledMetric var verticalPadding = 5
-    @State private var showingPremiumCalculator = false
+    @State private var showPremiumCalculator = false
+    @State private var showConnectWithMetamask = false
     
     var body: some View {
         VStack {
@@ -25,20 +26,23 @@ struct HomePage: View {
             BottomBar(verticalPadding: verticalPadding) {
                 VStack {
                     ProminentButton("Jetzt Beitrag berechnen") {
-                        showingPremiumCalculator.toggle()
+                        showPremiumCalculator.toggle()
                     }
                     HStack {
                         Text("Bereits versichert?")
                             .foregroundStyle(.secondary)
                         Button("Jetzt einloggen") {
-                            
+                            showConnectWithMetamask.toggle()
                         }
                     }
                 }
             }
         }
-        .sheet(isPresented: $showingPremiumCalculator) {
+        .sheet(isPresented: $showPremiumCalculator) {
             PremiumCalculationSheet()
+        }
+        .sheet(isPresented: $showConnectWithMetamask) {
+            PayWithMetamaskPage(isPayment: false)
         }
     }
 }

@@ -12,11 +12,11 @@ protocol CalculateYearlyPremium {
 }
 
 struct CalculatePremiumUseCase: CalculateYearlyPremium {
-    private let insuranceRepository: InsuranceRepository
+    private let insuranceRepository: ContractRepository
     private let calculateEthInEur: CalculateEthInEur
     
     init(
-        insuranceRepository: InsuranceRepository,
+        insuranceRepository: ContractRepository,
         calculateEthInEur: CalculateEthInEur
     ) {
         self.insuranceRepository = insuranceRepository

@@ -70,6 +70,9 @@
         }
       }
     },
+    "Bereits versichert?" : {
+
+    },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
         "de" : {
@@ -512,6 +515,9 @@
           }
         }
       }
+    },
+    "Jetzt einloggen" : {
+
     },
     "Keine lästigen Wartezeiten" : {
       "localizations" : {

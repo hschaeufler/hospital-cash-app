@@ -13,16 +13,10 @@ public final class PremiumContainer: SharedContainer {
     public let manager = ContainerManager()
 }
 
-
 extension PremiumContainer {
     // Config
-    var contractConfig: Factory<Configuration.InsuranceContract> {
-        self { Configuration.InsuranceContract() }
-            .singleton
-    }
-    
-    var walletConfig: Factory<Configuration.Wallet> {
-        self { Configuration.Wallet() }
+    var contractConfig: Factory<Configuration.Contract> {
+        self { Configuration.Contract() }
             .singleton
     }
     
@@ -31,12 +25,11 @@ extension PremiumContainer {
         self { ExchangeRateRemoteDatasourceImpl(restClient: CoreContainer.shared.restClient())}
     }
     
-    var walletLocalDataSource: Factory<WalletLocalDataSource> {
-        self { WalletLocalDataSourceImpl(walletConfig: self.walletConfig() )}
-    }
-    
-    var insuranceContractRemoteDatasource: Factory<InsuranceContractRemoteDatasource> {
-        self { InsuranceContractRemoteDatasourceImpl(contractConfig: self.contractConfig() )}
+    var insuranceContractRemoteDatasource: Factory<ContractRemoteDatasource> {
+        self { InsuranceContractRemoteDatasourceImpl(
+            client: CoreContainer.shared.ethereumHttpClient(),
+            contractConfig: self.contractConfig()
+        )}
     }
     
     // Repositories
@@ -44,15 +37,14 @@ extension PremiumContainer {
         self { ExchangeRateRepositoryImpl(remoteDatasource: self.exchangeRateRemoteDataSource()) }
     }
     
-    var insuraneRepository: Factory<InsuranceRepository> {
+    var insuraneRepository: Factory<ContractRepository> {
         self {
-            InsuranceRepositoryImpl(
-                insuracenContractRemoteDatasource: self.insuranceContractRemoteDatasource(),
-                walletLocalDatasource: self.walletLocalDataSource()
+            ContractRepositoryImpl(
+                contractRemoteDatasource: self.insuranceContractRemoteDatasource(),
+                walletLocalDatasource: OnboardingContainer.shared.walletLocalDataSource()
             )
         }
     }
-    
     
     // Usecases
     var calculateBMI: Factory<CalculateBMI> {
@@ -106,22 +98,10 @@ extension PremiumContainer {
         ) }
     }
     
-    var getTransactionState: Factory<GetTransactionState> {
-        self { GetTransactionStateUseCase(
-            insuranceRepository: self.insuraneRepository()
-        ) }
-    }
-    
-    var connectWallet: Factory<ConnectWallet> {
-        self { ConnectWalletUseCase(
-            insuranceRepository: self.insuraneRepository()
-        ) }
-    }
-    
     var getContractByTransaction: Factory<GetContractByTransaction> {
         self { GetContractByTransactionUseCase(
             getContract: self.getContrat(),
-            getTransactionState: self.getTransactionState()
+            getTransactionState: CoreContainer.shared.getTransactionState()
         ) }
     }
 }

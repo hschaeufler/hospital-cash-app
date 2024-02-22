@@ -12,9 +12,9 @@ protocol CheckHealthQuestionValidity {
 }
 
 struct CheckHealthQuestionValidityUseCase: CheckHealthQuestionValidity {
-    private let insuranceRepository: InsuranceRepository
+    private let insuranceRepository: ContractRepository
     
-    init(insuranceRepository: InsuranceRepository) {
+    init(insuranceRepository: ContractRepository) {
         self.insuranceRepository = insuranceRepository
     }
     

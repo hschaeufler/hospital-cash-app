@@ -12,13 +12,13 @@ protocol ConnectWallet {
 }
 
 struct ConnectWalletUseCase: ConnectWallet {
-    private let insuranceRepository: InsuranceRepository
+    private let walletRepository: WalletRepository
     
-    init(insuranceRepository: InsuranceRepository) {
-        self.insuranceRepository = insuranceRepository
+    init(walletRepository: WalletRepository) {
+        self.walletRepository = walletRepository
     }
     
     func callAsFunction() async throws -> String {
-        return try await insuranceRepository.connectWallet();
+        return try await walletRepository.connectWallet();
     }
 }

@@ -1,5 +1,5 @@
 //
-//  InsuranceContractRemoteDatasource.swift
+//  ContractRemoteDatasource.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 31.01.24.
@@ -9,7 +9,7 @@ import Foundation
 import web3
 
 
-protocol InsuranceContractRemoteDatasource {
+protocol ContractRemoteDatasource {
     func getContractAdress() -> EthereumAddress
     func getMonthlyPremium(
         with model: GetMonthlyPremiumRequestModel
@@ -20,9 +20,6 @@ protocol InsuranceContractRemoteDatasource {
     func checkHealthQuestions(
         with model: CheckHealthQuestionsRequestModel
     ) async throws -> CheckHealthQuestionsResponseModel
-    func getTransactionReciept(
-        with tx: String
-    ) async throws -> EthereumTransactionReceipt
     func getContract(
         with model: GetContractRequestModel
     ) async throws -> GetContractResponseModel
@@ -33,16 +30,15 @@ protocol InsuranceContractRemoteDatasource {
     ) async throws -> [NewContractEventModel]
 }
 
-public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatasource {
+class InsuranceContractRemoteDatasourceImpl: ContractRemoteDatasource {
     let client: EthereumHttpClient
     let contractAdress: EthereumAddress
     
-    init(contractConfig: Configuration.InsuranceContract) {
-        let network = EthereumNetwork.fromString(contractConfig.chainId)
-        self.client = EthereumHttpClient(
-            url: contractConfig.nodeRpcEndpoint,
-            network: network
-        )
+    init(
+        client: EthereumHttpClient,
+        contractConfig: Configuration.Contract
+    ) {
+        self.client = client
         self.contractAdress = EthereumAddress(contractConfig.contractAdress)
     }
     
@@ -75,12 +71,6 @@ public class InsuranceContractRemoteDatasourceImpl: InsuranceContractRemoteDatas
             withClient: client,
             responseType: CheckHealthQuestionsResponseModel.self
         )
-    }
-    
-    func getTransactionReciept(
-        with tx: String
-    ) async throws -> EthereumTransactionReceipt {
-        return try await client.eth_getTransactionReceipt(txHash: tx)
     }
     
     func getContract(
