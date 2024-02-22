@@ -72,6 +72,16 @@ class ContractRepositoryImpl: ContractRepository {
         }
     }
     
+    func getValidContract() async throws -> InsuranceContractEntity? {
+        let contractAdress = contractRemoteDatasource.getContractAdress()
+        let walletAddress = walletLocalDatasource.getWalletAdress()
+        let model = GetValidContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
+        let result = try await contractRemoteDatasource.getValidContract(with: model)
+        return result.isValid
+        ? result.insuranceContract.toEntity()
+        : nil;
+    }
+    
     func getContract() async throws -> InsuranceContractEntity? {
         let contractAdress = contractRemoteDatasource.getContractAdress()
         let walletAddress = walletLocalDatasource.getWalletAdress()
@@ -80,6 +90,22 @@ class ContractRepositoryImpl: ContractRepository {
         return result.isValid
         ? result.insuranceContract.toEntity()
         : nil;
+    }
+    
+    func hasValidContract() async throws -> Bool {
+        let contractAdress = contractRemoteDatasource.getContractAdress()
+        let walletAddress = walletLocalDatasource.getWalletAdress()
+        let model = HasValidContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
+        let result = try await contractRemoteDatasource.hasValidContract(with: model)
+        return result.value;
+    }
+    
+    func hasContract() async throws -> Bool {
+        let contractAdress = contractRemoteDatasource.getContractAdress()
+        let walletAddress = walletLocalDatasource.getWalletAdress()
+        let model = HasContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
+        let result = try await contractRemoteDatasource.hasContract(with: model)
+        return result.value;
     }
     
     func getNewContractEvent(address: String) async throws -> NewContractEventEntity? {

@@ -23,6 +23,15 @@ protocol ContractRemoteDatasource {
     func getContract(
         with model: GetContractRequestModel
     ) async throws -> GetContractResponseModel
+    func getValidContract(
+        with model: GetValidContractRequestModel
+    ) async throws -> GetValidContractResponseModel
+    func hasContract(
+        with model: HasContractRequestModel
+    ) async throws -> HasContractResponseModel
+    func hasValidContract(
+        with model: HasValidContractRequestModel
+    ) async throws -> HasValidContractResponseModel
     func getNewContractEvents(
         policyHolder: EthereumAddress,
         fromBlock: EthereumBlock,
@@ -30,7 +39,8 @@ protocol ContractRemoteDatasource {
     ) async throws -> [NewContractEventModel]
 }
 
-class InsuranceContractRemoteDatasourceImpl: ContractRemoteDatasource {
+class ContractRemoteDatasourceImpl: ContractRemoteDatasource {
+    
     let client: EthereumHttpClient
     let contractAdress: EthereumAddress
     
@@ -73,12 +83,39 @@ class InsuranceContractRemoteDatasourceImpl: ContractRemoteDatasource {
         )
     }
     
+    func getValidContract(
+        with model: GetValidContractRequestModel
+    ) async throws -> GetValidContractResponseModel {
+        try await model.call(
+            withClient: client,
+            responseType: GetValidContractResponseModel.self
+        )
+    }
+    
     func getContract(
         with model: GetContractRequestModel
     ) async throws -> GetContractResponseModel {
         try await model.call(
             withClient: client,
             responseType: GetContractResponseModel.self
+        )
+    }
+    
+    func hasValidContract(
+        with model: HasValidContractRequestModel
+    ) async throws -> HasValidContractResponseModel {
+        try await model.call(
+            withClient: client,
+            responseType: HasValidContractResponseModel.self
+        )
+    }
+    
+    func hasContract(
+        with model: HasContractRequestModel
+    ) async throws -> HasContractResponseModel {
+        try await model.call(
+            withClient: client,
+            responseType: HasContractResponseModel.self
         )
     }
     

@@ -12,13 +12,13 @@ protocol CheckBMI {
 }
 
 struct CheckBMIUseCase: CheckBMI {
-    private let insuranceRepository: ContractRepository
+    private let contractRepository: ContractRepository
     
-    init(insuranceRepository: ContractRepository) {
-        self.insuranceRepository = insuranceRepository
+    init(contractRepository: ContractRepository) {
+        self.contractRepository = contractRepository
     }
     
     func callAsFunction(heightInCm: Int, weightInKg: Int) async throws -> Bool {
-        try await insuranceRepository.checkBMI(heightInCm: heightInCm, weightInKg: weightInKg)
+        try await contractRepository.checkBMI(heightInCm: heightInCm, weightInKg: weightInKg)
     }
 }

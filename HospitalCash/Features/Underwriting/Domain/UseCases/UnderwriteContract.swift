@@ -14,15 +14,15 @@ protocol UnderwriteContract {
 }
 
 struct UnderwriteContractUseCase: UnderwriteContract {
-    let insuranceRepository: ContractRepository
+    let contractRepository: ContractRepository
     
-    init(insuranceRepository: ContractRepository) {
-        self.insuranceRepository = insuranceRepository
+    init(contractRepository: ContractRepository) {
+        self.contractRepository = contractRepository
     }
     
     func callAsFunction(
         with application: ContractApplicationEntity
     ) async throws -> String {
-        return try await insuranceRepository.underwriteContract(with: application);
+        return try await contractRepository.underwriteContract(with: application);
     }
 }

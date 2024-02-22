@@ -26,7 +26,7 @@ extension UnderwritingContainer {
     }
     
     var insuranceContractRemoteDatasource: Factory<ContractRemoteDatasource> {
-        self { InsuranceContractRemoteDatasourceImpl(
+        self { ContractRemoteDatasourceImpl(
             client: CoreContainer.shared.ethereumHttpClient(),
             contractConfig: self.contractConfig()
         )}
@@ -37,7 +37,7 @@ extension UnderwritingContainer {
         self { ExchangeRateRepositoryImpl(remoteDatasource: self.exchangeRateRemoteDataSource()) }
     }
     
-    var insuraneRepository: Factory<ContractRepository> {
+    var contractRepository: Factory<ContractRepository> {
         self {
             ContractRepositoryImpl(
                 contractRemoteDatasource: self.insuranceContractRemoteDatasource(),
@@ -53,7 +53,7 @@ extension UnderwritingContainer {
     
     var checkBMI: Factory<CheckBMI> {
         self {
-            CheckBMIUseCase(insuranceRepository: self.insuraneRepository())
+            CheckBMIUseCase(contractRepository: self.contractRepository())
         }
     }
     
@@ -73,14 +73,14 @@ extension UnderwritingContainer {
     
     var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
         self { CheckHealthQuestionValidityUseCase(
-            insuranceRepository: self.insuraneRepository()
+            insuranceRepository: self.contractRepository()
         ) }
     }
     
     var calculatePremium: Factory<CalculateYearlyPremium> {
         self {
             CalculatePremiumUseCase(
-                insuranceRepository: self.insuraneRepository(),
+                contractRepository: self.contractRepository(),
                 calculateEthInEur: self.calculateEthInEur()
             )
         }
@@ -88,19 +88,19 @@ extension UnderwritingContainer {
     
     var underwriteContract: Factory<UnderwriteContract> {
         self { UnderwriteContractUseCase(
-            insuranceRepository: self.insuraneRepository()
+            contractRepository: self.contractRepository()
         ) }
     }
     
-    var getContrat: Factory<GetContract> {
-        self { GetContractUseCase(
-            insuranceRepository: self.insuraneRepository()
+    var getValidContrat: Factory<GetValidContract> {
+        self { GetValidContractUseCase(
+            contractRepository: self.contractRepository()
         ) }
     }
     
     var getContractByTransaction: Factory<GetContractByTransaction> {
         self { GetContractByTransactionUseCase(
-            getContract: self.getContrat(),
+            getContract: self.getValidContrat(),
             getTransactionState: CoreContainer.shared.getTransactionState()
         ) }
     }

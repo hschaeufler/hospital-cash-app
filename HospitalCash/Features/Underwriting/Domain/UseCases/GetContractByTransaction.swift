@@ -12,15 +12,15 @@ protocol GetContractByTransaction {
 }
 
 struct GetContractByTransactionUseCase: GetContractByTransaction {
-    private let getContract: GetContract
+    private let getValidContract: GetValidContract
     private let getTransactionState: GetTransactionState
     
     init(
-        getContract: GetContract,
+        getContract: GetValidContract,
         getTransactionState: GetTransactionState
     ) {
         self.getTransactionState = getTransactionState
-        self.getContract = getContract
+        self.getValidContract = getContract
     }
     
     func callAsFunction(with tx: String) async throws -> InsuranceContractEntity? {
@@ -29,7 +29,7 @@ struct GetContractByTransactionUseCase: GetContractByTransaction {
         case .failure:
             throw CommonError.contractExecutionError(message: "Transaction fehlerhaft")
         case .success:
-            return try await self.getContract()
+            return try await self.getValidContract()
         case .notProcessed:
             return nil
         }

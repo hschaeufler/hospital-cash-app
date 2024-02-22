@@ -40,4 +40,10 @@ extension OnboardingContainer {
             walletRepository: self.walletRepository()
         ) }
     }
+    
+    var isWalletConnected: Factory<IsWalletConnected> {
+        self { IsWalletConnectedUsecase(
+            walletRepository: self.walletRepository()
+        ) }
+    }
 }
