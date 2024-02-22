@@ -41,6 +41,13 @@ extension OnboardingContainer {
         ) }
     }
     
+    var hasContract: Factory<HasContract> {
+        self { HasContractUseCase(
+            isWalletConnected: self.isWalletConnected(),
+            contractRepository: UnderwritingContainer.shared.contractRepository()
+        ) }
+    }
+    
     var isWalletConnected: Factory<IsWalletConnected> {
         self { IsWalletConnectedUsecase(
             walletRepository: self.walletRepository()

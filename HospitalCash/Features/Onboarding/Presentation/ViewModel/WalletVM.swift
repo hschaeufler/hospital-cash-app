@@ -13,6 +13,8 @@ import Factory
     @Injected(\OnboardingContainer.connectWallet) private var connectWalletUseCase
     @ObservationIgnored
     @Injected(\OnboardingContainer.isWalletConnected) private var isWalletConnectedUseCase
+    @ObservationIgnored
+    @Injected(\OnboardingContainer.hasContract) private var hasContractUseCase
     
     var error: Error? = nil
     
@@ -20,13 +22,24 @@ import Factory
         self.isWalletConnectedUseCase()
     }
     var hasContract = false;
+    var isReady = false
     
     func handleConnectWallet() async {
         do {
-            let address = try await self.connectWalletUseCase()
+            let _ = try await self.connectWalletUseCase()
+            self.hasContract = try await self.hasContractUseCase()
         } catch {
             self.error = error
         }
+    }
+    
+    func hasContract() async {
+        do {
+            self.hasContract = try await self.hasContractUseCase()
+        } catch {
+            self.error = error
+        }
+        self.isReady = true;
     }
     
     

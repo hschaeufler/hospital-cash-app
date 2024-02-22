@@ -31,6 +31,8 @@
 		843969782B86E79900FA3E00 /* HasContractResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969772B86E79900FA3E00 /* HasContractResponseModel.swift */; };
 		8439697A2B86E7AE00FA3E00 /* HasValidContractResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969792B86E7AE00FA3E00 /* HasValidContractResponseModel.swift */; };
 		8439697C2B86EAD400FA3E00 /* HasContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439697B2B86EAD400FA3E00 /* HasContract.swift */; };
+		8439697E2B86EFA000FA3E00 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439697D2B86EFA000FA3E00 /* WelcomePage.swift */; };
+		843969802B86F3C400FA3E00 /* ConnectWithWalletPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439697F2B86F3C400FA3E00 /* ConnectWithWalletPage.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
 		8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */; };
 		8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */; };
@@ -146,6 +148,8 @@
 		843969772B86E79900FA3E00 /* HasContractResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasContractResponseModel.swift; sourceTree = "<group>"; };
 		843969792B86E7AE00FA3E00 /* HasValidContractResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasValidContractResponseModel.swift; sourceTree = "<group>"; };
 		8439697B2B86EAD400FA3E00 /* HasContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasContract.swift; sourceTree = "<group>"; };
+		8439697D2B86EFA000FA3E00 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		8439697F2B86F3C400FA3E00 /* ConnectWithWalletPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWithWalletPage.swift; sourceTree = "<group>"; };
 		8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMonthlyPremiumRequestModel.swift; sourceTree = "<group>"; };
 		8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractRemoteDatasource.swift; sourceTree = "<group>"; };
 		8454E8A52B75B96A007A3887 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -422,6 +426,7 @@
 			children = (
 				840C6DC82B8570850052E6AA /* ConnectWallet.swift */,
 				8439696D2B86DD9000FA3E00 /* IsWalletConnected.swift */,
+				8439697B2B86EAD400FA3E00 /* HasContract.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -602,6 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				84ED672E2B63D97E001D600A /* HomePage.swift */,
+				8439697D2B86EFA000FA3E00 /* WelcomePage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -644,10 +650,12 @@
 		84ED673B2B642371001D600A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */,
 				84ED673C2B642446001D600A /* InsuranceAdvantagesColumn.swift */,
 				84ED673E2B64332A001D600A /* HospitalCashLogo.swift */,
 				84ED67402B6434D6001D600A /* ProductDescriptionText.swift */,
 				84ED67482B64488F001D600A /* ProductDescriptionGroup.swift */,
+				8439697F2B86F3C400FA3E00 /* ConnectWithWalletPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -690,7 +698,6 @@
 			isa = PBXGroup;
 			children = (
 				84ED67522B652F68001D600A /* UnderwritingSheet.swift */,
-				841A96572B7E68AB00BDA450 /* MetaMaskButton.swift */,
 				8454E8BD2B77DC8F007A3887 /* PremiumDetailGroup.swift */,
 				840C6DC22B84E6710052E6AA /* ContractDetailGroup.swift */,
 			);
@@ -795,7 +802,6 @@
 				84F8EAC72B80FB6000D0A414 /* UnderwriteContract.swift */,
 				840C6DD02B8579D70052E6AA /* GetValidContract.swift */,
 				849471C72B865F0B000EC4D3 /* GetContractByTransaction.swift */,
-				8439697B2B86EAD400FA3E00 /* HasContract.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -953,6 +959,7 @@
 				846D6F102B6AFB660074F2F3 /* ExchangeRateRepositoryImpl.swift in Sources */,
 				849471E52B86AEC4000EC4D3 /* EthereumRemoteDatasource.swift in Sources */,
 				840C6DC72B856D770052E6AA /* NewContractEventModel.swift in Sources */,
+				843969802B86F3C400FA3E00 /* ConnectWithWalletPage.swift in Sources */,
 				840C6DC52B856A200052E6AA /* TransactionStateEntity.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
@@ -991,6 +998,7 @@
 				8454E8AE2B765EF0007A3887 /* ContractRepositoryImpl.swift in Sources */,
 				8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */,
 				84ED673F2B64332A001D600A /* HospitalCashLogo.swift in Sources */,
+				8439697E2B86EFA000FA3E00 /* WelcomePage.swift in Sources */,
 				84ED67742B69B3D7001D600A /* SheetPageLayout.swift in Sources */,
 				84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */,
 				84F8EACA2B80FC3E00D0A414 /* BodyMeasureEntity.swift in Sources */,

@@ -13,4 +13,7 @@ protocol ContractRepository {
     func checkHealthQuestions(with entity: HealthQuestionEntity) async throws -> Bool
     func underwriteContract(with application: ContractApplicationEntity) async throws -> String
     func getContract() async throws -> InsuranceContractEntity?
+    func getValidContract() async throws -> InsuranceContractEntity?
+    func hasContract() async throws -> Bool
+    func hasValidContract() async throws -> Bool
 }
