@@ -26,7 +26,7 @@ struct ContractDetailGroup: View {
                     allowCopy: true
                 )
                 OutputFloatingPointField(
-                    titleKey: "Höhe Krankenhaustaggeld",
+                    titleKey: "Höhe Krankenhaustageld",
                     number: insuranceContract.dailyHospitalCash,
                     unit: "ETH",
                     style: OutputFloatingPointField.FieldStyle.multiLine,

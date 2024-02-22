@@ -60,19 +60,15 @@
         }
       }
     },
-    "Berechnungsfehler" : {
-      "extractionState" : "stale",
+    "Bereits versichert?" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calculation error"
+            "value" : "Already insured?"
           }
         }
       }
-    },
-    "Bereits versichert?" : {
-
     },
     "Bestimme selbst die Tagegeldhöhe" : {
       "localizations" : {
@@ -181,10 +177,24 @@
       }
     },
     "Connect with" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect with"
+          }
+        }
+      }
     },
     "Connect with Metamask" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect with Metamask"
+          }
+        }
+      }
     },
     "Contract Page" : {
 
@@ -206,13 +216,34 @@
       }
     },
     "Deine Informationen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your information"
+          }
+        }
+      }
     },
     "Deine Versicherung" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your insurance"
+          }
+        }
+      }
     },
     "Deine Versicherung ist 1 Jahr gültig und kann am Ende der Laufzeit verlängert werden." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your insurance is valid for 1 year and can be extended at the end of the term."
+          }
+        }
+      }
     },
     "Deine Vorteile" : {
       "localizations" : {
@@ -241,10 +272,24 @@
       }
     },
     "Diese musst du bei einem Krankenhausaufenthalt angeben." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must state this when you are hospitalised."
+          }
+        }
+      }
     },
     "Error Message" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error Message"
+          }
+        }
+      }
     },
     "ETH" : {
       "localizations" : {
@@ -257,7 +302,14 @@
       }
     },
     "Fehler" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      }
     },
     "für nur" : {
       "localizations" : {
@@ -396,7 +448,14 @@
       }
     },
     "Gratulation zum \nerfolgreichen Abschluss!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations on the \nsuccessful finalisation!"
+          }
+        }
+      }
     },
     "Größe" : {
       "localizations" : {
@@ -415,7 +474,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Hint"
           }
         }
@@ -425,13 +484,13 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "hospital cash amount"
           }
         }
       }
     },
-    "Höhe Krankenhaustaggeld" : {
+    "Höhe Krankenhaustageld" : {
 
     },
     "Home" : {
@@ -533,7 +592,14 @@
       }
     },
     "Jetzt einloggen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log in now"
+          }
+        }
+      }
     },
     "Keine lästigen Wartezeiten" : {
       "localizations" : {
@@ -612,16 +678,44 @@
       }
     },
     "OK" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     },
     "Pay with" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pay with"
+          }
+        }
+      }
     },
     "Pay With" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pay with"
+          }
+        }
+      }
     },
     "Pay with Metamask" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pay with MetaMask"
+          }
+        }
+      }
     },
     "Person must be an adult!" : {
       "extractionState" : "manual",
@@ -677,10 +771,24 @@
       }
     },
     "Sie haben bereits einen Vertrag unter dieser Adresse abgeschlossen. Kehren Sie zur Übersicht zurück um diesen zu Verwalten." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have already signed a contract at this address. Return to the overview to manage it."
+          }
+        }
+      }
     },
     "Sie sind bereits versichert!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You are already insured!"
+          }
+        }
+      }
     },
     "Stationäre Behandlung" : {
       "localizations" : {
@@ -713,7 +821,14 @@
       }
     },
     "Test123" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test123"
+          }
+        }
+      }
     },
     "Testpage" : {
       "localizations" : {
@@ -752,7 +867,14 @@
       }
     },
     "Versicherungsnummer" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insurance number"
+          }
+        }
+      }
     },
     "Voll automatisiert" : {
       "localizations" : {
@@ -813,10 +935,24 @@
       }
     },
     "Zeitraum" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time period"
+          }
+        }
+      }
     },
     "Zur Übersicht" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to overview"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
