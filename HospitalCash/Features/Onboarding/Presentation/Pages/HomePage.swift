@@ -39,7 +39,7 @@ struct HomePage: View {
             }
         }
         .sheet(isPresented: $showPremiumCalculator) {
-            PremiumCalculationSheet()
+            UnderwritingSheet()
         }
         .sheet(isPresented: $showConnectWithMetamask) {
             PayWithMetamaskPage(isPayment: false)

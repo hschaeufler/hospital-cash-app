@@ -10,7 +10,7 @@ import Factory
 
 @Observable class WalletVM {
     @ObservationIgnored
-    @Injected(\PremiumContainer.connectWallet) private var connectWalletUseCase
+    @Injected(\OnboardingContainer.connectWallet) private var connectWalletUseCase
     
     var isConnected = true
     

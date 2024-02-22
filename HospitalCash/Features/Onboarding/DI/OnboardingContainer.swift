@@ -27,10 +27,17 @@ extension OnboardingContainer {
         self { WalletLocalDataSourceImpl(walletConfig: self.walletConfig() )}
     }
     
+    // repositories
+    var walletRepository: Factory<WalletRepository> {
+        self { WalletRepositoryImpl(
+            walletLocalDatasource: self.walletLocalDataSource()
+        ) }
+    }
+    
     // usecases
     var connectWallet: Factory<ConnectWallet> {
         self { ConnectWalletUseCase(
-            insuranceRepository: PremiumContainer.shared.insuraneRepository()
+            walletRepository: self.walletRepository()
         ) }
     }
 }

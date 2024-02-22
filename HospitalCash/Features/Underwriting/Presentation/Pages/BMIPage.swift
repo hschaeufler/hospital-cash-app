@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct BMIPage: View {
-    @Environment(PremiumCalculationVM.self) private var premiumCalculationVm
+    @Environment(UnderwritingVM.self) private var underwritingVM
     
     var body: some View {
-        @Bindable var premiumCalculationVm = premiumCalculationVm
+        @Bindable var underwritingVM = underwritingVM
         
         SheetPageLayout("BMI") {
             VStack {
                 Form {
                     Section {
-                        NumberField("Größe", number: $premiumCalculationVm.height, unit: "cm", range: 0...250)
-                        NumberField("Gewicht", number: $premiumCalculationVm.weight, unit: "kg", range: 0...250)
+                        NumberField("Größe", number: $underwritingVM.height, unit: "cm", range: 0...250)
+                        NumberField("Gewicht", number: $underwritingVM.weight, unit: "kg", range: 0...250)
                     }
                     Section("Body Mass Index") {
-                        OutputFloatingPointField(titleKey: "BMI", number: premiumCalculationVm.bmi, unit: "kg/m²")
+                        OutputFloatingPointField(titleKey: "BMI", number: underwritingVM.bmi, unit: "kg/m²")
                     }
                     InfoBox("Gesundheitsfragen", contentKey: "GESUNDHEITSFRAGEN_INFO")
                         .backgroundStyle(.windowBackground)
@@ -29,7 +29,7 @@ struct BMIPage: View {
                 }
                 BorderedButton("Weiter") {
                     Task {
-                        await premiumCalculationVm.checkBMI()
+                        await underwritingVM.checkBMI()
                     }
                 }
             }
@@ -40,6 +40,6 @@ struct BMIPage: View {
 #Preview {
     NavigationStack {
         BMIPage()
-            .environment(PremiumCalculationVM())
+            .environment(UnderwritingVM())
     }
 }

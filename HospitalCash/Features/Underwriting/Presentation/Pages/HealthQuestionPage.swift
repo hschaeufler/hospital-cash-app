@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HealthQuestionPage: View {
-    @Environment(PremiumCalculationVM.self) private var premiumCalculationVm
+    @Environment(UnderwritingVM.self) private var viewModel
     
     @State private var hasInpatientTreatment = false;
     @State private var hasOutpatientTreatment = false;
@@ -17,8 +17,8 @@ struct HealthQuestionPage: View {
     @State private var hasMedication = false;
 
     var body: some View {
-        @Bindable var vm = premiumCalculationVm
-        let healthQuestions = $vm.healthQuestions
+        @Bindable var viewModel = viewModel
+        let healthQuestions = $viewModel.healthQuestions
         
         SheetPageLayout("Gesundheitsfragen") {
             VStack {
@@ -59,13 +59,13 @@ struct HealthQuestionPage: View {
                         )
                     }
                 }
-                .onChange(of: premiumCalculationVm.healthQuestions, {
+                .onChange(of: viewModel.healthQuestions, {
                     Task {
-                        await premiumCalculationVm.checkHealthQuestions()
+                        await viewModel.checkHealthQuestions()
                     }
                 })
                 NavigationLinkButton("Weiter", value: NavigationDestination.premiumCalculation)
-                    .disabled(!premiumCalculationVm.areHealthQuestionsValid)
+                    .disabled(!viewModel.areHealthQuestionsValid)
             }
         }
     }
@@ -74,6 +74,6 @@ struct HealthQuestionPage: View {
 #Preview {
     NavigationStack {
         HealthQuestionPage()
-            .environment(PremiumCalculationVM())
+            .environment(UnderwritingVM())
     }
 }

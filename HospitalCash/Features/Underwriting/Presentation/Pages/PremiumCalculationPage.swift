@@ -8,29 +8,29 @@
 import SwiftUI
 
 struct PremiumCalculationPage: View {
-    @Environment(PremiumCalculationVM.self) private var premiumCalculationVm
+    @Environment(UnderwritingVM.self) private var viewModel
     
     var body: some View {
-        @Bindable var premiumCalculationVm = premiumCalculationVm
+        @Bindable var viewModel = viewModel
         
         SheetPageLayout("Beitrag berechnen") {
             VStack {
                 Form {
                     NumberField("Höhe Krankenhaustagegeld",
                                 caption: "Welchen Betrag möchtest du tgl. bei einem Krankenhausaufenthalt erhalten?",
-                                number:  $premiumCalculationVm.amountHospitalCashEur,
+                                number:  $viewModel.amountHospitalCashEur,
                                 unit: "€",
                                 range: 0...250,
                                 step: 10,
                                 style: NumberField.FieldStyle.multiLine
-                    ).onChange(of: premiumCalculationVm.amountHospitalCashEur) { oldValue, newValue in
+                    ).onChange(of: viewModel.amountHospitalCashEur) { oldValue, newValue in
                         Task {
-                            await premiumCalculationVm.calculateEurInEth()
+                            await viewModel.calculateEurInEth()
                         }
                     }
                     OutputFloatingPointField(
                         titleKey: "tats. Betrag",
-                        number: premiumCalculationVm.amountHospitalCashEth,
+                        number: viewModel.amountHospitalCashEth,
                         unit: "ETH"
                     )
                     InfoBox("Hinweis", contentKey: "Die Krankenhaustagegeldhöhe wird in ETH versichert und ausgezahlt. Der EUR Betrag dient als Richtwert. Es besteht das Risiko von Wechselkursschwankungen.")
@@ -38,23 +38,23 @@ struct PremiumCalculationPage: View {
                         .listRowInsets(EdgeInsets())
                     DatePicker(
                         "Versicherungsbeginn",
-                        selection: $premiumCalculationVm.insuranceStartDate,
-                        in: premiumCalculationVm.fromTomorrowRange,
+                        selection: $viewModel.insuranceStartDate,
+                        in: viewModel.fromTomorrowRange,
                         displayedComponents: [.date]
                     )
                     .bold()
                     DatePicker(
                         "Geburtsdatum",
-                        selection: $premiumCalculationVm.birthDate,
-                        in: premiumCalculationVm.untilYesterdayRange,
+                        selection: $viewModel.birthDate,
+                        in: viewModel.untilYesterdayRange,
                         displayedComponents: [.date]
                     )
                     .bold()
                 }
                 .alert(
                     "Berechnungsfehler",
-                    isPresented: $premiumCalculationVm.showError,
-                    presenting: premiumCalculationVm.error
+                    isPresented: $viewModel.showError,
+                    presenting: viewModel.error
                 ) { error in
                     Button("Ok", role: .cancel, action: {})
                 } message: { error in
@@ -62,10 +62,10 @@ struct PremiumCalculationPage: View {
                 }
                 BorderedButton("Beitrag berechnen") {
                     Task {
-                        await premiumCalculationVm.caculatePremium()
+                        await viewModel.caculatePremium()
                     }
                 }
-                .disabled(!premiumCalculationVm.isCalculationAllowed)
+                .disabled(!viewModel.isCalculationAllowed)
             }
         }
     }
@@ -73,5 +73,5 @@ struct PremiumCalculationPage: View {
 
 #Preview {
     PremiumCalculationPage()
-        .environment(PremiumCalculationVM())
+        .environment(UnderwritingVM())
 }

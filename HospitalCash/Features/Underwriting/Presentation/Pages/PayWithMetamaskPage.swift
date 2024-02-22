@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PayWithMetamaskPage: View {
-    @Environment(PremiumCalculationVM.self) private var viewModel
+    @Environment(UnderwritingVM.self) private var viewModel
     var isPayment: Bool
     
     var body: some View {
@@ -41,5 +41,5 @@ struct PayWithMetamaskPage: View {
 
 #Preview {
     PayWithMetamaskPage(isPayment: false)
-        .environment(PremiumCalculationVM())
+        .environment(UnderwritingVM())
 }

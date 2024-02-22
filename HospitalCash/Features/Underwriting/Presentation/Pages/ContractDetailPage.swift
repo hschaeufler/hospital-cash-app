@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContractDetailPage: View {
-    @Environment(PremiumCalculationVM.self) private var viewModel
+    @Environment(UnderwritingVM.self) private var viewModel
     
     var body: some View {
         SheetPageLayout("Deine Versicherung") {
@@ -39,7 +39,7 @@ struct ContractDetailPage: View {
 }
 
 #Preview {
-    let viewModel = PremiumCalculationVM()
+    let viewModel = UnderwritingVM()
     viewModel.insuranceContract = InsuranceContractEntity(
         policyId: 1,
         insuranceStartDate: Date(),

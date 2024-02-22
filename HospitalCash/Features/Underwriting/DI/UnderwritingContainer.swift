@@ -8,12 +8,12 @@ import Foundation
 import Factory
 
 // See: https://hmlongco.github.io/Factory/documentation/factory/containers
-public final class PremiumContainer: SharedContainer {
-    public static let shared = PremiumContainer()
+public final class UnderwritingContainer: SharedContainer {
+    public static let shared = UnderwritingContainer()
     public let manager = ContainerManager()
 }
 
-extension PremiumContainer {
+extension UnderwritingContainer {
     // Config
     var contractConfig: Factory<Configuration.Contract> {
         self { Configuration.Contract() }

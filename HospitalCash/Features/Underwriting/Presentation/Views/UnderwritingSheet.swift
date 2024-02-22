@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct PremiumCalculationSheet: View {
-    @State private var premiumCalculationVM = PremiumCalculationVM()
+struct UnderwritingSheet: View {
+    @State private var viewModel = UnderwritingVM()
     
     var body: some View {
-        NavigationStack(path: $premiumCalculationVM.path) {
+        NavigationStack(path: $viewModel.path) {
             BMIPage()
                 .navigationDestination(for: NavigationDestination.self) { destination in
                     switch destination {
@@ -30,18 +30,18 @@ struct PremiumCalculationSheet: View {
         }
         .alert(
             "Fehler",
-            isPresented: $premiumCalculationVM.showError,
-            presenting: premiumCalculationVM.error
+            isPresented: $viewModel.showError,
+            presenting: viewModel.error
         ) { error in
             Button("Ok", role: .cancel, action: {})
         } message: { error in
             Text(LocalizedStringKey(error.localizedDescription))
         }
         .presentationDragIndicator(.visible)
-        .environment(premiumCalculationVM)
+        .environment(viewModel)
     }
 }
 
 #Preview {
-    PremiumCalculationSheet()
+    UnderwritingSheet()
 }

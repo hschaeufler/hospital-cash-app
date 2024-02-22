@@ -1,5 +1,5 @@
 //
-//  PremiumCalculationViewModel.swift
+//  UnderwritingVM.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 31.01.24.
@@ -7,25 +7,25 @@
 import Factory
 import SwiftUI
 
-@Observable class PremiumCalculationVM {
+@Observable class UnderwritingVM {
     @ObservationIgnored
-    @Injected(\PremiumContainer.calculateBMI) private var calculateBMIUseCase
+    @Injected(\UnderwritingContainer.calculateBMI) private var calculateBMIUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.checkBMI) private var checkBMIUseCase
+    @Injected(\UnderwritingContainer.checkBMI) private var checkBMIUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.checkHealthQuestionValidity) private var checkHealthQuestionValidityUseCase
+    @Injected(\UnderwritingContainer.checkHealthQuestionValidity) private var checkHealthQuestionValidityUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.calculateEthInEur) private var calculateEthInEurUseCase
+    @Injected(\UnderwritingContainer.calculateEthInEur) private var calculateEthInEurUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.calculateEurInEth) private var calculateEurInEthUseCase
+    @Injected(\UnderwritingContainer.calculateEurInEth) private var calculateEurInEthUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.calculatePremium) private var calculatePremiumUseCase
+    @Injected(\UnderwritingContainer.calculatePremium) private var calculatePremiumUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.connectWallet) private var connectWalletUseCase
+    @Injected(\OnboardingContainer.connectWallet) private var connectWalletUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.underwriteContract) private var underwriteContractUseCase
+    @Injected(\UnderwritingContainer.underwriteContract) private var underwriteContractUseCase
     @ObservationIgnored
-    @Injected(\PremiumContainer.getContractByTransaction) private var getContractByTransactionUseCase
+    @Injected(\UnderwritingContainer.getContractByTransaction) private var getContractByTransactionUseCase
     
     var path: [NavigationDestination] = []
     

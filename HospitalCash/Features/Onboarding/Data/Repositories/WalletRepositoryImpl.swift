@@ -1,8 +1,8 @@
 //
-//  WalletRepository.swift
+//  WalletRepositoryImpl.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 21.02.24.
+//  Created by Holger Schäufler on 22.02.24.
 //
 
 import Foundation
