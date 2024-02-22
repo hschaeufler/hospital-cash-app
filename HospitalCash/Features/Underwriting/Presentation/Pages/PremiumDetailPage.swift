@@ -9,11 +9,10 @@ import SwiftUI
 
 struct PremiumDetailPage: View {
     @Environment(UnderwritingVM.self) private var viewModel
-    @Environment(WalletVM.self) private var walletVM
     
     var body: some View {
-        @Bindable var viewModel = viewModel
         let premium = viewModel.premiumEntity
+        @Bindable var viewModel = viewModel
         
         SheetPageLayout("Dein Beitrag") {
             VStack {
@@ -38,17 +37,20 @@ struct PremiumDetailPage: View {
                     viewModel.showConnectSheet.toggle()
                 }
             }
-            
-        }
-        .sheet(isPresented: $viewModel.showConnectSheet) {
-            ConnectWithWalletPage()
-        }
-        .sheet(isPresented: $viewModel.showPaymentSheet) {
-            NavigationStack {
-                PayWithWalletPage()
+            .sheet(isPresented: $viewModel.showConnectSheet) {
+                ConnectWithWalletPage {
+                    Task {
+                        await viewModel.handleConnectWallet()
+                    }
+                }
             }
-            .presentationDetents([.fraction(1 / 3)])
-            .presentationDragIndicator(.visible)
+            .sheet(isPresented: $viewModel.showPaymentSheet) {
+                PayWithWalletPage {
+                    Task {
+                        await viewModel.handleUnderwriteContract()
+                    }
+                }
+            }
         }
     }
 }

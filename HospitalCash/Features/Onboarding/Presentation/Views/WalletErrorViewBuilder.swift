@@ -20,8 +20,6 @@ struct WalletErrorViewBuilder<Content>: View where Content: View {
                 return LocalizedStringKey(error)
             }
             return nil
-        } hideError: {_ in
-            walletVM.handleDismissError()
         }
     }
 }

@@ -26,6 +26,8 @@ import SwiftUI
     @Injected(\UnderwritingContainer.underwriteContract) private var underwriteContractUseCase
     @ObservationIgnored
     @Injected(\UnderwritingContainer.getContractByTransaction) private var getContractByTransactionUseCase
+    @ObservationIgnored
+    @Injected(\OnboardingContainer.getAppState) private var getAppState
     
     var path: [NavigationDestination] = []
     
@@ -138,7 +140,25 @@ import SwiftUI
         }
     }
     
-    func connectWallet() async {
+    func handleShowWallet() async {
+        do {
+            let appState = try await self.getAppState()
+            switch appState {
+            case .initial:
+                self.showConnectSheet = true;
+                break
+            case .isConnected:
+                self.showPaymentSheet = true;
+            case .hasContract:
+                break;
+            }
+            
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func handleConnectWallet() async {
         do {
             let _ = try await self.connectWalletUseCase();
             self.showConnectSheet = false;
@@ -148,7 +168,7 @@ import SwiftUI
         }
     }
     
-    func underwriteContract() async {
+    func handleUnderwriteContract() async {
         do {
             let application = ContractApplicationEntity(
                 healthQuestions: healthQuestions,

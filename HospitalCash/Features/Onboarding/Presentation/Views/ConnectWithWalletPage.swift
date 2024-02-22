@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct ConnectWithWalletPage: View {
-    @Environment(WalletVM.self) private var viewModel
+    var action: () -> Void
     
     var body: some View {
         WalletErrorViewBuilder {
@@ -15,12 +15,9 @@ struct ConnectWithWalletPage: View {
                 SheetPageLayout("Connect with Metamask") {
                     VStack(content: {
                         MetaMaskButton(
-                            titleKey: "Connect with"
-                        ) {
-                            Task {
-                                await viewModel.handleConnectWallet()
-                            }
-                        }
+                            titleKey: "Connect with",
+                            action: action
+                        )
                         .padding(10)
                         Spacer()
                     })
@@ -33,6 +30,5 @@ struct ConnectWithWalletPage: View {
 }
 
 #Preview {
-    PayWithWalletPage()
-        .environment(UnderwritingVM())
+    PayWithWalletPage {}
 }

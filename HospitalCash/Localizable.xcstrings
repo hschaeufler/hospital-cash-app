@@ -408,6 +408,9 @@
         }
       }
     },
+    "Hallo!" : {
+
+    },
     "Hinweis" : {
       "localizations" : {
         "en" : {

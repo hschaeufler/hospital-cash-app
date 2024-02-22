@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct PayWithWalletPage: View {
-    @Environment(UnderwritingVM.self) private var viewModel
+    var action: () -> Void
     
     var body: some View {
         NavigationStack {
             SheetPageLayout("Pay with Metamask") {
                 VStack {
                     MetaMaskButton(
-                        titleKey: "Pay with"
-                    ) {
-                        Task {
-                            await viewModel.underwriteContract()
-                        }
-                    }
+                        titleKey: "Pay with",
+                        action: action
+                    )
                     .padding(10)
                     Spacer()
                 }
@@ -32,6 +29,5 @@ struct PayWithWalletPage: View {
 }
 
 #Preview {
-    PayWithWalletPage()
-        .environment(UnderwritingVM())
+    PayWithWalletPage {}
 }

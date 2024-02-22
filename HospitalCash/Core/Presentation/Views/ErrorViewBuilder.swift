@@ -11,13 +11,12 @@ struct ErrorViewBuilder<Content>: View where Content : View {
     var titleKey: LocalizedStringKey
     @ViewBuilder var content: () -> Content
     var error: () -> LocalizedStringKey?
-    var hideError: ((Bool) -> Void)?
     var retryAction: (() -> Void)?
 
     private var isPresented: Binding<Bool> {
         Binding(get: {
             error() != nil
-        }, set: (hideError != nil ? hideError! : {_ in }))
+        }, set: {_ in })
     }
     
     var body: some View {
@@ -41,7 +40,5 @@ struct ErrorViewBuilder<Content>: View where Content : View {
         Text("Home")
     } error: {
         "Error Message"
-    } hideError: { _ in
-        
     }
 }

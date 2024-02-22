@@ -27,25 +27,16 @@ import Factory
     
     var state: WalletViewState = .loading
     
-    var showConnectWithMetamask = false
-    
-    func handleDismissError() {
-        self.state = .initial
-    }
-    
-    func handleError(error: Error) {
-        print(error.localizedDescription)
-        self.showConnectWithMetamask = false
-        self.state = WalletViewState.error(error.localizedDescription)
+    func handleLogin() {
+        self.state = .isConnecting
     }
     
     func handleConnectWallet() async {
         do {
-            self.state = .isConnecting
             let _ = try await self.connectWalletUseCase()
             await fetchAppState()
         } catch {
-            self.handleError(error: error)
+            self.state = WalletViewState.error(error.localizedDescription)
         }
     }
 
@@ -64,7 +55,7 @@ import Factory
                 break
             }
         } catch {
-            self.handleError(error: error)
+            self.state = WalletViewState.error(error.localizedDescription)
         }
     }
 }
