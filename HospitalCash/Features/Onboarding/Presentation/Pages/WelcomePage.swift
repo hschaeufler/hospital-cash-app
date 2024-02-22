@@ -15,37 +15,39 @@ struct WelcomePage: View {
     @Environment(WalletVM.self) private var walletVM
     
     var body: some View {
-        VStack {
-            Spacer()
-            HospitalCashLogo()
-            Spacer()
-            ProductDescriptionGroup()
-                .padding(.horizontal, 15)
-            Spacer()
-            InsuranceAdvantagesColumn()
-                .padding(.horizontal, 5)
-            Spacer()
-            BottomBar(verticalPadding: verticalPadding) {
-                VStack {
-                    ProminentButton("Jetzt Beitrag berechnen") {
-                        showPremiumCalculator.toggle()
-                    }
-                    HStack {
-                        Text("Bereits versichert?")
-                            .foregroundStyle(.secondary)
-                        Button("Jetzt einloggen") {
-                            showConnectWithMetamask.toggle()
+        @Bindable var walletVM = walletVM
+        
+        WalletErrorViewBuilder {
+            VStack {
+                Spacer()
+                HospitalCashLogo()
+                Spacer()
+                ProductDescriptionGroup()
+                    .padding(.horizontal, 15)
+                Spacer()
+                InsuranceAdvantagesColumn()
+                    .padding(.horizontal, 5)
+                Spacer()
+                BottomBar(verticalPadding: verticalPadding) {
+                    VStack {
+                        ProminentButton("Jetzt Beitrag berechnen") {
+                            showPremiumCalculator.toggle()
+                        }
+                        if walletVM.state != .isConnected {
+                            LoginButton {
+                                showConnectWithMetamask.toggle()
+                            }
                         }
                     }
                 }
             }
-        }
-        .sheet(isPresented: $showPremiumCalculator) {
-            UnderwritingSheet()
-        }
-        .sheet(isPresented: $showConnectWithMetamask) {
-            ConnectWithWalletPage()
-                .environment(walletVM)
+            .sheet(isPresented: $showPremiumCalculator) {
+                UnderwritingSheet()
+            }
+            .sheet(isPresented: $showConnectWithMetamask) {
+                ConnectWithWalletPage()
+                    .environment(walletVM)
+            }
         }
     }
 }
@@ -53,5 +55,6 @@ struct WelcomePage: View {
 #Preview {
     NavigationStack {
         WelcomePage()
+            .environment(WalletVM())
     }
 }

@@ -10,12 +10,6 @@ import SwiftUI
 struct HealthQuestionPage: View {
     @Environment(UnderwritingVM.self) private var viewModel
     
-    @State private var hasInpatientTreatment = false;
-    @State private var hasOutpatientTreatment = false;
-    @State private var hasPsychotherapy = false;
-    @State private var hasChronicIllness = false;
-    @State private var hasMedication = false;
-
     var body: some View {
         @Bindable var viewModel = viewModel
         let healthQuestions = $viewModel.healthQuestions

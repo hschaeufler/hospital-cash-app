@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PremiumDetailPage: View {
     @Environment(UnderwritingVM.self) private var viewModel
+    @Environment(WalletVM.self) private var walletVM
     
     var body: some View {
         @Bindable var viewModel = viewModel
@@ -40,17 +41,11 @@ struct PremiumDetailPage: View {
             
         }
         .sheet(isPresented: $viewModel.showConnectSheet) {
-            NavigationStack {
-                PayWithMetamaskPage(isPayment: false)
-                    .environment(viewModel)
-            }
-            .presentationDetents([.fraction(1 / 3)])
-            .presentationDragIndicator(.visible)
+            ConnectWithWalletPage()
         }
         .sheet(isPresented: $viewModel.showPaymentSheet) {
             NavigationStack {
-                PayWithMetamaskPage(isPayment: true)
-                    .environment(viewModel)
+                PayWithWalletPage(isPayment: true)
             }
             .presentationDetents([.fraction(1 / 3)])
             .presentationDragIndicator(.visible)
@@ -61,4 +56,5 @@ struct PremiumDetailPage: View {
 #Preview {
     PremiumDetailPage()
         .environment(UnderwritingVM())
+        .environment(WalletVM())
 }

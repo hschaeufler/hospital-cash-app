@@ -19,6 +19,6 @@ struct GetValidContractUseCase: GetValidContract {
     }
     
     func callAsFunction() async throws -> InsuranceContractEntity? {
-        return try await contractRepository.getContract()
+        return try await contractRepository.getValidContract()
     }
 }

@@ -10,8 +10,9 @@ struct ConnectWithWalletPage: View {
     @Environment(WalletVM.self) private var viewModel
     
     var body: some View {
-        NavigationStack {
-            SheetPageLayout("Connect with Metamask") {
+        WalletErrorViewBuilder {
+            NavigationStack {
+                SheetPageLayout("Connect with Metamask") {
                     VStack(content: {
                         MetaMaskButton(
                             titleKey: "Connect with"
@@ -24,13 +25,14 @@ struct ConnectWithWalletPage: View {
                         Spacer()
                     })
                 }
+            }
+            .presentationDetents([.fraction(1 / 3)])
+            .presentationDragIndicator(.visible)
         }
-        .presentationDetents([.fraction(1 / 3)])
-        .presentationDragIndicator(.visible)
     }
 }
 
 #Preview {
-    PayWithMetamaskPage(isPayment: false)
+    PayWithWalletPage(isPayment: false)
         .environment(UnderwritingVM())
 }

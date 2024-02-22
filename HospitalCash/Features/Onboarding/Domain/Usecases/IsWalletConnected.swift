@@ -19,6 +19,6 @@ struct IsWalletConnectedUsecase: IsWalletConnected {
     }
     
     func callAsFunction() -> Bool {
-        return walletRepository.getWalletAddress().isEmpty
+        return !walletRepository.getWalletAddress().isEmpty
     }
 }

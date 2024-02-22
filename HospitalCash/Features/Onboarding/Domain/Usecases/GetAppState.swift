@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol HasContract {
-    func callAsFunction() async throws -> Bool
+protocol GetAppState {
+    func callAsFunction() async throws -> AppState
 }
 
-struct HasContractUseCase: HasContract {
+struct GetAppStateUseCase: GetAppState {
     private let isWalletConnected: IsWalletConnected
     private let contractRepository: ContractRepository
     
@@ -23,10 +23,11 @@ struct HasContractUseCase: HasContract {
         self.contractRepository = contractRepository
     }
     
-    func callAsFunction() async throws -> Bool {
+    func callAsFunction() async throws -> AppState {
         guard self.isWalletConnected() else {
-            return false
+            return AppState.initial
         }
-        return try await contractRepository.hasContract()
+        let hasContract = try await contractRepository.hasContract()
+        return hasContract ? AppState.hasContract : AppState.isConnected
     }
 }

@@ -61,6 +61,7 @@
       }
     },
     "Berechnungsfehler" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -240,6 +241,9 @@
       }
     },
     "Diese musst du bei einem Krankenhausaufenthalt angeben." : {
+
+    },
+    "Error Message" : {
 
     },
     "ETH" : {
@@ -427,6 +431,12 @@
     "Höhe Krankenhaustaggeld" : {
 
     },
+    "Home" : {
+
+    },
+    "Homepage" : {
+
+    },
     "Hospital Cash" : {
       "localizations" : {
         "de" : {
@@ -597,6 +607,9 @@
           }
         }
       }
+    },
+    "OK" : {
+
     },
     "Pay with" : {
 

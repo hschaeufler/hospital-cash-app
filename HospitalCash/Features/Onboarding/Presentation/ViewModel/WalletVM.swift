@@ -14,33 +14,57 @@ import Factory
     @ObservationIgnored
     @Injected(\OnboardingContainer.isWalletConnected) private var isWalletConnectedUseCase
     @ObservationIgnored
-    @Injected(\OnboardingContainer.hasContract) private var hasContractUseCase
+    @Injected(\OnboardingContainer.getAppState) private var getAppState
     
-    var error: Error? = nil
-    
-    var isConnected: Bool {
-        self.isWalletConnectedUseCase()
+    enum WalletViewState: Equatable {
+        case loading
+        case initial
+        case isConnecting
+        case isConnected
+        case hasContract
+        case error(String)
     }
-    var hasContract = false;
-    var isReady = false
+    
+    var state: WalletViewState = .loading
+    
+    var showConnectWithMetamask = false
+    
+    func handleDismissError() {
+        self.state = .initial
+    }
+    
+    func handleError(error: Error) {
+        print(error.localizedDescription)
+        self.showConnectWithMetamask = false
+        self.state = WalletViewState.error(error.localizedDescription)
+    }
     
     func handleConnectWallet() async {
         do {
+            self.state = .isConnecting
             let _ = try await self.connectWalletUseCase()
-            self.hasContract = try await self.hasContractUseCase()
+            await fetchAppState()
         } catch {
-            self.error = error
+            self.handleError(error: error)
         }
     }
-    
-    func hasContract() async {
+
+    func fetchAppState() async {
         do {
-            self.hasContract = try await self.hasContractUseCase()
+            let appState = try await self.getAppState()
+            switch appState {
+            case .isConnected:
+                self.state = WalletViewState.isConnected
+                break
+            case .hasContract:
+                self.state = WalletViewState.hasContract
+                break
+            default:
+                self.state = WalletViewState.initial
+                break
+            }
         } catch {
-            self.error = error
+            self.handleError(error: error)
         }
-        self.isReady = true;
     }
-    
-    
 }

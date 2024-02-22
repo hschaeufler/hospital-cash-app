@@ -11,18 +11,18 @@ struct ContentView: View {
     @State private var viewModel = WalletVM()
     
     var body: some View {
-        if !viewModel.isReady {
-            VStack(alignment: .center) {
-                Spacer()
-                ProgressView()
-                Spacer()
-            }
-            .task {
-                await viewModel.hasContract()
-            }
-        } else if viewModel.hasContract {
+        switch viewModel.state {
+        case .loading:
+            LoadingPage()
+                .onAppear() {
+                    Task {
+                        await viewModel.fetchAppState()
+                    }
+                }
+        case .hasContract:
             HomePage()
-        } else {
+                .environment(viewModel)
+        default:
             WelcomePage()
                 .environment(viewModel)
         }
