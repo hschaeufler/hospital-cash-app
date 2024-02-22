@@ -38,7 +38,7 @@ import SwiftUI
              alreadyInsured
     }
     
-    var path: [Destination] = [.bmi]
+    var path: [Destination] = []
     
     var error: Error?
     var showError: Bool {

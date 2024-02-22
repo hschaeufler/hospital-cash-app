@@ -12,7 +12,7 @@ struct UnderwritingSheet: View {
     
     var body: some View {
         NavigationStack(path: $viewModel.path) {
-            EmptyView()
+            BMIPage()
                 .navigationDestination(for: UnderwritingVM.Destination.self) { destination in
                     switch destination {
                     case UnderwritingVM.Destination.bmi:
