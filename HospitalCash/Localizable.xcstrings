@@ -676,6 +676,12 @@
         }
       }
     },
+    "Sie haben bereits einen Vertrag unter dieser Adresse abgeschlossen. Kehren Sie zur Übersicht zurück um diesen zu Verwalten." : {
+
+    },
+    "Sie sind bereits versichert!" : {
+
+    },
     "Stationäre Behandlung" : {
       "localizations" : {
         "en" : {

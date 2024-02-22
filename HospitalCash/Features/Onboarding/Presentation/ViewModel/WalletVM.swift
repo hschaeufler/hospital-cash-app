@@ -20,6 +20,7 @@ import Factory
         case loading
         case initial
         case isConnecting
+        case isUnderwriting
         case isConnected
         case hasContract
         case error(String)
@@ -29,6 +30,10 @@ import Factory
     
     func handleLogin() {
         self.state = .isConnecting
+    }
+    
+    func handleUnderwriting() {
+        self.state = .isUnderwriting
     }
     
     func handleConnectWallet() async {

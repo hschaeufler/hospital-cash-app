@@ -14,8 +14,8 @@
             filePath = "HospitalCash/Features/Onboarding/Presentation/ViewModel/WalletVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "handleConnectWallet()"
             landmarkType = "7">
             <Locations>
@@ -92,8 +92,8 @@
             filePath = "HospitalCash/Features/Onboarding/Presentation/ViewModel/WalletVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "fetchAppState()"
             landmarkType = "7">
             <Locations>
@@ -156,6 +156,84 @@
                   startingLineNumber = "47"
                   endingLineNumber = "47"
                   offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "377F192F-1B49-4D41-B611-749FE07265CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Underwriting/Presentation/ViewModel/UnderwritingVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "handleShowWallet()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "377F192F-1B49-4D41-B611-749FE07265CF - 2fe8e782ed5cc02c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for HospitalCash.UnderwritingVM.handleShowWallet() async -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Underwriting/Presentation/ViewModel/UnderwritingVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "377F192F-1B49-4D41-B611-749FE07265CF - 92f4b601c5ed104d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for HospitalCash.UnderwritingVM.handleShowWallet() async -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Underwriting/Presentation/ViewModel/UnderwritingVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "377F192F-1B49-4D41-B611-749FE07265CF - e69ff4d22f9d6c22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for HospitalCash.UnderwritingVM.handleShowWallet() async -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Underwriting/Presentation/ViewModel/UnderwritingVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "377F192F-1B49-4D41-B611-749FE07265CF - 19c4437bb102425d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for HospitalCash.UnderwritingVM.handleShowWallet() async -&gt; ()"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Underwriting/Presentation/ViewModel/UnderwritingVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

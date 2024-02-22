@@ -32,6 +32,6 @@ struct NavigationLinkButton : View {
 
 #Preview {
     NavigationStack {
-        NavigationLinkButton("Weiter", value: NavigationDestination.bmi)
+        NavigationLinkButton("Weiter", value: UnderwritingVM.Destination.bmi)
     }
 }

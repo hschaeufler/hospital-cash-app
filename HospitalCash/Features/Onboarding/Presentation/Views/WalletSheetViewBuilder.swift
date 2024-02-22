@@ -24,6 +24,13 @@ struct WalletSheetViewBuilder<Content>: View where Content : View {
                     }
                 }
             }
+            .sheet(isPresented: Binding<Bool>(
+                get: { walletVM.state == .isUnderwriting },
+                set: { _ in }
+            )) {
+                UnderwritingSheet()
+            }
+
     }
 }
 

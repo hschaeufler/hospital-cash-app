@@ -31,7 +31,7 @@ struct WelcomePage: View {
                     BottomBar(verticalPadding: verticalPadding) {
                         VStack {
                             ProminentButton("Jetzt Beitrag berechnen") {
-                                showPremiumCalculator.toggle()
+                                walletVM.handleUnderwriting()
                             }
                             if walletVM.state != .isConnected {
                                 LoginButton {
@@ -40,9 +40,6 @@ struct WelcomePage: View {
                             }
                         }
                     }
-                }
-                .sheet(isPresented: $showPremiumCalculator) {
-                    UnderwritingSheet()
                 }
             }
         }

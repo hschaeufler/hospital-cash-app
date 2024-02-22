@@ -34,7 +34,9 @@ struct PremiumDetailPage: View {
                     .padding(.horizontal, 5)
                 Spacer()
                 BorderedButton("Jetzt abschließen") {
-                    viewModel.showConnectSheet.toggle()
+                    Task {
+                        await viewModel.handleShowWallet()
+                    }
                 }
             }
             .sheet(isPresented: $viewModel.showConnectSheet) {

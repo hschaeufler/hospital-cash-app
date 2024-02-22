@@ -29,7 +29,16 @@ import SwiftUI
     @ObservationIgnored
     @Injected(\OnboardingContainer.getAppState) private var getAppState
     
-    var path: [NavigationDestination] = []
+    enum Destination {
+        case bmi,
+             healthQuestions,
+             premiumCalculation,
+             premiumDetail,
+             contractDetail,
+             alreadyInsured
+    }
+    
+    var path: [Destination] = [.bmi]
     
     var error: Error?
     var showError: Bool {
@@ -86,11 +95,11 @@ import SwiftUI
     var tx: String? = nil
     var insuranceContract: InsuranceContractEntity? = nil
     
-    func navigate(to destination: NavigationDestination) {
+    func navigate(to destination: Destination) {
         self.path.append(destination)
     }
     
-    func navigateWithReplace(to destination: NavigationDestination) {
+    func navigateWithReplace(to destination: Destination) {
         self.path.removeAll()
         self.path.append(destination)
     }
@@ -140,19 +149,26 @@ import SwiftUI
         }
     }
     
+    private func handleGetAppstate() async throws {
+        let appState = try await self.getAppState()
+        switch appState {
+        case .initial:
+            self.showConnectSheet = true;
+            self.showPaymentSheet = false;
+            break
+        case .isConnected:
+            self.showConnectSheet = false;
+            self.showPaymentSheet = true;
+            break
+        case .hasContract:
+            self.navigateWithReplace(to: .alreadyInsured)
+            break
+        }
+    }
+    
     func handleShowWallet() async {
         do {
-            let appState = try await self.getAppState()
-            switch appState {
-            case .initial:
-                self.showConnectSheet = true;
-                break
-            case .isConnected:
-                self.showPaymentSheet = true;
-            case .hasContract:
-                break;
-            }
-            
+            try await handleGetAppstate();
         } catch {
             self.error = error
         }
@@ -161,8 +177,7 @@ import SwiftUI
     func handleConnectWallet() async {
         do {
             let _ = try await self.connectWalletUseCase();
-            self.showConnectSheet = false;
-            self.showPaymentSheet = true;
+            try await handleGetAppstate();
         } catch {
             self.error = error
         }

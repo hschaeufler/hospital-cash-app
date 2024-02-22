@@ -12,19 +12,21 @@ struct UnderwritingSheet: View {
     
     var body: some View {
         NavigationStack(path: $viewModel.path) {
-            BMIPage()
-                .navigationDestination(for: NavigationDestination.self) { destination in
+            EmptyView()
+                .navigationDestination(for: UnderwritingVM.Destination.self) { destination in
                     switch destination {
-                    case NavigationDestination.bmi:
+                    case UnderwritingVM.Destination.bmi:
                         BMIPage()
-                    case NavigationDestination.healthQuestions:
+                    case UnderwritingVM.Destination.healthQuestions:
                         HealthQuestionPage()
-                    case NavigationDestination.premiumCalculation:
+                    case UnderwritingVM.Destination.premiumCalculation:
                         PremiumCalculationPage()
-                    case NavigationDestination.premiumDetail:
+                    case UnderwritingVM.Destination.premiumDetail:
                         PremiumDetailPage()
-                    case NavigationDestination.contractDetail:
+                    case UnderwritingVM.Destination.contractDetail:
                         ContractDetailPage()
+                    case UnderwritingVM.Destination.alreadyInsured:
+                        AlreadyInsured()
                     }
                 }
         }

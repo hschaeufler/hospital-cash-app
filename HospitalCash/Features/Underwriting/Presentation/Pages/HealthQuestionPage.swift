@@ -58,7 +58,7 @@ struct HealthQuestionPage: View {
                         await viewModel.checkHealthQuestions()
                     }
                 })
-                NavigationLinkButton("Weiter", value: NavigationDestination.premiumCalculation)
+                NavigationLinkButton("Weiter", value: UnderwritingVM.Destination.premiumCalculation)
                     .disabled(!viewModel.areHealthQuestionsValid)
             }
         }
