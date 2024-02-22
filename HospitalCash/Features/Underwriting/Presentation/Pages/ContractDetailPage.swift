@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContractDetailPage: View {
-    @Environment(UnderwritingVM.self) private var viewModel
+    @Environment(UnderwritingVM.self) private var underwritingVM
+    @Environment(WalletVM.self) private var walletVM
     
     var body: some View {
         SheetPageLayout("Deine Versicherung") {
@@ -22,18 +23,22 @@ struct ContractDetailPage: View {
                     .bold()
                 CustomDivider(maxWidth: 150)
                     .padding(.vertical, 10)
-                if let insuranceContract = viewModel.insuranceContract {
+                if let insuranceContract = underwritingVM.insuranceContract {
                     ContractDetailGroup(insuranceContract: insuranceContract)
                 } else {
                     Spacer()
                     ProgressView()
                 }
                 Spacer()
-                BorderedButton("Zur Übersicht") {}
+                BorderedButton("Zur Übersicht") {
+                    Task {
+                        await walletVM.fetchAppState()
+                    }
+                }
             }
         }
         .onAppear {
-            viewModel.fetchContract()
+            underwritingVM.fetchContract()
         }
     }
 }
@@ -50,4 +55,5 @@ struct ContractDetailPage: View {
     
     return ContractDetailPage()
         .environment(viewModel)
+        .environment(WalletVM())
 }

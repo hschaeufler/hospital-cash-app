@@ -33,6 +33,6 @@ struct ConnectWithWalletPage: View {
 }
 
 #Preview {
-    PayWithWalletPage(isPayment: false)
+    PayWithWalletPage()
         .environment(UnderwritingVM())
 }

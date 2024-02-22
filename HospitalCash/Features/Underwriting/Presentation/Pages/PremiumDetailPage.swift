@@ -45,7 +45,7 @@ struct PremiumDetailPage: View {
         }
         .sheet(isPresented: $viewModel.showPaymentSheet) {
             NavigationStack {
-                PayWithWalletPage(isPayment: true)
+                PayWithWalletPage()
             }
             .presentationDetents([.fraction(1 / 3)])
             .presentationDragIndicator(.visible)
