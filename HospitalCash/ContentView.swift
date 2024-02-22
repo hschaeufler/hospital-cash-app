@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var viewModel = WalletVM()
+    
     var body: some View {
-        HomePage()
+        switch viewModel.state {
+        case .loading:
+            LoadingPage()
+                .onAppear() {
+                    Task {
+                        await viewModel.fetchAppState()
+                    }
+                }
+        case .hasContract:
+            HomePage()
+                .environment(viewModel)
+        default:
+            WelcomePage()
+                .environment(viewModel)
+        }
     }
 }
 

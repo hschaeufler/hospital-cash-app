@@ -8,28 +8,11 @@
 import SwiftUI
 
 struct HomePage: View {
-    @ScaledMetric var verticalPadding = 5
-    @State private var showingPremiumCalculator = false
     
     var body: some View {
         VStack {
+            Text("Contract Page")
             Spacer()
-            HospitalCashLogo()
-            Spacer()
-            ProductDescriptionGroup()
-                .padding(.horizontal, 15)
-            Spacer()
-            InsuranceAdvantagesColumn()
-                .padding(.horizontal, 5)
-            Spacer()
-            BottomBar(verticalPadding: verticalPadding) {
-                ProminentButton("Jetzt Beitrag berechnen") {
-                    showingPremiumCalculator.toggle()
-                }
-                .sheet(isPresented: $showingPremiumCalculator) {
-                    PremiumCalculationSheet()
-                }
-            }
         }
     }
 }

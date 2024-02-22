@@ -9,21 +9,24 @@
 import Foundation
 
 struct Configuration {
-    struct InsuranceContract {
+    struct Client {
         private static let nodeRpcEndpointKey = "NODE_RPC_ENDPOINT"
         private static let chainIdKey = "CHAIN_ID"
-        private static let contractAdressKey = "CONTRACT_ADRESS"
         
         var nodeRpcEndpoint: URL {
-            URL(string: getConfigValue(forKey: InsuranceContract.nodeRpcEndpointKey))!
+            URL(string: getConfigValue(forKey: Client.nodeRpcEndpointKey))!
         }
         
         var chainId: String {
-            getConfigValue(forKey: InsuranceContract.chainIdKey)
+            getConfigValue(forKey: Client.chainIdKey)
         }
+    }
+    
+    struct Contract {
+        private static let contractAdressKey = "CONTRACT_ADRESS"
         
         var contractAdress: String {
-            getConfigValue(forKey: InsuranceContract.contractAdressKey)
+            getConfigValue(forKey: Contract.contractAdressKey)
         }
     }
     
