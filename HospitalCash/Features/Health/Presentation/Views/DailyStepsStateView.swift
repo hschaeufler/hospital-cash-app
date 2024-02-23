@@ -8,24 +8,51 @@
 import SwiftUI
 
 struct DailyStepsStateView: View {
-    var viewState: DailyStepsViewModel.ViewState
+    @State private var viewModel = DailyStepsViewModel()
     
     var body: some View {
-        switch viewState {
+        switch viewModel.state {
         case .loading:
-            ProgressView()
+            ProgessCard()
+                .frame(height: 300)
+                .onAppear {
+                    Task {
+                        await viewModel.fetchDailySteps()
+                    }
+                }
         case .loaded(let steps):
-            DailyStepcountChart(todaysSteps: steps)
+            DailyStepCountCard(todaysSteps: steps)
         case .error(let errorMessage):
-            Text(errorMessage)
+            ErrorCard(
+                "Ein Fehler ist aufgetreten",
+                subtitle: LocalizedStringKey(errorMessage)) {
+                    Task {
+                        await viewModel.fetchDailySteps()
+                    }
+                }
         case .empty:
-            Text("Keine Daten da")
+            ErrorCard(
+                "Keine Daten",
+                subtitle: "Scheinbar liegen keine Schrittdaten vor."
+            ) {
+                Task {
+                    await viewModel.fetchDailySteps()
+                }
+            }
         case .accessDenied:
-            Text("Zugriff wird benötigt")
+            ErrorCard(
+                "Zugriff verweigert",
+                subtitle: "Du musst den Zugriff auf deine Schrittdaten erlauben."
+            ) {
+                Task {
+                    await viewModel.fetchDailySteps()
+                }
+            }
         }
     }
 }
 
 #Preview {
-    DailyStepsStateView(viewState: .loaded(3000))
+    DailyStepsStateView()
+        .environment(DailyStepsViewModel())
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct DailyStepcountChart: View {
+struct DailyStepCountChart: View {
     var todaysSteps: Double
     
     private let recommendedSteps = 8000.0
@@ -24,28 +24,32 @@ struct DailyStepcountChart: View {
                 innerRadius: .ratio(0.6),
                 angularInset: 3
             )
-            .foregroundStyle(.green)
+            .foregroundStyle(.primary)
             SectorMark(
-                angle: .value("Rest", remainingSteps),
+                angle: .value("Übrige Schritte", remainingSteps),
                 innerRadius: .ratio(0.7)
             )
-            .foregroundStyle(.blue)
+            .foregroundStyle(.gray)
         }
         .chartBackground { proxy in
             VStack {
-                Text("🏃")
-                    .font(.system(size: 50))
-                Text("\(todaysSteps.formatted())")
-                    .font(.largeTitle)
-                Text("🚩 \(recommendedSteps.formatted())")
+                Text("Heutige Schritte")
                     .foregroundStyle(.secondary)
-                    .font(.title2)
+                HStack(alignment: .bottom) {
+                    Text("\(todaysSteps.formatted())")
+                        .font(.largeTitle)
+                        .bold()
+                    Text("👣")
+                        .font(.caption)
+                }
+                Text("noch \(remainingSteps.formatted())")
+                    .foregroundStyle(.secondary)
             }
         }
-        .chartLegend(.hidden)
+        .aspectRatio(1, contentMode: .fit)
     }
 }
 
 #Preview {
-    DailyStepcountChart(todaysSteps: 6000)
+    DailyStepCountChart(todaysSteps: 6000)
 }

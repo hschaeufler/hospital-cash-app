@@ -11,20 +11,21 @@ struct HomePage: View {
     @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
-        NavigationStack {
-            TabView {
-                ContractPage()
-                    .tabItem { Label("Contract", systemImage: "folder.badge.person.crop") }
-                HealthPage()
-                    .tabItem { Label("Contract", systemImage: "heart.circle")}
-            }
-            .toolbar {
-                Button {
-                    walletVM.handleLogout()
-                } label: {
-                    Label("Logout", systemImage: "xmark.circle")
+        TabView {
+            ContractPage()
+                .tabItem {
+                    Label(
+                        "Vertrag",
+                        systemImage: "folder.badge.person.crop"
+                    )
                 }
-            }
+            HealthPage()
+                .tabItem {
+                    Label(
+                        "Gesundheit",
+                        systemImage: "heart.circle"
+                    )
+                }
         }
     }
 }

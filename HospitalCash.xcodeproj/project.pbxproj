@@ -80,7 +80,12 @@
 		8461A0BF2B89110A00C7D2B9 /* GetTodayStepCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */; };
 		8461A0C22B8911A900C7D2B9 /* DailyStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */; };
 		8461A0C42B89182500C7D2B9 /* DailyStepsStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */; };
-		8461A0C62B89194400C7D2B9 /* DailyStepcountChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C52B89194400C7D2B9 /* DailyStepcountChart.swift */; };
+		8461A0C62B89194400C7D2B9 /* DailyStepCountChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */; };
+		8461A0C82B8927A100C7D2B9 /* DailyStepCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */; };
+		8461A0CA2B893EF100C7D2B9 /* BorderedInkwell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */; };
+		8461A0CC2B89409000C7D2B9 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CB2B89409000C7D2B9 /* RetryButton.swift */; };
+		8461A0CE2B8943EB00C7D2B9 /* ErrorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */; };
+		8461A0D02B894DDA00C7D2B9 /* ProgessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -226,7 +231,12 @@
 		8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodayStepCount.swift; sourceTree = "<group>"; };
 		8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsViewModel.swift; sourceTree = "<group>"; };
 		8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsStateView.swift; sourceTree = "<group>"; };
-		8461A0C52B89194400C7D2B9 /* DailyStepcountChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepcountChart.swift; sourceTree = "<group>"; };
+		8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepCountChart.swift; sourceTree = "<group>"; };
+		8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepCountCard.swift; sourceTree = "<group>"; };
+		8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedInkwell.swift; sourceTree = "<group>"; };
+		8461A0CB2B89409000C7D2B9 /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCard.swift; sourceTree = "<group>"; };
+		8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgessCard.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -453,7 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */,
-				8461A0C52B89194400C7D2B9 /* DailyStepcountChart.swift */,
+				8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */,
+				8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -965,6 +976,7 @@
 		84ED67582B654AE2001D600A /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */,
 				840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */,
 				84ED67422B6435DF001D600A /* ProminentButton.swift */,
 				84ED67542B65351F001D600A /* NavigationDestinationButton.swift */,
@@ -973,6 +985,9 @@
 				8454E8C32B783F54007A3887 /* NavigationLinkButton.swift */,
 				84EC9DB82B79676300B839DA /* CustomButton.swift */,
 				84EC9DBA2B7967D300B839DA /* BorderedButton.swift */,
+				8461A0CB2B89409000C7D2B9 /* RetryButton.swift */,
+				8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */,
+				8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1232,6 +1247,7 @@
 				84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */,
 				84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */,
 				840C6DCD2B8575AD0052E6AA /* GetValidContractRequestModel.swift in Sources */,
+				8461A0CC2B89409000C7D2B9 /* RetryButton.swift in Sources */,
 				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
@@ -1242,6 +1258,7 @@
 				843969962B87C90700FA3E00 /* WalletSheetViewBuilder.swift in Sources */,
 				8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
+				8461A0CA2B893EF100C7D2B9 /* BorderedInkwell.swift in Sources */,
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
 				84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */,
 				8454E8D02B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift in Sources */,
@@ -1253,7 +1270,7 @@
 				84ED67432B6435DF001D600A /* ProminentButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				8454E8CC2B791C71007A3887 /* CheckBMIResponseModel.swift in Sources */,
-				8461A0C62B89194400C7D2B9 /* DailyStepcountChart.swift in Sources */,
+				8461A0C62B89194400C7D2B9 /* DailyStepCountChart.swift in Sources */,
 				849471CD2B869348000EC4D3 /* WalletViewModel.swift in Sources */,
 				8454E8AE2B765EF0007A3887 /* ContractRepositoryImpl.swift in Sources */,
 				8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */,
@@ -1293,11 +1310,13 @@
 				8439696E2B86DD9000FA3E00 /* IsWalletConnected.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				8439697A2B86E7AE00FA3E00 /* HasValidContractResponseModel.swift in Sources */,
+				8461A0CE2B8943EB00C7D2B9 /* ErrorCard.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				8461A0912B881F1600C7D2B9 /* ContractViewModel.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,
 				8461A0962B8825D200C7D2B9 /* PremiumRemoteDatasourceImpl.swift in Sources */,
 				84EC9DB92B79676300B839DA /* CustomButton.swift in Sources */,
+				8461A0D02B894DDA00C7D2B9 /* ProgessCard.swift in Sources */,
 				84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */,
 				840C6DD52B85811C0052E6AA /* NewContractEventEntity.swift in Sources */,
 				843969782B86E79900FA3E00 /* HasContractResponseModel.swift in Sources */,
@@ -1321,6 +1340,7 @@
 				8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,
 				8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */,
+				8461A0C82B8927A100C7D2B9 /* DailyStepCountCard.swift in Sources */,
 				8461A0C22B8911A900C7D2B9 /* DailyStepsViewModel.swift in Sources */,
 				84ED67552B65351F001D600A /* NavigationDestinationButton.swift in Sources */,
 			);

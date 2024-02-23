@@ -8,22 +8,21 @@
 import SwiftUI
 
 struct HealthPage: View {
-    @State private var dailyStepsVm = DailyStepsViewModel()
+    @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
-        VStack {
-            DailyStepsStateView(viewState: dailyStepsVm.state)
-                .onAppear {
-                    Task {
-                        await dailyStepsVm.fetchDailySteps()
-                    }
-                }
-            Spacer()
-            Text("Test")
+        NavigationStack {
+            List {
+                DailyStepsStateView()
+                    .listRowInsets(EdgeInsets())
+            }
+            .listRowInsets(.none)
+            .navigationTitle("Gesundheit")
         }
     }
 }
 
 #Preview {
     HealthPage()
+        .environment(WalletViewModel())
 }

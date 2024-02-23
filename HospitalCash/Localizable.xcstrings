@@ -23,10 +23,7 @@
         }
       }
     },
-    "🏃" : {
-
-    },
-    "🚩 %@" : {
+    "👣" : {
 
     },
     "€" : {
@@ -205,7 +202,7 @@
         }
       }
     },
-    "Contract" : {
+    "Das ist der Fehlergrund" : {
 
     },
     "Das ist ein Test" : {
@@ -290,6 +287,15 @@
         }
       }
     },
+    "Du musst den Zugriff auf deine Schrittdaten erlauben." : {
+
+    },
+    "Ein Fehler ist aufgetreten" : {
+
+    },
+    "Erneut versuchen" : {
+
+    },
     "Error Message" : {
       "localizations" : {
         "en" : {
@@ -339,6 +345,9 @@
           }
         }
       }
+    },
+    "Gesundheit" : {
+
     },
     "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
       "localizations" : {
@@ -613,7 +622,7 @@
         }
       }
     },
-    "Keine Daten da" : {
+    "Keine Daten" : {
 
     },
     "Keine lästigen Wartezeiten" : {
@@ -684,6 +693,12 @@
           }
         }
       }
+    },
+    "Netzwerkfehler" : {
+
+    },
+    "noch %@" : {
+
     },
     "Ok" : {
       "localizations" : {
@@ -788,7 +803,7 @@
         }
       }
     },
-    "Rest" : {
+    "Scheinbar liegen keine Schrittdaten vor." : {
 
     },
     "Sie haben bereits einen Vertrag unter dieser Adresse abgeschlossen. Kehren Sie zur Übersicht zurück um diesen zu Verwalten." : {
@@ -831,6 +846,9 @@
         }
       }
     },
+    "test" : {
+
+    },
     "Test" : {
       "localizations" : {
         "en" : {
@@ -860,6 +878,9 @@
           }
         }
       }
+    },
+    "Übrige Schritte" : {
+
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {
@@ -896,6 +917,12 @@
           }
         }
       }
+    },
+    "Vertrag" : {
+
+    },
+    "Vertragsdetails" : {
+
     },
     "Voll automatisiert" : {
       "localizations" : {
@@ -965,7 +992,7 @@
         }
       }
     },
-    "Zugriff wird benötigt" : {
+    "Zugriff verweigert" : {
 
     },
     "Zur Übersicht" : {
