@@ -11,7 +11,7 @@ struct ContractDetailLayout: View {
     var contract: ContractEntity
     
     var body: some View {
-        Group {
+        VStack {
             HStack {
                 Avatar(systemName: "newspaper")
                 Spacer()
