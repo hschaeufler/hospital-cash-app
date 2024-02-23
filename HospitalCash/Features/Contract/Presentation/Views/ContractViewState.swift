@@ -15,7 +15,7 @@ struct ContractViewState: View {
         case .loading:
             ProgressView()
         case .loaded(let contractEntity):
-            ContractDetailGroup(insuranceContract: contractEntity)
+            ContractDetailLayout(contract: contractEntity)
         case .error(let errorMessage):
             Text(errorMessage)
         }

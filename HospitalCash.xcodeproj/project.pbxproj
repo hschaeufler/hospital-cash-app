@@ -71,6 +71,7 @@
 		8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A02B882E8100C7D2B9 /* GetContract.swift */; };
 		8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */; };
 		8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */; };
+		8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -206,6 +207,7 @@
 		8461A0A02B882E8100C7D2B9 /* GetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContract.swift; sourceTree = "<group>"; };
 		8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractViewState.swift; sourceTree = "<group>"; };
 		8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectWallet.swift; sourceTree = "<group>"; };
+		8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailLayout.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 		841A96532B7E67FE00BDA450 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */,
 				8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */,
 			);
 			path = Views;
@@ -1128,6 +1131,7 @@
 				840C6DC52B856A200052E6AA /* TransactionStateEntity.swift in Sources */,
 				843969842B87709300FA3E00 /* AppState.swift in Sources */,
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
+				8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
 				8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,

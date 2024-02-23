@@ -11,15 +11,12 @@ struct ContractPage: View {
     @State private var contractVM = ContractViewModel()
     
     var body: some View {
-        Group {
-            ContractViewState(viewState: contractVM.state)
-                .onAppear {
-                    Task {
-                        await contractVM.fetchContract()
-                    }
+        ContractViewState(viewState: contractVM.state)
+            .onAppear {
+                Task {
+                    await contractVM.fetchContract()
                 }
-        }
-        .navigationTitle("Vertragsdetails")
+            }
     }
 }
 
