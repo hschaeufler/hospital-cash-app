@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContractDetailPage: View {
-    @Environment(UnderwritingVM.self) private var underwritingVM
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(UnderwritingViewModel.self) private var underwritingVM
+    @Environment(WalletViewModel.self) private var walletVM
 
     
     var body: some View {
@@ -45,8 +45,8 @@ struct ContractDetailPage: View {
 }
 
 #Preview {
-    let viewModel = UnderwritingVM()
-    viewModel.insuranceContract = InsuranceContractEntity(
+    let viewModel = UnderwritingViewModel()
+    viewModel.insuranceContract = ContractEntity(
         policyId: 1,
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),
@@ -56,5 +56,5 @@ struct ContractDetailPage: View {
     
     return ContractDetailPage()
         .environment(viewModel)
-        .environment(WalletVM())
+        .environment(WalletViewModel())
 }

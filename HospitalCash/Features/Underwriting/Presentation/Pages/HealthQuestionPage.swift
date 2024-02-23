@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HealthQuestionPage: View {
-    @Environment(UnderwritingVM.self) private var viewModel
+    @Environment(UnderwritingViewModel.self) private var viewModel
     
     var body: some View {
         @Bindable var viewModel = viewModel
@@ -58,7 +58,7 @@ struct HealthQuestionPage: View {
                         await viewModel.checkHealthQuestions()
                     }
                 })
-                NavigationLinkButton("Weiter", value: UnderwritingVM.Destination.premiumCalculation)
+                NavigationLinkButton("Weiter", value: UnderwritingViewModel.Destination.premiumCalculation)
                     .disabled(!viewModel.areHealthQuestionsValid)
             }
         }
@@ -68,7 +68,7 @@ struct HealthQuestionPage: View {
 #Preview {
     NavigationStack {
         HealthQuestionPage()
-            .environment(UnderwritingVM())
-            .environment(WalletVM())
+            .environment(UnderwritingViewModel())
+            .environment(WalletViewModel())
     }
 }

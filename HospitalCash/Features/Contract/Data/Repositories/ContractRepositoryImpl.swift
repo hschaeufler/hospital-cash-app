@@ -21,40 +21,6 @@ class ContractRepositoryImpl: ContractRepository {
         self.walletLocalDatasource = walletLocalDatasource
     }
     
-    func getMonthlyPremium(with entity: PremiumCalculationEntity) async throws -> Double {
-        let contractAdress = contractRemoteDatasource.getContractAdress()
-        let requestModel = GetMonthlyPremiumRequestModel.fromEntity(contractAdress, with: entity);
-        do {
-            let responseModel = try await contractRemoteDatasource
-                .getMonthlyPremium(with: requestModel)
-            return responseModel.toEth()!
-        } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
-            throw try jsonRpcErrorDetail.toCommonError()
-        }
-    }
-    
-    func checkBMI(heightInCm: Int, weightInKg: Int) async throws -> Bool {
-        let contractAdress = contractRemoteDatasource.getContractAdress()
-        let requestModel = CheckBMIRequestModel.fromEntity(contractAdress, heightInCm: heightInCm, weightInKg: weightInKg)
-        do {
-            let responseModel = try await contractRemoteDatasource.checkBMI(with: requestModel)
-            return responseModel.isOk
-        } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
-            throw try jsonRpcErrorDetail.toCommonError()
-        }
-    }
-    
-    func checkHealthQuestions(with entity: HealthQuestionEntity) async throws -> Bool {
-        let contractAdress = contractRemoteDatasource.getContractAdress()
-        let requestModel = CheckHealthQuestionsRequestModel.fromEntity(contractAdress, with: entity)
-        do {
-            let responseModel = try await contractRemoteDatasource.checkHealthQuestions(with: requestModel)
-            return responseModel.value
-        } catch EthereumClientError.executionError(let jsonRpcErrorDetail) {
-            throw try jsonRpcErrorDetail.toCommonError()
-        }
-    }
-    
     func underwriteContract(
         with application: ContractApplicationEntity
     ) async throws -> String {
@@ -72,7 +38,7 @@ class ContractRepositoryImpl: ContractRepository {
         }
     }
     
-    func getValidContract() async throws -> InsuranceContractEntity? {
+    func getValidContract() async throws -> ContractEntity? {
         let contractAdress = contractRemoteDatasource.getContractAdress()
         let walletAddress = walletLocalDatasource.getWalletAdress()
         let model = GetValidContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))
@@ -82,7 +48,7 @@ class ContractRepositoryImpl: ContractRepository {
         : nil;
     }
     
-    func getContract() async throws -> InsuranceContractEntity? {
+    func getContract() async throws -> ContractEntity? {
         let contractAdress = contractRemoteDatasource.getContractAdress()
         let walletAddress = walletLocalDatasource.getWalletAdress()
         let model = GetContractRequestModel(contractAdress, from: EthereumAddress(walletAddress))

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GetContractByTransaction {
-    func callAsFunction(with tx: String) async throws -> InsuranceContractEntity?
+    func callAsFunction(with tx: String) async throws -> ContractEntity?
 }
 
 struct GetContractByTransactionUseCase: GetContractByTransaction {
@@ -16,14 +16,14 @@ struct GetContractByTransactionUseCase: GetContractByTransaction {
     private let getTransactionState: GetTransactionState
     
     init(
-        getContract: GetValidContract,
+        getValidContract: GetValidContract,
         getTransactionState: GetTransactionState
     ) {
         self.getTransactionState = getTransactionState
-        self.getValidContract = getContract
+        self.getValidContract = getValidContract
     }
     
-    func callAsFunction(with tx: String) async throws -> InsuranceContractEntity? {
+    func callAsFunction(with tx: String) async throws -> ContractEntity? {
         let transactionStatus = try await getTransactionState(with: tx)
         switch transactionStatus {
         case .failure:

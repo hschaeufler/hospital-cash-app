@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WalletErrorViewBuilder<Content>: View where Content: View {
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(WalletViewModel.self) private var walletVM
     
     @ViewBuilder var content: () -> Content
     
@@ -28,5 +28,5 @@ struct WalletErrorViewBuilder<Content>: View where Content: View {
     WalletErrorViewBuilder {
         Text("Homepage")
     }
-    .environment(WalletVM())
+    .environment(WalletViewModel())
 }

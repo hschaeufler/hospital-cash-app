@@ -2,17 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CONTRACT_ADRESS</key>
-	<string>$(CONTRACT_ADRESS)</string>
 	<key>CHAIN_ID</key>
 	<string>$(CHAIN_ID)</string>
-	<key>NODE_RPC_ENDPOINT</key>
-	<string>$(NODE_RPC_ENDPOINT)</string>
+	<key>CONTRACT_ADRESS</key>
+	<string>$(CONTRACT_ADRESS)</string>
+	<key>DAPP_ICON_URL</key>
+	<string>$(DAPP_ICON_URL)</string>
 	<key>DAPP_NAME</key>
 	<string>$(DAPP_NAME)</string>
 	<key>DAPP_URL</key>
 	<string>$(DAPP_URL)</string>
-	<key>DAPP_ICON_URL</key>
-	<string>$(DAPP_ICON_URL)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>metamask://connect</string>
+	</array>
+	<key>NODE_RPC_ENDPOINT</key>
+	<string>$(NODE_RPC_ENDPOINT)</string>
 </dict>
 </plist>

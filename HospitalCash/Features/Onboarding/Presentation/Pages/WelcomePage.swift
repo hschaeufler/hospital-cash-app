@@ -11,7 +11,7 @@ struct WelcomePage: View {
     @ScaledMetric var verticalPadding = 5
     @State private var showPremiumCalculator = false
     
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
         @Bindable var walletVM = walletVM
@@ -31,11 +31,11 @@ struct WelcomePage: View {
                     BottomBar(verticalPadding: verticalPadding) {
                         VStack {
                             ProminentButton("Jetzt Beitrag berechnen") {
-                                walletVM.handleUnderwriting()
+                                walletVM.showUnderwriting()
                             }
                             if walletVM.state != .isConnected {
                                 LoginButton {
-                                    walletVM.handleLogin()
+                                    walletVM.showLogin()
                                 }
                             }
                         }
@@ -49,6 +49,6 @@ struct WelcomePage: View {
 #Preview {
     NavigationStack {
         WelcomePage()
-            .environment(WalletVM())
+            .environment(WalletViewModel())
     }
 }

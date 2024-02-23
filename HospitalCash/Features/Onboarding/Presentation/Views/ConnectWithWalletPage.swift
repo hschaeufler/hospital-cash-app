@@ -11,11 +11,10 @@ struct ConnectWithWalletPage: View {
     
     var action: () -> Void
     
-    
+
     var body: some View {
-        WalletErrorViewBuilder {
             NavigationStack {
-                SheetLayout("Connect with Metamask", dismiss:{dismiss()}) {
+                SheetLayout("Connect with Metamask", dismiss: {dismiss()}) {
                     VStack(content: {
                         MetaMaskButton(
                             titleKey: "Connect with",
@@ -28,7 +27,6 @@ struct ConnectWithWalletPage: View {
             }
             .presentationDetents([.fraction(1 / 3)])
             .presentationDragIndicator(.visible)
-        }
     }
 }
 

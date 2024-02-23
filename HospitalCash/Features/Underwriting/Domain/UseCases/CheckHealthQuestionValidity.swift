@@ -12,13 +12,13 @@ protocol CheckHealthQuestionValidity {
 }
 
 struct CheckHealthQuestionValidityUseCase: CheckHealthQuestionValidity {
-    private let insuranceRepository: ContractRepository
+    private let premiumRepository: PremiumRepository
     
-    init(insuranceRepository: ContractRepository) {
-        self.insuranceRepository = insuranceRepository
+    init(premiumRepository: PremiumRepository) {
+        self.premiumRepository = premiumRepository
     }
     
     func callAsFunction(with healthQuestions: HealthQuestionEntity) async throws -> Bool {
-        try await insuranceRepository.checkHealthQuestions(with: healthQuestions)
+        try await premiumRepository.checkHealthQuestions(with: healthQuestions)
     }
 }

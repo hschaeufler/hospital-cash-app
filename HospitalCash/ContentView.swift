@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var viewModel = WalletVM()
+    @State private var viewModel = WalletViewModel()
     
     var body: some View {
         switch viewModel.state {

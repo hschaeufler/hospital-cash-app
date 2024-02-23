@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BMIPage: View {
-    @Environment(UnderwritingVM.self) private var underwritingVM
+    @Environment(UnderwritingViewModel.self) private var underwritingVM
     
     var body: some View {
         @Bindable var underwritingVM = underwritingVM
@@ -40,7 +40,7 @@ struct BMIPage: View {
 #Preview {
     NavigationStack {
         BMIPage()
-            .environment(UnderwritingVM())
-            .environment(WalletVM())
+            .environment(UnderwritingViewModel())
+            .environment(WalletViewModel())
     }
 }

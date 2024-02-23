@@ -12,19 +12,19 @@ protocol CalculateYearlyPremium {
 }
 
 struct CalculatePremiumUseCase: CalculateYearlyPremium {
-    private let contractRepository: ContractRepository
+    private let premiumRepository: PremiumRepository
     private let calculateEthInEur: CalculateEthInEur
     
     init(
-        contractRepository: ContractRepository,
+        premiumRepository: PremiumRepository,
         calculateEthInEur: CalculateEthInEur
     ) {
-        self.contractRepository = contractRepository
+        self.premiumRepository = premiumRepository
         self.calculateEthInEur = calculateEthInEur
     }
  
     func callAsFunction(with premiumCalculation: PremiumCalculationEntity) async throws -> PremiumEntity {
-        let monthlyEthPremium = try await contractRepository.getMonthlyPremium(with: premiumCalculation)
+        let monthlyEthPremium = try await premiumRepository.getMonthlyPremium(with: premiumCalculation)
         let yearlyEthPremium = monthlyEthPremium * 12
         let yearlyEurPremium = try await calculateEthInEur(ethAmount: yearlyEthPremium)
         return PremiumEntity(

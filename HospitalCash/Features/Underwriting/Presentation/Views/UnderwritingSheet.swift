@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct UnderwritingSheet: View {
-    @State private var viewModel = UnderwritingVM()
+    @State private var viewModel = UnderwritingViewModel()
     
     var body: some View {
         NavigationStack(path: $viewModel.path) {
-            EmptyView()
-                .navigationDestination(for: UnderwritingVM.Destination.self) { destination in
+            BMIPage()
+                .navigationDestination(for: UnderwritingViewModel.Destination.self) { destination in
                     switch destination {
-                    case UnderwritingVM.Destination.bmi:
+                    case UnderwritingViewModel.Destination.bmi:
                         BMIPage()
-                    case UnderwritingVM.Destination.healthQuestions:
+                    case UnderwritingViewModel.Destination.healthQuestions:
                         HealthQuestionPage()
-                    case UnderwritingVM.Destination.premiumCalculation:
+                    case UnderwritingViewModel.Destination.premiumCalculation:
                         PremiumCalculationPage()
-                    case UnderwritingVM.Destination.premiumDetail:
+                    case UnderwritingViewModel.Destination.premiumDetail:
                         PremiumDetailPage()
-                    case UnderwritingVM.Destination.contractDetail:
+                    case UnderwritingViewModel.Destination.contractDetail:
                         ContractDetailPage()
-                    case UnderwritingVM.Destination.alreadyInsured:
+                    case UnderwritingViewModel.Destination.alreadyInsured:
                         AlreadyInsured()
                     }
                 }

@@ -7,7 +7,7 @@
 import Factory
 import SwiftUI
 
-@Observable class UnderwritingVM {
+@Observable class UnderwritingViewModel {
     @ObservationIgnored
     @Injected(\UnderwritingContainer.calculateBMI) private var calculateBMIUseCase
     @ObservationIgnored
@@ -38,7 +38,7 @@ import SwiftUI
              alreadyInsured
     }
     
-    var path: [Destination] = [.bmi]
+    var path: [Destination] = []
     
     var error: Error?
     var showError: Bool {
@@ -93,7 +93,7 @@ import SwiftUI
     var showPaymentSheet = false;
     
     var tx: String? = nil
-    var insuranceContract: InsuranceContractEntity? = nil
+    var insuranceContract: ContractEntity? = nil
     
     func navigate(to destination: Destination) {
         self.path.append(destination)

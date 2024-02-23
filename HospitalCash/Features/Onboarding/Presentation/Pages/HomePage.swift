@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct HomePage: View {
+    @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
-        VStack {
-            Text("Contract Page")
-            Spacer()
+        NavigationStack {
+            TabView {
+                ContractPage()
+                    .tabItem { Label("Contract", systemImage: "folder.badge.person.crop") }
+                HealthPage()
+                    .tabItem { Label("Contract", systemImage: "heart.circle")}
+            }
+            .toolbar {
+                Button {
+                    walletVM.handleLogout()
+                } label: {
+                    Label("Logout", systemImage: "xmark.circle")
+                }
+            }
         }
     }
 }
 
 #Preview {
-    NavigationStack {
-        HomePage()
-    }
+    HomePage()
+        .environment(WalletViewModel())
 }

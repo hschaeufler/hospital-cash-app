@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PremiumDetailPage: View {
-    @Environment(UnderwritingVM.self) private var viewModel
+    @Environment(UnderwritingViewModel.self) private var viewModel
     
     var body: some View {
         let premium = viewModel.premiumEntity
@@ -59,6 +59,6 @@ struct PremiumDetailPage: View {
 
 #Preview {
     PremiumDetailPage()
-        .environment(UnderwritingVM())
-        .environment(WalletVM())
+        .environment(UnderwritingViewModel())
+        .environment(WalletViewModel())
 }
