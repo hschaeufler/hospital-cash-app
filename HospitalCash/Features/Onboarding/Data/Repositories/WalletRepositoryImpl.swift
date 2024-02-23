@@ -24,4 +24,8 @@ class WalletRepositoryImpl: WalletRepository {
     func getWalletAddress() -> String {
         return walletLocalDatasource.getWalletAdress();
     }
+    
+    func disconnectWallet() {
+        walletLocalDatasource.disconnectWallet()
+    }
 }

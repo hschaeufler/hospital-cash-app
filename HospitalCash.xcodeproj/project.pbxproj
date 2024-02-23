@@ -69,6 +69,8 @@
 		8461A09D2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A09C2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift */; };
 		8461A09F2B8828D400C7D2B9 /* PremiumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A09E2B8828D400C7D2B9 /* PremiumRepository.swift */; };
 		8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A02B882E8100C7D2B9 /* GetContract.swift */; };
+		8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */; };
+		8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -202,6 +204,8 @@
 		8461A09C2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumRepositoryImpl.swift; sourceTree = "<group>"; };
 		8461A09E2B8828D400C7D2B9 /* PremiumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumRepository.swift; sourceTree = "<group>"; };
 		8461A0A02B882E8100C7D2B9 /* GetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContract.swift; sourceTree = "<group>"; };
+		8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractViewState.swift; sourceTree = "<group>"; };
+		8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectWallet.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -353,6 +357,7 @@
 		841A96532B7E67FE00BDA450 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				840C6DC82B8570850052E6AA /* ConnectWallet.swift */,
 				8439696D2B86DD9000FA3E00 /* IsWalletConnected.swift */,
 				8439697B2B86EAD400FA3E00 /* GetAppState.swift */,
+				8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -1187,6 +1193,7 @@
 				84ED677F2B69C2BE001D600A /* CalculateBMI.swift in Sources */,
 				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
 				849471EA2B86B25A000EC4D3 /* EthereumRepository.swift in Sources */,
+				8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */,
 				846D6F122B6B01A60074F2F3 /* CommonError.swift in Sources */,
 				846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */,
 				843969762B86E77E00FA3E00 /* HasValidContractRequestModel.swift in Sources */,
@@ -1222,6 +1229,7 @@
 				84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
+				8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,
 				8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */,
 				84ED67552B65351F001D600A /* NavigationDestinationButton.swift in Sources */,

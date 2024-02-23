@@ -15,6 +15,8 @@ import Factory
     @Injected(\OnboardingContainer.isWalletConnected) private var isWalletConnectedUseCase
     @ObservationIgnored
     @Injected(\OnboardingContainer.getAppState) private var getAppState
+    @ObservationIgnored
+    @Injected(\OnboardingContainer.disconnectWallet) private var disconnectWallet
     
     enum WalletViewState: Equatable {
         case loading
@@ -37,7 +39,8 @@ import Factory
     }
     
     func handleLogout() {
-
+        self.disconnectWallet()
+        self.state = .initial
     }
     
     func handleDismiss() {

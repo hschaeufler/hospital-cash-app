@@ -44,12 +44,18 @@ extension OnboardingContainer {
     var getAppState: Factory<GetAppState> {
         self { GetAppStateUseCase(
             isWalletConnected: self.isWalletConnected(),
-            contractRepository: UnderwritingContainer.shared.contractRepository()
+            contractRepository: ContractContainer.shared.contractRepository()
         ) }
     }
     
     var isWalletConnected: Factory<IsWalletConnected> {
         self { IsWalletConnectedUsecase(
+            walletRepository: self.walletRepository()
+        ) }
+    }
+    
+    var disconnectWallet: Factory<DisconnectWallet> {
+        self { DisconnectWalletUseCase(
             walletRepository: self.walletRepository()
         ) }
     }

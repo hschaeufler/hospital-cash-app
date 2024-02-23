@@ -11,4 +11,5 @@ import Foundation
 protocol WalletRepository {
     func connectWallet() async throws -> String
     func getWalletAddress() -> String
+    func disconnectWallet()
 }
