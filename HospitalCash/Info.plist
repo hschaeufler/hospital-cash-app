@@ -16,6 +16,8 @@
 	<array>
 		<string>metamask://connect</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>The steps taken are read in order to calculate a premium discount.</string>
 	<key>NODE_RPC_ENDPOINT</key>
 	<string>$(NODE_RPC_ENDPOINT)</string>
 </dict>

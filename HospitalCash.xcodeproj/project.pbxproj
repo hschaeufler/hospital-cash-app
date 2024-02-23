@@ -72,7 +72,10 @@
 		8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */; };
 		8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */; };
 		8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */; };
-		8461A0AB2B88CB9E00C7D2B9 /* HKLocalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0AA2B88CB9E00C7D2B9 /* HKLocalDatasource.swift */; };
+		8461A0AE2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */; };
+		8461A0B52B8905D400C7D2B9 /* HKLocalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */; };
+		8461A0B72B89067400C7D2B9 /* HealthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */; };
+		8461A0B92B8908F300C7D2B9 /* HealthContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -209,7 +212,11 @@
 		8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractViewState.swift; sourceTree = "<group>"; };
 		8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectWallet.swift; sourceTree = "<group>"; };
 		8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailLayout.swift; sourceTree = "<group>"; };
-		8461A0AA2B88CB9E00C7D2B9 /* HKLocalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKLocalDatasource.swift; sourceTree = "<group>"; };
+		8461A0AC2B88D39B00C7D2B9 /* HospitalCash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HospitalCash.entitlements; sourceTree = "<group>"; };
+		8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedErrorStringExtension.swift; sourceTree = "<group>"; };
+		8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKLocalDatasource.swift; sourceTree = "<group>"; };
+		8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRepositoryImpl.swift; sourceTree = "<group>"; };
+		8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthContainer.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -378,8 +385,8 @@
 		843969852B8775A100FA3E00 /* Health */ = {
 			isa = PBXGroup;
 			children = (
-				843969882B87760100FA3E00 /* Data */,
 				843969862B87760100FA3E00 /* DI */,
+				843969882B87760100FA3E00 /* Data */,
 				843969872B87760100FA3E00 /* Domain */,
 				843969892B87760100FA3E00 /* Presentation */,
 			);
@@ -389,6 +396,7 @@
 		843969862B87760100FA3E00 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -403,7 +411,9 @@
 		843969882B87760100FA3E00 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8461A0AA2B88CB9E00C7D2B9 /* HKLocalDatasource.swift */,
+				8461A0B22B8905D300C7D2B9 /* Datasources */,
+				8461A0B42B8905D300C7D2B9 /* Models */,
+				8461A0B12B89056F00C7D2B9 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -519,6 +529,29 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8461A0B12B89056F00C7D2B9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8461A0B22B8905D300C7D2B9 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		8461A0B42B8905D300C7D2B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		846D6EFD2B6AEA980074F2F3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				846D6F112B6B01A60074F2F3 /* CommonError.swift */,
+				8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -728,6 +762,7 @@
 		84A4F8792B6368F30018AA37 /* HospitalCash */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0AC2B88D39B00C7D2B9 /* HospitalCash.entitlements */,
 				8454E8B82B77AA1E007A3887 /* Info.plist */,
 				84ED67302B63DD49001D600A /* Core */,
 				84ED672A2B63D8DC001D600A /* Features */,
@@ -1136,6 +1171,7 @@
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
 				8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
+				8461A0AE2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift in Sources */,
 				8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
 				8461A09F2B8828D400C7D2B9 /* PremiumRepository.swift in Sources */,
@@ -1143,6 +1179,7 @@
 				846D6F082B6AEC420074F2F3 /* CoreContainer.swift in Sources */,
 				840C6DCF2B8575CD0052E6AA /* GetValidContractResponseModel.swift in Sources */,
 				8454E8CA2B791C4B007A3887 /* CheckBMIRequestModel.swift in Sources */,
+				8461A0B72B89067400C7D2B9 /* HealthRepositoryImpl.swift in Sources */,
 				8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */,
 				849471C82B865F0B000EC4D3 /* GetContractByTransaction.swift in Sources */,
 				8439696C2B86DBF600FA3E00 /* UnderwritingViewModel.swift in Sources */,
@@ -1156,7 +1193,6 @@
 				840C6DCD2B8575AD0052E6AA /* GetValidContractRequestModel.swift in Sources */,
 				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
-				8461A0AB2B88CB9E00C7D2B9 /* HKLocalDatasource.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
 				8439699A2B88001D00FA3E00 /* UnderwritingSheetLayout.swift in Sources */,
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
@@ -1188,6 +1224,7 @@
 				8454E8B62B768FC1007A3887 /* EthUnits.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				840C6DC92B8570850052E6AA /* ConnectWallet.swift in Sources */,
+				8461A0B92B8908F300C7D2B9 /* HealthContainer.swift in Sources */,
 				843969742B86E74600FA3E00 /* HasContractRequestModel.swift in Sources */,
 				8454E8B02B76750B007A3887 /* GetMonthlyPremiumResponseModel.swift in Sources */,
 				84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */,
@@ -1237,6 +1274,7 @@
 				84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
+				8461A0B52B8905D400C7D2B9 /* HKLocalDatasource.swift in Sources */,
 				8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,
 				8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */,
@@ -1372,6 +1410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HospitalCash/HospitalCash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HospitalCash/Preview Content\"";
@@ -1403,6 +1442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HospitalCash/HospitalCash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HospitalCash/Preview Content\"";

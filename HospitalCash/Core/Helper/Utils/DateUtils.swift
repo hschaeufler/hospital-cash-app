@@ -23,4 +23,12 @@ struct DateUtils {
             to: Date.now
         )!
     }
+    
+    static func onWeekAgoStartOfDay() -> Date {
+        Calendar.current.date(
+            byAdding: .day,
+            value: -7,
+            to: Calendar.current.startOfDay(for: Date.now)
+        )!
+    }
 }
