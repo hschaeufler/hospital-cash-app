@@ -8,7 +8,7 @@
 import Foundation
 import HealthKit
 
-class HealthRepositoryImpl {
+class HealthRepositoryImpl: HealthRepository {
     let hkLocalDatasource: HKLocalDatasource
     
     init(
@@ -17,7 +17,7 @@ class HealthRepositoryImpl {
         self.hkLocalDatasource = hkLocalDatasource
     }
 
-    func getTodayStepCount() async throws -> Double {
-       try await hkLocalDatasource.readTodaysSteps().sumQuantity()!.doubleValue(for: HKUnit.count())
+    func getTodayStepCount() async throws -> Double? {
+       try await hkLocalDatasource.readTodaysSteps().sumQuantity()?.doubleValue(for: HKUnit.count())
     }
 }

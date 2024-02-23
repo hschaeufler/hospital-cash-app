@@ -24,10 +24,14 @@ class HKLocalDataSourceImpl: HKLocalDatasource {
     
     func requestReadAuthorisation(_ typesToRead: Set<HKObjectType>) async throws {
         guard HKHealthStore.isHealthDataAvailable() else {
-            throw "Healthdata is not availabe"
+            throw "Healthdata is not availabe on device"
         }
         let stepType = HKQuantityType(HKQuantityTypeIdentifier.stepCount)
-        try await self.healthStore.requestAuthorization(toShare: [], read: [stepType])
+        do {
+            try await self.healthStore.requestAuthorization(toShare: [], read: [stepType])
+        } catch {
+            throw CommonError.accessDenied
+        }
         
     }
     

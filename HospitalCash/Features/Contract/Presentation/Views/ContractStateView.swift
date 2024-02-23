@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContractViewState: View {
+struct ContractStateView: View {
     var viewState: ContractViewModel.ContractViewState
     
     var body: some View {
@@ -30,5 +30,5 @@ struct ContractViewState: View {
         dailyHospitalCash: 0.5,
         birthdate: Date()
     );
-    return ContractViewState(viewState: .loaded(contractEntity))
+    return ContractStateView(viewState: .loaded(contractEntity))
 }

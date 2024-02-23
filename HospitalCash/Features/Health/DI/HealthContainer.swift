@@ -7,6 +7,7 @@
 
 import Foundation
 import Factory
+import HealthKit
 
 public final class HealthContainer: SharedContainer {
     public static let shared = HealthContainer()
@@ -14,40 +15,32 @@ public final class HealthContainer: SharedContainer {
 }
 
 extension HealthContainer {
-    // Config
-    var contractConfig: Factory<Configuration.Contract> {
-        self { Configuration.Contract() }
+    // Clients
+    var hkHealthStore: Factory<HKHealthStore> {
+        self { HKHealthStore() }
             .singleton
     }
     
     // Datasources
     var hkLocalDatasource: Factory<HKLocalDatasource> {
-        self { HKLocalDataSourceImpl(
-            client: CoreContainer.shared.ethereumHttpClient(),
-            contractConfig: self.contractConfig()
-        )}
-    }
-    
-    // Repositories
-    var contractRepository: Factory<ContractRepository> {
         self {
-            ContractRepositoryImpl(
-                contractRemoteDatasource: self.contractRemoteDatasource(),
-                walletLocalDatasource: OnboardingContainer.shared.walletLocalDataSource()
+            HKLocalDataSourceImpl(
+                healthStore: self.hkHealthStore()
             )
         }
     }
     
-    // Usecases
-    var getContrat: Factory<GetContract> {
-        self { GetContractUseCase(
-            contractRepository: self.contractRepository()
-        ) }
+    // Repositories
+    var healthRepository: Factory<HealthRepository> {
+        self {
+            HealthRepositoryImpl(hkLocalDatasource: self.hkLocalDatasource())
+        }
     }
     
-    var getValidContrat: Factory<GetValidContract> {
-        self { GetValidContractUseCase(
-            contractRepository: self.contractRepository()
+    // Usecases
+    var getTodayStepCount: Factory<GetTodayStepCount> {
+        self { GetTodayStepCountUseCase(
+            healthRepository: self.healthRepository()
         ) }
     }
     

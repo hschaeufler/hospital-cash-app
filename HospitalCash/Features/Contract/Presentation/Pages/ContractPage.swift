@@ -11,7 +11,7 @@ struct ContractPage: View {
     @State private var contractVM = ContractViewModel()
     
     var body: some View {
-        ContractViewState(viewState: contractVM.state)
+        ContractStateView(viewState: contractVM.state)
             .onAppear {
                 Task {
                     await contractVM.fetchContract()

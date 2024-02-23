@@ -12,6 +12,7 @@ enum CommonError: Error {
     case dataCorrupted
     case couldNotParse
     case contractExecutionError(message: String)
+    case accessDenied
 }
 
 extension CommonError: LocalizedError {
@@ -23,6 +24,8 @@ extension CommonError: LocalizedError {
             return "Could not parse Data"
         case .contractExecutionError(let message):
             return message
+        case .accessDenied:
+            return "Access was denied."
         }
     }
 }

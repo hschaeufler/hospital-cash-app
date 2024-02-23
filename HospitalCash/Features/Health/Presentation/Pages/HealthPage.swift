@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct HealthPage: View {
+    @State private var dailyStepsVm = DailyStepsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            DailyStepsStateView(viewState: dailyStepsVm.state)
+                .onAppear {
+                    Task {
+                        await dailyStepsVm.fetchDailySteps()
+                    }
+                }
+            Spacer()
+            Text("Test")
+        }
     }
 }
 
