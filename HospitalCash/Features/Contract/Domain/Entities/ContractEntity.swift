@@ -1,5 +1,5 @@
 //
-//  InsuranceContractEntity.swift
+//  ContractEntity.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 17.02.24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct InsuranceContractEntity {
+struct ContractEntity {
     let policyId: Int
     let insuranceStartDate: Date
     let insuranceEndDate: Date

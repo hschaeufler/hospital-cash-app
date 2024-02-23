@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UnderwritingSheetLayout<Content>: View where Content: View {
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(WalletViewModel.self) private var walletVM
     
     var titleKey: LocalizedStringKey
     @ViewBuilder let content: () -> Content
@@ -29,5 +29,5 @@ struct UnderwritingSheetLayout<Content>: View where Content: View {
     UnderwritingSheetLayout("Test") {
         Text("Test123")
     }
-    .environment(WalletVM())
+    .environment(WalletViewModel())
 }

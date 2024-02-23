@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GetValidContract {
-    func callAsFunction() async throws -> InsuranceContractEntity?
+    func callAsFunction() async throws -> ContractEntity?
 }
 
 struct GetValidContractUseCase: GetValidContract {
@@ -18,7 +18,7 @@ struct GetValidContractUseCase: GetValidContract {
         self.contractRepository = contractRepository
     }
     
-    func callAsFunction() async throws -> InsuranceContractEntity? {
+    func callAsFunction() async throws -> ContractEntity? {
         return try await contractRepository.getValidContract()
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WalletSheetViewBuilder<Content>: View where Content : View {
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(WalletViewModel.self) private var walletVM
     
     @ViewBuilder var content: () -> Content
     
@@ -16,26 +16,30 @@ struct WalletSheetViewBuilder<Content>: View where Content : View {
         content()
             .sheet(isPresented: Binding<Bool>(
                 get: { walletVM.state == .isConnecting },
-                set: { _ in }
+                set: { _ in walletVM.handleDismiss() }
             )) {
-                ConnectWithWalletPage {
-                    Task {
-                        await walletVM.handleConnectWallet()
+                WalletErrorViewBuilder {
+                    ConnectWithWalletPage {
+                        Task {
+                            await walletVM.handleConnectWallet()
+                        }
                     }
                 }
             }
             .sheet(isPresented: Binding<Bool>(
                 get: { walletVM.state == .isUnderwriting },
-                set: { _ in }
+                set: { _ in walletVM.handleDismiss() }
             )) {
-                UnderwritingSheet()
+                WalletErrorViewBuilder {
+                    UnderwritingSheet()
+                }
             }
 
     }
 }
 
 #Preview {
-    let vm = WalletVM()
+    let vm = WalletViewModel()
     vm.state = .isConnecting
     
     return Group {

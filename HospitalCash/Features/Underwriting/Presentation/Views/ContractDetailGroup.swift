@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContractDetailGroup: View {
-    var insuranceContract: InsuranceContractEntity
+    var insuranceContract: ContractEntity
     
     var body: some View {
         List {
@@ -47,7 +47,7 @@ struct ContractDetailGroup: View {
 
 #Preview {
     ContractDetailGroup(
-    insuranceContract: InsuranceContractEntity(
+    insuranceContract: ContractEntity(
         policyId: 12334,
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),

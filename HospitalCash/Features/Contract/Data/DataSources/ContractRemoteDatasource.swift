@@ -11,15 +11,6 @@ import web3
 
 protocol ContractRemoteDatasource {
     func getContractAdress() -> EthereumAddress
-    func getMonthlyPremium(
-        with model: GetMonthlyPremiumRequestModel
-    ) async throws -> GetMonthlyPremiumResponseModel
-    func checkBMI(
-        with model: CheckBMIRequestModel
-    ) async throws -> CheckBMIResponseModel
-    func checkHealthQuestions(
-        with model: CheckHealthQuestionsRequestModel
-    ) async throws -> CheckHealthQuestionsResponseModel
     func getContract(
         with model: GetContractRequestModel
     ) async throws -> GetContractResponseModel
@@ -54,33 +45,6 @@ class ContractRemoteDatasourceImpl: ContractRemoteDatasource {
     
     func getContractAdress() -> EthereumAddress {
         self.contractAdress
-    }
-    
-    func getMonthlyPremium(
-        with model: GetMonthlyPremiumRequestModel
-    ) async throws -> GetMonthlyPremiumResponseModel {
-        try await model.call(
-            withClient: client,
-            responseType: GetMonthlyPremiumResponseModel.self
-        )
-    }
-    
-    func checkBMI(
-        with model: CheckBMIRequestModel
-    ) async throws -> CheckBMIResponseModel {
-        try await model.call(
-            withClient: client,
-            responseType: CheckBMIResponseModel.self
-        )
-    }
-    
-    func checkHealthQuestions(
-        with model: CheckHealthQuestionsRequestModel
-    ) async throws -> CheckHealthQuestionsResponseModel {
-        try await model.call(
-            withClient: client,
-            responseType: CheckHealthQuestionsResponseModel.self
-        )
     }
     
     func getValidContract(

@@ -25,8 +25,8 @@ extension UnderwritingContainer {
         self { ExchangeRateRemoteDatasourceImpl(restClient: CoreContainer.shared.restClient())}
     }
     
-    var insuranceContractRemoteDatasource: Factory<ContractRemoteDatasource> {
-        self { ContractRemoteDatasourceImpl(
+    var premiumRemoteDatasource: Factory<PremiumRemoteDatasource> {
+        self { PremiumRemoteDatasourceImpl(
             client: CoreContainer.shared.ethereumHttpClient(),
             contractConfig: self.contractConfig()
         )}
@@ -37,10 +37,10 @@ extension UnderwritingContainer {
         self { ExchangeRateRepositoryImpl(remoteDatasource: self.exchangeRateRemoteDataSource()) }
     }
     
-    var contractRepository: Factory<ContractRepository> {
+    var premiumRepository: Factory<PremiumRepository> {
         self {
-            ContractRepositoryImpl(
-                contractRemoteDatasource: self.insuranceContractRemoteDatasource(),
+            PremiumRepositoryImpl(
+                premiumRemoteDatasource: self.premiumRemoteDatasource(),
                 walletLocalDatasource: OnboardingContainer.shared.walletLocalDataSource()
             )
         }
@@ -53,7 +53,7 @@ extension UnderwritingContainer {
     
     var checkBMI: Factory<CheckBMI> {
         self {
-            CheckBMIUseCase(contractRepository: self.contractRepository())
+            CheckBMIUseCase(premiumRepository: self.premiumRepository())
         }
     }
     
@@ -73,14 +73,14 @@ extension UnderwritingContainer {
     
     var checkHealthQuestionValidity: Factory<CheckHealthQuestionValidity> {
         self { CheckHealthQuestionValidityUseCase(
-            insuranceRepository: self.contractRepository()
+            premiumRepository: self.premiumRepository()
         ) }
     }
     
     var calculatePremium: Factory<CalculateYearlyPremium> {
         self {
             CalculatePremiumUseCase(
-                contractRepository: self.contractRepository(),
+                premiumRepository: self.premiumRepository(),
                 calculateEthInEur: self.calculateEthInEur()
             )
         }
@@ -88,19 +88,13 @@ extension UnderwritingContainer {
     
     var underwriteContract: Factory<UnderwriteContract> {
         self { UnderwriteContractUseCase(
-            contractRepository: self.contractRepository()
+            contractRepository: ContractContainer.shared.contractRepository()
         ) }
     }
-    
-    var getValidContrat: Factory<GetValidContract> {
-        self { GetValidContractUseCase(
-            contractRepository: self.contractRepository()
-        ) }
-    }
-    
+
     var getContractByTransaction: Factory<GetContractByTransaction> {
         self { GetContractByTransactionUseCase(
-            getContract: self.getValidContrat(),
+            getValidContract: ContractContainer.shared.getValidContrat(),
             getTransactionState: CoreContainer.shared.getTransactionState()
         ) }
     }

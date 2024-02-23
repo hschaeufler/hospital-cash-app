@@ -8,7 +8,7 @@
 import Foundation
 import Factory
 
-@Observable class WalletVM {
+@Observable class WalletViewModel {
     @ObservationIgnored
     @Injected(\OnboardingContainer.connectWallet) private var connectWalletUseCase
     @ObservationIgnored
@@ -28,12 +28,16 @@ import Factory
     
     var state: WalletViewState = .loading
     
-    func handleLogin() {
+    func showLogin() {
         self.state = .isConnecting
     }
     
-    func handleUnderwriting() {
+    func showUnderwriting() {
         self.state = .isUnderwriting
+    }
+    
+    func handleLogout() {
+
     }
     
     func handleDismiss() {

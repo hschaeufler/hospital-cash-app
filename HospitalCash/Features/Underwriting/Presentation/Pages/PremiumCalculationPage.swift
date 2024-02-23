@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PremiumCalculationPage: View {
-    @Environment(UnderwritingVM.self) private var viewModel
+    @Environment(UnderwritingViewModel.self) private var viewModel
     
     var body: some View {
         @Bindable var viewModel = viewModel
@@ -64,6 +64,6 @@ struct PremiumCalculationPage: View {
 
 #Preview {
     PremiumCalculationPage()
-        .environment(UnderwritingVM())
-        .environment(WalletVM())
+        .environment(UnderwritingViewModel())
+        .environment(WalletViewModel())
 }

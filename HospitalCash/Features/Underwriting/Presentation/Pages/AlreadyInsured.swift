@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AlreadyInsured: View {
-    @Environment(WalletVM.self) private var walletVM
+    @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
         UnderwritingSheetLayout("Bereits versichert?") {
@@ -37,5 +37,5 @@ struct AlreadyInsured: View {
 
 #Preview {
     AlreadyInsured()
-        .environment(WalletVM())
+        .environment(WalletViewModel())
 }

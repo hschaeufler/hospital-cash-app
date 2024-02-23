@@ -196,7 +196,7 @@
         }
       }
     },
-    "Contract Page" : {
+    "Contract" : {
 
     },
     "Das ist ein Test" : {
@@ -470,6 +470,9 @@
     "Hallo!" : {
 
     },
+    "Hello, World!" : {
+
+    },
     "Hinweis" : {
       "localizations" : {
         "en" : {
@@ -656,6 +659,9 @@
           }
         }
       }
+    },
+    "Logout" : {
+
     },
     "Medikamenteneinahme" : {
       "localizations" : {
