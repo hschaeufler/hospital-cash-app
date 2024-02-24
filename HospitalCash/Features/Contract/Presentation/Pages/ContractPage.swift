@@ -9,19 +9,29 @@ import SwiftUI
 
 struct ContractPage: View {
     @State private var contractVM = ContractViewModel()
+    @Environment(WalletViewModel.self) private var walletVM
     
     var body: some View {
-        ContractViewState(viewState: contractVM.state)
-            .onAppear {
-                Task {
-                    await contractVM.fetchContract()
+        NavigationStack {
+            ContractStateView(viewState: contractVM.state)
+                .navigationTitle("Vertragsdetails")
+                .toolbar {
+                    Button {
+                        walletVM.handleLogout()
+                    } label: {
+                        Label("Logout", systemImage: "xmark.circle")
+                    }
                 }
-            }
+                .onAppear {
+                    Task {
+                        await contractVM.fetchContract()
+                    }
+                }
+        }
     }
 }
 
 #Preview {
-    NavigationStack {
-        ContractPage()
-    }
+    ContractPage()
+        .environment(WalletViewModel())
 }

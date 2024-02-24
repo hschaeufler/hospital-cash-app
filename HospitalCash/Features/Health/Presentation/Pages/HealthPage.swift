@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct HealthPage: View {
+    @Environment(WalletViewModel.self) private var walletVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                    DailyStepsStateView()
+                        .listRowInsets(EdgeInsets())
+                    WeeklyStepsStateView()
+                        .listRowInsets(EdgeInsets())
+            }
+            .listRowSpacing(15)
+            .listRowInsets(.none)
+            .navigationTitle("Gesundheit")
+            .toolbar {
+                Button {
+                    walletVM.handleLogout()
+                } label: {
+                    Label("Logout", systemImage: "xmark.circle")
+                }
+            }
+        }
     }
 }
 
 #Preview {
     HealthPage()
+        .environment(WalletViewModel())
 }

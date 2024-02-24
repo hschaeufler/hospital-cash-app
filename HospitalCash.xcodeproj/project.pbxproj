@@ -69,9 +69,30 @@
 		8461A09D2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A09C2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift */; };
 		8461A09F2B8828D400C7D2B9 /* PremiumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A09E2B8828D400C7D2B9 /* PremiumRepository.swift */; };
 		8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A02B882E8100C7D2B9 /* GetContract.swift */; };
-		8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */; };
+		8461A0A52B883C5200C7D2B9 /* ContractStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A42B883C5200C7D2B9 /* ContractStateView.swift */; };
 		8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */; };
 		8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */; };
+		8461A0AE2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */; };
+		8461A0B52B8905D400C7D2B9 /* HKLocalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */; };
+		8461A0B72B89067400C7D2B9 /* HealthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */; };
+		8461A0B92B8908F300C7D2B9 /* HealthContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */; };
+		8461A0BC2B890ADF00C7D2B9 /* HealthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0BB2B890ADF00C7D2B9 /* HealthRepository.swift */; };
+		8461A0BF2B89110A00C7D2B9 /* GetTodayStepCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */; };
+		8461A0C22B8911A900C7D2B9 /* DailyStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */; };
+		8461A0C42B89182500C7D2B9 /* DailyStepsStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */; };
+		8461A0C62B89194400C7D2B9 /* DailyStepCountChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */; };
+		8461A0C82B8927A100C7D2B9 /* DailyStepCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */; };
+		8461A0CA2B893EF100C7D2B9 /* BorderedInkwell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */; };
+		8461A0CC2B89409000C7D2B9 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CB2B89409000C7D2B9 /* RetryButton.swift */; };
+		8461A0CE2B8943EB00C7D2B9 /* ErrorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */; };
+		8461A0D02B894DDA00C7D2B9 /* ProgessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */; };
+		8461A0D42B8958B600C7D2B9 /* StepDateCountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0D32B8958B600C7D2B9 /* StepDateCountEntity.swift */; };
+		8461A0D62B89590E00C7D2B9 /* HKStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0D52B89590E00C7D2B9 /* HKStatisticsModel.swift */; };
+		8461A0D82B895AA300C7D2B9 /* GetWeeklyStepCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0D72B895AA300C7D2B9 /* GetWeeklyStepCount.swift */; };
+		8461A0DA2B895B5900C7D2B9 /* WeeklyStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0D92B895B5900C7D2B9 /* WeeklyStepsViewModel.swift */; };
+		8461A0DC2B895BE700C7D2B9 /* WeeklyStepsStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */; };
+		8461A0DE2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */; };
+		8461A0E02B895D0A00C7D2B9 /* WeekdayStepCountChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -205,9 +226,31 @@
 		8461A09C2B8828B700C7D2B9 /* PremiumRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumRepositoryImpl.swift; sourceTree = "<group>"; };
 		8461A09E2B8828D400C7D2B9 /* PremiumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumRepository.swift; sourceTree = "<group>"; };
 		8461A0A02B882E8100C7D2B9 /* GetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContract.swift; sourceTree = "<group>"; };
-		8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractViewState.swift; sourceTree = "<group>"; };
+		8461A0A42B883C5200C7D2B9 /* ContractStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractStateView.swift; sourceTree = "<group>"; };
 		8461A0A62B88422500C7D2B9 /* DisconnectWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectWallet.swift; sourceTree = "<group>"; };
 		8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailLayout.swift; sourceTree = "<group>"; };
+		8461A0AC2B88D39B00C7D2B9 /* HospitalCash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HospitalCash.entitlements; sourceTree = "<group>"; };
+		8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedErrorStringExtension.swift; sourceTree = "<group>"; };
+		8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKLocalDatasource.swift; sourceTree = "<group>"; };
+		8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRepositoryImpl.swift; sourceTree = "<group>"; };
+		8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthContainer.swift; sourceTree = "<group>"; };
+		8461A0BB2B890ADF00C7D2B9 /* HealthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRepository.swift; sourceTree = "<group>"; };
+		8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodayStepCount.swift; sourceTree = "<group>"; };
+		8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsViewModel.swift; sourceTree = "<group>"; };
+		8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsStateView.swift; sourceTree = "<group>"; };
+		8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepCountChart.swift; sourceTree = "<group>"; };
+		8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepCountCard.swift; sourceTree = "<group>"; };
+		8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedInkwell.swift; sourceTree = "<group>"; };
+		8461A0CB2B89409000C7D2B9 /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCard.swift; sourceTree = "<group>"; };
+		8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgessCard.swift; sourceTree = "<group>"; };
+		8461A0D32B8958B600C7D2B9 /* StepDateCountEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDateCountEntity.swift; sourceTree = "<group>"; };
+		8461A0D52B89590E00C7D2B9 /* HKStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStatisticsModel.swift; sourceTree = "<group>"; };
+		8461A0D72B895AA300C7D2B9 /* GetWeeklyStepCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeeklyStepCount.swift; sourceTree = "<group>"; };
+		8461A0D92B895B5900C7D2B9 /* WeeklyStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStepsViewModel.swift; sourceTree = "<group>"; };
+		8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStepsStateView.swift; sourceTree = "<group>"; };
+		8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStepsCountCard.swift; sourceTree = "<group>"; };
+		8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayStepCountChart.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -360,7 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				8461A0A82B88476500C7D2B9 /* ContractDetailLayout.swift */,
-				8461A0A42B883C5200C7D2B9 /* ContractViewState.swift */,
+				8461A0A42B883C5200C7D2B9 /* ContractStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,8 +419,8 @@
 		843969852B8775A100FA3E00 /* Health */ = {
 			isa = PBXGroup;
 			children = (
-				843969882B87760100FA3E00 /* Data */,
 				843969862B87760100FA3E00 /* DI */,
+				843969882B87760100FA3E00 /* Data */,
 				843969872B87760100FA3E00 /* Domain */,
 				843969892B87760100FA3E00 /* Presentation */,
 			);
@@ -387,6 +430,7 @@
 		843969862B87760100FA3E00 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0B82B8908F300C7D2B9 /* HealthContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -394,6 +438,9 @@
 		843969872B87760100FA3E00 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0BA2B890AC500C7D2B9 /* Repositories */,
+				8461A0BD2B8910EE00C7D2B9 /* Usecases */,
+				8461A0C02B89118E00C7D2B9 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -401,6 +448,9 @@
 		843969882B87760100FA3E00 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0B22B8905D300C7D2B9 /* Datasources */,
+				8461A0B42B8905D300C7D2B9 /* Models */,
+				8461A0B12B89056F00C7D2B9 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -418,6 +468,8 @@
 		8439698A2B87760100FA3E00 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */,
+				8461A0D92B895B5900C7D2B9 /* WeeklyStepsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -425,6 +477,12 @@
 		8439698B2B87760100FA3E00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0C32B89182500C7D2B9 /* DailyStepsStateView.swift */,
+				8461A0C52B89194400C7D2B9 /* DailyStepCountChart.swift */,
+				8461A0C72B8927A100C7D2B9 /* DailyStepCountCard.swift */,
+				8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */,
+				8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */,
+				8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -516,6 +574,55 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8461A0B12B89056F00C7D2B9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0B62B89067400C7D2B9 /* HealthRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8461A0B22B8905D300C7D2B9 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		8461A0B42B8905D300C7D2B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0D52B89590E00C7D2B9 /* HKStatisticsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8461A0BA2B890AC500C7D2B9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0BB2B890ADF00C7D2B9 /* HealthRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8461A0BD2B8910EE00C7D2B9 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */,
+				8461A0D72B895AA300C7D2B9 /* GetWeeklyStepCount.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		8461A0C02B89118E00C7D2B9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8461A0D32B8958B600C7D2B9 /* StepDateCountEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		846D6EFD2B6AEA980074F2F3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				846D6F112B6B01A60074F2F3 /* CommonError.swift */,
+				8461A0AD2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -725,6 +833,7 @@
 		84A4F8792B6368F30018AA37 /* HospitalCash */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0AC2B88D39B00C7D2B9 /* HospitalCash.entitlements */,
 				8454E8B82B77AA1E007A3887 /* Info.plist */,
 				84ED67302B63DD49001D600A /* Core */,
 				84ED672A2B63D8DC001D600A /* Features */,
@@ -888,6 +997,7 @@
 		84ED67582B654AE2001D600A /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0C92B893EF100C7D2B9 /* BorderedInkwell.swift */,
 				840C6DBD2B84C5EB0052E6AA /* CopyButton.swift */,
 				84ED67422B6435DF001D600A /* ProminentButton.swift */,
 				84ED67542B65351F001D600A /* NavigationDestinationButton.swift */,
@@ -896,6 +1006,9 @@
 				8454E8C32B783F54007A3887 /* NavigationLinkButton.swift */,
 				84EC9DB82B79676300B839DA /* CustomButton.swift */,
 				84EC9DBA2B7967D300B839DA /* BorderedButton.swift */,
+				8461A0CB2B89409000C7D2B9 /* RetryButton.swift */,
+				8461A0CD2B8943EB00C7D2B9 /* ErrorCard.swift */,
+				8461A0CF2B894DDA00C7D2B9 /* ProgessCard.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1117,8 +1230,10 @@
 				849471DD2B86A0B1000EC4D3 /* WalletRepository.swift in Sources */,
 				849471E82B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift in Sources */,
 				843969922B8794E100FA3E00 /* ErrorViewBuilder.swift in Sources */,
+				8461A0BC2B890ADF00C7D2B9 /* HealthRepository.swift in Sources */,
 				84ED673D2B642446001D600A /* InsuranceAdvantagesColumn.swift in Sources */,
 				846D6F0A2B6AED130074F2F3 /* ExchangeRateRemoteDatasourceImpl.swift in Sources */,
+				8461A0D42B8958B600C7D2B9 /* StepDateCountEntity.swift in Sources */,
 				84F8EACC2B810DF300D0A414 /* ContractEntity.swift in Sources */,
 				843969722B86E55500FA3E00 /* GetContractResponseModel.swift in Sources */,
 				84C426682B82E403002AC308 /* ContractDetailPage.swift in Sources */,
@@ -1133,13 +1248,17 @@
 				84ED67702B66B96D001D600A /* HealthQuestionEntity.swift in Sources */,
 				8461A0A92B88476500C7D2B9 /* ContractDetailLayout.swift in Sources */,
 				84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */,
+				8461A0AE2B88E6B400C7D2B9 /* LocalizedErrorStringExtension.swift in Sources */,
 				8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */,
 				84ED67412B6434D6001D600A /* ProductDescriptionText.swift in Sources */,
+				8461A0C42B89182500C7D2B9 /* DailyStepsStateView.swift in Sources */,
 				8461A09F2B8828D400C7D2B9 /* PremiumRepository.swift in Sources */,
 				84ED67532B652F68001D600A /* UnderwritingSheet.swift in Sources */,
 				846D6F082B6AEC420074F2F3 /* CoreContainer.swift in Sources */,
 				840C6DCF2B8575CD0052E6AA /* GetValidContractResponseModel.swift in Sources */,
 				8454E8CA2B791C4B007A3887 /* CheckBMIRequestModel.swift in Sources */,
+				8461A0B72B89067400C7D2B9 /* HealthRepositoryImpl.swift in Sources */,
+				8461A0D62B89590E00C7D2B9 /* HKStatisticsModel.swift in Sources */,
 				8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */,
 				849471C82B865F0B000EC4D3 /* GetContractByTransaction.swift in Sources */,
 				8439696C2B86DBF600FA3E00 /* UnderwritingViewModel.swift in Sources */,
@@ -1151,6 +1270,8 @@
 				84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */,
 				84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */,
 				840C6DCD2B8575AD0052E6AA /* GetValidContractRequestModel.swift in Sources */,
+				8461A0D82B895AA300C7D2B9 /* GetWeeklyStepCount.swift in Sources */,
+				8461A0CC2B89409000C7D2B9 /* RetryButton.swift in Sources */,
 				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
@@ -1161,16 +1282,20 @@
 				843969962B87C90700FA3E00 /* WalletSheetViewBuilder.swift in Sources */,
 				8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
+				8461A0CA2B893EF100C7D2B9 /* BorderedInkwell.swift in Sources */,
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
 				84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */,
 				8454E8D02B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift in Sources */,
 				84ED67842B69C8B0001D600A /* UnderwritingContainer.swift in Sources */,
+				8461A0BF2B89110A00C7D2B9 /* GetTodayStepCount.swift in Sources */,
 				8439699E2B880D8500FA3E00 /* HealthPage.swift in Sources */,
 				8461A0932B8822C700C7D2B9 /* ContractContainer.swift in Sources */,
+				8461A0DC2B895BE700C7D2B9 /* WeeklyStepsStateView.swift in Sources */,
 				846D6F0C2B6AF0D70074F2F3 /* ExchangeRateDataModel.swift in Sources */,
 				84ED67432B6435DF001D600A /* ProminentButton.swift in Sources */,
 				84A4F87D2B6368F30018AA37 /* ContentView.swift in Sources */,
 				8454E8CC2B791C71007A3887 /* CheckBMIResponseModel.swift in Sources */,
+				8461A0C62B89194400C7D2B9 /* DailyStepCountChart.swift in Sources */,
 				849471CD2B869348000EC4D3 /* WalletViewModel.swift in Sources */,
 				8454E8AE2B765EF0007A3887 /* ContractRepositoryImpl.swift in Sources */,
 				8454E8A82B763D5B007A3887 /* Configuration.swift in Sources */,
@@ -1181,12 +1306,15 @@
 				84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */,
 				84F8EACA2B80FC3E00D0A414 /* BodyMeasureEntity.swift in Sources */,
 				846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */,
+				8461A0E02B895D0A00C7D2B9 /* WeekdayStepCountChart.swift in Sources */,
 				8454E8B62B768FC1007A3887 /* EthUnits.swift in Sources */,
 				84ED672F2B63D97E001D600A /* HomePage.swift in Sources */,
 				840C6DC92B8570850052E6AA /* ConnectWallet.swift in Sources */,
+				8461A0B92B8908F300C7D2B9 /* HealthContainer.swift in Sources */,
 				843969742B86E74600FA3E00 /* HasContractRequestModel.swift in Sources */,
 				8454E8B02B76750B007A3887 /* GetMonthlyPremiumResponseModel.swift in Sources */,
 				84ED675F2B666E9B001D600A /* OutputFloatingPointField.swift in Sources */,
+				8461A0DE2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift in Sources */,
 				843969822B876BD500FA3E00 /* LoadingPage.swift in Sources */,
 				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,
 				846D6F1E2B6C38D90074F2F3 /* WalletLocalDataSource.swift in Sources */,
@@ -1197,7 +1325,7 @@
 				84ED677F2B69C2BE001D600A /* CalculateBMI.swift in Sources */,
 				846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */,
 				849471EA2B86B25A000EC4D3 /* EthereumRepository.swift in Sources */,
-				8461A0A52B883C5200C7D2B9 /* ContractViewState.swift in Sources */,
+				8461A0A52B883C5200C7D2B9 /* ContractStateView.swift in Sources */,
 				846D6F122B6B01A60074F2F3 /* CommonError.swift in Sources */,
 				846D6F172B6B08250074F2F3 /* CalculateEthInEur.swift in Sources */,
 				843969762B86E77E00FA3E00 /* HasValidContractRequestModel.swift in Sources */,
@@ -1209,11 +1337,13 @@
 				8439696E2B86DD9000FA3E00 /* IsWalletConnected.swift in Sources */,
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				8439697A2B86E7AE00FA3E00 /* HasValidContractResponseModel.swift in Sources */,
+				8461A0CE2B8943EB00C7D2B9 /* ErrorCard.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				8461A0912B881F1600C7D2B9 /* ContractViewModel.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,
 				8461A0962B8825D200C7D2B9 /* PremiumRemoteDatasourceImpl.swift in Sources */,
 				84EC9DB92B79676300B839DA /* CustomButton.swift in Sources */,
+				8461A0D02B894DDA00C7D2B9 /* ProgessCard.swift in Sources */,
 				84ED67472B6443D4001D600A /* CustomDivider.swift in Sources */,
 				840C6DD52B85811C0052E6AA /* NewContractEventEntity.swift in Sources */,
 				843969782B86E79900FA3E00 /* HasContractResponseModel.swift in Sources */,
@@ -1232,10 +1362,14 @@
 				840C6DC32B84E6710052E6AA /* ContractDetailGroup.swift in Sources */,
 				84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
+				8461A0DA2B895B5900C7D2B9 /* WeeklyStepsViewModel.swift in Sources */,
 				8454E8B32B7683A3007A3887 /* PremiumCalculationEntity.swift in Sources */,
+				8461A0B52B8905D400C7D2B9 /* HKLocalDatasource.swift in Sources */,
 				8461A0A72B88422500C7D2B9 /* DisconnectWallet.swift in Sources */,
 				846D6F0E2B6AFAB10074F2F3 /* ExchangeRateRepository.swift in Sources */,
 				8454E8BA2B77D6C1007A3887 /* PremiumEntity.swift in Sources */,
+				8461A0C82B8927A100C7D2B9 /* DailyStepCountCard.swift in Sources */,
+				8461A0C22B8911A900C7D2B9 /* DailyStepsViewModel.swift in Sources */,
 				84ED67552B65351F001D600A /* NavigationDestinationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1368,6 +1502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HospitalCash/HospitalCash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HospitalCash/Preview Content\"";
@@ -1399,6 +1534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HospitalCash/HospitalCash.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HospitalCash/Preview Content\"";

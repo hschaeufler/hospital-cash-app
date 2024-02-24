@@ -12,7 +12,7 @@ struct MetaMaskButton: View {
     var action: () -> Void
     
     var body: some View {
-        Button ( action: action, label: {
+        BorderedInkwell (action: action) {
             VStack(spacing: 0) {
                 Text(titleKey)
                     .font(.title2)
@@ -21,16 +21,7 @@ struct MetaMaskButton: View {
                     .aspectRatio(contentMode: .fit)
                     .clipped()
             }
-            .padding(5)
-            .background {
-                RoundedRectangle(
-                    cornerRadius: 10,
-                    style: .continuous
-                )
-                .stroke(.gray, lineWidth: 1.0)
-            }
-        })
-        .buttonStyle(.plain)
+        }
     }
 }
 

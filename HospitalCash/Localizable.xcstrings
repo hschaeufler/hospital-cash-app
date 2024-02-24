@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "" : {
+
+    },
     " - " : {
 
     },
@@ -19,6 +22,9 @@
           }
         }
       }
+    },
+    "👣" : {
+
     },
     "€" : {
       "localizations" : {
@@ -196,7 +202,7 @@
         }
       }
     },
-    "Contract" : {
+    "Das ist der Fehlergrund" : {
 
     },
     "Das ist ein Test" : {
@@ -281,6 +287,15 @@
         }
       }
     },
+    "Du musst den Zugriff auf deine Schrittdaten erlauben." : {
+
+    },
+    "Ein Fehler ist aufgetreten" : {
+
+    },
+    "Erneut versuchen" : {
+
+    },
     "Error Message" : {
       "localizations" : {
         "en" : {
@@ -330,6 +345,9 @@
           }
         }
       }
+    },
+    "Gesundheit" : {
+
     },
     "GESUNDHEITSFRAGE_AMBULANTE_BEHANDLUNG" : {
       "localizations" : {
@@ -470,7 +488,7 @@
     "Hallo!" : {
 
     },
-    "Hello, World!" : {
+    "Heutige Schritte" : {
 
     },
     "Hinweis" : {
@@ -604,6 +622,9 @@
         }
       }
     },
+    "Keine Daten" : {
+
+    },
     "Keine lästigen Wartezeiten" : {
       "localizations" : {
         "de" : {
@@ -672,6 +693,12 @@
           }
         }
       }
+    },
+    "Netzwerkfehler" : {
+
+    },
+    "noch %@" : {
+
     },
     "Ok" : {
       "localizations" : {
@@ -776,6 +803,12 @@
         }
       }
     },
+    "Scheinbar liegen für heute noch keine Schrittdaten vor." : {
+
+    },
+    "Scheinbar liegen keine Schrittdaten vor." : {
+
+    },
     "Sie haben bereits einen Vertrag unter dieser Adresse abgeschlossen. Kehren Sie zur Übersicht zurück um diesen zu Verwalten." : {
       "localizations" : {
         "en" : {
@@ -816,6 +849,9 @@
         }
       }
     },
+    "test" : {
+
+    },
     "Test" : {
       "localizations" : {
         "en" : {
@@ -845,6 +881,9 @@
           }
         }
       }
+    },
+    "Übrige Schritte" : {
+
     },
     "Versicherung auf Blockchain einsehbar" : {
       "localizations" : {
@@ -881,6 +920,12 @@
           }
         }
       }
+    },
+    "Vertrag" : {
+
+    },
+    "Vertragsdetails" : {
+
     },
     "Voll automatisiert" : {
       "localizations" : {
@@ -949,6 +994,9 @@
           }
         }
       }
+    },
+    "Zugriff verweigert" : {
+
     },
     "Zur Übersicht" : {
       "localizations" : {
