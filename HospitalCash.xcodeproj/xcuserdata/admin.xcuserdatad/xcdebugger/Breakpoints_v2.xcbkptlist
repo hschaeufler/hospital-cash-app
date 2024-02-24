@@ -849,5 +849,69 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53747387-E8E5-4E25-8125-4870B9C1F4B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "callAsFunction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53747387-E8E5-4E25-8125-4870B9C1F4B5 - 240c1f0d41d9025d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (HospitalCash.StepDateCountEntity) -&gt; Swift.Bool in HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "53747387-E8E5-4E25-8125-4870B9C1F4B5 - 240c1f0d41d9025d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (HospitalCash.StepDateCountEntity) -&gt; Swift.Bool in HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CDE737B-F0F6-45B0-9086-C6C4E0CF8BD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "CleaimDiscountUseCase"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

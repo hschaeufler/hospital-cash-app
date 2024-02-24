@@ -1,5 +1,5 @@
 //
-//  DailyStepCountGroup.swift
+//  DailyStepCountCard.swift
 //  HospitalCash
 //
 //  Created by Holger Schäufler on 23.02.24.
@@ -16,14 +16,14 @@ struct DailyStepCountCard: View {
             todaysSteps: todaysSteps,
             recommendedSteps: 8000
         )
-            .padding(20)
-            .background {
-                RoundedRectangle(
-                    cornerRadius: 10,
-                    style: .continuous
-                )
-                .stroke(.gray, lineWidth: 1.0)
-            }
+        .padding(20)
+        .background {
+            RoundedRectangle(
+                cornerRadius: 10,
+                style: .continuous
+            )
+            .stroke(.gray, lineWidth: 1.0)
+        }
     }
 }
 

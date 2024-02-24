@@ -29,10 +29,13 @@ struct CleaimDiscountUseCase: ClaimDiscount {
     func callAsFunction() async throws -> String {
         let weeklySteps = try await getWeeklyStepcount();
         let includedSteps = weeklySteps.filter { entity in
-            let startOfToday = Calendar.current.startOfDay(for: Date.now)
+            let startOfToday = DateUtils.startOfDate(for: Date.now)
             return entity.date < startOfToday
                 && !entity.isSubmitted!
                 && entity.steps >= Double(healthConfig.stepLimit);
+        }
+        guard !includedSteps.isEmpty else {
+            throw "Keine Schritte zum Übertragen"
         }
         return try await healthRepository.claimDiscount(with: includedSteps)
     }

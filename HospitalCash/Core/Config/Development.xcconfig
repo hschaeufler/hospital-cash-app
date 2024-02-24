@@ -14,4 +14,4 @@ DAPP_NAME = Hospital Cash
 DAPP_URL = https:/$()/the-wallet.dev
 DAPP_ICON_URL = https:/$()/the-wallet.dev/favicon.ico
 // Health
-STEP_LIMIT = 300
+STEP_LIMIT = 8000
