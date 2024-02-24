@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DailyStepsStateView: View {
-    @State private var viewModel = DailyStepsViewModel()
+    @Environment(DailyStepsViewModel.self) private var viewModel
     
     var body: some View {
         switch viewModel.state {

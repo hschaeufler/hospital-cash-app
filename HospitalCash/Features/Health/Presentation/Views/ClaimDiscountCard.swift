@@ -23,7 +23,7 @@ struct ClaimDiscountCard: View {
                 .font(.title3)
             Divider()
             Button (action: action) {
-                Label("Erneut versuchen", systemImage: "icloud.and.arrow.up")
+                Label("Jetzt beantragen", systemImage: "icloud.and.arrow.up")
             }
             .buttonStyle(.bordered)
             .font(.title2)

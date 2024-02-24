@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct WeeklyStepsStateView: View {
-    @State private var viewModel = WeeklyStepsViewModel()
+    @Environment(WeeklyStepsViewModel.self) private var viewModel
     
     var body: some View {
         switch viewModel.state {

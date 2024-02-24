@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ClaimDiscountStateView: View {
-    @State private var viewModel = ClaimDiscountViewModel()
+    @Environment(ClaimDiscountViewModel.self) private var viewModel
+    @Environment(WeeklyStepsViewModel.self) private var weeklyVM
+
     
     var body: some View {
         switch viewModel.state {
@@ -28,6 +30,7 @@ struct ClaimDiscountStateView: View {
                 subtitle: LocalizedStringKey(errorMessage)) {
                     Task {
                         await viewModel.handleClaimDiscount()
+                        await weeklyVM.fetchWeeklySteps()
                     }
                 }
         case .accessDenied:
@@ -46,4 +49,5 @@ struct ClaimDiscountStateView: View {
 #Preview {
     WeeklyStepsStateView()
         .environment(WeeklyStepsViewModel())
+        .environment(ClaimDiscountViewModel())
 }
