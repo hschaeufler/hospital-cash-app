@@ -52,6 +52,8 @@ struct ContractDetailGroup: View {
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),
         dailyHospitalCash: 1222,
+        paidPremium: 1222,
+        lastPayoutDate: Date(),
         birthdate: Date()
     )
     )

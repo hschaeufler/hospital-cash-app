@@ -19,6 +19,12 @@ struct GetWeeklyStepCountUseCase: GetWeeklyStepCount {
     }
     
     func callAsFunction() async throws -> [StepDateCountEntity] {
-        return try await healthRepository.getWeeklySteps()
+        let lastPayoutDate = try await healthRepository.getLastPayoutDate()
+        let weeklySteps = try await healthRepository.getWeeklySteps()
+        return weeklySteps.map { stepDateCountEntity in
+            var copy = stepDateCountEntity
+            copy.isSubmitted = stepDateCountEntity.date < lastPayoutDate
+            return copy
+        }
     }
 }

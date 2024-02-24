@@ -10,9 +10,9 @@ import web3
 import BigInt
 
 struct GetValidContractResponseModel: ABIResponse {
-    static var types: [ABIType.Type] { [Bool.self, InsuranceContractModel.self] }
+    static var types: [ABIType.Type] { [Bool.self, ContractModel.self] }
     let isValid: Bool
-    let insuranceContract: InsuranceContractModel
+    let insuranceContract: ContractModel
     
     public init?(values: [ABIDecoder.DecodedValue]) throws {
         self.isValid = try values[0].decoded()

@@ -12,7 +12,7 @@ import BigInt
 import Combine
 
 protocol WalletLocalDataSource {
-    func sendTransaction(with model: UnderwriteContractRequestModel) async throws -> String
+    func sendTransaction<T: CodableData>(with model: T) async throws -> String
     func connectWallet() async throws -> String
     func disconnectWallet()
     func getWalletAdress() -> String

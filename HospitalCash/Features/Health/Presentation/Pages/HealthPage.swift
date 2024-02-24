@@ -17,6 +17,8 @@ struct HealthPage: View {
                         .listRowInsets(EdgeInsets())
                     WeeklyStepsStateView()
                         .listRowInsets(EdgeInsets())
+                    ClaimDiscountStateView()
+                        .listRowInsets(EdgeInsets())
             }
             .listRowSpacing(15)
             .listRowInsets(.none)
