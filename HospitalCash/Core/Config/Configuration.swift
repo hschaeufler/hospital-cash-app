@@ -66,6 +66,6 @@ struct Configuration {
     }
     
     static private func getConfigValue(forKey: String) -> Int {
-        Bundle.main.object(forInfoDictionaryKey: forKey) as! Int
+        Int(Bundle.main.object(forInfoDictionaryKey: forKey) as! String)!
     }
 }
