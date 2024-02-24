@@ -10,8 +10,8 @@ import Charts
 
 struct DailyStepCountChart: View {
     var todaysSteps: Double
+    var recommendedSteps : Double
     
-    private let recommendedSteps = 8000.0
     private var remainingSteps: Double {
         recommendedSteps - todaysSteps
     }
@@ -51,5 +51,8 @@ struct DailyStepCountChart: View {
 }
 
 #Preview {
-    DailyStepCountChart(todaysSteps: 6000)
+    DailyStepCountChart(
+        todaysSteps: 6000,
+        recommendedSteps: 8000
+    )
 }

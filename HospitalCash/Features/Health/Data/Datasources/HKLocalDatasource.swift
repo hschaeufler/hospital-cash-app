@@ -67,7 +67,7 @@ class HKLocalDataSourceImpl: HKLocalDatasource {
         let stepType = HKQuantityType(HKQuantityTypeIdentifier.stepCount)
         try await requestReadAuthorisation([stepType])
         
-        let startOfDay = Calendar.current.startOfDay(for: Date.now)
+        let startOfDay = DateUtils.startOfDate(for: Date.now)
         let now = Date.now
         let todayPredicate = HKQuery.predicateForSamples(
             withStart: startOfDay,

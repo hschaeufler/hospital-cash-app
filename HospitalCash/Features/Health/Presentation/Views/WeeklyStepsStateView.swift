@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct WeeklyStepsStateView: View {
-    @State private var viewModel = WeeklyStepsViewModel()
+    @Environment(WeeklyStepsViewModel.self) private var viewModel
     
     var body: some View {
         switch viewModel.state {
@@ -21,8 +21,15 @@ struct WeeklyStepsStateView: View {
                         await viewModel.fetchWeeklySteps()
                     }
                 }
-        case .loaded(let weeklySteps):
-            WeeklyStepsCountCard(weeklySteps: weeklySteps)
+        case .loaded(let weeklySteps, let stepLimit):
+            WeeklyStepsCountCard(
+                weeklySteps: weeklySteps,
+                recommendedSteps: stepLimit
+            ) {
+                Task {
+                    await viewModel.fetchWeeklySteps();
+                }
+            }
         case .error(let errorMessage):
             ErrorCard(
                 "Ein Fehler ist aufgetreten",

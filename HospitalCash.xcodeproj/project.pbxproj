@@ -93,6 +93,17 @@
 		8461A0DC2B895BE700C7D2B9 /* WeeklyStepsStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */; };
 		8461A0DE2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */; };
 		8461A0E02B895D0A00C7D2B9 /* WeekdayStepCountChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */; };
+		8461A0E22B898EF800C7D2B9 /* HealthRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0E12B898EF800C7D2B9 /* HealthRemoteDatasource.swift */; };
+		8461A0E42B89914B00C7D2B9 /* GetLastPayOutDateRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0E32B89914B00C7D2B9 /* GetLastPayOutDateRequestModel.swift */; };
+		8461A0E62B8991A300C7D2B9 /* GetLastPayOutDateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0E52B8991A300C7D2B9 /* GetLastPayOutDateResponseModel.swift */; };
+		8461A0E82B89955C00C7D2B9 /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0E72B89955C00C7D2B9 /* BigUInt.swift */; };
+		8461A0EA2B89965E00C7D2B9 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0E92B89965E00C7D2B9 /* BigInt.swift */; };
+		8461A0EC2B899BAD00C7D2B9 /* ClaimDiscountRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0EB2B899BAD00C7D2B9 /* ClaimDiscountRequestModel.swift */; };
+		8461A0EE2B899DB800C7D2B9 /* StepDateCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0ED2B899DB800C7D2B9 /* StepDateCountModel.swift */; };
+		8461A0F02B89A46200C7D2B9 /* ClaimDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0EF2B89A46200C7D2B9 /* ClaimDiscount.swift */; };
+		8461A0F42B89A94500C7D2B9 /* ClaimDiscountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0F32B89A94500C7D2B9 /* ClaimDiscountViewModel.swift */; };
+		8461A0F62B89AA4400C7D2B9 /* ClaimDiscountStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0F52B89AA4400C7D2B9 /* ClaimDiscountStateView.swift */; };
+		8461A0F82B89AB0A00C7D2B9 /* ClaimDiscountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461A0F72B89AB0A00C7D2B9 /* ClaimDiscountCard.swift */; };
 		846D6F002B6AEAD80074F2F3 /* RESTClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */; };
 		846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F012B6AEAE00074F2F3 /* RESTClient.swift */; };
 		846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */; };
@@ -121,7 +132,7 @@
 		84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */; };
 		84C426602B823355002AC308 /* PremiumCalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4265F2B823355002AC308 /* PremiumCalculationModel.swift */; };
 		84C426622B823364002AC308 /* BodyMeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426612B823364002AC308 /* BodyMeasureModel.swift */; };
-		84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426632B823392002AC308 /* InsuranceContractModel.swift */; };
+		84C426642B823392002AC308 /* ContractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426632B823392002AC308 /* ContractModel.swift */; };
 		84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426652B8235F1002AC308 /* ContractApplicationModel.swift */; };
 		84C426682B82E403002AC308 /* ContractDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C426672B82E403002AC308 /* ContractDetailPage.swift */; };
 		84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA13D62B7976870075561E /* HealthQuestionModel.swift */; };
@@ -251,6 +262,17 @@
 		8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStepsStateView.swift; sourceTree = "<group>"; };
 		8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStepsCountCard.swift; sourceTree = "<group>"; };
 		8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayStepCountChart.swift; sourceTree = "<group>"; };
+		8461A0E12B898EF800C7D2B9 /* HealthRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRemoteDatasource.swift; sourceTree = "<group>"; };
+		8461A0E32B89914B00C7D2B9 /* GetLastPayOutDateRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastPayOutDateRequestModel.swift; sourceTree = "<group>"; };
+		8461A0E52B8991A300C7D2B9 /* GetLastPayOutDateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastPayOutDateResponseModel.swift; sourceTree = "<group>"; };
+		8461A0E72B89955C00C7D2B9 /* BigUInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigUInt.swift; sourceTree = "<group>"; };
+		8461A0E92B89965E00C7D2B9 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		8461A0EB2B899BAD00C7D2B9 /* ClaimDiscountRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDiscountRequestModel.swift; sourceTree = "<group>"; };
+		8461A0ED2B899DB800C7D2B9 /* StepDateCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDateCountModel.swift; sourceTree = "<group>"; };
+		8461A0EF2B89A46200C7D2B9 /* ClaimDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDiscount.swift; sourceTree = "<group>"; };
+		8461A0F32B89A94500C7D2B9 /* ClaimDiscountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDiscountViewModel.swift; sourceTree = "<group>"; };
+		8461A0F52B89AA4400C7D2B9 /* ClaimDiscountStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDiscountStateView.swift; sourceTree = "<group>"; };
+		8461A0F72B89AB0A00C7D2B9 /* ClaimDiscountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimDiscountCard.swift; sourceTree = "<group>"; };
 		846D6EFF2B6AEAD80074F2F3 /* RESTClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClientError.swift; sourceTree = "<group>"; };
 		846D6F012B6AEAE00074F2F3 /* RESTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		846D6F032B6AEAE80074F2F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -279,7 +301,7 @@
 		84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwriteContractRequestModel.swift; sourceTree = "<group>"; };
 		84C4265F2B823355002AC308 /* PremiumCalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCalculationModel.swift; sourceTree = "<group>"; };
 		84C426612B823364002AC308 /* BodyMeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasureModel.swift; sourceTree = "<group>"; };
-		84C426632B823392002AC308 /* InsuranceContractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceContractModel.swift; sourceTree = "<group>"; };
+		84C426632B823392002AC308 /* ContractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractModel.swift; sourceTree = "<group>"; };
 		84C426652B8235F1002AC308 /* ContractApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractApplicationModel.swift; sourceTree = "<group>"; };
 		84C426672B82E403002AC308 /* ContractDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailPage.swift; sourceTree = "<group>"; };
 		84EA13D62B7976870075561E /* HealthQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionModel.swift; sourceTree = "<group>"; };
@@ -468,8 +490,9 @@
 		8439698A2B87760100FA3E00 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */,
 				8461A0D92B895B5900C7D2B9 /* WeeklyStepsViewModel.swift */,
+				8461A0C12B8911A900C7D2B9 /* DailyStepsViewModel.swift */,
+				8461A0F32B89A94500C7D2B9 /* ClaimDiscountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -483,6 +506,8 @@
 				8461A0DB2B895BE700C7D2B9 /* WeeklyStepsStateView.swift */,
 				8461A0DD2B895C9300C7D2B9 /* WeeklyStepsCountCard.swift */,
 				8461A0DF2B895D0A00C7D2B9 /* WeekdayStepCountChart.swift */,
+				8461A0F52B89AA4400C7D2B9 /* ClaimDiscountStateView.swift */,
+				8461A0F72B89AB0A00C7D2B9 /* ClaimDiscountCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -510,6 +535,8 @@
 			children = (
 				8454E8B52B768FC1007A3887 /* EthUnits.swift */,
 				849471C52B863CA9000EC4D3 /* DateUtils.swift */,
+				8461A0E72B89955C00C7D2B9 /* BigUInt.swift */,
+				8461A0E92B89965E00C7D2B9 /* BigInt.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -559,7 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				84C4265B2B8232F4002AC308 /* UnderwriteContractRequestModel.swift */,
-				84C426632B823392002AC308 /* InsuranceContractModel.swift */,
+				84C426632B823392002AC308 /* ContractModel.swift */,
 				84C426652B8235F1002AC308 /* ContractApplicationModel.swift */,
 				840C6DC62B856D770052E6AA /* NewContractEventModel.swift */,
 				840C6DCC2B8575AD0052E6AA /* GetValidContractRequestModel.swift */,
@@ -586,6 +613,7 @@
 			isa = PBXGroup;
 			children = (
 				8461A0B32B8905D300C7D2B9 /* HKLocalDatasource.swift */,
+				8461A0E12B898EF800C7D2B9 /* HealthRemoteDatasource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -593,7 +621,11 @@
 		8461A0B42B8905D300C7D2B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8461A0ED2B899DB800C7D2B9 /* StepDateCountModel.swift */,
 				8461A0D52B89590E00C7D2B9 /* HKStatisticsModel.swift */,
+				8461A0E32B89914B00C7D2B9 /* GetLastPayOutDateRequestModel.swift */,
+				8461A0E52B8991A300C7D2B9 /* GetLastPayOutDateResponseModel.swift */,
+				8461A0EB2B899BAD00C7D2B9 /* ClaimDiscountRequestModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -611,6 +643,7 @@
 			children = (
 				8461A0BE2B89110A00C7D2B9 /* GetTodayStepCount.swift */,
 				8461A0D72B895AA300C7D2B9 /* GetWeeklyStepCount.swift */,
+				8461A0EF2B89A46200C7D2B9 /* ClaimDiscount.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -1227,6 +1260,7 @@
 			files = (
 				84C426622B823364002AC308 /* BodyMeasureModel.swift in Sources */,
 				84ED674F2B645961001D600A /* BMIPage.swift in Sources */,
+				8461A0EA2B89965E00C7D2B9 /* BigInt.swift in Sources */,
 				849471DD2B86A0B1000EC4D3 /* WalletRepository.swift in Sources */,
 				849471E82B86B0BB000EC4D3 /* EthereumRepositoryImpl.swift in Sources */,
 				843969922B8794E100FA3E00 /* ErrorViewBuilder.swift in Sources */,
@@ -1268,17 +1302,20 @@
 				840C6DCB2B85734A0052E6AA /* EthereumTransactionReceiptStatusModel.swift in Sources */,
 				8454E8C82B79199C007A3887 /* CheckBMI.swift in Sources */,
 				84C4265C2B8232F4002AC308 /* UnderwriteContractRequestModel.swift in Sources */,
-				84C426642B823392002AC308 /* InsuranceContractModel.swift in Sources */,
+				84C426642B823392002AC308 /* ContractModel.swift in Sources */,
 				840C6DCD2B8575AD0052E6AA /* GetValidContractRequestModel.swift in Sources */,
 				8461A0D82B895AA300C7D2B9 /* GetWeeklyStepCount.swift in Sources */,
+				8461A0F02B89A46200C7D2B9 /* ClaimDiscount.swift in Sources */,
 				8461A0CC2B89409000C7D2B9 /* RetryButton.swift in Sources */,
 				841A96582B7E68AB00BDA450 /* MetaMaskButton.swift in Sources */,
+				8461A0F82B89AB0A00C7D2B9 /* ClaimDiscountCard.swift in Sources */,
 				840C6DD32B857AC70052E6AA /* GetTransactionState.swift in Sources */,
 				84ED67652B668A50001D600A /* InfoToggle.swift in Sources */,
 				8439699A2B88001D00FA3E00 /* UnderwritingSheetLayout.swift in Sources */,
 				8454E8AC2B765A10007A3887 /* CalculateYearlyPremium.swift in Sources */,
 				843969702B86E54200FA3E00 /* GetContractRequestModel.swift in Sources */,
 				840C6DC12B84CDC90052E6AA /* OutputDateRangeField.swift in Sources */,
+				8461A0E62B8991A300C7D2B9 /* GetLastPayOutDateResponseModel.swift in Sources */,
 				843969962B87C90700FA3E00 /* WalletSheetViewBuilder.swift in Sources */,
 				8461A0A12B882E8100C7D2B9 /* GetContract.swift in Sources */,
 				846D6F022B6AEAE00074F2F3 /* RESTClient.swift in Sources */,
@@ -1286,6 +1323,7 @@
 				846D6F152B6B08020074F2F3 /* CalculateEurInEth.swift in Sources */,
 				84EA13D72B7976870075561E /* HealthQuestionModel.swift in Sources */,
 				8454E8D02B791CA1007A3887 /* CheckHealthQuestionsResponseModel.swift in Sources */,
+				8461A0E82B89955C00C7D2B9 /* BigUInt.swift in Sources */,
 				84ED67842B69C8B0001D600A /* UnderwritingContainer.swift in Sources */,
 				8461A0BF2B89110A00C7D2B9 /* GetTodayStepCount.swift in Sources */,
 				8439699E2B880D8500FA3E00 /* HealthPage.swift in Sources */,
@@ -1305,6 +1343,7 @@
 				843969902B87768E00FA3E00 /* LoginButton.swift in Sources */,
 				84C426662B8235F1002AC308 /* ContractApplicationModel.swift in Sources */,
 				84F8EACA2B80FC3E00D0A414 /* BodyMeasureEntity.swift in Sources */,
+				8461A0EC2B899BAD00C7D2B9 /* ClaimDiscountRequestModel.swift in Sources */,
 				846D6F042B6AEAE80074F2F3 /* HTTPMethod.swift in Sources */,
 				8461A0E02B895D0A00C7D2B9 /* WeekdayStepCountChart.swift in Sources */,
 				8454E8B62B768FC1007A3887 /* EthUnits.swift in Sources */,
@@ -1319,6 +1358,7 @@
 				84ED67672B66976F001D600A /* PremiumCalculationPage.swift in Sources */,
 				846D6F1E2B6C38D90074F2F3 /* WalletLocalDataSource.swift in Sources */,
 				84F8EAC82B80FB6000D0A414 /* UnderwriteContract.swift in Sources */,
+				8461A0EE2B899DB800C7D2B9 /* StepDateCountModel.swift in Sources */,
 				841A96562B7E689600BDA450 /* PayWithWalletPage.swift in Sources */,
 				8454E8BE2B77DC8F007A3887 /* PremiumDetailGroup.swift in Sources */,
 				8454E8AA2B765995007A3887 /* ContractRepository.swift in Sources */,
@@ -1338,6 +1378,7 @@
 				84ED675D2B65DE26001D600A /* NumberField.swift in Sources */,
 				8439697A2B86E7AE00FA3E00 /* HasValidContractResponseModel.swift in Sources */,
 				8461A0CE2B8943EB00C7D2B9 /* ErrorCard.swift in Sources */,
+				8461A0E22B898EF800C7D2B9 /* HealthRemoteDatasource.swift in Sources */,
 				84ED67512B652DB0001D600A /* HealthQuestionPage.swift in Sources */,
 				8461A0912B881F1600C7D2B9 /* ContractViewModel.swift in Sources */,
 				84ED67572B653840001D600A /* ButtonLabel.swift in Sources */,
@@ -1353,13 +1394,16 @@
 				84A4F87B2B6368F30018AA37 /* HospitalCashApp.swift in Sources */,
 				84EC9DBB2B7967D300B839DA /* BorderedButton.swift in Sources */,
 				8439697C2B86EAD400FA3E00 /* GetAppState.swift in Sources */,
+				8461A0F42B89A94500C7D2B9 /* ClaimDiscountViewModel.swift in Sources */,
 				8439696A2B86D4D900FA3E00 /* WalletRepositoryImpl.swift in Sources */,
 				8454E8C62B7867F7007A3887 /* JSONRPCErrorDetailModel.swift in Sources */,
+				8461A0F62B89AA4400C7D2B9 /* ClaimDiscountStateView.swift in Sources */,
 				84ED673A2B640D44001D600A /* Avatar.swift in Sources */,
 				84ED67722B69B258001D600A /* PremiumDetailPage.swift in Sources */,
 				840C6DD12B8579D70052E6AA /* GetValidContract.swift in Sources */,
 				8454E8CE2B791C89007A3887 /* CheckHealthQuestionsRequestModel.swift in Sources */,
 				840C6DC32B84E6710052E6AA /* ContractDetailGroup.swift in Sources */,
+				8461A0E42B89914B00C7D2B9 /* GetLastPayOutDateRequestModel.swift in Sources */,
 				84F8EACE2B81109400D0A414 /* ContractApplicationEntity.swift in Sources */,
 				84ED67362B640828001D600A /* ListTile.swift in Sources */,
 				8461A0DA2B895B5900C7D2B9 /* WeeklyStepsViewModel.swift in Sources */,

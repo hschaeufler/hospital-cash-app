@@ -30,6 +30,8 @@ struct ContractDetailLayout: View {
         insuranceStartDate: Date(),
         insuranceEndDate: Date(),
         dailyHospitalCash: 0.5,
+        paidPremium: 0.5,
+        lastPayoutDate: Date(),
         birthdate: Date()
     );
     return ContractDetailLayout(contract: contractEntity)

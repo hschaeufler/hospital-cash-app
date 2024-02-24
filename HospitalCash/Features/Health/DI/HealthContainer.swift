@@ -21,6 +21,12 @@ extension HealthContainer {
             .singleton
     }
     
+    // Config
+    var healthConfig: Factory<Configuration.Health> {
+        self { Configuration.Health() }
+            .singleton
+    }
+    
     // Datasources
     var hkLocalDatasource: Factory<HKLocalDatasource> {
         self {
@@ -29,11 +35,23 @@ extension HealthContainer {
             )
         }
     }
+    var healthRemoteDatasource: Factory<HealthRemoteDatasource> {
+        self {
+            HealthRemoteDatasourceImpl(
+                client: CoreContainer.shared.ethereumHttpClient(),
+                contractConfig: ContractContainer.shared.contractConfig()
+            )
+        }
+    }
     
     // Repositories
     var healthRepository: Factory<HealthRepository> {
         self {
-            HealthRepositoryImpl(hkLocalDatasource: self.hkLocalDatasource())
+            HealthRepositoryImpl(
+                hkLocalDatasource: self.hkLocalDatasource(),
+                healthRemoteDatasource: self.healthRemoteDatasource(),
+                walletLocalDatasource: OnboardingContainer.shared.walletLocalDataSource()
+            )
         }
     }
     
@@ -46,7 +64,16 @@ extension HealthContainer {
     
     var getWeeklyStepCount: Factory<GetWeeklyStepCount> {
         self { GetWeeklyStepCountUseCase(
-            healthRepository: self.healthRepository()
+            healthRepository: self.healthRepository(),
+            healthConfig: self.healthConfig()
+        ) }
+    }
+    
+    var claimDiscount: Factory<ClaimDiscount> {
+        self { CleaimDiscountUseCase(
+            healthRepository: self.healthRepository(),
+            getWeeklyStepcount: self.getWeeklyStepCount(),
+            healthConfig: self.healthConfig()
         ) }
     }
     

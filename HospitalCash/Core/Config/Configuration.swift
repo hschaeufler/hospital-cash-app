@@ -53,11 +53,19 @@ struct Configuration {
         }
     }
     
+    struct Health {
+        private static let stepLimit = "STEP_LIMIT"
+
+        var stepLimit: Int {
+            getConfigValue(forKey: Health.stepLimit)
+        }
+    }
+    
     static private func getConfigValue(forKey: String) -> String {
         Bundle.main.object(forInfoDictionaryKey: forKey) as! String
     }
     
     static private func getConfigValue(forKey: String) -> Int {
-        Bundle.main.object(forInfoDictionaryKey: forKey) as! Int
+        Int(Bundle.main.object(forInfoDictionaryKey: forKey) as! String)!
     }
 }

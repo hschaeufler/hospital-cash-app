@@ -12,5 +12,7 @@ struct ContractEntity {
     let insuranceStartDate: Date
     let insuranceEndDate: Date
     let dailyHospitalCash: Double
+    let paidPremium: Double
+    let lastPayoutDate: Date
     let birthdate: Date
 }

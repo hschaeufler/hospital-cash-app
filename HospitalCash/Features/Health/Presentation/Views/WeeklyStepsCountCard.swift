@@ -11,13 +11,26 @@ import SwiftUI
 
 struct WeeklyStepsCountCard: View {
     var weeklySteps: [StepDateCountEntity]
+    var recommendedSteps : Double
+    var action: () -> Void
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                ForEach(weeklySteps, id: \.date) { stepDateCount in
-                    WeekdayStepCountChart(stepDateCount: stepDateCount)
+        VStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(weeklySteps, id: \.date) { stepDateCount in
+                        WeekdayStepCountChart(
+                            stepDateCount: stepDateCount,
+                            recommendedSteps: recommendedSteps
+                        )
+                    }
                 }
+            }
+            Button (action: action) {
+                Label(
+                    "Status aktualiseren",
+                    systemImage: "arrow.triangle.2.circlepath.icloud.fill"
+                )
             }
         }
         .padding(.vertical, 20)
@@ -36,5 +49,7 @@ struct WeeklyStepsCountCard: View {
         StepDateCountEntity(steps: 2000, date: Date()),
         StepDateCountEntity(steps: 1000, date: Date()),
         StepDateCountEntity(steps: 2900, date: Date())
-    ])
+    ],
+                         recommendedSteps: 8000
+    ) {}
 }

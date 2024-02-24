@@ -25,7 +25,8 @@ struct CalculatePremiumUseCase: CalculateYearlyPremium {
  
     func callAsFunction(with premiumCalculation: PremiumCalculationEntity) async throws -> PremiumEntity {
         let monthlyEthPremium = try await premiumRepository.getMonthlyPremium(with: premiumCalculation)
-        let yearlyEthPremium = monthlyEthPremium * 12
+        // Add 10 Weis to to avoid rounding errors.
+        let yearlyEthPremium = monthlyEthPremium * 12 + Double(10 / EthUnits.wei)
         let yearlyEurPremium = try await calculateEthInEur(ethAmount: yearlyEthPremium)
         return PremiumEntity(
             yearlyEthPremium: yearlyEthPremium,

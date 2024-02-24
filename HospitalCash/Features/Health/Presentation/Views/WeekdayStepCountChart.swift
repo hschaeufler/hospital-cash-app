@@ -12,8 +12,8 @@ import Charts
 
 struct WeekdayStepCountChart: View {
     var stepDateCount: StepDateCountEntity
+    var recommendedSteps: Double
     
-    private let recommendedSteps = 8000.0
     private var remainingSteps: Double {
         recommendedSteps - stepDateCount.steps
     }
@@ -70,5 +70,7 @@ struct WeekdayStepCountChart: View {
             steps: 2000,
             date: Date(),
             isSubmitted: true
-        ))
+        ),
+        recommendedSteps: 8000
+    )
 }

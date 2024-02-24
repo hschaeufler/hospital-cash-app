@@ -13,3 +13,5 @@ CONTRACT_ADRESS = 0x8936FD38C5AcC5a6CFfb3841153EC604E215309E
 DAPP_NAME = Hospital Cash
 DAPP_URL = https:/$()/the-wallet.dev
 DAPP_ICON_URL = https:/$()/the-wallet.dev/favicon.ico
+// Health
+STEP_LIMIT = 300

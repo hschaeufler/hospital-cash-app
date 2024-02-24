@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HealthPage: View {
     @Environment(WalletViewModel.self) private var walletVM
+    @State private var claimDiscountVM = ClaimDiscountViewModel()
+    @State private var weeklyStepsVM = WeeklyStepsViewModel()
+    @State private var dailyStepsVM = DailyStepsViewModel()
     
     var body: some View {
         NavigationStack {
@@ -16,6 +19,8 @@ struct HealthPage: View {
                     DailyStepsStateView()
                         .listRowInsets(EdgeInsets())
                     WeeklyStepsStateView()
+                        .listRowInsets(EdgeInsets())
+                    ClaimDiscountStateView()
                         .listRowInsets(EdgeInsets())
             }
             .listRowSpacing(15)
@@ -29,6 +34,9 @@ struct HealthPage: View {
                 }
             }
         }
+        .environment(claimDiscountVM)
+        .environment(weeklyStepsVM)
+        .environment(dailyStepsVM)
     }
 }
 
