@@ -909,8 +909,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "CleaimDiscountUseCase"
-            landmarkType = "14">
+            landmarkName = "callAsFunction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7CDE737B-F0F6-45B0-9086-C6C4E0CF8BD5 - 5bebf20a033c8bf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "7CDE737B-F0F6-45B0-9086-C6C4E0CF8BD5 - 92b41f662e6428d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "7CDE737B-F0F6-45B0-9086-C6C4E0CF8BD5 - 164694ebffc5cff2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "7CDE737B-F0F6-45B0-9086-C6C4E0CF8BD5 - a2a5b9cb5beb73f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for HospitalCash.CleaimDiscountUseCase.callAsFunction() async throws -&gt; Swift.String"
+                  moduleName = "HospitalCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/workspace/hospitalcash/HospitalCash/HospitalCash/Features/Health/Domain/Usecases/ClaimDiscount.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
