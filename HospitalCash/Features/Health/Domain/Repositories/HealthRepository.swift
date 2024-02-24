@@ -9,4 +9,5 @@ import Foundation
 
 protocol HealthRepository {
     func getTodayStepCount() async throws -> Double?
+    func getWeeklySteps() async throws -> [StepDateCountEntity]
 }

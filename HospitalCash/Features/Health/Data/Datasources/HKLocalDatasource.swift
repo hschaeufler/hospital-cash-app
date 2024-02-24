@@ -11,7 +11,7 @@ import HealthKit
 protocol HKLocalDatasource {
     func requestReadAuthorisation(_ typesToRead: Set<HKObjectType>) async throws
     func readWeeklySteps(with anchorDate: Date?) async throws -> [HKStatistics]
-    func readTodaysSteps() async throws -> HKStatistics
+    func readTodaysSteps() async throws -> HKStatistics?
 }
 
 class HKLocalDataSourceImpl: HKLocalDatasource {
@@ -63,7 +63,7 @@ class HKLocalDataSourceImpl: HKLocalDatasource {
     }
     
     // see: https://developer.apple.com/documentation/healthkit/hkstatisticsquerydescriptor
-    func readTodaysSteps() async throws -> HKStatistics {
+    func readTodaysSteps() async throws -> HKStatistics? {
         let stepType = HKQuantityType(HKQuantityTypeIdentifier.stepCount)
         try await requestReadAuthorisation([stepType])
         
@@ -84,7 +84,7 @@ class HKLocalDataSourceImpl: HKLocalDatasource {
         )
         
         let result = try await sumOfStepsQuery.result(for: healthStore);
-        return result!;
+        return result;
     }
     
     

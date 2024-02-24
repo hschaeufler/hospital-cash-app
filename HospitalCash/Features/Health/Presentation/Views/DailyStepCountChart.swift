@@ -36,13 +36,13 @@ struct DailyStepCountChart: View {
                 Text("Heutige Schritte")
                     .foregroundStyle(.secondary)
                 HStack(alignment: .bottom) {
-                    Text("\(todaysSteps.formatted())")
+                    Text(String(format: "%.0f", todaysSteps))
                         .font(.largeTitle)
                         .bold()
                     Text("👣")
                         .font(.caption)
                 }
-                Text("noch \(remainingSteps.formatted())")
+                Text("noch \(String(format: "%.0f", remainingSteps))")
                     .foregroundStyle(.secondary)
             }
         }

@@ -44,4 +44,10 @@ extension HealthContainer {
         ) }
     }
     
+    var getWeeklyStepCount: Factory<GetWeeklyStepCount> {
+        self { GetWeeklyStepCountUseCase(
+            healthRepository: self.healthRepository()
+        ) }
+    }
+    
 }

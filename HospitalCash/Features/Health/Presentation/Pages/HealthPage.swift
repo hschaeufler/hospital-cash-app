@@ -13,11 +13,21 @@ struct HealthPage: View {
     var body: some View {
         NavigationStack {
             List {
-                DailyStepsStateView()
-                    .listRowInsets(EdgeInsets())
+                    DailyStepsStateView()
+                        .listRowInsets(EdgeInsets())
+                    WeeklyStepsStateView()
+                        .listRowInsets(EdgeInsets())
             }
+            .listRowSpacing(15)
             .listRowInsets(.none)
             .navigationTitle("Gesundheit")
+            .toolbar {
+                Button {
+                    walletVM.handleLogout()
+                } label: {
+                    Label("Logout", systemImage: "xmark.circle")
+                }
+            }
         }
     }
 }

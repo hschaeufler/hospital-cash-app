@@ -1,14 +1,15 @@
 //
-//  DailyStepcountStateView.swift
+//  WeeklyStepsStateView.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 23.02.24.
+//  Created by Holger Schäufler on 24.02.24.
 //
 
+import Foundation
 import SwiftUI
 
-struct DailyStepsStateView: View {
-    @State private var viewModel = DailyStepsViewModel()
+struct WeeklyStepsStateView: View {
+    @State private var viewModel = WeeklyStepsViewModel()
     
     var body: some View {
         switch viewModel.state {
@@ -17,26 +18,26 @@ struct DailyStepsStateView: View {
                 .frame(height: 300)
                 .onAppear {
                     Task {
-                        await viewModel.fetchDailySteps()
+                        await viewModel.fetchWeeklySteps()
                     }
                 }
-        case .loaded(let steps):
-            DailyStepCountCard(todaysSteps: steps)
+        case .loaded(let weeklySteps):
+            WeeklyStepsCountCard(weeklySteps: weeklySteps)
         case .error(let errorMessage):
             ErrorCard(
                 "Ein Fehler ist aufgetreten",
                 subtitle: LocalizedStringKey(errorMessage)) {
                     Task {
-                        await viewModel.fetchDailySteps()
+                        await viewModel.fetchWeeklySteps()
                     }
                 }
         case .empty:
             ErrorCard(
                 "Keine Daten",
-                subtitle: "Scheinbar liegen für heute noch keine Schrittdaten vor."
+                subtitle: "Scheinbar liegen keine Schrittdaten vor."
             ) {
                 Task {
-                    await viewModel.fetchDailySteps()
+                    await viewModel.fetchWeeklySteps()
                 }
             }
         case .accessDenied:
@@ -45,7 +46,7 @@ struct DailyStepsStateView: View {
                 subtitle: "Du musst den Zugriff auf deine Schrittdaten erlauben."
             ) {
                 Task {
-                    await viewModel.fetchDailySteps()
+                    await viewModel.fetchWeeklySteps()
                 }
             }
         }
@@ -53,6 +54,6 @@ struct DailyStepsStateView: View {
 }
 
 #Preview {
-    DailyStepsStateView()
-        .environment(DailyStepsViewModel())
+    WeeklyStepsStateView()
+        .environment(WeeklyStepsViewModel())
 }

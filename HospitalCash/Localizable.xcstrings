@@ -1,10 +1,10 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
-    " - " : {
+    "" : {
 
     },
-    "%@" : {
+    " - " : {
 
     },
     "%@ Eth / ~ %@ €" : {
@@ -802,6 +802,9 @@
           }
         }
       }
+    },
+    "Scheinbar liegen für heute noch keine Schrittdaten vor." : {
+
     },
     "Scheinbar liegen keine Schrittdaten vor." : {
 

@@ -18,10 +18,12 @@ class HealthRepositoryImpl: HealthRepository {
     }
 
     func getTodayStepCount() async throws -> Double? {
-       try await hkLocalDatasource.readTodaysSteps().sumQuantity()?.doubleValue(for: HKUnit.count())
+       try await hkLocalDatasource.readTodaysSteps()?.sumQuantity()?.doubleValue(for: HKUnit.count())
     }
     
-    func getWeeklySteps() async throws -> Double? {
-       return nil
+    func getWeeklySteps() async throws -> [StepDateCountEntity] {
+        try await hkLocalDatasource.readWeeklySteps(with: nil).map { hkStatistic in
+            hkStatistic.toStepDateCountEntity()
+        }
     }
 }

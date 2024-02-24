@@ -1,19 +1,20 @@
 //
-//  DailyStepsViewModel.swift
+//  WeeklyStepsViewModel.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 23.02.24.
+//  Created by Holger Schäufler on 24.02.24.
 //
+
 import SwiftUI
 import Factory
 
-@Observable class DailyStepsViewModel {
+@Observable class WeeklyStepsViewModel {
     @ObservationIgnored
-    @Injected(\HealthContainer.getTodayStepCount) private var getTodayStepCount
+    @Injected(\HealthContainer.getWeeklyStepCount) private var getWeeklyStepCount
     
     enum ViewState {
         case loading
-        case loaded(Double)
+        case loaded([StepDateCountEntity])
         case empty
         case accessDenied
         case error(String)
@@ -21,11 +22,11 @@ import Factory
     
     var state: ViewState = .loading
     
-    func fetchDailySteps() async {
+    func fetchWeeklySteps() async {
         do {
-            let todaySteps = try await self.getTodayStepCount()
-            if let todaySteps = todaySteps {
-                self.state = .loaded(todaySteps)
+            let weeklySteps = try await self.getWeeklyStepCount()
+            if !weeklySteps.isEmpty {
+                self.state = .loaded(weeklySteps)
             } else {
                 self.state = .empty
             }
