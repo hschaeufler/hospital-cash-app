@@ -14,22 +14,25 @@ protocol ClaimDiscount {
 struct CleaimDiscountUseCase: ClaimDiscount {
     private let healthRepository: HealthRepository
     private let getWeeklyStepcount: GetWeeklyStepCount
+    private let healthConfig: Configuration.Health
     
     init(
         healthRepository: HealthRepository,
-        getWeeklyStepcount: GetWeeklyStepCount
+        getWeeklyStepcount: GetWeeklyStepCount,
+        healthConfig: Configuration.Health
     ) {
         self.healthRepository = healthRepository
         self.getWeeklyStepcount = getWeeklyStepcount
+        self.healthConfig = healthConfig
     }
-    
-    //   (entity.isSubmitted ?? false)! && entity.date.
     
     func callAsFunction() async throws -> String {
         let weeklySteps = try await getWeeklyStepcount();
         let includedSteps = weeklySteps.filter { entity in
             let startOfToday = Calendar.current.startOfDay(for: Date.now)
-            return entity.date < startOfToday && !entity.isSubmitted!;
+            return entity.date < startOfToday
+                && !entity.isSubmitted!
+                && entity.steps >= Double(healthConfig.stepLimit);
         }
         return try await healthRepository.claimDiscount(with: includedSteps)
     }

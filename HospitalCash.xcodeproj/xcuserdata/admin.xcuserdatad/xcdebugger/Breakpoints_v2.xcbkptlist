@@ -703,8 +703,8 @@
             filePath = "HospitalCash/Features/Health/Presentation/ViewModel/DailyStepsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "fetchDailySteps()"
             landmarkType = "7">
             <Locations>
@@ -811,8 +811,8 @@
             filePath = "HospitalCash/Features/Health/Presentation/ViewModel/DailyStepsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "fetchDailySteps()"
             landmarkType = "7">
             <Locations>

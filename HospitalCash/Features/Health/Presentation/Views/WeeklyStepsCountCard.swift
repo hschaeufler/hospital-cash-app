@@ -11,12 +11,16 @@ import SwiftUI
 
 struct WeeklyStepsCountCard: View {
     var weeklySteps: [StepDateCountEntity]
+    var recommendedSteps : Double
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(weeklySteps, id: \.date) { stepDateCount in
-                    WeekdayStepCountChart(stepDateCount: stepDateCount)
+                    WeekdayStepCountChart(
+                        stepDateCount: stepDateCount,
+                        recommendedSteps: recommendedSteps
+                    )
                 }
             }
         }
@@ -36,5 +40,7 @@ struct WeeklyStepsCountCard: View {
         StepDateCountEntity(steps: 2000, date: Date()),
         StepDateCountEntity(steps: 1000, date: Date()),
         StepDateCountEntity(steps: 2900, date: Date())
-    ])
+    ],
+    recommendedSteps: 8000
+    )
 }

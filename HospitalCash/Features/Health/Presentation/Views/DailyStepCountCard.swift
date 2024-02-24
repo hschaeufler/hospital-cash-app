@@ -9,9 +9,13 @@ import SwiftUI
 
 struct DailyStepCountCard: View {
     var todaysSteps: Double
+    var recommendedSteps : Double
     
     var body: some View {
-        DailyStepCountChart(todaysSteps: todaysSteps)
+        DailyStepCountChart(
+            todaysSteps: todaysSteps,
+            recommendedSteps: 8000
+        )
             .padding(20)
             .background {
                 RoundedRectangle(
@@ -24,5 +28,8 @@ struct DailyStepCountCard: View {
 }
 
 #Preview {
-    DailyStepCountCard(todaysSteps: 200)
+    DailyStepCountCard(
+        todaysSteps: 200,
+        recommendedSteps: 8000
+    )
 }

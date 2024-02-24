@@ -21,8 +21,11 @@ struct WeeklyStepsStateView: View {
                         await viewModel.fetchWeeklySteps()
                     }
                 }
-        case .loaded(let weeklySteps):
-            WeeklyStepsCountCard(weeklySteps: weeklySteps)
+        case .loaded(let weeklySteps, let stepLimit):
+            WeeklyStepsCountCard(
+                weeklySteps: weeklySteps,
+                recommendedSteps: stepLimit
+            )
         case .error(let errorMessage):
             ErrorCard(
                 "Ein Fehler ist aufgetreten",

@@ -20,8 +20,11 @@ struct DailyStepsStateView: View {
                         await viewModel.fetchDailySteps()
                     }
                 }
-        case .loaded(let steps):
-            DailyStepCountCard(todaysSteps: steps)
+        case .loaded(let steps, let stepLimit):
+            DailyStepCountCard(
+                todaysSteps: steps,
+                recommendedSteps: stepLimit
+            )
         case .error(let errorMessage):
             ErrorCard(
                 "Ein Fehler ist aufgetreten",

@@ -20,5 +20,7 @@
 	<string>The steps taken are read in order to calculate a premium discount.</string>
 	<key>NODE_RPC_ENDPOINT</key>
 	<string>$(NODE_RPC_ENDPOINT)</string>
+	<key>STEP_LIMIT</key>
+	<string>$(STEP_LIMIT)</string>
 </dict>
 </plist>

@@ -10,10 +10,12 @@ import Factory
 @Observable class DailyStepsViewModel {
     @ObservationIgnored
     @Injected(\HealthContainer.getTodayStepCount) private var getTodayStepCount
+    @ObservationIgnored
+    @Injected(\HealthContainer.healthConfig) private var healthConfig
     
     enum ViewState {
         case loading
-        case loaded(Double)
+        case loaded(Double, Double)
         case empty
         case accessDenied
         case error(String)
@@ -25,7 +27,7 @@ import Factory
         do {
             let todaySteps = try await self.getTodayStepCount()
             if let todaySteps = todaySteps {
-                self.state = .loaded(todaySteps)
+                self.state = .loaded(todaySteps, Double(healthConfig.stepLimit))
             } else {
                 self.state = .empty
             }
