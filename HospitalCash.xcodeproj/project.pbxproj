@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,6 +43,9 @@
 		8439699A2B88001D00FA3E00 /* UnderwritingSheetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843969992B88001D00FA3E00 /* UnderwritingSheetLayout.swift */; };
 		8439699C2B880B7D00FA3E00 /* ContractPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439699B2B880B7D00FA3E00 /* ContractPage.swift */; };
 		8439699E2B880D8500FA3E00 /* HealthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439699D2B880D8500FA3E00 /* HealthPage.swift */; };
+		844090252B91280D0068388B /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 844090242B91280D0068388B /* metamask-ios-sdk */; };
+		844090282B912A6C0068388B /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 844090272B912A6C0068388B /* web3-zksync.swift */; };
+		8440902A2B912A6C0068388B /* web3.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 844090292B912A6C0068388B /* web3.swift */; };
 		8454E8872B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E8862B6C9790007A3887 /* GetMonthlyPremiumRequestModel.swift */; };
 		8454E88F2B6E79B7007A3887 /* ContractRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454E88E2B6E79B7007A3887 /* ContractRemoteDatasource.swift */; };
 		8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */; };
@@ -347,8 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				846D6F1B2B6C372D0074F2F3 /* metamask-ios-sdk in Frameworks */,
+				8440902A2B912A6C0068388B /* web3.swift in Frameworks */,
 				8454E8A12B6FC1E4007A3887 /* web3-zksync.swift in Frameworks */,
 				8454E8A32B6FC1E4007A3887 /* web3.swift in Frameworks */,
+				844090252B91280D0068388B /* metamask-ios-sdk in Frameworks */,
+				844090282B912A6C0068388B /* web3-zksync.swift in Frameworks */,
 				84ED67822B69C7D3001D600A /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1196,6 +1202,9 @@
 				846D6F1A2B6C372D0074F2F3 /* metamask-ios-sdk */,
 				8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */,
 				8454E8A22B6FC1E4007A3887 /* web3.swift */,
+				844090242B91280D0068388B /* metamask-ios-sdk */,
+				844090272B912A6C0068388B /* web3-zksync.swift */,
+				844090292B912A6C0068388B /* web3.swift */,
 			);
 			productName = HospitalCash;
 			productReference = 84A4F8772B6368F30018AA37 /* HospitalCash.app */;
@@ -1228,8 +1237,8 @@
 			mainGroup = 84A4F86E2B6368F30018AA37;
 			packageReferences = (
 				84ED67802B69C7D3001D600A /* XCRemoteSwiftPackageReference "Factory" */,
-				846D6F192B6C372D0074F2F3 /* XCLocalSwiftPackageReference "../fork/metamask-ios-sdk" */,
-				8454E89F2B6FC1E4007A3887 /* XCLocalSwiftPackageReference "../other/web3.swift" */,
+				844090232B91280D0068388B /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				844090262B912A6C0068388B /* XCRemoteSwiftPackageReference "web3.swift" */,
 			);
 			productRefGroup = 84A4F8782B6368F30018AA37 /* Products */;
 			projectDirPath = "";
@@ -1627,18 +1636,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		8454E89F2B6FC1E4007A3887 /* XCLocalSwiftPackageReference "../other/web3.swift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../other/web3.swift;
-		};
-		846D6F192B6C372D0074F2F3 /* XCLocalSwiftPackageReference "../fork/metamask-ios-sdk" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../fork/metamask-ios-sdk";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		844090232B91280D0068388B /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hschaeufler/metamask-ios-sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		844090262B912A6C0068388B /* XCRemoteSwiftPackageReference "web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hschaeufler/web3.swift.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		84ED67802B69C7D3001D600A /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory.git";
@@ -1650,6 +1664,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		844090242B91280D0068388B /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844090232B91280D0068388B /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+		844090272B912A6C0068388B /* web3-zksync.swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844090262B912A6C0068388B /* XCRemoteSwiftPackageReference "web3.swift" */;
+			productName = "web3-zksync.swift";
+		};
+		844090292B912A6C0068388B /* web3.swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844090262B912A6C0068388B /* XCRemoteSwiftPackageReference "web3.swift" */;
+			productName = web3.swift;
+		};
 		8454E8A02B6FC1E4007A3887 /* web3-zksync.swift */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "web3-zksync.swift";
