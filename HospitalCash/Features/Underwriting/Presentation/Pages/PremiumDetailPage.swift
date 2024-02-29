@@ -2,7 +2,7 @@
 //  PremiumDetailPage.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 30.01.24.
+//  Created by hschaeufler on 30.01.24.
 //
 
 import SwiftUI

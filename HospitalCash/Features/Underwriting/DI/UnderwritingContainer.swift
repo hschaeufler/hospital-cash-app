@@ -2,7 +2,7 @@
 //  PremiumContainer.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 31.01.24.
+//  Created by hschaeufler on 31.01.24.
 
 import Foundation
 import Factory

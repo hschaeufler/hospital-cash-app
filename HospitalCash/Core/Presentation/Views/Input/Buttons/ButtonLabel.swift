@@ -2,7 +2,7 @@
 //  ButtonLabel.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 27.01.24.
+//  Created by hschaeufler on 27.01.24.
 //
 
 import SwiftUI

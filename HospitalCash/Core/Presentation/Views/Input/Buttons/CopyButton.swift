@@ -2,7 +2,7 @@
 //  CopyButton.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 20.02.24.
+//  Created by hschaeufler on 20.02.24.
 //
 
 import SwiftUI

@@ -2,7 +2,7 @@
 //  MetaMaskButton.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 15.02.24.
+//  Created by hschaeufler on 15.02.24.
 //
 
 import SwiftUI

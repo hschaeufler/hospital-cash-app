@@ -2,7 +2,7 @@
 //  NewContractEventEntity.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 21.02.24.
+//  Created by hschaeufler on 21.02.24.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  LoadingPage.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 22.02.24.
+//  Created by hschaeufler on 22.02.24.
 //
 
 import SwiftUI

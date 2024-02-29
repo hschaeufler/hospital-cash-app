@@ -2,7 +2,7 @@
 //  PaintedButton.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 11.02.24.
+//  Created by hschaeufler on 11.02.24.
 //
 
 import SwiftUI

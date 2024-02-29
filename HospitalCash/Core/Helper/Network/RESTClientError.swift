@@ -2,7 +2,7 @@
 //  RESTClientError.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 29.01.23.
+//  Created by hschaeufler on 29.01.23.
 //  Source: https://github.com/hschaeufler/he4lth-app
 
 import Foundation

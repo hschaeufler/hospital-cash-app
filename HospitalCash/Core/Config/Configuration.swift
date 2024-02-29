@@ -2,7 +2,7 @@
 //  Configuration.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 09.02.24.
+//  Created by hschaeufler on 09.02.24.
 //
 //  See: https://cocoacasts.com/cocoa-fundamentals-how-to-access-builds-settings-in-swift
 

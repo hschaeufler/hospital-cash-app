@@ -2,7 +2,7 @@
 //  GetMonthlyPremiumRequestModel.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 02.02.24.
+//  Created by hschaeufler on 02.02.24.
 //
 
 import Foundation

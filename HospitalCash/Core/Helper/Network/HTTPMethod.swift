@@ -2,7 +2,7 @@
 //  HTTPMethod.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 30.01.23.
+//  Created by hschaeufler on 30.01.23.
 //  Source: https://github.com/hschaeufler/he4lth-app
 
 import Foundation

@@ -2,7 +2,7 @@
 //  DailyStepsViewModel.swift
 //  HospitalCash
 //
-//  Created by Holger Schäufler on 23.02.24.
+//  Created by hschaeufler on 23.02.24.
 //
 import SwiftUI
 import Factory
